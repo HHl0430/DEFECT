@@ -1,0 +1,92 @@
+.nextpage-container {
+  width: 1000px;
+  margin: 20px auto; }
+  .nextpage-container .max-tit {
+    font-size: 24px;
+    line-height: 2em;
+    margin: 40px 0 20px 0; }
+  .nextpage-container .app-list {
+    width: 1020px;
+    margin-left: -10px; }
+    .nextpage-container .app-list:after {
+      content: "";
+      display: block;
+      clear: both;
+      overflow: hidden;
+      height: 0; }
+    .nextpage-container .app-list li {
+      float: left;
+      width: 25%;
+      box-sizing: border-box;
+      padding: 10px; }
+      .nextpage-container .app-list li a {
+        display: block;
+        text-align: center;
+        border-radius: 4px;
+        background: #fff;
+        padding: 30px 20px;
+        box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.05); }
+        .nextpage-container .app-list li a i {
+          font-size: 54px;
+          background: #1c92ed;
+          color: #fff;
+          width: 100px;
+          height: 100px;
+          line-height: 100px;
+          text-align: center;
+          border-radius: 50%;
+          display: inline-block;
+          margin-top: 10px; }
+        .nextpage-container .app-list li a span {
+          display: block;
+          color: #565f7d;
+          font-size: 14px;
+          line-height: 20px;
+          margin: 20px 0; }
+        .nextpage-container .app-list li a:hover {
+          background: #fafafa; }
+  .nextpage-container .breadCrumb {
+    font-size: 12px;
+    color: #b0bdd7; }
+    .nextpage-container .breadCrumb a {
+      color: #b0bdd7;
+      display: inline-block;
+      margin: 5px 0;
+      line-height: 20px; }
+      .nextpage-container .breadCrumb a:hover {
+        color: #1c92ed; }
+  .nextpage-container .page-title {
+    line-height: 40px;
+    font-size: 18px;
+    margin: 10px 0; }
+  .nextpage-container .page-content {
+    background: #fff;
+    margin: 10px 0;
+    border-radius: 4px;
+    padding: 20px; }
+    .nextpage-container .page-content .select-bar {
+      height: 40px; }
+      .nextpage-container .page-content .select-bar select, .nextpage-container .page-content .select-bar input[type=tex], .nextpage-container .page-content .select-bar input[type=date] {
+        height: 34px;
+        border: 1px solid #ddd;
+        width: 160px;
+        margin-right: 5px;
+        vertical-align: middle;
+        display: inline-block;
+        border-radius: 4px;
+        background: #fff;
+        box-sizing: border-box; }
+      .nextpage-container .page-content .select-bar input[type=date] {
+        width: 120px; }
+      .nextpage-container .page-content .select-bar a {
+        vertical-align: middle; }
+    .nextpage-container .page-content .main_box {
+      margin-top: 20px;
+      height: 340px;
+      position: relative; }
+      .nextpage-container .page-content .main_box .main_rem {
+        text-align: center; }
+      .nextpage-container .page-content .main_box .main {
+        height: 320px; }
+
+/*# sourceMappingURL=nextpage.css.map */

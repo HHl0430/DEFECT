@@ -1,0 +1,88 @@
+.add_box .layui-input {
+  width: 250px;
+  height: 34px;
+  float: left;
+}
+#more_dailog .pup-box {
+  width: 875px;
+}
+#more_dailog .content {
+    height: 500px;
+    overflow: auto;
+}
+.more-left {
+  float: left;
+  width: 118px;
+  padding: 10px;
+  max-height: 165px;
+  background: #eee;
+  text-align: center;
+  border-right: 2px solid #eee;
+  margin-right: 20px;
+}
+.more-right {
+  float: left;
+  width: 649px;
+  padding: 10px;
+  max-height: 165px;
+  border-left: 1px solid #eee;
+  text-align: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.more-right ul {
+  width: 1090px;
+}
+.more-right li {
+  cursor: pointer;
+  padding: 10px;
+  float: left;
+}
+.more-right li.active {
+  background: #eee;
+}
+.more-right li:hover {
+  background: #eee;
+}
+.enting {
+  margin-top: 185px;
+}
+.enting .title {
+  padding: 10px 15px;
+  font-size: 16px;
+}
+.enting_left {
+  margin-top: 25px;
+  float: left;
+  width: 290px;
+  padding: 10px;
+  max-height: 165px;
+  background: #eee;
+  text-align: center;
+  border-right: 2px solid #eee;
+  margin-right: 20px;
+}
+.text {
+  font-weight: 700;
+  margin-top: 10px;
+}
+.enting_right {
+  float: left;
+  width: calc(100% - 360px);
+  height: 225px;
+  text-align: center;
+}
+.defect_left {
+  text-align: center;
+  width: 385px;
+  float: left;
+}
+.defect_left td {
+  padding: 10px;
+}
+.defect_right {
+    float: left;
+  }
+  .defect_right td {
+    padding: 10px;
+  }
