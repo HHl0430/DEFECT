@@ -7,7 +7,7 @@
   width: 875px;
 }
 #more_dailog .content {
-  height: 500px;
+  height: 600px;
   overflow: auto;
 }
 .more-left {
@@ -15,27 +15,23 @@
   width: 118px;
   padding: 10px;
   max-height: 165px;
-  background: #eee;
   text-align: center;
   border-right: 2px solid #eee;
   margin-right: 20px;
 }
+.more-left.active {
+  background: #eee;
+}
 .more-right {
   float: left;
-  width: 100%;
-  padding: 10px;
-  max-height: 165px;
+  width: 677px;
+  max-height: 183px;
   border-left: 1px solid #eee;
   text-align: center;
+  overflow: auto;
+  overflow-y: hidden;
 }
 .more-right > ul {
-  width: 1090px;
-}
-.li-box {
-  width: 681px;
-  overflow: auto;
-}
-.li-box ul {
   width: 1090px;
 }
 .more-right li {
@@ -87,7 +83,26 @@
 }
 .defect_right {
   float: left;
+  height: 328px;
+  overflow: auto;
 }
 .defect_right td {
   padding: 10px;
+}
+.translation_left {
+  float: left;
+}
+.translation_left td {
+  padding: 10px;
+}
+
+.defect_right img {
+  width: 35px;
+}
+.contrast .active {
+  background: #eee;
+}
+.translation_left img {
+  width: 98px;
+  height: 68px;
 }

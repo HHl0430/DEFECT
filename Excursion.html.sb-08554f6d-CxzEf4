@@ -473,7 +473,7 @@
                         <div class="box" style="height:auto;padding: 10px">
                             <input class="model_swich" name="model" type="checkbox" value='chart' />
                             <div class="title" style="padding-left: 20px;">Trend Chart</div>
-                            <div class="box-content chart-box-content" style="text-align: center;">
+                            <div class="box-content chart-box-content " style="text-align: center;">
                                 <div class="add_box">
                                     <select name="" id="">
                                         <option value="1">1</option>
@@ -894,7 +894,7 @@
                     <div class="box" style="height:auto">
                         <input class="model_swich" name="model" type="checkbox" value='chart' />
                         <div class="title" style="padding-left: 20px;">Trend Chart</div>
-                        <div class="box-content chart-box-content" style="text-align: center;">
+                        <div class="box-content chart-box-content out_box" style="text-align: center;">
                             <div class="add_box">
                                 <select name="" id="">
                                     <option value="1">1</option>
@@ -1115,42 +1115,36 @@
             <a href="javascript:;" class="close-btn"><i class="iconfont iconguanbi"></i></a>
             <div class="max-tit">W#1</div>
             <div class="content">
-                <!-- <div class="more-left">
-
-                </div> -->
+                <div class="more-left active">
+                    <img src="./images/step3.png" alt="">
+                    <div class="text">Current Step</div>
+                </div>
                 <div class="more-right">
                     <ul>
-                        <li>
-                            <img src="./images/step3.png" alt="">
-                            <div class="text">Current Step</div>
+                        <li class="active">
+                            <img src="./images/step4.png" alt="">
+                            <div class="text">Step1</div>
                         </li>
-                        <li class="li-box">
-                            <ul>
-                                <li class="active">
-                                    <img src="./images/step4.png" alt="">
-                                    <div class="text">Step1</div>
-                                </li>
-                                <li>
-                                    <img src="./images/step5.png" alt="">
-                                    <div class="text">Step2</div>
-                                </li>
-                                <li>
-                                    <img src="./images/step6.png" alt="">
-                                    <div class="text">Step3</div>
-                                </li>
-                                <li>
-                                    <img src="./images/step4.png" alt="">
-                                    <div class="text">Step4</div>
-                                </li>
-                                <li>
-                                    <img src="./images/step5.png" alt="">
-                                    <div class="text">Step5</div>
-                                </li>
-                                <li>
-                                    <img src="./images/step6.png" alt="">
-                                    <div class="text">Step6</div>
-                                </li>
-                            </ul>
+                        <li>
+                            <img src="./images/step5.png" alt="">
+                            <div class="text">Step2</div>
+                        </li>
+                        <li>
+                            <img src="./images/step6.png" alt="">
+                            <div class="text">Step3</div>
+                        </li>
+                        <li>
+                            <img src="./images/step4.png" alt="">
+                            <div class="text">Step4</div>
+                        </li>
+                        <li>
+                            <img src="./images/step5.png" alt="">
+                            <div class="text">Step5</div>
+                        </li>
+                        <li>
+                            <img src="./images/step6.png" alt="">
+                            <div class="text">Step6</div>
+                        </li>
                         </li>
 
                     </ul>
@@ -1160,45 +1154,90 @@
                         DSA Engine
                     </div>
                     <div class="enting_left">
-                        <div style="width:50%;float: left;">
-                            <img src="./images/step3.png" alt="">
-                            <div class="text">Current Step</div>
-                        </div>
-                        <div class="change_img" style="width:50%;float: left;">
-                            <img src="./images/step4.png" alt="">
-                            <div class="text">Step1</div>
-                        </div>
                     </div>
                     <div class="enting_right" id="step"></div>
                 </div>
                 <div class="defect">
                     <div class="defect_left">
-                        <table>
-                            <tr>
-                                <td></td>
-                                <td>Currents Step</td>
-                                <td>Step3</td>
-                            </tr>
-                            <tr>
-                                <td>Conmmon</td>
-                                <td><img src="./images/step1.png" alt=""></td>
-                                <td><img src="./images/step2.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td>Unique</td>
-                                <td><img src="./images/step1.png" alt=""></td>
-                                <td><img src="./images/step2.png" alt=""></td>
-                            </tr>
-                        </table>
                     </div>
                     <div class="defect_right">
+                        <!-- <table style="width: 440px;text-align: center;">
+                            <thead>
+                                <tr>
+                                    <th>location</th>
+                                    <th>Step</th>
+                                    <th>defect ID</th>
+                                    <th>time</th>
+                                    <th>image</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2">5,6</td>
+                                    <td>11</td>
+                                    <td>22</td>
+                                    <td>33</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>22</td>
+                                    <td>33</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">5,6</td>
+                                    <td>11</td>
+                                    <td>22</td>
+                                    <td>33</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>22</td>
+                                    <td>33</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">5,6</td>
+                                    <td>11</td>
+                                    <td>22</td>
+                                    <td>33</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>22</td>
+                                    <td>33</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">5,6</td>
+                                    <td>11</td>
+                                    <td>22</td>
+                                    <td>33</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>22</td>
+                                    <td>33</td>
+                                    <td>11</td>
+                                </tr>
+                            </tbody>
+                        </table> -->
+
+                    </div>
+                </div>
+                <div class="translation">
+                    <div class="translation_left">
                         <div style="padding: 10px">Defect translation gelley</div>
                         <table>
-                            <tr>
+                            <!-- <tr>
                                 <td><img src="./images/1_11.png" alt=""></td>
                                 <td><img src="./images/1_11.png" alt=""></td>
                                 <td><img src="./images/1_11.png" alt=""></td>
-                            </tr>
+                            </tr> -->
                         </table>
                     </div>
                 </div>
