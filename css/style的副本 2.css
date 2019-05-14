@@ -1,0 +1,426 @@
+@charset "UTF-8";
+.red-color {
+  color: #f44141 !important; }
+
+.green-color {
+  color: #45b821 !important; }
+
+.gray-bg {
+  background-color: #edf2f6; }
+
+.blue-btn {
+  background: #1c92ed;
+  color: #fff;
+  line-height: 30px;
+  padding: 0 20px;
+  display: inline-block;
+  border-radius: 30px;
+  height: 30px;
+  overflow: hidden; }
+  .blue-btn:hover {
+    background: #1a7bc6; }
+  .blue-btn:active {
+    line-height: 32px; }
+
+.gray-btn {
+  background: #aaa;
+  color: #fff;
+  line-height: 30px;
+  padding: 0 20px;
+  display: inline-block;
+  border-radius: 30px;
+  height: 30px;
+  overflow: hidden; }
+  .gray-btn:hover {
+    background: #888; }
+  .gray-btn:active {
+    line-height: 32px; }
+
+body {
+  font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #333;
+  background: #fff;
+  height: 100%;
+  position: relative; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6, figure {
+  color: #000;
+  font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  font-weight: 400;
+  margin: 0 0 30px 0; }
+
+ul, li, ol {
+  list-style: none; }
+
+.container {
+  padding-top: 55px;
+  margin: 0 auto; }
+  .container:after {
+    content: "";
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    clear: both;
+    overflow: hidden; }
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 55px;
+  background: #1c92ed;
+  box-shadow: 0 4px 8px 0px rgba(28, 146, 237, 0.5);
+  z-index: 2; }
+  .header .logo {
+    float: left;
+    display: block;
+    height: 60px;
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 100;
+    background: url(../images/smic-logo.png) 0 center no-repeat;
+    background-size: 60px auto;
+    width: 100px; }
+  .header .nav {
+    float: left;
+    margin: 2px 0 0 100px; }
+    .header .nav li {
+      float: left;
+      margin: 0 30px; }
+      .header .nav li a {
+        display: block;
+        line-height: 50px;
+        color: #fff;
+        color: rgba(255, 255, 255, 0.6);
+        min-width: 60px;
+        text-align: center;
+        font-size: 16px; }
+        .header .nav li a:hover {
+          color: #fff; }
+      .header .nav li.cur a {
+        border-bottom: 3px solid #ffff;
+        color: #fff; }
+  .header .right-bar {
+    float: right;
+    margin-right: 20px; }
+    .header .right-bar a {
+      color: #fff;
+      padding: 15px 10px;
+      line-height: 25px;
+      display: block;
+      float: left; }
+      .header .right-bar a i {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px; }
+
+.left-list {
+  background: #f0f7fc;
+  width: 200px;
+  position: fixed;
+  height: 100%;
+  top: 55px;
+  border-right: 1px solid #ddd; }
+  .left-list .title {
+    line-height: 30px;
+    padding: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+    font-weight: 700; }
+  .left-list .List-tit {
+    background: #eee;
+    line-height: 25px;
+    height: 25px; }
+    .left-list .List-tit span {
+      float: left;
+      width: 50%;
+      box-sizing: border-box;
+      padding: 0 10px;
+      color: #888; }
+  .left-list .List li {
+    position: relative;
+    border-bottom: 1px solid #ddd; }
+    .left-list .List li a {
+      display: block;
+      line-height: 40px;
+      height: 40px; }
+      .left-list .List li a span {
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 0 10px;
+        color: #000; }
+    .left-list .List li:hover {
+      background: rgba(28, 146, 237, 0.1); }
+    .left-list .List li.cur {
+      background: rgba(28, 146, 237, 0.3); }
+      .left-list .List li.cur:after {
+        display: block;
+        height: 40px;
+        width: 3px;
+        content: "";
+        background: #1c92ed;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0; }
+
+.right-content {
+  padding-left: 200px; }
+  .right-content .top-btn-bar {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; }
+    .right-content .top-btn-bar:after {
+      content: "";
+      display: block;
+      clear: both;
+      overflow: hidden;
+      height: 0; }
+    .right-content .top-btn-bar a {
+      float: left;
+      margin-right: 10px; }
+      .right-content .top-btn-bar a:hover {
+        color: #fff; }
+  .right-content .box-container:after {
+    content: "";
+    display: block;
+    clear: both;
+    overflow: hidden;
+    height: 0; }
+  .right-content .box-container .box {
+    float: left;
+    width: 50%;
+    min-height: 200px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding: 10px; }
+    .right-content .box-container .box:nth-child(even) {
+      border-left: 1px solid #ddd; }
+    .right-content .box-container .box .title {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 30px;
+      padding: 0; }
+      .right-content .box-container .box .title select {
+        width: 100px;
+        height: 30px;
+        margin-left: 10px;
+        vertical-align: middle;
+        border: 1px solid #ddd;
+        background: #fff; }
+    .right-content .box-container .box .more {
+      position: absolute;
+      right: 10px;
+      line-height: 20px;
+      top: 10px;
+      font-size: 12px;
+      color: #1c92ed; }
+    .right-content .box-container .box .box-tb {
+      margin-top: 10px; }
+      .right-content .box-container .box .box-tb table {
+        width: 100%;
+        border-collapse: collapse; }
+        .right-content .box-container .box .box-tb table tr th {
+          background: #f0f7fc;
+          font-weight: normal;
+          line-height: 25px;
+          padding: 0 10px;
+          text-align: left;
+          box-sizing: border-box;
+          width: 25%; }
+        .right-content .box-container .box .box-tb table tr td {
+          padding: 10px;
+          line-height: 20px;
+          border-bottom: 1px solid #ddd;
+          box-sizing: border-box; }
+        .right-content .box-container .box .box-tb table tr:hover td {
+          background: #fafafa; }
+  .right-content .box-container .box1, .right-content .box-container .box2 {
+    height: 710px;
+    overflow-y: auto; }
+  .right-content .bottom-bar {
+    padding: 10px; }
+    .right-content .bottom-bar .title {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 30px;
+      padding: 0; }
+    .right-content .bottom-bar .btn-bar {
+      margin-top: 10px; }
+
+.pup-bg {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: Center; }
+
+.pup-box {
+  background: #fff;
+  min-width: 300px;
+  min-height: 200px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative; }
+  .pup-box .close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    color: #aaa; }
+    .pup-box .close-btn i {
+      font-size: 20px; }
+  .pup-box .max-tit {
+    line-height: 30px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd; }
+  .pup-box .content {
+    padding: 10px; }
+    .pup-box .content .input-list {
+      padding: 0 20px; }
+      .pup-box .content .input-list li {
+        position: relative;
+        padding-left: 120px;
+        min-height: 30px;
+        margin: 5px; }
+        .pup-box .content .input-list li .tit {
+          position: absolute;
+          left: 0px;
+          top: 0;
+          display: block;
+          line-height: 20px;
+          padding: 5px 0;
+          width: 110px; }
+        .pup-box .content .input-list li input, .pup-box .content .input-list li select {
+          width: 100%;
+          height: 30px;
+          box-sizing: border-box;
+          background: #fff;
+          border: 1px solid #ddd;
+          border-radius: 2px;
+          padding: 0 10px; }
+        .pup-box .content .input-list li input[type="date"] {
+          padding: 0px; }
+    .pup-box .content .input-line {
+      padding: 0 10px; }
+      .pup-box .content .input-line:after {
+        content: "";
+        display: block;
+        clear: both;
+        overflow: hidden;
+        height: 0; }
+      .pup-box .content .input-line li {
+        float: left;
+        margin-right: 20px; }
+        .pup-box .content .input-line li .tit {
+          display: inline-block;
+          line-height: 20px;
+          padding: 5px; }
+        .pup-box .content .input-line li input, .pup-box .content .input-line li select {
+          width: 100px;
+          height: 30px;
+          box-sizing: border-box;
+          background: #fff;
+          border: 1px solid #ddd;
+          border-radius: 2px;
+          padding: 0 10px; }
+        .pup-box .content .input-line li input[type="date"] {
+          padding: 0px; }
+    .pup-box .content .pup-tb {
+      padding: 10px; }
+      .pup-box .content .pup-tb table {
+        width: 100%;
+        border-collapse: collapse; }
+        .pup-box .content .pup-tb table tr th {
+          background: #f0f7fc;
+          font-weight: normal;
+          line-height: 25px;
+          padding: 0 10px;
+          text-align: left;
+          box-sizing: border-box;
+          width: 23%; }
+        .pup-box .content .pup-tb table tr td {
+          padding: 10px;
+          line-height: 20px;
+          border-bottom: 1px solid #ddd;
+          box-sizing: border-box; }
+        .pup-box .content .pup-tb table tr:hover td {
+          background: #fafafa; }
+  .pup-box .bottom-btn {
+    text-align: center;
+    padding: 20px 0;
+    height: 30px; }
+    .pup-box .bottom-btn a {
+      margin: 0 20px; }
+
+.box-content {
+  padding: 10px; }
+  .box-content .min-tit {
+    line-height: 20px;
+    padding: 10px 0; }
+  .box-content .chart-container {
+    text-align: center; }
+    .box-content .chart-container:after {
+      content: "";
+      display: block;
+      clear: both;
+      overflow: hidden;
+      height: 0; }
+    .box-content .chart-container .chart1, .box-content .chart-container .chart2 {
+      display: inline-block;
+      margin: 0 20px;
+      vertical-align: top; }
+  .box-content .pic-list {
+    margin-top: 10px;
+    padding: 6px;
+    border: 1px solid #ddd; }
+    .box-content .pic-list:after {
+      content: "";
+      display: block;
+      clear: both;
+      overflow: hidden;
+      height: 0; }
+    .box-content .pic-list a {
+      display: inline-block;
+      float: left;
+      text-align: center;
+      margin-right: 5px;
+      background: #fff;
+      padding: 5px;
+      box-sizing: border-box; }
+      .box-content .pic-list a img {
+        display: block; }
+
+.history-list {
+  padding: 0 10px; }
+  .history-list li {
+    line-height: 20px;
+    padding: 5px 0; }
+    .history-list li span {
+      display: inline-block; }
+    .history-list li span + span {
+      margin-left: 10px; }
+    .history-list li .time {
+      color: #aaa; }
+
+/*# sourceMappingURL=style.css.map */

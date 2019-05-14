@@ -4,20 +4,17 @@
 <meta charset="UTF-8">
 <title>Baseline Reporting</title>
 <link rel="stylesheet" type="text/css" href="font/iconfont.css" >
+<link href="select2/select2.min.css" rel="stylesheet" />
+<link href="layui/css/layui.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="css/style.css" >
 <link rel="stylesheet" type="text/css" href="css/nextpage.css" >
+
 </head>
 
 <body class="gray-bg">
 
 <div class="header">
-    <a href="javascript:;" class="logo"></a>
-    <ul class="nav">
-        <li><a href="Excursion.html">Excursion</a></li>
-        <li class="cur"><a href="Baseline-Reporting.html">Baseline Reporting</a></li>
-        <li><a href="javascript:;">Toolbox</a></li>
-        <li><a href="javascript:;">Set Up</a></li>
-    </ul>
+    <a href="javascript:;" class="logo"> AI Defect</a>
 
     <div class="right-bar">
         <a href="javascript:;"><i class="iconfont iconzhanghu"></i>Admin</a>
@@ -27,6 +24,14 @@
 
 
 <div class="container">
+    <div class="left-nav">
+        <ul class="nav">
+            <li><a href="Excursion.html"><i class="iconfont iconzhineng"></i> <span>Excursion</span></a></li>
+            <li  class="cur"><a href="Baseline-Reporting.html"><i class="iconfont iconlogAnalysis"></i> <span>Baseline Reporting</span></a></li>
+            <li><a href="javascript:;"><i class="iconfont iconzhinengyunweiguanli"></i> <span>Toolbox</span></a></li>
+            <li><a href="javascript:;"><i class="iconfont iconzhizao"></i> <span>Set Up</span></a></li>
+        </ul>
+    </div>
     <div class="nextpage-container">
         <div class="breadCrumb">
             <a href="javascript:;">Home</a> /
@@ -40,11 +45,11 @@
             <div class="chart-box-content">
 
                 <div class="select-bar">
-                    <select><option>Product</option></select>
-                    <select><option>Layer</option></select>
-                    <select><option>DOI</option></select>
-                    <input type="date" name=""> -
-                    <input type="date" name="">
+                    <select class="js-example-basic-single"><option>Product</option><option>Product1</option><option>Product2</option></select>
+                    <select class="js-example-basic-single"><option>Layer</option><option>Layer1</option><option>Layer2</option></select>
+                    <select class="js-example-basic-single"><option>DOI</option><option>DOI1</option><option>DOI2</option></select>
+                    <input type="text" class="layui-input time-slot" style="width: 240px;"  placeholder="请选择时间段 ">
+                     
                     <a href="javascript:;" class="blue-btn addChart">Add</a>
                 </div>
                 <div class="main_box">
@@ -70,9 +75,34 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/echarts.min.js"></script>
-<script src="js/viewer.min.js"></script>
 <script src="js/eacher.js"></script>
+<script src="select2/select2.min.js"></script>
+<script src="layui/layui.js"></script>
+<script type="text/javascript">
 
+    $(document).ready(function() {
+        $('.js-example-basic-multiple').select2();
+        $('.js-example-basic-single').select2();
+       
+    });
+ 
+layui.use('laydate', function(){
+  var laydate = layui.laydate;
+  
+   
+  //同时绑定多个
+  lay('.time-slot').each(function(){
+    laydate.render({
+      elem: this
+      ,range: true
+      ,trigger: 'click'
+      ,format: 'yyyy年MM月dd日'
+        ,theme: '#30a5ff'
+    });
+  });
+
+});
+</script>
 
 
 

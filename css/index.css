@@ -7,8 +7,8 @@
   width: 875px;
 }
 #more_dailog .content {
-    height: 500px;
-    overflow: auto;
+  height: 500px;
+  overflow: auto;
 }
 .more-left {
   float: left;
@@ -22,15 +22,20 @@
 }
 .more-right {
   float: left;
-  width: 649px;
+  width: 100%;
   padding: 10px;
   max-height: 165px;
   border-left: 1px solid #eee;
   text-align: center;
-  overflow-x: auto;
-  overflow-y: hidden;
 }
-.more-right ul {
+.more-right > ul {
+  width: 1090px;
+}
+.li-box {
+  width: 681px;
+  overflow: auto;
+}
+.li-box ul {
   width: 1090px;
 }
 .more-right li {
@@ -81,8 +86,8 @@
   padding: 10px;
 }
 .defect_right {
-    float: left;
-  }
-  .defect_right td {
-    padding: 10px;
-  }
+  float: left;
+}
+.defect_right td {
+  padding: 10px;
+}

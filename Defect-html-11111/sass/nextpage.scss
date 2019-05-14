@@ -1,0 +1,142 @@
+$font-primary:'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+
+// Overrides
+$grid-gutter-width: 40px !default; 
+$border-radius-base:  4px !default;
+$padding-base-vertical: 14px !default;
+ 
+$brand-white: #fff;
+$brand-black: #000;
+$brand-darker: #444;
+$blue-color:#1c92ed;
+ 
+$light-color:#9fb1c4;
+$yellow-color:#fd861c;
+$red-color:#f44141;
+$green-color:#45b821;
+ 
+
+.nextpage-container{
+	width: 1000px;
+	margin:20px auto;
+	 
+	.max-tit{
+		font-size: 24px;
+		line-height: 2em;
+		margin:40px 0 20px 0 ; 
+		 
+	}
+	.app-list{
+		width: 1020px;
+		margin-left: -10px;
+		&:after{ content: ""; display: block; clear:both; overflow: hidden; height: 0;}
+		li{
+			float: left;
+			width: 25%;
+			box-sizing:border-box;
+			padding: 10px;
+			a{
+				display: block;
+				text-align: center;
+				border-radius:4px;
+				background:#fff;
+				padding:30px 20px;
+				box-shadow: 0 4px 8px 0px rgba(#000, 0.05);
+				i{
+					font-size: 54px;
+					background: $blue-color;
+					color: #fff;
+					width: 100px;
+					height: 100px;
+					line-height: 100px;
+					text-align: center;
+					border-radius:50%;
+					display: inline-block;
+					margin-top: 10px;
+				}
+				span{
+					display: block;
+					color: #565f7d;
+					font-size: 14px;
+					line-height: 20px;
+					margin:20px 0; 
+				}
+				&:hover{
+					background:#fafafa;
+				}
+			}
+
+		}
+	}
+	.breadCrumb{
+		font-size:12px;
+		color: #b0bdd7;
+		a{
+			color: #b0bdd7;
+			display: inline-block;
+			margin:5px 0;
+			line-height: 20px;
+			&:hover{
+				color: $blue-color;
+			} 
+		}
+	}
+	.page-title{
+		line-height: 40px;
+		font-size: 18px;
+		margin:10px 0;
+		 
+	}
+	.page-content{
+		background:#fff;
+		margin:10px 0;
+		border-radius:4px;
+		padding:20px;
+		.select-bar{
+			height: 40px;
+			select,input[type=tex],input[type=date]{
+				height: 34px;
+				border:1px solid #ddd;
+				width: 160px;
+				margin-right: 5px;
+				vertical-align: middle;
+				display: inline-block;
+				border-radius:4px;
+				background:#fff;
+				box-sizing:border-box;
+			}
+			input[type=date]{
+				width: 120px;
+			}
+			a{
+				vertical-align: middle;
+			}
+		}
+		.main_box{
+			margin-top: 20px;
+			height: 340px;
+			position: relative;
+			.main_rem{
+				text-align: center;
+
+			}
+			.main{
+				height: 320px;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

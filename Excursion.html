@@ -15,14 +15,7 @@
 <body class="gray-bg">
 
     <div class="header">
-        <a href="javascript:;" class="logo"></a>
-        <ul class="nav">
-            <li class="cur"><a href="Excursion.html">Excursion</a></li>
-            <li><a href="Baseline-Reporting.html">Baseline Reporting</a></li>
-            <li><a href="javascript:;">Toolbox</a></li>
-            <li><a href="javascript:;">Set Up</a></li>
-        </ul>
-
+        <a href="javascript:;" class="logo"> AI Defect</a>
         <div class="right-bar">
             <a href="javascript:;"><i class="iconfont iconzhanghu"></i>Admin</a>
             <a href="javascript:;"><i class="iconfont iconzhuxiao"></i>Logout</a>
@@ -31,74 +24,81 @@
 
 
     <div class="container">
+
+        <div class="left-nav">
+            <ul class="nav">
+                <li class="cur"><a href="Excursion.html"><i class="iconfont iconzhineng"></i> <span>Excursion</span></a>
+                </li>
+                <li><a href="Baseline-Reporting.html"><i class="iconfont iconlogAnalysis"></i> <span>Baseline
+                            Reporting</span></a></li>
+                <li><a href="javascript:;"><i class="iconfont iconzhinengyunweiguanli"></i> <span>Toolbox</span></a>
+                </li>
+                <li><a href="javascript:;"><i class="iconfont iconzhizao"></i> <span>Set Up</span></a></li>
+            </ul>
+        </div>
+
         <div class="left-list">
             <div class="title">Hold Lot List</div>
             <div class="List-tit">
                 <span>Lot Id </span>
-                <span>Lot Qty</span>
-                <span>loywer</span>
+                <span>layer</span>
                 <span>Status</span>
-                <span>total</span>
+                <span>Wafer Qty</span>
+
             </div>
             <ul class="List">
                 <li class="cur">
                     <a href="javascript:;">
                         <span>A01</span>
-                        <span>Hold</span>
-                        <span>Hold</span>
-                        <span>Hold</span>
-                        <span>1</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:;">
-                        <span>A02</span>
-                        <span>Hold</span>
-                        <span>Hold</span>
+                        <span>layer1</span>
                         <span>Hold</span>
                         <span>1</span>
                     </a>
                 </li>
                 <li>
                     <a href="javascript:;">
-                        <span>A03</span>
-                        <span>Hold</span>
-                        <span>Hold</span>
-                        <span>Hold</span>
-                        <span>1</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:;">
-                        <span>A04</span>
-                        <span>Hold</span>
-                        <span>Hold</span>
+                        <span>A01</span>
+                        <span>layer2</span>
                         <span>Hold</span>
                         <span>1</span>
                     </a>
                 </li>
                 <li>
                     <a href="javascript:;">
-                        <span>A05</span>
-                        <span>Hold</span>
-                        <span>Hold</span>
-                        <span>Hold</span>
-                        <span>1</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:;">
-                        <span>A06</span>
-                        <span>Hold</span>
-                        <span>Hold</span>
+                        <span>A01</span>
+                        <span>layer1</span>
                         <span>Hold</span>
                         <span>1</span>
                     </a>
                 </li>
                 <li>
                     <a href="javascript:;">
-                        <span style="width: 80%">Hold lot WID</span>
-                        <span style="width: 20%">6</span>
+                        <span>A01</span>
+                        <span>layer3</span>
+                        <span>Hold</span>
+                        <span>1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span>A01</span>
+                        <span>layer4</span>
+                        <span>Hold</span>
+                        <span>1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span>A01</span>
+                        <span>layer5</span>
+                        <span>Hold</span>
+                        <span>1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span style="width: 75%">Total</span>
+                        <span style="width: 25%">6</span>
                     </a>
                 </li>
             </ul>
@@ -249,12 +249,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <!-- <div class="pic-list">
-                                            <a href="javascript:;"><img src="images/1_11.png"></a>
-                                            <a href="javascript:;"><img src="images/1_11.png"></a>
-                                            <a href="javascript:;"><img src="images/1_11.png"></a>
-                                            <a href="javascript:;"><img src="images/1_11.png"></a>
-                                        </div> -->
+
                             </div>
 
                             <div class="box-content w2" style="display: none">
@@ -395,12 +390,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <!-- <div class="pic-list">
-                                            <a href="javascript:;"><img src="images/1_11.png"></a>
-                                            <a href="javascript:;"><img src="images/1_11.png"></a>
-                                            <a href="javascript:;"><img src="images/1_11.png"></a>
-                                            <a href="javascript:;"><img src="images/1_11.png"></a>
-                                        </div> -->
+
                             </div>
 
                         </div>
@@ -414,110 +404,65 @@
                                 <table>
                                     <tr>
                                         <th>Step Name</th>
-                                        <th>机台</th>
+                                        <th>Step No</th>
+                                        <th>EQP ID</th>
                                         <th>Chamber</th>
-                                        <th>Hold Comment</th>
-                                        <th>Check In</th>
-                                        <th>Check Out</th>
-                                        <th>Active</th>
+                                        <th>Activity</th>
+                                        <th>Txn Time</th>
+                                        <th>Hold Comment </th>
                                     </tr>
                                     <tr>
                                         <td>XXX</td>
-                                        <td>E-ID</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                    </tr>
-                                    <tr>
-                                        <td>XXX</td>
-                                        <td>E-ID</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
+                                        <td>0010</td>
+                                        <td>E01</td>
+                                        <td>A</td>
+                                        <td>Hold</td>
+                                        <td>2019-01-20 10:10:20</td>
                                         <td>--</td>
                                     </tr>
                                     <tr>
                                         <td>XXX</td>
-                                        <td>E-ID</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                    </tr>
-                                    <tr>
-                                        <td>XXX</td>
-                                        <td>E-ID</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
+                                        <td>0010</td>
+                                        <td>E01</td>
+                                        <td>A</td>
+                                        <td>Release</td>
+                                        <td>2019-01-21 10:10:20</td>
                                         <td>--</td>
                                     </tr>
                                     <tr>
                                         <td>XXX</td>
-                                        <td>E-ID</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                    </tr>
-                                    <tr>
-                                        <td>XXX</td>
-                                        <td>E-ID</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
+                                        <td>0020</td>
+                                        <td>E02</td>
+                                        <td>B</td>
+                                        <td>Hold</td>
+                                        <td>2019-01-22 10:10:20</td>
                                         <td>--</td>
                                     </tr>
                                     <tr>
                                         <td>XXX</td>
-                                        <td>E-ID</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                    </tr>
-                                    <tr>
-                                        <td>XXX</td>
-                                        <td>E-ID</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
+                                        <td>0020</td>
+                                        <td>E02</td>
+                                        <td>B</td>
+                                        <td>TrackOut</td>
+                                        <td>2019-01-23 10:10:20</td>
                                         <td>--</td>
                                     </tr>
                                     <tr>
                                         <td>XXX</td>
-                                        <td>E-ID</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                    </tr>
-                                    <tr>
-                                        <td>XXX</td>
-                                        <td>E-ID</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
+                                        <td>0030</td>
+                                        <td>E03</td>
+                                        <td>A</td>
+                                        <td>Hold</td>
+                                        <td>2019-01-24 10:10:20</td>
                                         <td>--</td>
                                     </tr>
                                     <tr>
                                         <td>XXX</td>
-                                        <td>E-ID</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
-                                        <td>--</td>
+                                        <td>0030</td>
+                                        <td>E03</td>
+                                        <td>B</td>
+                                        <td>Release</td>
+                                        <td>2019-01-25 10:10:20</td>
                                         <td>--</td>
                                     </tr>
 
@@ -879,110 +824,65 @@
                             <table>
                                 <tr>
                                     <th>Step Name</th>
-                                    <th>机台</th>
+                                    <th>Step No</th>
+                                    <th>EQP ID</th>
                                     <th>Chamber</th>
-                                    <th>Hold Comment</th>
-                                    <th>Check In</th>
-                                    <th>Check Out</th>
-                                    <th>Active</th>
+                                    <th>Activity</th>
+                                    <th>Txn Time</th>
+                                    <th>Hold Comment </th>
                                 </tr>
                                 <tr>
                                     <td>XXX</td>
-                                    <td>E-ID</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                </tr>
-                                <tr>
-                                    <td>XXX</td>
-                                    <td>E-ID</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
+                                    <td>0010</td>
+                                    <td>E01</td>
+                                    <td>A</td>
+                                    <td>Hold</td>
+                                    <td>2019-01-20 10:10:20</td>
                                     <td>--</td>
                                 </tr>
                                 <tr>
                                     <td>XXX</td>
-                                    <td>E-ID</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                </tr>
-                                <tr>
-                                    <td>XXX</td>
-                                    <td>E-ID</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
+                                    <td>0010</td>
+                                    <td>E01</td>
+                                    <td>A</td>
+                                    <td>Release</td>
+                                    <td>2019-01-21 10:10:20</td>
                                     <td>--</td>
                                 </tr>
                                 <tr>
                                     <td>XXX</td>
-                                    <td>E-ID</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                </tr>
-                                <tr>
-                                    <td>XXX</td>
-                                    <td>E-ID</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
+                                    <td>0020</td>
+                                    <td>E02</td>
+                                    <td>B</td>
+                                    <td>Hold</td>
+                                    <td>2019-01-22 10:10:20</td>
                                     <td>--</td>
                                 </tr>
                                 <tr>
                                     <td>XXX</td>
-                                    <td>E-ID</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                </tr>
-                                <tr>
-                                    <td>XXX</td>
-                                    <td>E-ID</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
+                                    <td>0020</td>
+                                    <td>E02</td>
+                                    <td>B</td>
+                                    <td>TrackOut</td>
+                                    <td>2019-01-23 10:10:20</td>
                                     <td>--</td>
                                 </tr>
                                 <tr>
                                     <td>XXX</td>
-                                    <td>E-ID</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                </tr>
-                                <tr>
-                                    <td>XXX</td>
-                                    <td>E-ID</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
+                                    <td>0030</td>
+                                    <td>E03</td>
+                                    <td>A</td>
+                                    <td>Hold</td>
+                                    <td>2019-01-24 10:10:20</td>
                                     <td>--</td>
                                 </tr>
                                 <tr>
                                     <td>XXX</td>
-                                    <td>E-ID</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
-                                    <td>--</td>
+                                    <td>0030</td>
+                                    <td>E03</td>
+                                    <td>B</td>
+                                    <td>Release</td>
+                                    <td>2019-01-25 10:10:20</td>
                                     <td>--</td>
                                 </tr>
 
@@ -1215,35 +1115,42 @@
             <a href="javascript:;" class="close-btn"><i class="iconfont iconguanbi"></i></a>
             <div class="max-tit">W#1</div>
             <div class="content">
-                <div class="more-left">
-                    <img src="./images/step3.png" alt="">
-                    <div class="text">Current Step</div>
-                </div>
+                <!-- <div class="more-left">
+
+                </div> -->
                 <div class="more-right">
                     <ul>
-                        <li class="active">
-                            <img src="./images/step4.png" alt="">
-                            <div class="text">Step1</div>
-                        </li>
                         <li>
-                            <img src="./images/step5.png" alt="">
-                            <div class="text">Step2</div>
+                            <img src="./images/step3.png" alt="">
+                            <div class="text">Current Step</div>
                         </li>
-                        <li>
-                            <img src="./images/step6.png" alt="">
-                            <div class="text">Step3</div>
-                        </li>
-                        <li>
-                            <img src="./images/step4.png" alt="">
-                            <div class="text">Step4</div>
-                        </li>
-                        <li>
-                            <img src="./images/step5.png" alt="">
-                            <div class="text">Step5</div>
-                        </li>
-                        <li>
-                            <img src="./images/step6.png" alt="">
-                            <div class="text">Step6</div>
+                        <li class="li-box">
+                            <ul>
+                                <li class="active">
+                                    <img src="./images/step4.png" alt="">
+                                    <div class="text">Step1</div>
+                                </li>
+                                <li>
+                                    <img src="./images/step5.png" alt="">
+                                    <div class="text">Step2</div>
+                                </li>
+                                <li>
+                                    <img src="./images/step6.png" alt="">
+                                    <div class="text">Step3</div>
+                                </li>
+                                <li>
+                                    <img src="./images/step4.png" alt="">
+                                    <div class="text">Step4</div>
+                                </li>
+                                <li>
+                                    <img src="./images/step5.png" alt="">
+                                    <div class="text">Step5</div>
+                                </li>
+                                <li>
+                                    <img src="./images/step6.png" alt="">
+                                    <div class="text">Step6</div>
+                                </li>
+                            </ul>
                         </li>
 
                     </ul>

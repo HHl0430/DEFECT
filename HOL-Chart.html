@@ -4,21 +4,19 @@
 <meta charset="UTF-8">
 <title>Baseline Reporting</title>
 <link rel="stylesheet" type="text/css" href="font/iconfont.css" >
+<link href="select2/select2.min.css" rel="stylesheet" />
+<link href="layui/css/layui.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="css/style.css" >
 <link rel="stylesheet" type="text/css" href="css/nextpage.css" >
+
+
 </head>
 
 <body class="gray-bg">
 
 <div class="header">
-    <a href="javascript:;" class="logo"></a>
-    <ul class="nav">
-        <li><a href="Excursion.html">Excursion</a></li>
-        <li class="cur"><a href="Baseline-Reporting.html">Baseline Reporting</a></li>
-        <li><a href="javascript:;">Toolbox</a></li>
-        <li><a href="javascript:;">Set Up</a></li>
-    </ul>
-
+    <a href="javascript:;" class="logo"> AI Defect</a>
+     
     <div class="right-bar">
         <a href="javascript:;"><i class="iconfont iconzhanghu"></i>Admin</a>
         <a href="javascript:;"><i class="iconfont iconzhuxiao"></i>Logout</a>
@@ -27,6 +25,14 @@
 
 
 <div class="container">
+    <div class="left-nav">
+        <ul class="nav">
+            <li><a href="Excursion.html"><i class="iconfont iconzhineng"></i> <span>Excursion</span></a></li>
+            <li  class="cur"><a href="Baseline-Reporting.html"><i class="iconfont iconlogAnalysis"></i> <span>Baseline Reporting</span></a></li>
+            <li><a href="javascript:;"><i class="iconfont iconzhinengyunweiguanli"></i> <span>Toolbox</span></a></li>
+            <li><a href="javascript:;"><i class="iconfont iconzhizao"></i> <span>Set Up</span></a></li>
+        </ul>
+    </div>
     <div class="nextpage-container">
         <div class="breadCrumb">
             <a href="javascript:;">Home</a> /
@@ -36,25 +42,111 @@
         <div class="page-title">HOL Chart</div>
         <div class="page-content">
             
+            <div class="chart-box-content">
+                <!-- <img src="images/hol_03.png"> -->
+                <div class="min-tit">By Time</div>
+                <div class="select-bar">
+                    <select class="js-example-basic-single" style="height: 120px;">
+                        <option>Product</option>
+                        <option>Product1</option>
+                        <option>Product2</option>
+                        <option>Product3</option>
+                        <option>Product4</option>
+                    </select>
+                    
+                    <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+                        <option selected>Layer1</option>
+                        <option >Layer2</option>
+                        <option >Layer3</option>
+                        <option >Layer4</option>
+                        <option >Layer5</option>
+                        <option >Layer6</option>
+                        <option >Layer7</option>
+                        <option >Layer8</option>
+                        <option >Layer8</option>
+                    </select>
+
+                    <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+                        <option selected>DOI1</option>
+                        <option >DOI2</option>
+                        <option >DOI3</option>
+                        <option >DOI4</option>
+                        <option >DOI5</option>
+                        <option >DOI6</option>
+                        <option >DOI7</option>
+                        <option >DOI8</option>
+                        <option >DOI8</option>
+                    </select>
+                    <input type="text" class="layui-input time-slot" style="width: 240px;"  placeholder="请选择时间段 ">
+                     
+                    
+                    <a href="javascript:;" class="blue-btn addChart">Add</a>
+                </div>
+                 
+                <div class="main_box">
+                    <span  class="main_rem">Remove</span>
+                    <div id="main" class="main" style="height: 340px;"></div>
+                </div>
+
+            </div>
 
             <div class="chart-box-content">
-                <img src="images/hol_03.png">
-                <!-- <div class="select-bar">
-                    <select><option>Product</option></select>
-                    <select><option>Layer</option></select>
-                    <select><option>DOI</option></select>
-                    <input type="date" name=""> -
-                    <input type="date" name="">
-                    <a href="javascript:;" class="blue-btn addChart">Add</a>
+                <!-- <img src="images/hol_03.png"> -->
+                <div class="min-tit">By Lot</div>
+                <div class="select-bar">
+                    <select class="js-example-basic-single" style="height: 120px;">
+                        <option>Product</option>
+                        <option>Product1</option>
+                        <option>Product2</option>
+                        <option>Product3</option>
+                        <option>Product4</option>
+                    </select>
+                    
+                    <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+                        <option selected>Layer1</option>
+                        <option >Layer2</option>
+                        <option >Layer3</option>
+                        <option >Layer4</option>
+                        <option >Layer5</option>
+                        <option >Layer6</option>
+                        <option >Layer7</option>
+                        <option >Layer8</option>
+                        <option >Layer8</option>
+                    </select>
+
+                    <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+                        <option selected>DOI1</option>
+                        <option >DOI2</option>
+                        <option >DOI3</option>
+                        <option >DOI4</option>
+                        <option >DOI5</option>
+                        <option >DOI6</option>
+                        <option >DOI7</option>
+                        <option >DOI8</option>
+                        <option >DOI8</option>
+                    </select>
+
+                    <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+                        <option selected>Lot1</option>
+                        <option >Lot2</option>
+                        <option >Lot3</option>
+                        <option >Lot4</option>
+                        <option >Lot5</option>
+                        <option >Lot6</option>
+                        <option >Lot7</option>
+                        <option >Lot8</option>
+                        <option >Lot8</option>
+                    </select>
+
+                    
+                    <a href="javascript:;" class="blue-btn addChart2">Add</a>
                 </div>
                 <div class="main_box">
                     <span  class="main_rem">Remove</span>
-                    <div id=" -->main" class="main" style="height: 300px;"></div>
+                    <div id="main2" class="main" style="height: 340px;"></div>
                 </div>
             </div>
              
-
-
             <!-- <div class="chart-bar">
                 <img src="images/chart_03.png">
                 <img src="images/chart_03.png">
@@ -70,12 +162,35 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/echarts.min.js"></script>
-<script src="js/viewer.min.js"></script>
-<script src="js/eacher.js"></script>
+<script src="js/eacher-hol.js"></script>
+<script src="select2/select2.min.js"></script>
+<script src="layui/layui.js"></script>
 
+<script type="text/javascript">
 
+    $(document).ready(function() {
+        $('.js-example-basic-multiple').select2();
+        $('.js-example-basic-single').select2();
+       
+    });
+ 
+layui.use('laydate', function(){
+  var laydate = layui.laydate;
+  
+   
+  //同时绑定多个
+  lay('.time-slot').each(function(){
+    laydate.render({
+      elem: this
+      ,range: true
+      ,trigger: 'click'
+      ,format: 'yyyy年MM月dd日'
+        ,theme: '#30a5ff'
+    });
+  });
 
-
+});
+</script>
 
 
 </html>

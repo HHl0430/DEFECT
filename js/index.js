@@ -46,7 +46,7 @@ $(function () {
     };
     var stepOption = {
         legend: {
-            data: ['Current Step', 'Step1','Disappear']
+            data: ['Current Step', 'Step1', 'Disappear']
         },
         xAxis: {
             type: 'category',
@@ -58,7 +58,7 @@ $(function () {
         },
         series: [
 
-            {   
+            {
                 barWidth: 20,
                 stack: '总量',
                 type: 'bar',
@@ -108,12 +108,17 @@ $(function () {
         myCharta3.setOption(stepOption);
     })
     $(".more-right li").on("click", function () {
-        $(this).siblings().removeClass()
-        $(this).addClass("active")
-        var src = $(this).find('img')[0].src
-        var text = $(this).find('.text').text()
-        $(".change_img").find("img").attr("src", src)
-        $(".change_img").find(".text").text(text)
+        if ($(this).className() === 'li-box') {
+
+        } else {
+            $(this).siblings().removeClass()
+            $(this).addClass("active")
+            var src = $(this).find('img')[0].src
+            var text = $(this).find('.text').text()
+            $(".change_img").find("img").attr("src", src)
+            $(".change_img").find(".text").text(text)
+        }
+
     })
 
 })

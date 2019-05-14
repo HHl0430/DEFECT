@@ -1,0 +1,1298 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Excursion</title>
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/viewer.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body class="gray-bg">
+
+    <div class="header">
+        <a href="javascript:;" class="logo"></a>
+        <ul class="nav">
+            <li class="cur"><a href="Excursion.html">Excursion</a></li>
+            <li><a href="Baseline-Reporting.html">Baseline Reporting</a></li>
+            <li><a href="javascript:;">Toolbox</a></li>
+            <li><a href="javascript:;">Set Up</a></li>
+        </ul>
+
+        <div class="right-bar">
+            <a href="javascript:;"><i class="iconfont iconzhanghu"></i>Admin</a>
+            <a href="javascript:;"><i class="iconfont iconzhuxiao"></i>Logout</a>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="left-list">
+            <div class="title">Hold Lot List</div>
+            <div class="List-tit">
+                <span>Lot Id </span>
+                <span>Wafer Qty</span>
+                <span>layer</span>
+                <span>Status</span>
+                
+            </div>
+            <ul class="List">
+                <li class="cur">
+                    <a href="javascript:;">
+                        <span>A01</span>
+                        <span>Hold</span>
+                        <span>Hold</span>
+                        <span>Hold</span>
+                        <span>1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span>A02</span>
+                        <span>Hold</span>
+                        <span>Hold</span>
+                        <span>Hold</span>
+                        <span>1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span>A03</span>
+                        <span>Hold</span>
+                        <span>Hold</span>
+                        <span>Hold</span>
+                        <span>1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span>A04</span>
+                        <span>Hold</span>
+                        <span>Hold</span>
+                        <span>Hold</span>
+                        <span>1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span>A05</span>
+                        <span>Hold</span>
+                        <span>Hold</span>
+                        <span>Hold</span>
+                        <span>1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span>A06</span>
+                        <span>Hold</span>
+                        <span>Hold</span>
+                        <span>Hold</span>
+                        <span>1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span style="width: 80%">Hold lot WID</span>
+                        <span style="width: 20%">6</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-container">
+            <div class="pup-bg" id="dailog" style="display:none;">
+                <div class="dailog-box">
+                    <a href="javascript:;" class="close-btn"><i class="iconfont iconguanbi"></i></a>
+                    <div class="max-tit">EQP History</div>
+                    <div class="box-container">
+
+                        <div class="box">
+                            <div class="box-content w1" style="display: none">
+                                <div class="min-tit">W#1 <select class="a_d_tog">
+                                        <option>amount</option>
+                                        <option>density</option>
+                                    </select> </div>
+                                <a class="more" href="javascript:;">More>></a>
+                                <div class="chart-container">
+                                    <div class="legend">
+                                        <ul id="dowebok3">
+                                            <li><img class="legend_img" data-original="images/tibet-1.jpg"
+                                                    src="images/tibet-1.jpg" alt="图片1">
+                                            </li>
+                                            <li><img class="legend_img" data-original="images/tibet-2.jpg"
+                                                    src="images/tibet-2.jpg" alt="图片2">
+                                            </li>
+                                            <li><img class="legend_img" data-original="images/tibet-3.jpg"
+                                                    src="images/tibet-3.jpg" alt="图片3">
+                                            </li>
+                                            <li><img class="legend_img" data-original="images/tibet-4.jpg"
+                                                    src="images/tibet-4.jpg" alt="图片4">
+                                            </li>
+                                            <li><img class="legend_img" data-original="images/tibet-5.jpg"
+                                                    src="images/tibet-5.jpg" alt="图片5">
+                                        </ul>
+                                    </div>
+                                    <div class="chart1">
+                                        <ul class="chip">
+                                            <li class="chip-a">
+                                                <i style="left:90px; top: 52px;"></i>
+                                                <i style="left:40px; top: 40px;"></i>
+                                                <i style="left:90px; top: 90px;"></i>
+                                                <i style="left:60px; top: 104px;"></i>
+                                                <i style="left:45px; top: 110px;"></i>
+                                                <i style="left:140px; top: 150px;"></i>
+                                                <i style="left:87px; top: 75px;"></i>
+                                                <i style="left:167px; top:40px;"></i>
+                                            </li>
+                                            <li class="chip-b">
+                                                <i style="left:104px; top: 102px;"></i>
+                                                <i style="left:60px; top: 130px;"></i>
+                                                <i style="left:42px; top: 80px;"></i>
+                                                <i style="left:45px; top: 44px;"></i>
+                                                <i style="left:155px; top: 130px;"></i>
+                                                <i style="left:90px; top: 180px;"></i>
+                                                <i style="left:147px; top: 105px;"></i>
+                                                <i style="left:1437px; top:80px;"></i>
+                                            </li>
+                                            <li class="chip-c">
+                                                <i style="left:104px; top: 142px;"></i>
+                                                <i style="left:60px; top: 30px;"></i>
+                                                <i style="left:72px; top: 160px;"></i>
+                                                <i style="left:85px; top: 94px;"></i>
+                                                <i style="left:145px; top: 130px;"></i>
+                                                <i style="left:120px; top: 160px;"></i>
+                                                <i style="left:177px; top: 175px;"></i>
+                                                <i style="left:147px; top:170px;"></i>
+                                            </li>
+                                            <li class="chip-d">
+                                                <i style="left:164px; top: 122px;"></i>
+                                                <i style="left:160px; top: 150px;"></i>
+                                                <i style="left:32px; top: 60px;"></i>
+                                                <i style="left:107px; top: 115px;"></i>
+                                                <i style="left:47px; top:120px;"></i>
+                                            </li>
+                                            <li class="chip-e">
+                                                <i style="left:54px; top: 42px;"></i>
+                                                <i style="left:63px; top: 20px;"></i>
+                                                <i style="left:132px; top: 70px;"></i>
+                                                <i style="left:25px; top: 104px;"></i>
+                                                <i style="left:125px; top: 80px;"></i>
+                                            </li>
+                                            <li>
+                                                <b style="left:50px; top: 32px;"></b>
+                                                <b style="left:120px; top: 40px;"></b>
+                                                <b style="left:152px; top: 45px;"></b>
+                                                <b style="left:49px; top: 104px;"></b>
+                                                <b style="left:95px; top: 180px;"></b>
+                                                <b style="left:130px; top: 142px;"></b>
+                                                <b style="left:90px; top: 100px;"></b>
+                                                <b style="left:32px; top: 45px;"></b>
+                                                <b style="left:55px; top: 304px;"></b>
+                                                <b style="left:72px; top: 30px;"></b>
+                                                <b style="left:120px; top: 82px;"></b>
+                                                <b style="left:129px; top: 85px;"></b>
+                                                <b style="left:139px; top: 43px;"></b>
+                                                <b style="left:39px; top: 144px;"></b>
+                                                <b style="left:43px; top: 161px;"></b>
+                                                <b style="left:32px; top: 147px;"></b>
+                                                <b style="left:130px; top: 132px;"></b>
+                                                <b style="left:160px; top: 105px;"></b>
+                                                <b style="left:150px; top: 94px;"></b>
+                                                <b style="left:170px; top: 54px;"></b>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="chart2">
+                                        <ul class="y-axis amount">
+                                            <li><span>25</span></li>
+                                            <li><span>20</span></li>
+                                            <li><span>15</span></li>
+                                            <li><span>10</span></li>
+                                            <li><span>5</span></li>
+                                            <li><span>0</span></li>
+                                        </ul>
+                                        <ul class="y-axis density" style="display:none">
+                                            <li><span>100%</span></li>
+                                            <li><span>80%</span></li>
+                                            <li><span>60%</span></li>
+                                            <li><span>40%</span></li>
+                                            <li><span>20%</span></li>
+                                            <li><span>0%</span></li>
+                                        </ul>
+                                        <ul class="x-axis">
+                                            <li><span>A</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>C</span></li>
+                                            <li><span>D</span></li>
+                                            <li><span>E</span></li>
+                                        </ul>
+                                        <ul class="bar-graph">
+
+                                            <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                            <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                            <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                            <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                            <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                        </ul>
+                                        <ul class="line">
+                                            <li><span style="top: 140px;"></span></li>
+                                            <li><span style="top: 120px;"></span></li>
+                                            <li><span style="top: 160px;"></span></li>
+                                            <li><span style="top: 105px;"></span></li>
+                                            <li><span style="top: 85px;"></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- <div class="pic-list">
+                                            <a href="javascript:;"><img src="images/1_11.png"></a>
+                                            <a href="javascript:;"><img src="images/1_11.png"></a>
+                                            <a href="javascript:;"><img src="images/1_11.png"></a>
+                                            <a href="javascript:;"><img src="images/1_11.png"></a>
+                                        </div> -->
+                            </div>
+
+                            <div class="box-content w2" style="display: none">
+                                <div class="min-tit">W#2 <select class="a_d_tog">
+                                        <option>amount</option>
+                                        <option>density</option>
+                                    </select> </div>
+                                <a class="more" href="javascript:;">More>></a>
+                                <div class="chart-container">
+                                    <div class="legend">
+                                        <ul id="dowebok4">
+
+                                            <li><img class="legend_img" data-original="images/tibet-3.jpg"
+                                                    src="images/tibet-3.jpg" alt="图片3">
+                                            </li>
+                                            <li><img class="legend_img" data-original="images/tibet-4.jpg"
+                                                    src="images/tibet-4.jpg" alt="图片4">
+                                            </li>
+                                            <li><img class="legend_img" data-original="images/tibet-5.jpg"
+                                                    src="images/tibet-5.jpg" alt="图片5">
+                                            <li><img class="legend_img" data-original="images/tibet-1.jpg"
+                                                    src="images/tibet-1.jpg" alt="图片1">
+                                            </li>
+                                            <li><img class="legend_img" data-original="images/tibet-2.jpg"
+                                                    src="images/tibet-2.jpg" alt="图片2">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="chart1">
+                                        <ul class="chip">
+                                            <li class="chip-a">
+                                                <i style="left:90px; top: 52px;"></i>
+                                                <i style="left:40px; top: 40px;"></i>
+                                                <i style="left:90px; top: 90px;"></i>
+                                                <i style="left:60px; top: 104px;"></i>
+                                                <i style="left:45px; top: 110px;"></i>
+                                                <i style="left:140px; top: 150px;"></i>
+                                                <i style="left:87px; top: 75px;"></i>
+                                                <i style="left:167px; top:40px;"></i>
+                                            </li>
+                                            <li class="chip-b">
+                                                <i style="left:104px; top: 102px;"></i>
+                                                <i style="left:60px; top: 130px;"></i>
+                                                <i style="left:42px; top: 80px;"></i>
+                                                <i style="left:45px; top: 44px;"></i>
+                                                <i style="left:155px; top: 130px;"></i>
+                                                <i style="left:90px; top: 180px;"></i>
+                                                <i style="left:147px; top: 105px;"></i>
+                                                <i style="left:1437px; top:80px;"></i>
+                                            </li>
+                                            <li class="chip-c">
+                                                <i style="left:104px; top: 142px;"></i>
+                                                <i style="left:60px; top: 30px;"></i>
+                                                <i style="left:72px; top: 160px;"></i>
+                                                <i style="left:85px; top: 94px;"></i>
+                                                <i style="left:145px; top: 130px;"></i>
+                                                <i style="left:120px; top: 160px;"></i>
+                                                <i style="left:177px; top: 175px;"></i>
+                                                <i style="left:147px; top:170px;"></i>
+                                            </li>
+                                            <li class="chip-d">
+                                                <i style="left:164px; top: 122px;"></i>
+                                                <i style="left:160px; top: 150px;"></i>
+                                                <i style="left:32px; top: 60px;"></i>
+                                                <i style="left:107px; top: 115px;"></i>
+                                                <i style="left:47px; top:120px;"></i>
+                                            </li>
+                                            <li class="chip-e">
+                                                <i style="left:54px; top: 42px;"></i>
+                                                <i style="left:63px; top: 20px;"></i>
+                                                <i style="left:132px; top: 70px;"></i>
+                                                <i style="left:25px; top: 104px;"></i>
+                                                <i style="left:125px; top: 80px;"></i>
+                                            </li>
+                                            <li>
+                                                <b style="left:50px; top: 32px;"></b>
+                                                <b style="left:120px; top: 40px;"></b>
+                                                <b style="left:152px; top: 45px;"></b>
+                                                <b style="left:49px; top: 104px;"></b>
+                                                <b style="left:95px; top: 180px;"></b>
+                                                <b style="left:130px; top: 142px;"></b>
+                                                <b style="left:90px; top: 100px;"></b>
+                                                <b style="left:32px; top: 45px;"></b>
+                                                <b style="left:55px; top: 304px;"></b>
+                                                <b style="left:72px; top: 30px;"></b>
+                                                <b style="left:120px; top: 82px;"></b>
+                                                <b style="left:129px; top: 85px;"></b>
+                                                <b style="left:139px; top: 43px;"></b>
+                                                <b style="left:39px; top: 144px;"></b>
+                                                <b style="left:43px; top: 161px;"></b>
+                                                <b style="left:32px; top: 147px;"></b>
+                                                <b style="left:130px; top: 132px;"></b>
+                                                <b style="left:160px; top: 105px;"></b>
+                                                <b style="left:150px; top: 94px;"></b>
+                                                <b style="left:170px; top: 54px;"></b>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="chart2">
+                                        <ul class="y-axis amount">
+                                            <li><span>25</span></li>
+                                            <li><span>20</span></li>
+                                            <li><span>15</span></li>
+                                            <li><span>10</span></li>
+                                            <li><span>5</span></li>
+                                            <li><span>0</span></li>
+                                        </ul>
+                                        <ul class="y-axis density" style="display:none">
+                                            <li><span>100%</span></li>
+                                            <li><span>80%</span></li>
+                                            <li><span>60%</span></li>
+                                            <li><span>40%</span></li>
+                                            <li><span>20%</span></li>
+                                            <li><span>0%</span></li>
+                                        </ul>
+                                        <ul class="x-axis">
+                                            <li><span>A</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>C</span></li>
+                                            <li><span>D</span></li>
+                                            <li><span>E</span></li>
+                                        </ul>
+                                        <ul class="bar-graph">
+
+                                            <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                            <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                            <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                            <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                            <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                        </ul>
+                                        <ul class="line">
+                                            <li><span style="top: 140px;"></span></li>
+                                            <li><span style="top: 120px;"></span></li>
+                                            <li><span style="top: 160px;"></span></li>
+                                            <li><span style="top: 105px;"></span></li>
+                                            <li><span style="top: 85px;"></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- <div class="pic-list">
+                                            <a href="javascript:;"><img src="images/1_11.png"></a>
+                                            <a href="javascript:;"><img src="images/1_11.png"></a>
+                                            <a href="javascript:;"><img src="images/1_11.png"></a>
+                                            <a href="javascript:;"><img src="images/1_11.png"></a>
+                                        </div> -->
+                            </div>
+
+                        </div>
+                        <div class="box history" style="display: none;">
+                            <div class="title" >Lot History 
+                                <select>
+                                    <option>Select</option>
+                                </select> </div>
+                            <a class="more" href="javascript:;">More>></a>
+                            <div class="box-tb">
+                                <table>
+                                    <tr>
+                                        <th>Step Name</th>
+                                        <th>EQP ID</th>
+                                        <th>Chamber</th>
+                                        <th>Hold Comment </th>
+                                         
+                                         
+                                        <th>Activity</th>
+                                        <th>Txn Time</th>
+                                    </tr>
+                                    <tr>
+                                        <td>XXX</td>
+                                        <td>E-ID</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>XXX</td>
+                                        <td>E-ID</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>XXX</td>
+                                        <td>E-ID</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>XXX</td>
+                                        <td>E-ID</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>XXX</td>
+                                        <td>E-ID</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>XXX</td>
+                                        <td>E-ID</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>XXX</td>
+                                        <td>E-ID</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>XXX</td>
+                                        <td>E-ID</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>XXX</td>
+                                        <td>E-ID</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>XXX</td>
+                                        <td>E-ID</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>XXX</td>
+                                        <td>E-ID</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div class="box Chart" style="height:340px;display: none">
+                            <div class="title">Trend Chart</div>
+                            <div class="box-content" style="text-align: center;">
+                                <img src="images/1_15.png">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="right-content">
+
+                <div class="right-btn-bar">
+                    <a class="blue-btn" id="MESBtn" href="javascript:;">MES Hold</a>
+                    <a class="blue-btn" id="addBtn" href="javascript:;">加扫加量</a>
+                    <a class="blue-btn" id="DownBtn" href="javascript:;">Down 机</a>
+                    <a class="blue-btn" id="ReleaseBtn" href="javascript:;">Release</a>
+                    <a class="blue-btn" id="LTNBtn" href="javascript:;">Lot Tracing Notice</a>
+                    <a class="blue-btn" id="ILTBtn" href="javascript:;">Impact Lot Tracing</a>
+                    <a class="blue-btn" id="IDBtn" href="javascript:;">Issue DN(Defect Notice)</a>
+                    <a class="blue-btn model_btn" id="IDBtn" href="javascript:;">Defect Report</a>
+                </div>
+                <div class="box-container">
+                    <div class="box">
+                        <div class="title">诊断建议 </div>
+
+                        <div class="box-content">
+                            <p style=" margin: 10px 0;">诊断建议内容，XXXX，XX</p>
+                            <div class="btn-bar" style=" margin: 10px 0;">
+                                <a class="blue-btn" href="javascript:;">button</a>
+                                <a class="blue-btn" href="javascript:;">button</a></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="title">Information </div>
+                        <div class="box-content">
+                            <input class="model_swich" type="checkbox" name="model" value='w1' />
+                            <div class="min-tit">W#1 <select class="a_d_tog">
+                                    <option>amount</option>
+                                    <option>density</option>
+                                </select></div>
+                            <a class="more" href="javascript:;">More>></a>
+                            <div class="chart-container">
+                                <div class="legend">
+                                    <ul id="dowebok">
+                                        <li><img class="legend_img" data-original="images/tibet-1.jpg"
+                                                src="images/tibet-1.jpg" alt="图片1">
+                                        </li>
+                                        <li><img class="legend_img" data-original="images/tibet-2.jpg"
+                                                src="images/tibet-2.jpg" alt="图片2">
+                                        </li>
+                                        <li><img class="legend_img" data-original="images/tibet-3.jpg"
+                                                src="images/tibet-3.jpg" alt="图片3">
+                                        </li>
+                                        <li><img class="legend_img" data-original="images/tibet-4.jpg"
+                                                src="images/tibet-4.jpg" alt="图片4">
+                                        </li>
+                                        <li><img class="legend_img" data-original="images/tibet-5.jpg"
+                                                src="images/tibet-5.jpg" alt="图片5">
+                                    </ul>
+                                </div>
+                                <div class="chart1">
+                                    <ul class="chip">
+                                        <li class="chip-a">
+                                            <i style="left:90px; top: 52px;"></i>
+                                            <i style="left:40px; top: 40px;"></i>
+                                            <i style="left:90px; top: 90px;"></i>
+                                            <i style="left:60px; top: 104px;"></i>
+                                            <i style="left:45px; top: 110px;"></i>
+                                            <i style="left:140px; top: 150px;"></i>
+                                            <i style="left:87px; top: 75px;"></i>
+                                            <i style="left:167px; top:40px;"></i>
+                                        </li>
+                                        <li class="chip-b">
+                                            <i style="left:104px; top: 102px;"></i>
+                                            <i style="left:60px; top: 130px;"></i>
+                                            <i style="left:42px; top: 80px;"></i>
+                                            <i style="left:45px; top: 44px;"></i>
+                                            <i style="left:155px; top: 130px;"></i>
+                                            <i style="left:90px; top: 180px;"></i>
+                                            <i style="left:147px; top: 105px;"></i>
+                                            <i style="left:1437px; top:80px;"></i>
+                                        </li>
+                                        <li class="chip-c">
+                                            <i style="left:104px; top: 142px;"></i>
+                                            <i style="left:60px; top: 30px;"></i>
+                                            <i style="left:72px; top: 160px;"></i>
+                                            <i style="left:85px; top: 94px;"></i>
+                                            <i style="left:145px; top: 130px;"></i>
+                                            <i style="left:120px; top: 160px;"></i>
+                                            <i style="left:177px; top: 175px;"></i>
+                                            <i style="left:147px; top:170px;"></i>
+                                        </li>
+                                        <li class="chip-d">
+                                            <i style="left:164px; top: 122px;"></i>
+                                            <i style="left:160px; top: 150px;"></i>
+                                            <i style="left:32px; top: 60px;"></i>
+                                            <i style="left:107px; top: 115px;"></i>
+                                            <i style="left:47px; top:120px;"></i>
+                                        </li>
+                                        <li class="chip-e">
+                                            <i style="left:54px; top: 42px;"></i>
+                                            <i style="left:63px; top: 20px;"></i>
+                                            <i style="left:132px; top: 70px;"></i>
+                                            <i style="left:25px; top: 104px;"></i>
+                                            <i style="left:125px; top: 80px;"></i>
+                                        </li>
+                                        <li>
+                                            <b style="left:50px; top: 32px;"></b>
+                                            <b style="left:120px; top: 40px;"></b>
+                                            <b style="left:152px; top: 45px;"></b>
+                                            <b style="left:49px; top: 104px;"></b>
+                                            <b style="left:95px; top: 180px;"></b>
+                                            <b style="left:130px; top: 142px;"></b>
+                                            <b style="left:90px; top: 100px;"></b>
+                                            <b style="left:32px; top: 45px;"></b>
+                                            <b style="left:55px; top: 304px;"></b>
+                                            <b style="left:72px; top: 30px;"></b>
+                                            <b style="left:120px; top: 82px;"></b>
+                                            <b style="left:129px; top: 85px;"></b>
+                                            <b style="left:139px; top: 43px;"></b>
+                                            <b style="left:39px; top: 144px;"></b>
+                                            <b style="left:43px; top: 161px;"></b>
+                                            <b style="left:32px; top: 147px;"></b>
+                                            <b style="left:130px; top: 132px;"></b>
+                                            <b style="left:160px; top: 105px;"></b>
+                                            <b style="left:150px; top: 94px;"></b>
+                                            <b style="left:170px; top: 54px;"></b>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="chart2">
+                                    <ul class="y-axis amount">
+                                        <li><span>25</span></li>
+                                        <li><span>20</span></li>
+                                        <li><span>15</span></li>
+                                        <li><span>10</span></li>
+                                        <li><span>5</span></li>
+                                        <li><span>0</span></li>
+                                    </ul>
+                                    <ul class="y-axis density" style="display:none">
+                                        <li><span>100%</span></li>
+                                        <li><span>80%</span></li>
+                                        <li><span>60%</span></li>
+                                        <li><span>40%</span></li>
+                                        <li><span>20%</span></li>
+                                        <li><span>0%</span></li>
+                                    </ul>
+                                    <ul class="x-axis">
+                                        <li><span>A</span></li>
+                                        <li><span>B</span></li>
+                                        <li><span>C</span></li>
+                                        <li><span>D</span></li>
+                                        <li><span>E</span></li>
+                                    </ul>
+                                    <ul class="bar-graph">
+
+                                        <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                        <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                        <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                        <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                        <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                    </ul>
+                                    <ul class="line">
+                                        <li><span style="top: 140px;"></span></li>
+                                        <li><span style="top: 120px;"></span></li>
+                                        <li><span style="top: 160px;"></span></li>
+                                        <li><span style="top: 105px;"></span></li>
+                                        <li><span style="top: 85px;"></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- <div class="pic-list">
+                                <a href="javascript:;"><img src="images/1_11.png"></a>
+                                <a href="javascript:;"><img src="images/1_11.png"></a>
+                                <a href="javascript:;"><img src="images/1_11.png"></a>
+                                <a href="javascript:;"><img src="images/1_11.png"></a>
+                            </div> -->
+                        </div>
+
+                        <div class="box-content">
+                            <input class="model_swich" name="model" type="checkbox" value='w2' />
+                            <div class="min-tit">W#2 <select class="a_d_tog">
+                                    <option>amount</option>
+                                    <option>density</option>
+                                </select></div>
+                            <a class="more" href="javascript:;">More>></a>
+                            <div class="chart-container">
+                                <div class="legend">
+                                    <ul id="dowebok1">
+
+                                        <li><img class="legend_img" data-original="images/tibet-3.jpg"
+                                                src="images/tibet-3.jpg" alt="图片3">
+                                        </li>
+                                        <li><img class="legend_img" data-original="images/tibet-4.jpg"
+                                                src="images/tibet-4.jpg" alt="图片4">
+                                        </li>
+                                        <li><img class="legend_img" data-original="images/tibet-5.jpg"
+                                                src="images/tibet-5.jpg" alt="图片5">
+                                        <li><img class="legend_img" data-original="images/tibet-1.jpg"
+                                                src="images/tibet-1.jpg" alt="图片1">
+                                        </li>
+                                        <li><img class="legend_img" data-original="images/tibet-2.jpg"
+                                                src="images/tibet-2.jpg" alt="图片2">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="chart1">
+                                    <ul class="chip">
+                                        <li class="chip-a">
+                                            <i style="left:90px; top: 52px;"></i>
+                                            <i style="left:40px; top: 40px;"></i>
+                                            <i style="left:90px; top: 90px;"></i>
+                                            <i style="left:60px; top: 104px;"></i>
+                                            <i style="left:45px; top: 110px;"></i>
+                                            <i style="left:140px; top: 150px;"></i>
+                                            <i style="left:87px; top: 75px;"></i>
+                                            <i style="left:167px; top:40px;"></i>
+                                        </li>
+                                        <li class="chip-b">
+                                            <i style="left:104px; top: 102px;"></i>
+                                            <i style="left:60px; top: 130px;"></i>
+                                            <i style="left:42px; top: 80px;"></i>
+                                            <i style="left:45px; top: 44px;"></i>
+                                            <i style="left:155px; top: 130px;"></i>
+                                            <i style="left:90px; top: 180px;"></i>
+                                            <i style="left:147px; top: 105px;"></i>
+                                            <i style="left:1437px; top:80px;"></i>
+                                        </li>
+                                        <li class="chip-c">
+                                            <i style="left:104px; top: 142px;"></i>
+                                            <i style="left:60px; top: 30px;"></i>
+                                            <i style="left:72px; top: 160px;"></i>
+                                            <i style="left:85px; top: 94px;"></i>
+                                            <i style="left:145px; top: 130px;"></i>
+                                            <i style="left:120px; top: 160px;"></i>
+                                            <i style="left:177px; top: 175px;"></i>
+                                            <i style="left:147px; top:170px;"></i>
+                                        </li>
+                                        <li class="chip-d">
+                                            <i style="left:164px; top: 122px;"></i>
+                                            <i style="left:160px; top: 150px;"></i>
+                                            <i style="left:32px; top: 60px;"></i>
+                                            <i style="left:107px; top: 115px;"></i>
+                                            <i style="left:47px; top:120px;"></i>
+                                        </li>
+                                        <li class="chip-e">
+                                            <i style="left:54px; top: 42px;"></i>
+                                            <i style="left:63px; top: 20px;"></i>
+                                            <i style="left:132px; top: 70px;"></i>
+                                            <i style="left:25px; top: 104px;"></i>
+                                            <i style="left:125px; top: 80px;"></i>
+                                        </li>
+                                        <li>
+                                            <b style="left:50px; top: 32px;"></b>
+                                            <b style="left:120px; top: 40px;"></b>
+                                            <b style="left:152px; top: 45px;"></b>
+                                            <b style="left:49px; top: 104px;"></b>
+                                            <b style="left:95px; top: 180px;"></b>
+                                            <b style="left:130px; top: 142px;"></b>
+                                            <b style="left:90px; top: 100px;"></b>
+                                            <b style="left:32px; top: 45px;"></b>
+                                            <b style="left:55px; top: 304px;"></b>
+                                            <b style="left:72px; top: 30px;"></b>
+                                            <b style="left:120px; top: 82px;"></b>
+                                            <b style="left:129px; top: 85px;"></b>
+                                            <b style="left:139px; top: 43px;"></b>
+                                            <b style="left:39px; top: 144px;"></b>
+                                            <b style="left:43px; top: 161px;"></b>
+                                            <b style="left:32px; top: 147px;"></b>
+                                            <b style="left:130px; top: 132px;"></b>
+                                            <b style="left:160px; top: 105px;"></b>
+                                            <b style="left:150px; top: 94px;"></b>
+                                            <b style="left:170px; top: 54px;"></b>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="chart2">
+                                    <ul class="y-axis amount">
+                                        <li><span>25</span></li>
+                                        <li><span>20</span></li>
+                                        <li><span>15</span></li>
+                                        <li><span>10</span></li>
+                                        <li><span>5</span></li>
+                                        <li><span>0</span></li>
+                                    </ul>
+                                    <ul class="y-axis density" style="display:none">
+                                        <li><span>100%</span></li>
+                                        <li><span>80%</span></li>
+                                        <li><span>60%</span></li>
+                                        <li><span>40%</span></li>
+                                        <li><span>20%</span></li>
+                                        <li><span>0%</span></li>
+                                    </ul>
+                                    <ul class="x-axis">
+                                        <li><span>A</span></li>
+                                        <li><span>B</span></li>
+                                        <li><span>C</span></li>
+                                        <li><span>D</span></li>
+                                        <li><span>E</span></li>
+                                    </ul>
+                                    <ul class="bar-graph">
+
+                                        <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                        <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                        <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                        <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                        <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                    </ul>
+                                    <ul class="line">
+                                        <li><span style="top: 140px;"></span></li>
+                                        <li><span style="top: 120px;"></span></li>
+                                        <li><span style="top: 160px;"></span></li>
+                                        <li><span style="top: 105px;"></span></li>
+                                        <li><span style="top: 85px;"></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- <div class="pic-list">
+                                <a href="javascript:;"><img src="images/1_11.png"></a>
+                                <a href="javascript:;"><img src="images/1_11.png"></a>
+                                <a href="javascript:;"><img src="images/1_11.png"></a>
+                                <a href="javascript:;"><img src="images/1_11.png"></a>
+                            </div> -->
+                        </div>
+
+                    </div>
+                    <div class="box">
+                        <input class="model_swich" name="model" type="checkbox" value='history' />
+                        <div class="title" style="padding-left: 20px;">Lot History <select>
+                                <option>Select</option>
+                            </select> </div>
+                        <a class="more" href="javascript:;">More>></a>
+                        <div class="box-tb">
+                            <table>
+                                <tr>
+                                    <th>Step Name</th>
+                                    <th>Step No</th>
+                                    <th>EQP ID</th>
+                                    <th>Chamber</th>
+                                    
+                                     
+                                     
+                                    <th>Activity</th>
+                                    <th>Txn Time</th>
+                                    <th>Hold Comment </th>
+                                </tr>
+                                <tr>
+                                    <td>XXX</td>
+                                    <td>0010</td>
+                                    <td>E01</td>
+                                    <td>A</td>
+                                    
+                                    
+                                    <td>Hold</td>
+                                    <td>2019-01-20 10:10:20</td>
+                                    <td>--</td>
+                                </tr>
+                                <tr>
+                                    <td>XXX</td>
+                                    <td>0010</td>
+                                    <td>E01</td>
+                                    <td>A</td>
+                                    
+                                    
+                                    <td>Release</td>
+                                    <td>2019-01-21 10:10:20</td>
+                                    <td>--</td>
+                                </tr>
+                                <tr>
+                                    <td>XXX</td>
+                                    <td>0020</td>
+                                    <td>E02</td>
+                                    <td>B</td>
+                                    
+                                     
+                                    <td>TrackOut</td>
+                                    <td>2019-01-22 10:10:20</td>
+                                    <td>--</td>
+                                </tr>
+                                <tr>
+                                    <td>XXX</td>
+                                    <td>E-ID</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                </tr>
+                                <tr>
+                                    <td>XXX</td>
+                                    <td>E-ID</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                </tr>
+                                <tr>
+                                    <td>XXX</td>
+                                    <td>E-ID</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                </tr>
+                                <tr>
+                                    <td>XXX</td>
+                                    <td>E-ID</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                </tr>
+                                <tr>
+                                    <td>XXX</td>
+                                    <td>E-ID</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                </tr>
+                                <tr>
+                                    <td>XXX</td>
+                                    <td>E-ID</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                </tr>
+                                <tr>
+                                    <td>XXX</td>
+                                    <td>E-ID</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                </tr>
+                                <tr>
+                                    <td>XXX</td>
+                                    <td>E-ID</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                </tr>
+                                <tr>
+                                    <td>XXX</td>
+                                    <td>E-ID</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+
+
+                    <div class="box" style="height:auto">
+                        <input class="model_swich" name="model" type="checkbox" value='chart' />
+                        <div class="title"  style="padding-left: 20px;">Trend Chart</div>
+                        <div class="box-content chart-box-content" style="text-align: center;">
+                            <div class="add_box">
+                                <select name="" id="">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                                <a class="blue-btn addChart" id="LTNBtn" href="javascript:;">Add</a>
+                            </div>
+                            <div class="main_box">
+                                <span  class="main_rem">Remove</span>
+                                <div id="main" class="main"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="pup-bg" id="MESBox" style="display: none;">
+        <div class="pup-box" style="width: 400px;">
+            <a href="javascript:;" class="close-btn"><i class="iconfont iconguanbi"></i></a>
+            <div class="max-tit">MES Hold</div>
+            <div class="content">
+                <ul class="input-list">
+                    <li>
+                        <span class="tit">Department</span>
+                        <select>
+                            <option>--</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="tit">Section</span>
+                        <select>
+                            <option>--</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="tit">Reason Code</span>
+                        <select>
+                            <option>--</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="tit">Comments</span>
+                        <input type="text" name="">
+                    </li>
+                    <li>
+                        <span class="tit">Hold Owner</span>
+                        <select>
+                            <option>--</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="tit">Hold Sponsor</span>
+                        <select>
+                            <option>--</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom-btn">
+                <a href="javascript:;" class="blue-btn Submit">Submit</a>
+                <a href="javascript:;" class="gray-btn Cancel">Cancel</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="pup-bg" id="LTNBox" style="display: none;">
+        <div class="pup-box" style="width: 400px;">
+            <a href="javascript:;" class="close-btn"><i class="iconfont iconguanbi"></i></a>
+            <div class="max-tit">Lot Tracing Notice</div>
+            <div class="content">
+                <ul class="input-list">
+                    <li>
+                        <span class="tit">Time</span>
+                        <input type="date" name="" style="width: 47%"> - <input type="date" name="" style="width: 47%">
+                    </li>
+                    <li>
+                        <span class="tit">Activity</span>
+                        <select>
+                            <option>--</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="tit">Meant To</span>
+                        <select>
+                            <option>--</option>
+                        </select>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="bottom-btn">
+                <a href="javascript:;" class="blue-btn Submit">Submit</a>
+                <a href="javascript:;" class="gray-btn Cancel">Cancel</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="pup-bg" id="ILTBox" style="display: none;">
+        <div class="pup-box" style="width: 670px;">
+            <a href="javascript:;" class="close-btn"><i class="iconfont iconguanbi"></i></a>
+            <div class="max-tit">Impact Lot Tracing</div>
+            <div class="content">
+                <ul class="input-line">
+                    <li>
+                        <span class="tit">Step ID</span>
+                        <select>
+                            <option>--</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="tit">Eone ID </span>
+                        <select>
+                            <option>--</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="tit">Time</span>
+                        <input type="date" name=""> - <input type="date" name="">
+                    </li>
+                </ul>
+
+                <div class="pup-tb">
+                    <table>
+                        <tr>
+                            <th style="width: 8%;"><input type="checkBox" name=""></th>
+                            <th>Lot ID </th>
+                            <th>Concern Step</th>
+                            <th>Lot priority</th>
+                            <th>QT</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkBox" name=""></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkBox" name=""></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkBox" name=""></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkBox" name=""></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+            <div class="bottom-btn">
+                <a href="javascript:;" class="blue-btn Submit">Submit</a>
+                <a href="javascript:;" class="gray-btn Cancel">Cancel</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="pup-bg" id="EQPBox" style="display:none;">
+        <div class="pup-box" style="width: 400px;">
+            <a href="javascript:;" class="close-btn"><i class="iconfont iconguanbi"></i></a>
+            <div class="max-tit">EQP History</div>
+            <div class="content">
+                <ul class="history-list">
+                    <li>
+                        <span class="time">2019-04-05 10:12:00</span>
+                        <span>XXXXX</span>
+                    </li>
+                    <li>
+                        <span class="time">2019-04-04 15:45:08</span>
+                        <span>PM</span>
+                    </li>
+                    <li>
+                        <span class="time">2019-04-03 09:06:09</span>
+                        <span>----</span>
+                    </li>
+                    <li>
+                        <span class="time">2019-04-01 18:12:11</span>
+                        <span>ABC XXXX</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom-btn">
+                <a href="javascript:;" class="blue-btn Submit">Submit</a>
+                <a href="javascript:;" class="gray-btn Cancel">Cancel</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/viewer.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/eacher.js"></script>
+
+
+
+<script>
+
+    $(document).ready(function () {
+        $("#MESBtn").click(function () {
+            $("#MESBox").show();
+        });
+
+        $("#LTNBtn").click(function () {
+            $("#LTNBox").show();
+        });
+
+        $("#ILTBtn").click(function () {
+            $("#ILTBox").show();
+        });
+
+        $(".box-tb tr td").click(function () {
+            $("#EQPBox").show();
+        });
+
+
+
+        $(".close-btn").click(function () {
+            $(".pup-bg").hide();
+        });
+        $(".Submit").click(function () {
+            $(".pup-bg").hide();
+        });
+        $(".Cancel").click(function () {
+            $(".pup-bg").hide();
+        });
+
+
+        $(".bar-graph li").click(function () {
+            $(this).toggleClass("cur");
+        });
+
+        $(".bar-a").click(function () {
+            $(this).parents('.chart-container').find('.chip-a').toggle();
+        });
+        $(".bar-b").click(function () {
+            $(this).parents('.chart-container').find('.chip-b').toggle();
+        });
+        $(".bar-c").click(function () {
+            $(this).parents('.chart-container').find('.chip-c').toggle();
+        });
+        $(".bar-d").click(function () {
+            $(this).parents('.chart-container').find('.chip-d').toggle();
+        });
+        $(".bar-e").click(function () {
+            $(this).parents('.chart-container').find('.chip-e').toggle();
+        });
+
+
+  var viewer = new Viewer(document.getElementById('dowebok'), {
+        url: 'data-original'
+    });
+    var viewer1 = new Viewer(document.getElementById('dowebok1'), {
+        url: 'data-original'
+    });
+    var viewer3 = new Viewer(document.getElementById('dowebok3'), {
+        url: 'data-original'
+    });
+    var viewer4 = new Viewer(document.getElementById('dowebok4'), {
+        url: 'data-original'
+    });
+
+
+    });
+
+
+</script>
+
+</html>
