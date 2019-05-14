@@ -46,11 +46,11 @@ $(function () {
     };
     var stepOption = {
         legend: {
-            data: ['Current Step', 'Step1', 'Disappear']
+            data: ['Current Step', 'Disappear']
         },
         xAxis: {
             type: 'category',
-            data: ['Current Step', 'Step1', 'Disappear']
+            data: ['Current Step', 'Disappear']
 
         },
         yAxis: {
@@ -62,13 +62,20 @@ $(function () {
                 barWidth: 20,
                 stack: '总量',
                 type: 'bar',
-                data: [41, 36, 21]
+                data: [41, 21]
             },
             {
                 stack: '总量',
                 width: '10%',
                 type: 'bar',
-                data: [0, 0, 21]
+                data: [0, -10]
+            },
+            ,
+            {
+                stack: '总量',
+                width: '10%',
+                type: 'bar',
+                data: [0, 10]
             }
         ]
     }
@@ -101,24 +108,355 @@ $(function () {
         $(this).parents('.box-content').find('.y-axis').hide()
         $(this).parents('.box-content').find(i).show()
     })
+
     $(".more").on("click", function () {
-        console.log(111)
         $("#more_dailog").show()
         var myCharta3 = echarts.init(document.getElementById('step'));
         myCharta3.setOption(stepOption);
     })
-    $(".more-right li").on("click", function () {
-        if ($(this).className() === 'li-box') {
-
+    $(".more-left").on("click", function () {
+        if ($(this).attr('class') === 'more-left active') {
+            $(this).removeClass("active")
+            list.map(item => {
+                if (item.text === $(this).find('.text').text()) {
+                    item.src = '';
+                    item.text = "";
+                }
+            })
+            render()
         } else {
-            $(this).siblings().removeClass()
             $(this).addClass("active")
-            var src = $(this).find('img')[0].src
-            var text = $(this).find('.text').text()
-            $(".change_img").find("img").attr("src", src)
-            $(".change_img").find(".text").text(text)
+            list[0].src = $(this).find('img')[0].src;
+            list[0].text = $(this).find('.text').text();
+            render()
+        }
+    })
+    var list = [{
+        src: './images/step3.png',
+        text: 'Current Step',
+        tableSrc: './images/step1.png',
+        UniqueSrc: './images/step0.png',
+    },
+    {
+        src: './images/step4.png',
+        text: 'Step1',
+        tableSrc: './images/step2.png',
+        UniqueSrc: './images/step1.png',
+    }]
+    var defectRender = function () {
+        $(".defect_right").empty()
+        let defectHTML = `  <table style="width: 436px;text-align: center;">
+        <thead>
+            <tr>
+                <th>location</th>
+                <th>Step</th>
+                <th>defect ID</th>
+                <th>time</th>
+                <th>image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">7,8</td>
+                <td>${list[0].text}</td>
+                <td>22</td>
+                <td>2019-04-30 12:00:00</td>
+                <td><img src="./images/1_11.png" ></td>
+            </tr>
+            <tr>
+                <td>${list[1].text}</td>
+                <td>22</td>
+                <td>2019-04-30 12:00:00</td>
+                <td><img src="./images/1_11.png" ></td>
+            </tr>
+            <tr>
+                <td rowspan="2">5,6</td>
+                <td>${list[0].text}</td>
+                <td>22</td>
+                <td>2019-04-30 12:00:00</td>
+                <td><img src="./images/1_11.png" ></td>
+            </tr>
+            <tr>
+                <td>${list[1].text}</td>
+                <td>22</td>
+                <td>2019-04-30 12:00:00</td>
+               <td><img src="./images/1_11.png" ></td>
+            </tr>
+            <tr>
+                <td rowspan="2">3,4</td>
+                <td>${list[0].text}</td>
+                <td>22</td>
+                <td>2019-04-30 12:00:00</td>
+               <td><img src="./images/1_11.png" ></td>
+            </tr>
+            <tr>
+                <td>${list[1].text}</td>
+                <td>22</td>
+                <td>2019-04-30 12:00:00</td>
+               <td><img src="./images/1_11.png" ></td>
+            </tr>
+           
+        </tbody>
+    </table>`
+
+        $(".defect_right").append(defectHTML)
+    }
+    defectRender()
+    var render = function () {
+        $(".enting_left").empty()
+        $(".defect_left").empty()
+        list.map(item => {
+            let html = `<div style="width:50%;float: left;">
+                    <img src="${item.src}" alt="">
+                    <div class="text">${item.text}</div>
+                </div>`
+            $(".enting_left").append(html)
+        })
+        let tableHtml = `<table class="contrast">
+        <tr>
+            <td></td>
+            <td>${list[0].text}</td>
+            <td>${list[1].text}</td>
+        </tr>
+        <tr>
+            <td>Conmmon</td>
+            <td class="active"><img class="one" src="${list[0].tableSrc}" alt=""></td>
+            <td><img class="two" src="${list[1].tableSrc}" alt=""></td>
+        </tr>
+        <tr>
+            <td>Unique</td>
+            <td><img class="thr" src="${list[0].UniqueSrc}" alt=""></td>
+            <td><img class="five" src="${list[1].UniqueSrc}" alt=""></td>
+        </tr>
+    </table>`
+        $(".defect_left").append(tableHtml)
+        $(".more-right li").removeClass()
+        $(".more-right li").each((index, element) => {
+            list.map(item => {
+                if (item.text === element.children[1].innerHTML) {
+                    if (element.children[1].innerHTML === 'Step2') {
+                        item.tableSrc = './images/step0.png'
+                        item.UniqueSrc = './images/step2.png'
+                        stepOption.series = [
+                            {
+                                barWidth: 20,
+                                stack: '总量',
+                                type: 'bar',
+                                data: [31, 26]
+                            },
+                            {
+                                stack: '总量',
+                                width: '10%',
+                                type: 'bar',
+                                data: [0, -5]
+                            },
+                            ,
+                            {
+                                stack: '总量',
+                                width: '10%',
+                                type: 'bar',
+                                data: [0, 10]
+                            }
+                        ]
+                    } else if (element.children[1].innerHTML === 'Step3') {
+                        item.tableSrc = './images/step1.png'
+                        item.UniqueSrc = './images/step2.png'
+                        stepOption.series = [
+                            {
+                                barWidth: 20,
+                                stack: '总量',
+                                type: 'bar',
+                                data: [21, 16]
+                            },
+                            {
+                                stack: '总量',
+                                width: '10%',
+                                type: 'bar',
+                                data: [0, -5]
+                            },
+                            ,
+                            {
+                                stack: '总量',
+                                width: '10%',
+                                type: 'bar',
+                                data: [0, 10]
+                            }
+                        ]
+                    } else if (element.children[1].innerHTML === 'Step4') {
+                        item.tableSrc = './images/step0.png'
+                        item.UniqueSrc = './images/step2.png'
+                        stepOption.series = [
+                            {
+                                barWidth: 20,
+                                stack: '总量',
+                                type: 'bar',
+                                data: [46, 36]
+                            },
+                            {
+                                stack: '总量',
+                                width: '10%',
+                                type: 'bar',
+                                data: [0, -10]
+                            },
+                            ,
+                            {
+                                stack: '总量',
+                                width: '10%',
+                                type: 'bar',
+                                data: [0, 10]
+                            }
+                        ]
+                    } else {
+                        item.tableSrc = './images/step0.png'
+                        item.UniqueSrc = './images/step1.png'
+                        stepOption.series = [
+
+                            {
+                                barWidth: 20,
+                                stack: '总量',
+                                type: 'bar',
+                                data: [41, 21]
+                            },
+                            {
+                                stack: '总量',
+                                width: '10%',
+                                type: 'bar',
+                                data: [0, -10]
+                            },
+                            ,
+                            {
+                                stack: '总量',
+                                width: '10%',
+                                type: 'bar',
+                                data: [0, 10]
+                            }
+                        ]
+                    }
+                    element.classList.add("active");
+                } else {
+                    // console.log(element)
+                    // element.classList.remove("active");
+                }
+            })
+        })
+        if (list[0].src === '' && list[1].src === '') {
+            $(".enting").hide();
+            $(".defect").hide()
+        } else {
+            $(".enting").show();
+            $(".defect").show()
+        }
+    }
+    render()
+    $(".more-right li").on("click", function () {
+        if ($(this).attr('class') === 'active') {
+            // $(this).removeClass("active")
+            list.map(item => {
+                if (item.text === $(this).find('.text').text()) {
+                    item.src = '';
+                    item.text = "";
+                }
+            })
+            render()
+            defectRender()
+        } else {
+            // $(this).siblings().removeClass()
+            // $(this).addClass("active")
+            if (list[0].text !== "") {
+                list[1].src = $(this).find('img')[0].src;
+                list[1].text = $(this).find('.text').text();
+            } else {
+                list[0].src = $(this).find('img')[0].src;
+                list[0].text = $(this).find('.text').text();
+            }
+
+            render()
+            defectRender()
+
+            // var src = $(this).find('img')[0].src
+            // var text = $(this).find('.text').text()
+            // $(".change_img").find("img").attr("src", src)
+            // $(".change_img").find(".text").text(text)
         }
 
+    })
+    var imgList = [
+        {
+            src: './images/1_11.png'
+        },
+        {
+            src: './images/1_11.png'
+        },
+        {
+            src: './images/1_11.png'
+        }
+    ]
+    var translationRender = function () {
+        $(".translation_left table").empty()
+        var html = `
+        <tr>
+        <td><img src="${imgList[0].src}" alt=""></td>
+        <td><img src="${imgList[1].src}" alt=""></td>
+        <td><img src="${imgList[2].src}" alt=""></td>
+    </tr>`
+        $(".translation_left table").append(html)
+    }
+    translationRender()
+
+    $("body").on("click", ".contrast img", function () {
+        $(this).parent().siblings().removeClass("active")
+        $(this).parents("tr").siblings().find('td').removeClass("active")
+        $(this).parent().addClass("active")
+        if ($(this).attr("class") === 'one') {
+            imgList = [
+                {
+                    src: './images/1_11.png'
+                },
+                {
+                    src: './images/1_11.png'
+                },
+                {
+                    src: './images/1_11.png'
+                }
+            ]
+        } else if ($(this).attr("class") === 'two') {
+            imgList = [
+                {
+                    src: './images/121.jpg'
+                },
+                {
+                    src: './images/122.jpg'
+                },
+                {
+                    src: './images/1_11.png'
+                }
+            ]
+        } else if ($(this).attr("class") === 'thr') {
+            imgList = [
+                {
+                    src: './images/122.jpg'
+                },
+                {
+                    src: './images/124.jpg'
+                },
+                {
+                    src: './images/1_11.png'
+                }
+            ]
+        } else if ($(this).attr("class") === 'five') {
+            imgList = [
+                {
+                    src: './images/121.jpg'
+                },
+                {
+                    src: './images/122.jpg'
+                },
+                {
+                    src: './images/124.jpg'
+                }
+            ]
+        }
+        translationRender()
     })
 
 })

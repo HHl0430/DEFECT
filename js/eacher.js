@@ -3,7 +3,7 @@ $(function () {
     var option = {
         title: {
             text: 'Peoduct1,layer1,DOI1,2019.04.01-2019.02.12',
-             
+
             x: 'center',
             y: 'top',
             textStyle: {
@@ -45,16 +45,20 @@ $(function () {
             },
         ]
     };
-   
+
     var myChart = echarts.init(document.getElementById('main'));
     myChart.setOption(option);
-    $("body").on("click",".main_rem",function() {
+    $("body").on("click", ".main_rem", function () {
         $(this).parents('.main_box').remove()
     })
     $(".addChart").on("click", function () {
-        var len = $(".chart-box-content").children().length
-        $(".chart-box-content").append(`<div class='main_box'><span class='main_rem'>Remove</span><div class="main" id='${'main' + len}'></div> </div>`)
-        var myChart1 = echarts.init(document.getElementById(`${'main' + len}`));
-        myChart1.setOption(option);
+        var num = new Date().getTime().toString(36) + Math.random().toString(36).slice(2)
+        $(".out_box").append(`<div class='main_box'><span class='main_rem'>Remove</span><div class="main" id='${'main' + num}'></div> </div>`)
+        // var myChart1 = echarts.init(document.getElementById(`${'main' + num}`));
+        // myChart1.setOption(option);
+        setTimeout(() => {
+            var myChart = echarts.init(document.getElementById(`${'main' + num}`));
+            myChart.setOption(option);
+        }, 100);
     })
 })
