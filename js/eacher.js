@@ -16,6 +16,10 @@ $(function () {
         xAxis: {
             type: 'category',
             boundaryGap: false,
+            axisLabel: {
+                interval: 0,
+                rotate: 30
+            },
             // data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
             data: ['Lot 1_W#1_2019-04-01', 'Lot 1_W#1_2019-04-02',
                 'Lot 1_W#1_2019-04-03', 'Lot 1_W#1_2019-04-04', 'Lot 1_W#1_2019-04-05', 'Lot 1_W#1_2019-04-06', 'Lot 1_W#1_2019-04-07',
