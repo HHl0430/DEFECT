@@ -12,18 +12,23 @@ $(function () {
         tooltip: {
             trigger: 'axis'
         },
-
+        legend: {
+            data: ['1', '2','3','4'],
+            x: 'left'
+        },
         xAxis: {
             type: 'category',
             boundaryGap: false,
+
             axisLabel: {
                 interval: 0,
-                rotate: 30
+                rotate: 90
             },
             // data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
             data: ['Lot 1_W#1_2019-04-01', 'Lot 1_W#1_2019-04-02',
                 'Lot 1_W#1_2019-04-03', 'Lot 1_W#1_2019-04-04', 'Lot 1_W#1_2019-04-05', 'Lot 1_W#1_2019-04-06', 'Lot 1_W#1_2019-04-07',
-                'Lot 1_W#1_2019-04-08', 'Lot 1_W#1_2019-04-09', 'Lot 1_W#1_2019-04-10', 'Lot 1_W#1_2019-04-11', 'Lot 1_W#1_2019-04-12',]
+                'Lot 1_W#1_2019-04-08', 'Lot 1_W#1_2019-04-09', 'Lot 1_W#1_2019-04-10', 'Lot 1_W#1_2019-04-11', 'Lot 1_W#1_2019-04-12',
+                'Lot 1_W#1_2019-04-13', 'Lot 1_W#1_2019-04-14', 'Lot 1_W#1_2019-04-15']
         },
         yAxis: {
             type: 'value'
@@ -32,19 +37,70 @@ $(function () {
             {
                 symbol: 'circle',
                 symbolSize: 7,
-                name: '',
+                connectNulls: true,
+                name: '1',
                 type: 'line',
                 stack: '总量',
-                itemStyle: {
-                    normal: {
-                        color: '#1c92ed',
-                        lineStyle: {
-                            color: '#ccc',
-                            width: 3
-                        }
-                    }
-                },
-                data: [38, 28, 41, 32, 34, 45, 39, 24, 23, 26, 43, 31]
+                // itemStyle: {
+                //     normal: {
+                //         lineStyle: {
+                //             color: '#ccc',
+                //             width: 3
+                //         }
+                //     }
+                // },
+                data: [12, null, null, null, 10, null, null, null, 14, null, null, null, 15, null, null]
+            },
+            {
+                symbol: 'circle',
+                symbolSize: 7,
+                connectNulls: true,
+                name: '2',
+                type: 'line',
+                stack: '总量',
+                // itemStyle: {
+                //     normal: {
+                //         lineStyle: {
+                //             color: '#ccc',
+                //             width: 3
+                //         }
+                //     }
+                // },
+                data: [null, 1, null, null, null, 4, null, null, null, 5, null, null, null, 5, null]
+            },
+            {
+                symbol: 'circle',
+                symbolSize: 7,
+                connectNulls: true,
+                name: '3',
+                type: 'line',
+                stack: '总量',
+                // itemStyle: {
+                //     normal: {
+                //         lineStyle: {
+                //             color: '#ccc',
+                //             width: 3
+                //         }
+                //     }
+                // },
+                data: [null, null, 2, null, null, null, 5, null, null, null, 3, null, null, null, 2]
+            },
+            {
+                symbol: 'circle',
+                symbolSize: 7,
+                connectNulls: true,
+                name: '4',
+                type: 'line',
+                stack: '总量',
+                // itemStyle: {
+                //     normal: {
+                //         lineStyle: {
+                //             color: '#ccc',
+                //             width: 3
+                //         }
+                //     }
+                // },
+                data: [null, null, null, 4, null, null, null, 3, null, null, null, 5, null, null, null]
             },
         ]
     };
