@@ -41,6 +41,7 @@
 }
 .gray-btn:hover {
   background: #888;
+  color: #fff;
 }
 .gray-btn:active {
   line-height: 36px;
@@ -107,7 +108,6 @@ ol {
   height: 50px;
   background: #1c92ed;
   background:linear-gradient(-45deg,#2ccac1,#1c92ed);
-  
   z-index: 2;
 
 }
@@ -235,13 +235,14 @@ ol {
 
 .left-list {
   background: #fff;
-  width: 312px;
+  width: 430px;
   position: fixed;
   height: 100%;
   top: 50px;
   left: 100px;
  
 }
+
 .left-list .title {
   line-height: 30px;
   padding: 10px;
@@ -249,6 +250,58 @@ ol {
   border-bottom: 1px solid #eee;
 
 }
+
+.left-list .List-tb{
+ padding:0 1px;
+}
+.left-list .List-tb table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.left-list .List-tb table tr th{
+  background: #f8f9fc;
+  font-weight: normal;
+  line-height: 16px;
+  padding:5px;
+  text-align: left;
+  box-sizing: border-box;
+  
+  color: #b0bdd7;
+  border-bottom: 1px solid #f0f2fd;
+}
+
+.left-list .List-tb table tr td{
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  line-height: 16px;
+  padding: 10px 5px;
+}
+.left-list .List-tb table tr:hover td{
+  background:#f0f4fb;
+}
+
+.left-list .List-tb table tr td:first-child {
+ 
+}
+.left-list .List-tb table tr.cur td{
+  background:#1c92ed;
+  position: relative;
+  color: #fff;
+}
+
+.left-list .List-tb table tr.cur td:first-child:after {
+  content:"";
+  display: block;
+  position: absolute;
+  left: -3px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: #30a5ff;
+  display: none;
+}
+
+
 .left-list .List-tit {
   line-height: 25px;
   height: 25px;
@@ -257,7 +310,7 @@ ol {
 }
 .left-list .List-tit span {
   float: left;
-  width: 25%;
+  width: 12.5%;
   box-sizing: border-box;
   padding: 0 5px;
   color: #000;
@@ -302,13 +355,13 @@ ol {
 
 
 .right-content {
-  padding: 0 20px;
-  padding-right: 120px;
+  padding: 0 15px;
+  padding-right: 115px;
   
 }
 
 .right-container {
-  padding-left: 312px;
+  padding-left: 430px;
 }
 .right-container .top-btn-bar {
   padding: 10px;
@@ -392,6 +445,7 @@ ol {
   vertical-align: middle;
   border: 1px solid #ddd;
   background: #fff;
+  font-size: 12px;
 }
 .right-container .box-container .box .box-content {
   padding: 5px 20px;
@@ -414,7 +468,7 @@ ol {
   position: absolute;
   line-height: 30px;
   top: 0px;
-  border-radius: 3px;
+  border-radius: ;
   right: 95px;
   font-size: 12px;
   z-index: 1;
@@ -438,7 +492,7 @@ ol {
 }
 .right-container .box-container .box .box-content .chart-container {
   text-align: center;
-  padding-left: 320px;
+  padding-left: 280px;
   position: relative;
 }
 .right-container .box-container .box .box-content .chart-container:after {
@@ -457,12 +511,12 @@ ol {
 }
 .right-container .box-container .box .box-content .chart-container .chip {
   border-radius: 50%;
-  width: 240px;
-  height: 240px;
+  width: 220px;
+  height: 220px;
   background: #ddd;
   position: absolute;
-  left: 40px;
-  top: 30px;
+  left: 30px;
+  top: 40px;
   overflow: hidden;
 }
 .right-container .box-container .box .box-content .chart-container .chip li i {
@@ -826,8 +880,9 @@ ol {
   left: 0;
   top: 0;
   width: 100%;
-  height: 0;
-  font-size: 0;
+  height: 10px;
+  font-size: 0px;
+
 }
 .right-container
   .box-container
@@ -839,8 +894,9 @@ ol {
   li {
   display: inline-block;
   width: 20%;
-  height: 0;
   position: relative;
+  text-align: center;
+  left: 0px; 
 }
 .right-container
   .box-container
@@ -851,10 +907,13 @@ ol {
   .line
   li
   span {
-  border-top: 2px solid #f00;
-  width: 50%;
+  border-bottom:2px dashed #f00;
+  width: 60%;
   display: inline-block;
   position: relative;
+  font-size: 12px;
+  line-height: 18px;
+
 }
 .right-container .box-container .box .box-content .pic-list {
   margin-top: 10px;
@@ -915,7 +974,7 @@ ol {
   border-bottom: 1px solid #f0f2fd;
 }
 .right-container .box-container .box .box-tb table tr td {
-  padding: 15px 10px;
+  padding:10px;
   line-height: 20px;
   border-bottom: 1px solid #f0f2fd;
   box-sizing: border-box;
@@ -954,7 +1013,7 @@ ol {
   background: #fff;
   min-width: 300px;
   min-height: 200px;
-  border-radius: 4px;
+   
   overflow: hidden;
   position: relative;
 }
@@ -979,6 +1038,37 @@ ol {
 .pup-box .content {
   padding: 10px;
 }
+.pup-box .content .min-tit {
+  line-height: 30px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.pup-box .content .checkbox-list{
+  padding:10px 20px;
+  font-size: 0;
+}
+
+.pup-box .content .checkbox-list label{
+  display:inline-block;
+  width: 82px;
+  width: 20%;
+  line-height: 20px;
+  font-size: 12px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.pup-box .content .checkbox-list label:hover{
+  background-color: #eee;
+}
+
+.pup-box .content .checkbox-list label.cur{
+  color:#1c92ed;
+}
+
+
+
 .pup-box .content .input-list {
   padding: 0 20px;
 }
@@ -997,6 +1087,12 @@ ol {
   padding: 5px 0;
   width: 110px;
 }
+.pup-box .content .input-list li .text{
+  line-height: 24px;
+  padding: 5px 0;
+  display: block;
+  font-weight: 400;
+}
 .pup-box .content .input-list li input,
 .pup-box .content .input-list li select {
   width: 100%;
@@ -1004,7 +1100,7 @@ ol {
   box-sizing: border-box;
   background: #fff;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 0;
   padding: 0 10px;
 }
 .pup-box .content .input-list li input[type="date"] {
@@ -1036,7 +1132,7 @@ ol {
   box-sizing: border-box;
   background: #fff;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 0;
   padding: 0 10px;
 }
 .pup-box .content .input-line li input[type="date"] {
@@ -1061,7 +1157,7 @@ ol {
   border-bottom: 1px solid #f0f2fd;
 }
 .pup-box .content .pup-tb table tr td {
-  padding:15px 10px;
+  padding: 10px;
   line-height: 20px;
   border-bottom: 1px solid #f0f2fd;
   box-sizing: border-box;
@@ -1163,7 +1259,34 @@ ol {
   margin-left: 0px !important;
 }
 .add_box .blue-btn {
-  border-radius: 3px;
+  border-radius: 0;
   float: left;
   margin-left: 20px;
 }
+
+.defect_right{
+
+}
+.defect_right table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.defect_right table tr th{
+  background-color: #f7f7f7;
+  border:1px solid #ddd;
+  line-height: 20px;
+  padding:5px;
+}
+.defect_right table tr td{
+  border:1px solid #ddd;
+  line-height: 20px;
+  padding: 10px 5px;
+}
+
+
+
+
+
+
+
+

@@ -2,8 +2,7 @@
 $(function () {
     var option = {
         title: {
-            text: 'Peoduct1,layer1,DOI1,2019.04.01-2019.02.12',
-
+            text: 'Product1,layer1,DOI1,2019.04.01-2019.02.12',
             x: 'center',
             y: 'top',
             textStyle: {

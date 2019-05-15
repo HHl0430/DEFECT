@@ -22,7 +22,6 @@
       .nextpage-container .app-list li a {
         display: block;
         text-align: center;
-        border-radius: 4px;
         background: #fff;
         padding: 30px 20px;
         box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.05); }
