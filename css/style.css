@@ -265,13 +265,12 @@ ol {
   padding:5px;
   text-align: left;
   box-sizing: border-box;
-  
-  color: #b0bdd7;
-  border-bottom: 1px solid #f0f2fd;
+  color: #949bab;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .left-list .List-tb table tr td{
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e1e1e1;
   text-align: left;
   line-height: 16px;
   padding: 10px 5px;
@@ -365,7 +364,7 @@ ol {
 }
 .right-container .top-btn-bar {
   padding: 10px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #e1e1e1;
 }
 .right-container .top-btn-bar:after {
   content: "";
@@ -414,7 +413,9 @@ ol {
   box-sizing: border-box;
   line-height: 20px;
   position: relative;
-  padding: 10px 0;
+  margin:15px 0;
+  padding: 10px 20px;
+  background: #fff;
 }
 .right-container .box-container .box:after {
   content: "";
@@ -426,15 +427,16 @@ ol {
 .right-container .box-container .box .title {
   font-size: 18px;
   font-weight: 400;
-  line-height: 30px;
-  padding: 0;
+  line-height: 20px;
+  padding: 10px 0;
   padding-left: 0;
+  border-bottom: 1px solid #e1e1e1;
 }
 .right-container .box-container .box .more {
   position: absolute;
   right: 15px;
   line-height: 20px;
-  top: 20px;
+  top: 25px;
   font-size: 12px;
   color: #1c92ed;
 }
@@ -443,56 +445,74 @@ ol {
   height: 34px;
   margin-left: 10px;
   vertical-align: middle;
-  border: 1px solid #ddd;
+  border: 1px solid #e1e1e1;
   background: #fff;
   font-size: 12px;
 }
 .right-container .box-container .box .box-content {
-  padding: 5px 20px;
+  
   position: relative;
   box-sizing: border-box;
   background: #fff;
-  margin: 10px 0;
+  
   height: 100%;
-  min-height: 100px;
+   
 }
 .right-container .box-container .box .chart-box-content{
-  padding-top: 40px;
+   
 }
 .main_rem {
   cursor: pointer;
   height: 30px;
   width: 90px;
-  border: 1px solid #ddd;
+  border: 1px solid #e1e1e1;
   color: red;
   position: absolute;
   line-height: 30px;
   top: 0px;
-  border-radius: ;
-  right: 95px;
+  right: 0px;
   font-size: 12px;
+  text-align: center;
   z-index: 1;
 }
 .right-container .box-container .box .box-content .main_box {
-  height:340px;
+  height:500px;
   width: 100%;
   position: relative;
-  margin-top: 40px;
+  margin-top:10px;
   background: #fff;
 }
 .right-container .box-container .box .box-content .main {
-  height: 100%;
+  height:100%;
   width: 100%;
+  display: block;
 }
+ 
+ 
 .right-container .box-container .box .box-content .min-tit {
   line-height: 20px;
   font-size: 14px;
   padding: 10px 0;
-  padding-left: 20px;
+  
 }
+
+
+.right-container .box-container .box .box-content .more {
+  position: absolute;
+  right: 15px;
+  line-height: 20px;
+  top: 15px;
+  font-size: 12px;
+  color: #1c92ed;
+}
+
+.model_swich{
+  vertical-align: middle;
+}
+
 .right-container .box-container .box .box-content .chart-container {
   text-align: center;
-  padding-left: 280px;
+  padding-left: 260px;
   position: relative;
 }
 .right-container .box-container .box .box-content .chart-container:after {
@@ -513,9 +533,9 @@ ol {
   border-radius: 50%;
   width: 220px;
   height: 220px;
-  background: #ddd;
+  background: #e1e1e1;
   position: absolute;
-  left: 30px;
+  left: 20px;
   top: 40px;
   overflow: hidden;
 }
@@ -530,6 +550,7 @@ ol {
   background: #fff;
   z-index: 1;
 }
+
 .right-container
   .box-container
   .box
@@ -621,7 +642,7 @@ ol {
   .chart2
   .y-axis
   li {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #e1e1e1;
   border-left: 1px solid #000;
   height: 40px;
   text-align: left;
@@ -791,7 +812,7 @@ ol {
   left: 50%;
   margin-left: -20px;
   bottom: 0;
-  background: #ddd;
+  background: #e1e1e1;
 }
 .right-container
   .box-container
@@ -918,7 +939,7 @@ ol {
 .right-container .box-container .box .box-content .pic-list {
   margin-top: 10px;
   padding: 6px;
-  border: 1px solid #ddd;
+  border: 1px solid #e1e1e1;
 }
 .right-container .box-container .box .box-content .pic-list:after {
   content: "";
@@ -965,18 +986,18 @@ ol {
 .right-container .box-container .box .box-tb table tr th {
   background: #f8f9fc;
   font-weight: normal;
-  line-height: 40px;
-  padding: 0 10px;
+  line-height: 15px;
+  padding:10px;
   text-align: left;
   box-sizing: border-box;
   width: 14.28%;
-  color: #b0bdd7;
-  border-bottom: 1px solid #f0f2fd;
+  color: #949bab;
+  border-bottom: 1px solid #e1e1e1;
 }
 .right-container .box-container .box .box-tb table tr td {
   padding:10px;
   line-height: 20px;
-  border-bottom: 1px solid #f0f2fd;
+  border-bottom: 1px solid #e1e1e1;
   box-sizing: border-box;
   background: #fff;
 }
@@ -1033,7 +1054,7 @@ ol {
   line-height: 30px;
   padding: 10px 15px;
   font-size: 16px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #e1e1e1;
 }
 .pup-box .content {
   padding: 10px;
@@ -1099,7 +1120,7 @@ ol {
   height: 34px;
   box-sizing: border-box;
   background: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #e1e1e1;
   border-radius: 0;
   padding: 0 10px;
 }
@@ -1131,7 +1152,7 @@ ol {
   height: 33px;
   box-sizing: border-box;
   background: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #e1e1e1;
   border-radius: 0;
   padding: 0 10px;
 }
@@ -1153,13 +1174,13 @@ ol {
   text-align: left;
   box-sizing: border-box;
   width: 23%;
-  color: #b0bdd7;
-  border-bottom: 1px solid #f0f2fd;
+  color: #949bab;
+  border-bottom: 1px solid #e1e1e1;
 }
 .pup-box .content .pup-tb table tr td {
   padding: 10px;
   line-height: 20px;
-  border-bottom: 1px solid #f0f2fd;
+  border-bottom: 1px solid #e1e1e1;
   box-sizing: border-box;
 }
 .pup-box .content .pup-tb table tr:hover td {
@@ -1212,8 +1233,7 @@ ol {
 }
 
 .model_swich {
-  position: absolute;
-  top: 22px;
+   margin-right: 5px;
 }
 
 .dailog-box {
@@ -1244,14 +1264,21 @@ ol {
   line-height: 30px;
   padding: 10px 15px;
   font-size: 16px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #e1e1e1;
 }
 .add_box {
   height: 35px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  padding: 10px;
+  padding: 10px 0; 
+}
+ 
+
+.add_box:after {
+  content: "";
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  clear: both;
+  overflow: hidden;
 }
 .add_box select {
   float: left;
@@ -1273,15 +1300,103 @@ ol {
 }
 .defect_right table tr th{
   background-color: #f7f7f7;
-  border:1px solid #ddd;
+  border:1px solid #e1e1e1;
   line-height: 20px;
   padding:5px;
 }
 .defect_right table tr td{
-  border:1px solid #ddd;
+  border:1px solid #e1e1e1;
   line-height: 20px;
   padding: 10px 5px;
 }
+
+.box-content-tit{
+  text-align: left;
+  font-size: 16px;
+  line-height: 40px;
+   
+}
+.box-content-chart{
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 10px;
+}
+.box-tab{
+  margin-top: 15px;
+  margin-bottom: -15px;
+  background: #fafafa;
+  border-bottom: 1px solid #e1e1e1;
+}
+.box-tab:after {
+  content: "";
+  display: block;
+  clear: both;
+  overflow: hidden;
+  height: 0;
+}
+.box-tab li{
+  float: left;
+}
+.box-tab li a{
+  display: block;
+  line-height: 40px;
+  padding: 0 30px;
+  border-right: 1px solid #eee;
+  text-align: center;
+  min-width: 90px;
+   
+}
+.box-tab li a:hover{
+  background:#eee;
+}
+.box-tab li.selected a{
+  background: #1c92ed;
+  color: #fff;
+}
+
+.box-chart-list li{
+  height: 0;
+  overflow: hidden;
+}
+.box-chart-list li.selected{
+  height:auto;
+}
+
+.proposal-list{
+  margin:10px 0; 
+}
+
+.proposal-list li{
+  line-height: 20px;
+  padding: 5px 0; 
+  border-bottom: 1px dashed #eee;
+  padding-right: 100px;
+  position: relative;
+}
+
+.proposal-list li span{
+  display: inline-block;
+  text-decoration: line-through;
+}
+.proposal-list li b{
+  display: inline-block;
+  padding:0 10px; 
+  font-weight: 400;
+  color: #aaa;
+  width: 100px;
+}
+.proposal-list li.Ongoing b{
+  color: #2ccac1;
+}
+.proposal-list li.Ongoing span{
+  text-decoration:none;
+}
+
+
+
+
+
+
+
 
 
 

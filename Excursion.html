@@ -595,16 +595,27 @@
                         <div class="title">诊断建议 </div>
 
                         <div class="box-content">
-                            <p style=" margin: 10px 0;">诊断建议内容，XXXX，XX</p>
-                            <div class="btn-bar" style=" margin: 10px 0;">
+                            
+                            <ul class="proposal-list">
+                                <li class="Done"><span>1.Down Tool A & in MES ,inform Etch On duty by mail</span> <b>Done</b></li>
+                                <li class="Done"><span>2.Add scan neighbor N wafer from Tool D</span> <b>Done</b></li>
+                                <li class="Done"><span>3.Pullback impact lot list and add scan </span> <b>Done</b></li>
+                                <li class="Done"><span>4.Issue DN and auto send out</span> <b>Done</b></li>
+                                <li class="Ongoing"><span>5.Record for tracing yield</span> <b>On going</b></li>
+                            </ul>
+
+                           <!--  <div class="btn-bar" style=" margin: 10px 0;">
                                 <a class="blue-btn" href="javascript:;">button</a>
-                                <a class="blue-btn" href="javascript:;">button</a></div>
+                                <a class="blue-btn" href="javascript:;">button</a>
+                            </div> -->
                         </div>
                     </div>
                     <div class="box">
-                        <div class="title">Information </div>
+                        <div class="title">
+                            <input class="model_swich" type="checkbox" name="model" value='w1' />Information 
+                        </div>
                         <div class="box-content">
-                            <input class="model_swich" type="checkbox" name="model" value='w1' />
+                            
                             <div class="min-tit">W#1 <select class="a_d_tog">
                                     <option>amount</option>
                                     <option>density</option>
@@ -751,11 +762,11 @@
                                         <li><span>0%</span></li>
                                     </ul>
                                     <ul class="x-axis">
-                                        <li><span>A</span></li>
-                                        <li><span>B</span></li>
-                                        <li><span>C</span></li>
-                                        <li><span>D</span></li>
-                                        <li><span>E</span></li>
+                                        <li><span>Defect1</span></li>
+                                        <li><span>Defect2</span></li>
+                                        <li><span>Defect3</span></li>
+                                        <li><span>Defect4</span></li>
+                                        <li><span>Defect5</span></li>
                                     </ul>
                                     <ul class="bar-graph">
 
@@ -775,16 +786,11 @@
                                     </ul>
                                 </div>
                             </div>
-                            <!-- <div class="pic-list">
-                                <a href="javascript:;"><img src="images/1_11.png"></a>
-                                <a href="javascript:;"><img src="images/1_11.png"></a>
-                                <a href="javascript:;"><img src="images/1_11.png"></a>
-                                <a href="javascript:;"><img src="images/1_11.png"></a>
-                            </div> -->
+                          
                         </div>
 
                         <div class="box-content">
-                            <input class="model_swich" name="model" type="checkbox" value='w2' />
+                            
                             <div class="min-tit">W#2 <select class="a_d_tog">
                                     <option>amount</option>
                                     <option>density</option>
@@ -932,19 +938,19 @@
                                         <li><span>0%</span></li>
                                     </ul>
                                     <ul class="x-axis">
-                                        <li><span>A</span></li>
-                                        <li><span>B</span></li>
-                                        <li><span>C</span></li>
-                                        <li><span>D</span></li>
-                                        <li><span>E</span></li>
+                                        <li><span>Defect1</span></li>
+                                        <li><span>Defect2</span></li>
+                                        <li><span>Defect3</span></li>
+                                        <li><span>Defect4</span></li>
+                                        <li><span>Defect5</span></li>
                                     </ul>
                                     <ul class="bar-graph">
 
-                                        <li class="bar-a cur"><span style="height: 120px;"></span></li>
-                                        <li class="bar-b cur"><span style="height: 140px;"></span></li>
-                                        <li class="bar-c cur"><span style="height: 180px;"></span></li>
-                                        <li class="bar-d cur"><span style="height: 70px;"></span></li>
-                                        <li class="bar-e cur"><span style="height: 60px;"></span></li>
+                                        <li class="bar-a cur"><span style="height: 150px;"></span></li>
+                                        <li class="bar-b cur"><span style="height: 120px;"></span></li>
+                                        <li class="bar-c cur"><span style="height: 110px;"></span></li>
+                                        <li class="bar-d cur"><span style="height: 20px;"></span></li>
+                                        <li class="bar-e cur"><span style="height: 80px;"></span></li>
 
                                     </ul>
                                     <ul class="line">
@@ -966,8 +972,8 @@
 
                     </div>
                     <div class="box">
-                        <input class="model_swich" name="model" type="checkbox" value='history' />
-                        <div class="title" style="padding-left: 20px;">Lot History <select>
+                        
+                        <div class="title"> <input class="model_swich" name="model" type="checkbox" value='history' /> Lot History <select>
                                 <option>Select</option>
                             </select> </div>
                         <a class="more" href="javascript:;">More>></a>
@@ -1034,30 +1040,182 @@
                     </div>
 
 
-                    <div class="box" style="height:auto">
-                        <input class="model_swich" name="model" type="checkbox" value='chart' />
-                        <div class="title" style="padding-left: 20px;">Trend Chart</div>
-                        <div class="box-content chart-box-content out_box" style="text-align: center;">
-                            <div class="add_box">
-                                <select name="" id="">
-                                    <option value="1">Product1</option>
-                                    <option value="2">Product2</option>
-                                </select>
-                                <select name="" id="">
-                                    <option value="1">Prod1</option>
-                                    <option value="2">Prod2</option>
-                                </select>
-                                <select name="" id="">
-                                    <option value="1">Layer1</option>
-                                    <option value="2">Layer2</option>
-                                </select>
-                                <input type="text" class="layui-input" id="test1" placeholder="2019-4-1 - 2019-4-30">
-                                <a class="blue-btn addChart" id="LTNBtn" href="javascript:;">Add</a>
-                            </div>
-                            <div class="main_box">
-                                <span class="main_rem">Remove</span>
-                                <div id="main" class="main"></div>
-                            </div>
+                    <div class="box-tab">
+                        <ul>
+                            <li class="selected">
+                                <a href="javascript:;">Defect1</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Defect2</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Defect3</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="box">
+                        
+                        <div class="box-content chart-box-content out_box">
+
+                            <ul class="box-chart-list">
+                                <li class="selected">
+                                    <div class="box-content-tit">Trend Chart</div>
+                                    <div class="box-content-chart">
+                                        <div class="add_box">
+                                            <select name="" id="">
+                                                <option value="1">Product1</option>
+                                                <option value="2">Product2</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="1">Prod1</option>
+                                                <option value="2">Prod2</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="1">Layer1</option>
+                                                <option value="2">Layer2</option>
+                                            </select>
+                                            <input type="text" class="layui-input" id="test1" placeholder="2019-4-16 - 2019-5-15">
+                                            <a class="blue-btn addChart1"  href="javascript:;">Add</a>
+                                        </div>
+
+                                        <div class="main_box">
+                                            <span class="main_rem">Remove</span>
+                                            <div id="main1" class="main"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="box-content-chart">
+                                        <div class="box-content-tit">Cross Module Chart</div>
+                                        <div class="add_box">
+                                            <select name="" id="">
+                                                <option value="1">Product1</option>
+                                                <option value="2">Product2</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="1">Prod1</option>
+                                                <option value="2">Prod2</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="1">Layer1</option>
+                                                <option value="2">Layer2</option>
+                                            </select>
+                                            <input type="text" class="layui-input" id="test1" placeholder="2019-4-16 - 2019-5-15">
+                                            <a class="blue-btn addChart2"  href="javascript:;">Add</a>
+                                        </div>
+
+                                        <div class="main_box">
+                                            <span class="main_rem">Remove</span>
+                                            <div id="main2" class="main"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box-content-tit">Trend Chart</div>
+                                    <div class="box-content-chart">
+                                        <div class="add_box">
+                                            <select name="" id="">
+                                                <option value="1">Product1</option>
+                                                <option value="2">Product2</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="1">Prod1</option>
+                                                <option value="2">Prod2</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="1">Layer1</option>
+                                                <option value="2">Layer2</option>
+                                            </select>
+                                            <input type="text" class="layui-input" id="test1" placeholder="2019-4-16 - 2019-5-15">
+                                            <a class="blue-btn addChart3"  href="javascript:;">Add</a>
+                                        </div>
+
+                                        <div class="main_box">
+                                            <span class="main_rem">Remove</span>
+                                            <div id="main3" class="main"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="box-content-chart">
+                                        <div class="box-content-tit">Cross Module Chart</div>
+                                        <div class="add_box">
+                                            <select name="" id="">
+                                                <option value="1">Product1</option>
+                                                <option value="2">Product2</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="1">Prod1</option>
+                                                <option value="2">Prod2</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="1">Layer1</option>
+                                                <option value="2">Layer2</option>
+                                            </select>
+                                            <input type="text" class="layui-input" id="test1" placeholder="2019-4-16 - 2019-5-15">
+                                            <a class="blue-btn addChart4"  href="javascript:;">Add</a>
+                                        </div>
+
+                                        <div class="main_box">
+                                            <span class="main_rem">Remove</span>
+                                            <div id="main4" class="main"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box-content-tit">Trend Chart</div>
+                                    <div class="box-content-chart">
+                                        <div class="add_box">
+                                            <select name="" id="">
+                                                <option value="1">Product1</option>
+                                                <option value="2">Product2</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="1">Prod1</option>
+                                                <option value="2">Prod2</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="1">Layer1</option>
+                                                <option value="2">Layer2</option>
+                                            </select>
+                                            <input type="text" class="layui-input" id="test1" placeholder="2019-4-16 - 2019-5-15">
+                                            <a class="blue-btn addChart5"  href="javascript:;">Add</a>
+                                        </div>
+
+                                        <div class="main_box">
+                                            <span class="main_rem">Remove</span>
+                                            <div id="main5" class="main"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="box-content-chart">
+                                        <div class="box-content-tit">Cross Module Chart</div>
+                                        <div class="add_box">
+                                            <select name="" id="">
+                                                <option value="1">Product1</option>
+                                                <option value="2">Product2</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="1">Prod1</option>
+                                                <option value="2">Prod2</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="1">Layer1</option>
+                                                <option value="2">Layer2</option>
+                                            </select>
+                                            <input type="text" class="layui-input" id="test1" placeholder="2019-4-16 - 2019-5-15">
+                                            <a class="blue-btn addChart6"  href="javascript:;">Add</a>
+                                        </div>
+
+                                        <div class="main_box">
+                                            <span class="main_rem">Remove</span>
+                                            <div id="main6" class="main"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+
+
                         </div>
                     </div>
 
@@ -1615,6 +1773,7 @@
         $(".bar-c").click(function () {
             $(this).parents('.chart-container').find('.chip-c').toggle();
         });
+
         $(".bar-d").click(function () {
             $(this).parents('.chart-container').find('.chip-d').toggle();
         });
@@ -1635,6 +1794,9 @@
         var viewer4 = new Viewer(document.getElementById('dowebok4'), {
             url: 'data-original'
         });
+
+
+        
 
     });
 

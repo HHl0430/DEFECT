@@ -8,7 +8,7 @@ $(function () {
                 }
             },
             legend: {
-                data:['Layer1','Layer2','DOI1','DOI2']
+                data:['Layer1','Layer2','Layer3','Layer4']
             },
             grid: {
                 left: '3%',
@@ -24,7 +24,10 @@ $(function () {
             ],
             yAxis : [
                 {
-                    type : 'value'
+                    type : 'value',
+                    axisLabel: {
+                        formatter: '{value} %'
+                    },
                 }
             ],
             series : [
@@ -35,28 +38,28 @@ $(function () {
                     barWidth : 50,
                     stack: 'Product',
                     color:'#eb4848',
-                    data:[340, 162, 141, 174, 90, 240, 220]
+                    data:[2, 2.5, 3, 2.5, 2, 2, 2]
                 },
                 {
                     name:'Layer2',
                     type:'bar',
                     stack: 'Product',
                     color:'#64c828',
-                    data:[280, 182, 191, 234, 290, 330, 290]
+                    data:[1.5, 3.5, 2, 3, 2, 2, 1.5]
                 },
                 {
-                    name:'DOI1',
+                    name:'Layer3',
                     type:'bar',
                     stack: 'Product',
                     color:'#fead2e',
-                    data:[250, 232, 201, 154, 190, 330, 320]
+                    data:[1, 5, 3.5, 3, 3.5, 2.5, 2]
                 },
                 {
-                    name:'DOI2',
+                    name:'Layer4',
                     type:'bar',
                     stack: 'Product',
                     color:'#30a5ff',
-                    data:[380, 232, 201, 154, 190, 330, 240]
+                    data:[1.5, 4, 4, 2, 2, 2, 2]
                 },
                  
                 
@@ -87,7 +90,10 @@ $(function () {
             ],
             yAxis : [
                 {
-                    type : 'value'
+                    type : 'value',
+                    axisLabel: {
+                        formatter: '{value} %'
+                    },
                 }
             ],
             series : [
@@ -98,28 +104,28 @@ $(function () {
                     barWidth : 50,
                     stack: 'Product',
                     color:'#eb4848',
-                    data:[340, 162, 141, 174, 90, 240, 220]
+                    data:[2, 3, 2, 3, 2, 1, 2]
                 },
                 {
                     name:'Layer2',
                     type:'bar',
                     stack: 'Product',
                     color:'#64c828',
-                    data:[280, 182, 191, 234, 290, 330, 290]
+                    data:[1.5, 2, 2, 2, 2, 4, 3]
                 },
                 {
                     name:'DOI1',
                     type:'bar',
                     stack: 'Product',
                     color:'#fead2e',
-                    data:[250, 232, 201, 154, 190, 330, 320]
+                    data:[1, 4, 3.2, 3, 4, 2, 2]
                 },
                 {
                     name:'DOI2',
                     type:'bar',
                     stack: 'Product',
                     color:'#30a5ff',
-                    data:[380, 232, 201, 154, 190, 330, 240]
+                    data:[2, 4, 4, 2, 2, 2, 1]
                 },
                  
                 

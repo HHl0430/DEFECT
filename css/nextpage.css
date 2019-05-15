@@ -61,19 +61,17 @@
   .nextpage-container .page-content {
     background: #fff;
     margin: 10px 0;
-    border-radius: 4px;
     padding: 20px; }
     .nextpage-container .page-content .select-bar {
       height: 40px; }
       .nextpage-container .page-content .select-bar select, .nextpage-container .page-content .select-bar input[type=text], .nextpage-container .page-content .select-bar input[type=date] {
-        min-height: 34px;
+        height: 34px;
         border: 1px solid #ddd;
         line-height: 34px;
         width: 200px;
         margin-right: 5px;
         vertical-align: middle;
         display: inline-block;
-        border-radius: 4px;
         background: #fff;
         box-sizing: border-box;
         padding: 0 10px;
@@ -101,5 +99,19 @@
       font-size: 14px;
       line-height: 20px;
       margin-bottom: 10px; }
+    .nextpage-container .page-content .HOL-chartLine .main:after {
+      content: "";
+      border-left: 1px dashed #000;
+      width: 0;
+      height: 240px;
+      position: absolute;
+      left: 187px;
+      top: 60px;
+      overflow: hidden;
+      display: block; }
+    .nextpage-container .page-content .select2-container--default .select2-selection--single,
+    .nextpage-container .page-content .select2-container--default .select2-selection--multiple {
+      border-radius: 0;
+      min-height: 34px; }
 
 /*# sourceMappingURL=nextpage.css.map */
