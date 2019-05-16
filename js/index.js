@@ -598,15 +598,15 @@ $(function () {
         translationRender()
     })
     $(".hold-btn").on("click", function () {
-        $(".hold_down").text("On going").addClass("on-going")
+        $(".hold_down").text("Done").removeClass("on-going")
     })
     $(".add-btn").on("click", function () {
-        $(".down_text").text("On going").addClass("on-going")
+        $(".down_text").text("Done").removeClass("on-going")
     })
     $(".donw_btn").on("click", function () {
-        $(".relest_text").text("On going").addClass("on-going")
+        $(".relest_text").text("Done").removeClass("on-going")
     })
     $(".release_btn").on("click", function () {
-        $(".add_text").text("On going").addClass("on-going")
+        $(".add_text").text("Done").removeClass("on-going")
     })
 })
