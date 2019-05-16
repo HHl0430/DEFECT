@@ -53,7 +53,7 @@ $(function () {
                     type:'bar',
                     stack: 'Product',
                     color:'#fead2e',
-                    data:[1, 4, 3, 3, 3.5, 3, 2]
+                    data:[1, 4, 3, 3, 3, 2, 2]
                 },
                 {
                     name:'Layer4',

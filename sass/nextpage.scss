@@ -124,7 +124,6 @@ $green-color:#45b821;
 			position: relative;
 			.main_rem{
 				text-align: center;
-
 			}
 			.main{
 				height: 320px;
@@ -138,12 +137,12 @@ $green-color:#45b821;
 				box-sizing:border-box;
 				width:100%;
 				text-align: center;
+				 
 				&:after{ content: ""; display: block; clear:both; overflow: hidden; height: 0;}
 				li{
 					width: 16.666666%;
 					float: left;
-					height: 10px;
-					background: #f80;
+					height: 1px;
 					i{
 						display:block;
 						line-height: 27px;

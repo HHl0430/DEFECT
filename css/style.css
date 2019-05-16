@@ -230,6 +230,8 @@ ol {
 
 .left-nav ul li a span{
   display:block;
+  line-height: 16px;
+  margin:5px 0; 
 }
 
 
@@ -1399,7 +1401,7 @@ ol {
 
 .proposal-list li span{
   display: inline-block;
-  text-decoration: line-through;
+  
 }
 .proposal-list li b{
   display: inline-block;
@@ -1408,18 +1410,15 @@ ol {
   color: #aaa;
   width: 100px;
 }
-.proposal-list li.Ongoing b{
+.proposal-list li b.on-going{
   color: #2ccac1;
 }
-.proposal-list li.Ongoing span{
-  text-decoration:none;
-}
-
+ 
 .box-content-chart .add_box .layui-input{
   width: 220px;
 }
 
- 
+
 
 
 

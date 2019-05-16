@@ -248,7 +248,7 @@ $(function () {
         $(this).parents('.box-content').find(i).show()
     })
 
-    $(".more").on("click", function () {
+    $(".Infomore").on("click", function () {
         $("#more_dailog").show()
         var myCharta3 = echarts.init(document.getElementById('step'));
         myCharta3.setOption(stepOption);
@@ -287,51 +287,51 @@ $(function () {
         let defectHTML = `  <table style="width: 436px;text-align: center;">
         <thead>
             <tr>
-                <th>location</th>
+                <th>Location</th>
                 <th>Step</th>
-                <th>defect ID</th>
-                <th>time</th>
-                <th>image</th>
+                <th>Defect ID</th>
+                <th>Scan Time</th>
+                <th>Image</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td rowspan="2">7,8</td>
                 <td>${list[0].text}</td>
-                <td>22</td>
-                <td>2019-04-30 12:00:00</td>
+                <td>0051</td>
+                <td>2019-05-15 12:10:00</td>
                 <td><img src="./images/1_11.png" ></td>
             </tr>
             <tr>
                 <td>${list[1].text}</td>
-                <td>22</td>
-                <td>2019-04-30 12:00:00</td>
+                <td>0021</td>
+                <td>2019-05-14 10:30:10</td>
                 <td><img src="./images/1_11.png" ></td>
             </tr>
             <tr>
                 <td rowspan="2">5,6</td>
                 <td>${list[0].text}</td>
-                <td>22</td>
-                <td>2019-04-30 12:00:00</td>
+                <td>0052</td>
+                <td>2019-05-15 12:10:00</td>
                 <td><img src="./images/1_11.png" ></td>
             </tr>
             <tr>
                 <td>${list[1].text}</td>
-                <td>22</td>
-                <td>2019-04-30 12:00:00</td>
+                <td>0022</td>
+                <td>2019-05-14 10:30:10</td>
                <td><img src="./images/1_11.png" ></td>
             </tr>
             <tr>
                 <td rowspan="2">3,4</td>
                 <td>${list[0].text}</td>
-                <td>22</td>
-                <td>2019-04-30 12:00:00</td>
+                <td>0053</td>
+                <td>2019-05-15 12:10:00</td>
                <td><img src="./images/1_11.png" ></td>
             </tr>
             <tr>
                 <td>${list[1].text}</td>
-                <td>22</td>
-                <td>2019-04-30 12:00:00</td>
+                <td>0023</td>
+                <td>2019-05-14 10:30:10</td>
                <td><img src="./images/1_11.png" ></td>
             </tr>
            
