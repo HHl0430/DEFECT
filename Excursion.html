@@ -102,7 +102,7 @@
                         <td>Defect oos&ooc Please PE MM Handle</td>
                     </tr>
                     <tr>
-                         
+
                         <td colspan="4" style=" text-align: center;">total</td>
                         <td>90</td>
                         <td> </td>
@@ -112,7 +112,7 @@
                 </table>
             </div>
 
-            
+
         </div>
 
         <div class="right-container">
@@ -121,9 +121,8 @@
                     <a href="javascript:;" class="close-btn"><i class="iconfont iconguanbi"></i></a>
                     <div class="max-tit">EQP History</div>
                     <div class="box-container">
-
-                        <div class="box">
-                            <div class="box-content w1" style="display: none">
+                        <div class="box information" style="display: none">
+                            <div class="box-content w1">
                                 <div class="min-tit">W#1 <select class="a_d_tog">
                                         <option>amount</option>
                                         <option>density</option>
@@ -248,7 +247,7 @@
                                                 <b style="left:139px; top: 43px;"></b>
                                                 <b style="left:39px; top: 144px;"></b>
                                                 <b style="left:143px; top: 161px;"></b>
-                                                 
+
                                             </li>
                                         </ul>
                                     </div>
@@ -295,8 +294,7 @@
                                 </div>
 
                             </div>
-
-                            <div class="box-content w2" style="display: none">
+                            <div class="box-content w2">
                                 <div class="min-tit">W#2 <select class="a_d_tog">
                                         <option>amount</option>
                                         <option>density</option>
@@ -422,7 +420,7 @@
                                                 <b style="left:139px; top: 43px;"></b>
                                                 <b style="left:39px; top: 144px;"></b>
                                                 <b style="left:143px; top: 161px;"></b>
-                                                 
+
                                             </li>
                                         </ul>
                                     </div>
@@ -470,7 +468,6 @@
                                 </div>
 
                             </div>
-
                         </div>
                         <div class="box history" style="display: none;">
                             <div class="title">Lot History
@@ -547,29 +544,22 @@
                                 </table>
                             </div>
                         </div>
+                        <div class="defect1">
+                            <div class="box trend_chart" style="height:auto;padding: 10px;display: none">
+                                <div class="title" style="padding-left: 20px;">Trend Chart</div>
+                                <div class="box-content chart-box-content " style="text-align: center;">
 
-                        <div class="box" style="height:auto;padding: 10px">
-                            <input class="model_swich" name="model" type="checkbox" value='chart' />
-                            <div class="title" style="padding-left: 20px;">Trend Chart</div>
-                            <div class="box-content chart-box-content " style="text-align: center;">
-                                <div class="add_box">
-                                    <select name="" id="">
-                                        <option value="1">Product1</option>
-                                        <option value="2">Product2</option>
-                                    </select>
-                                    <select name="" id="">
-                                        <option value="1">Prod1</option>
-                                        <option value="2">Prod2</option>
-                                    </select>
-                                    <select name="" id="">
-                                        <option value="1">Layer1</option>
-                                        <option value="2">Layer2</option>
-                                    </select>
-                                    <a class="blue-btn addChart" href="javascript:;">Add</a>
+                                    <div class="main_box">
+                                        <div id="mein" class="main"></div>
+                                    </div>
                                 </div>
-                                <div class="main_box">
-                                    <span class="main_rem">Remove</span>
-                                    <div id="mein" class="main"></div>
+                            </div>
+                            <div class="box cross_charts" style="height:auto;padding: 10px;display: none">
+                                <div class="title" style="padding-left: 20px;"> Cross Module Chart</div>
+                                <div class="box-content chart-box-content " style="text-align: center;">
+                                    <div class="main_box">
+                                        <div id="mein2" class="main"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -595,16 +585,20 @@
                         <div class="title">诊断建议 </div>
 
                         <div class="box-content">
-                            
+
                             <ul class="proposal-list">
-                                <li class="Done"><span>1.Down Tool A & in MES ,inform Etch On duty by mail</span> <b>Done</b></li>
-                                <li class="Done"><span>2.Add scan neighbor N wafer from Tool D</span> <b>Done</b></li>
-                                <li class="Done"><span>3.Pullback impact lot list and add scan </span> <b>Done</b></li>
-                                <li class="Done"><span>4.Issue DN and auto send out</span> <b>Done</b></li>
+                                <li class="Done"><span>1.Down Tool A & in MES ,inform Etch On duty by mail</span> <b
+                                        class="hold_down">Done</b></li>
+                                <li class="Done"><span>2.Add scan neighbor N wafer from Tool D</span> <b
+                                        class="down_text">Done</b></li>
+                                <li class="Done"><span>3.Pullback impact lot list and add scan </span> <b
+                                        class="relest_text">Done</b></li>
+                                <li class="Done"><span>4.Issue DN and auto send out</span> <b class="add_text">Done</b>
+                                </li>
                                 <li class="Ongoing"><span>5.Record for tracing yield</span> <b>On going</b></li>
                             </ul>
 
-                           <!--  <div class="btn-bar" style=" margin: 10px 0;">
+                            <!--  <div class="btn-bar" style=" margin: 10px 0;">
                                 <a class="blue-btn" href="javascript:;">button</a>
                                 <a class="blue-btn" href="javascript:;">button</a>
                             </div> -->
@@ -612,10 +606,10 @@
                     </div>
                     <div class="box">
                         <div class="title">
-                            <input class="model_swich" type="checkbox" name="model" value='w1' />Information 
+                            <input class="model_swich" type="checkbox" name="model" value='information' />Information
                         </div>
                         <div class="box-content">
-                            
+
                             <div class="min-tit">W#1 <select class="a_d_tog">
                                     <option>amount</option>
                                     <option>density</option>
@@ -740,7 +734,7 @@
                                             <b style="left:139px; top: 43px;"></b>
                                             <b style="left:39px; top: 144px;"></b>
                                             <b style="left:143px; top: 161px;"></b>
-                                             
+
                                         </li>
                                     </ul>
                                 </div>
@@ -786,11 +780,11 @@
                                     </ul>
                                 </div>
                             </div>
-                          
+
                         </div>
 
                         <div class="box-content">
-                            
+
                             <div class="min-tit">W#2 <select class="a_d_tog">
                                     <option>amount</option>
                                     <option>density</option>
@@ -854,7 +848,7 @@
                                             <i style="left:155px; top: 130px;"></i>
                                             <i style="left:60px; top: 80px;"></i>
                                             <i style="left:127px; top: 105px;"></i>
-                                            
+
                                         </li>
                                         <li class="chip-c">
                                             <i style="left:104px; top: 142px;"></i>
@@ -872,7 +866,7 @@
                                             <i style="left:105px; top: 134px;"></i>
                                             <i style="left:100px; top: 168px;"></i>
                                             <i style="left:117px; top: 95px;"></i>
-                                            
+
                                         </li>
                                         <li class="chip-d">
                                             <i style="left:76px; top: 160px;"></i>
@@ -907,7 +901,7 @@
                                             <b style="left:139px; top: 43px;"></b>
                                             <b style="left:39px; top: 144px;"></b>
                                             <b style="left:143px; top: 161px;"></b>
-                                             
+
                                         </li>
                                     </ul>
                                 </div>
@@ -963,11 +957,12 @@
 
                     </div>
                     <div class="box">
-                        
-                        <div class="title"> <input class="model_swich" name="model" type="checkbox" value='history' /> Lot History 
+
+                        <div class="title"> <input class="model_swich" name="model" type="checkbox" value='history' />
+                            Lot History
                             <select>
                                 <option>Select</option>
-                            </select> 
+                            </select>
                         </div>
                         <a class="more" href="javascript:;">More>></a>
                         <div class="box-tb">
@@ -990,7 +985,7 @@
                                     <td>2019-05-14 14:30:20</td>
                                     <td>Defect oos&ooc Please YE MM Handle</td>
                                 </tr>
-                                 
+
                                 <tr>
                                     <td>Step 19</td>
                                     <td>0190</td>
@@ -1095,16 +1090,17 @@
                     </div>
 
                     <div class="box">
-                        
+
                         <div class="box-content chart-box-content out_box">
 
                             <ul class="box-chart-list">
                                 <li class="selected">
-                                    <div class="box-content-tit"> <input class="model_swich" name="model" type="checkbox" value='history' /> Trend Chart </div>
+                                    <div class="box-content-tit"> <input class="model_swich" name="model"
+                                            type="checkbox" value='trend_chart' /> Trend Chart </div>
                                     <div class="box-content-chart">
                                         <div class="add_box">
                                             <select name="" id="">
-                                                <option value="1">Product1</option>
+                                                <option value="1">Product13</option>
                                                 <option value="2">Product2</option>
                                             </select>
                                             <select name="" id="">
@@ -1115,9 +1111,10 @@
                                                 <option value="1">DOI1</option>
                                                 <option value="2">DOI2</option>
                                             </select>
-                                            
-                                            <input type="text" class="layui-input" id="test1" placeholder="2019-4-16 - 2019-5-15">
-                                            <a class="blue-btn addChart1"  href="javascript:;">Add</a>
+
+                                            <input type="text" class="layui-input" id="test1"
+                                                placeholder="2019-4-16 - 2019-5-15">
+                                            <a class="blue-btn addChart1" href="javascript:;">Add</a>
                                         </div>
 
                                         <div class="main_box">
@@ -1127,7 +1124,8 @@
                                     </div>
 
                                     <div class="box-content-chart">
-                                        <div class="box-content-tit"><input class="model_swich" name="model" type="checkbox" value='history' /> Cross Module Chart</div>
+                                        <div class="box-content-tit"><input class="model_swich" name="model"
+                                                type="checkbox" value='cross_charts' /> Cross Module Chart</div>
                                         <div class="add_box">
                                             <select name="" id="">
                                                 <option value="1">Product1</option>
@@ -1141,8 +1139,9 @@
                                                 <option value="1">DOI1</option>
                                                 <option value="2">DOI2</option>
                                             </select>
-                                            <input type="text" class="layui-input" id="test1" placeholder="2019-4-16 - 2019-5-15">
-                                            <a class="blue-btn addChart2"  href="javascript:;">Add</a>
+                                            <input type="text" class="layui-input" id="test1"
+                                                placeholder="2019-4-16 - 2019-5-15">
+                                            <a class="blue-btn addChart2" href="javascript:;">Add</a>
                                         </div>
 
                                         <div class="main_box">
@@ -1152,7 +1151,8 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="box-content-tit"><input class="model_swich" name="model" type="checkbox" value='history' /> Trend Chart </div>
+                                    <div class="box-content-tit"><input class="model_swich" name="model" type="checkbox"
+                                            value='history' /> Trend Chart </div>
                                     <div class="box-content-chart">
                                         <div class="add_box">
                                             <select name="" id="">
@@ -1167,8 +1167,9 @@
                                                 <option value="1">DOI1</option>
                                                 <option value="2">DOI2</option>
                                             </select>
-                                            <input type="text" class="layui-input" id="test1" placeholder="2019-4-16 - 2019-5-15">
-                                            <a class="blue-btn addChart3"  href="javascript:;">Add</a>
+                                            <input type="text" class="layui-input" id="test1"
+                                                placeholder="2019-4-16 - 2019-5-15">
+                                            <a class="blue-btn addChart3" href="javascript:;">Add</a>
                                         </div>
 
                                         <div class="main_box">
@@ -1178,7 +1179,8 @@
                                     </div>
 
                                     <div class="box-content-chart">
-                                        <div class="box-content-tit"><input class="model_swich" name="model" type="checkbox" value='history' /> Cross Module Chart</div>
+                                        <div class="box-content-tit"><input class="model_swich" name="model"
+                                                type="checkbox" value='history' /> Cross Module Chart</div>
                                         <div class="add_box">
                                             <select name="" id="">
                                                 <option value="1">Product1</option>
@@ -1192,8 +1194,9 @@
                                                 <option value="1">DOI1</option>
                                                 <option value="2">DOI2</option>
                                             </select>
-                                            <input type="text" class="layui-input" id="test1" placeholder="2019-4-16 - 2019-5-15">
-                                            <a class="blue-btn addChart4"  href="javascript:;">Add</a>
+                                            <input type="text" class="layui-input" id="test1"
+                                                placeholder="2019-4-16 - 2019-5-15">
+                                            <a class="blue-btn addChart4" href="javascript:;">Add</a>
                                         </div>
 
                                         <div class="main_box">
@@ -1203,7 +1206,8 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="box-content-tit"><input class="model_swich" name="model" type="checkbox" value='history' /> Trend Chart </div>
+                                    <div class="box-content-tit"><input class="model_swich" name="model" type="checkbox"
+                                            value='history' /> Trend Chart </div>
                                     <div class="box-content-chart">
                                         <div class="add_box">
                                             <select name="" id="">
@@ -1218,8 +1222,9 @@
                                                 <option value="1">DOI1</option>
                                                 <option value="2">DOI2</option>
                                             </select>
-                                            <input type="text" class="layui-input" id="test1" placeholder="2019-4-16 - 2019-5-15">
-                                            <a class="blue-btn addChart5"  href="javascript:;">Add</a>
+                                            <input type="text" class="layui-input" id="test1"
+                                                placeholder="2019-4-16 - 2019-5-15">
+                                            <a class="blue-btn addChart5" href="javascript:;">Add</a>
                                         </div>
 
                                         <div class="main_box">
@@ -1229,7 +1234,8 @@
                                     </div>
 
                                     <div class="box-content-chart">
-                                        <div class="box-content-tit"><input class="model_swich" name="model" type="checkbox" value='history' /> Cross Module Chart</div>
+                                        <div class="box-content-tit"><input class="model_swich" name="model"
+                                                type="checkbox" value='history' /> Cross Module Chart</div>
                                         <div class="add_box">
                                             <select name="" id="">
                                                 <option value="1">Product1</option>
@@ -1243,8 +1249,9 @@
                                                 <option value="1">DOI1</option>
                                                 <option value="2">DOI2</option>
                                             </select>
-                                            <input type="text" class="layui-input" id="test1" placeholder="2019-4-16 - 2019-5-15">
-                                            <a class="blue-btn addChart6"  href="javascript:;">Add</a>
+                                            <input type="text" class="layui-input" id="test1"
+                                                placeholder="2019-4-16 - 2019-5-15">
+                                            <a class="blue-btn addChart6" href="javascript:;">Add</a>
                                         </div>
 
                                         <div class="main_box">
@@ -1278,7 +1285,7 @@
                         <span class="tit">lot ID</span>
                         <span class="text">A01</span>
                     </li>
-                     <li>
+                    <li>
                         <span class="tit">Department</span>
                         <select>
                             <option>--</option>
@@ -1315,7 +1322,7 @@
                 </ul>
             </div>
             <div class="bottom-btn">
-                <a href="javascript:;" class="blue-btn Submit">Submit</a>
+                <a href="javascript:;" class="blue-btn hold-btn Submit">Submit</a>
                 <a href="javascript:;" class="gray-btn Cancel">Cancel</a>
             </div>
         </div>
@@ -1376,7 +1383,7 @@
                 </ul>
             </div>
             <div class="bottom-btn">
-                <a href="javascript:;" class="blue-btn Submit">Submit</a>
+                <a href="javascript:;" class="blue-btn Submit add-btn">Submit</a>
                 <a href="javascript:;" class="gray-btn Cancel">Cancel</a>
             </div>
         </div>
@@ -1412,7 +1419,7 @@
                 </ul>
             </div>
             <div class="bottom-btn">
-                <a href="javascript:;" class="blue-btn Submit">Submit</a>
+                <a href="javascript:;" class="blue-btn Submit donw_btn">Submit</a>
                 <a href="javascript:;" class="gray-btn Cancel">Cancel</a>
             </div>
         </div>
@@ -1448,7 +1455,7 @@
                 </ul>
             </div>
             <div class="bottom-btn">
-                <a href="javascript:;" class="blue-btn Submit">Submit</a>
+                <a href="javascript:;" class="blue-btn Submit release_btn">Submit</a>
                 <a href="javascript:;" class="gray-btn Cancel">Cancel</a>
             </div>
         </div>
@@ -1597,7 +1604,7 @@
     </div>
 
 
-    
+
 
     <div class="pup-bg" id="more_dailog" style="display:none;">
         <div class="pup-box">
@@ -1773,7 +1780,7 @@
         });
 
 
-        
+
 
         $("#LTNBtn").click(function () {
             $("#LTNBox").show();
@@ -1796,7 +1803,7 @@
         $(".Cancel").click(function () {
             $(".pup-bg").hide();
         });
- 
+
 
         $(".bar-graph li").click(function () {
             $(this).toggleClass("cur");
@@ -1839,7 +1846,7 @@
         });
 
 
-        
+
 
     });
 

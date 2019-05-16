@@ -1272,6 +1272,7 @@ ol {
 .dailog-box .box-container {
   overflow: auto;
   height: 100%;
+  background: #fff;
 }
 .dailog-box .close-btn {
   position: absolute;
