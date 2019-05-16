@@ -960,22 +960,45 @@ ol {
 .right-container .box-container .box .box-content .pic-list a img {
   display: block;
 }
-.right-container .box-container .box .history-list {
-  padding: 0 10px;
+.pup-box .history-list {
+  padding: 10px;
+  margin-top: 5px;
 }
-.right-container .box-container .box .history-list li {
+.pup-box .history-list li {
   line-height: 20px;
-  padding: 5px 0;
+  position: relative;
+  padding-left: 120px;
 }
-.right-container .box-container .box .history-list li span {
+.pup-box .history-list li span {
   display: inline-block;
+  padding: 5px 0;
+
 }
-.right-container .box-container .box .history-list li span + span {
+.pup-box .history-list li span + span {
   margin-left: 10px;
+  border-left: 2px solid #ddd;
+  padding-left: 10px;
 }
-.right-container .box-container .box .history-list li .time {
+.pup-box .history-list li .time {
   color: #aaa;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
+.pup-box .history-list li:after{
+  content:"";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1c92ed;
+  position:absolute;
+  left: 127px;
+  z-index: 1;
+  top: 10px;
+  border:1px solid #fff;
+}
+
 .right-container .box-container .box .box-tb {
   margin-top: 10px;
 }
@@ -1288,7 +1311,7 @@ ol {
 .add_box .blue-btn {
   border-radius: 0;
   float: left;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .defect_right{
@@ -1391,9 +1414,11 @@ ol {
   text-decoration:none;
 }
 
+.box-content-chart .add_box .layui-input{
+  width: 220px;
+}
 
-
-
+ 
 
 
 
