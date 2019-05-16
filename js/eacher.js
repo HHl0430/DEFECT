@@ -75,7 +75,7 @@ $(function () {
                 //         }
                 //     }
                 // },
-                data: [2, 1, 2, 1, 1, 0, 2, 0, 1, 0, 1, 2, 0, 1, 2, 1, 0, 2, 0, 0, 2, 0, 1, 1, 15, 1, 2, 2, 1, 1]
+                data: [2, 1, 2, 1, 1, 0, 2, 0, 1, 0, 1, 2, 0, 1, 2, 1, 0, 2, 0, 0, 2, 0, 1, 1, 18, 1, 2, 2, 15, 1]
             },
             
         ]
@@ -162,7 +162,7 @@ $(function () {
                 //         }
                 //     }
                 // },
-                data: [3, null, null, null, 4, null, null, null, 3, null, null, null, 2, null, null, null, 3, null, null, null, 3, null, null, null, 15, null, null, null, 1, null, null]
+                data: [2, null, null, null, 10, null, null, null, 3, null, null, null, 6, null, null, null, 4.5, null, null, null, 3, null, null, null, 18, null, null, null, 15, null, null]
             },
             {
                 
@@ -385,7 +385,7 @@ $(function () {
                 //         }
                 //     }
                 // },
-                data: [2, null, null, null, 4, null, null, null, 2, null, null, null, 1, null, null, null, 3, null, null, null, 3, null, null, null, 1, null, null, null, 17, null, null]
+                data: [2.5, null, null, null, 5, null, null, null, 4.5, null, null, null, 11, null, null, null, 3, null, null, null, 3, null, null, null, 3.5, null, null, null, 17, null, null]
             },
             {
                 
@@ -520,7 +520,7 @@ $(function () {
                 //         }
                 //     }
                 // },
-                data: [0, 1, 2, 1, 1, 0, 2, 0, 1, 1, 1, 2, 0, 1, 0, 1, 0, 2, 0, 1, 22, 0, 1, 1, 1, 1, 0, 2, 1, 1]
+                data: [0, 1, 2, 1, 1, 0, 2, 0, 1, 1, 1, 2, 0, 1, 0, 1, 0, 2, 0, 1, 22, 0, 1, 0, 1, 1, 0, 1, 0, 0]
             },
             
         ]
@@ -608,7 +608,7 @@ $(function () {
                 //         }
                 //     }
                 // },
-                data: [3, null, null, null, 4, null, null, null, 3, null, null, null, 3, null, null, null, 4, null, null, null, 22, null, null, null, 3.2, null, null, null, 2.5, null, null]
+                data: [10, null, null, null, 4, null, null, null, 3.5, null, null, null, 8, null, null, null, 4, null, null, null, 22, null, null, null, 3.2, null, null, null, 2.5, null, null]
             },
             {
                 
@@ -625,7 +625,7 @@ $(function () {
                 //         }
                 //     }
                 // },
-                data: [null, 1, null, null, null, 2, null, null, null, 1, null, null, null, 0, null, null, null, 0, null, null, null, 0, null, null, null, 1, null, null, null, 0]
+                data: [null, 1, null, null, null, 1.5, null, null, null, 1, null, null, null, 0, null, null, null, 0, null, null, null, 0, null, null, null, 1, null, null, null, 0]
             },
             {
                  
@@ -659,7 +659,7 @@ $(function () {
                 //         }
                 //     }
                 // },
-                data: [null, null, null, 0, null, null, null, 1, null, null, null, 1, null, null, null, 1, null, null, null, 0, null, null, null, 1, null, null, null, 2, null, null, null]
+                data: [null, null, null, 0, null, null, null, 1, null, null, null, 1, null, null, null, 1, null, null, null, 0, null, null, null, 1, null, null, null, 0, null, null, null]
             },
         ]
     };

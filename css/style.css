@@ -235,7 +235,7 @@ ol {
 
 .left-list {
   background: #fff;
-  width: 430px;
+  width: 400px;
   position: fixed;
   height: 100%;
   top: 50px;
@@ -360,7 +360,7 @@ ol {
 }
 
 .right-container {
-  padding-left: 430px;
+  padding-left: 400px;
 }
 .right-container .top-btn-bar {
   padding: 10px;
