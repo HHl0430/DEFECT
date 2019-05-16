@@ -680,3 +680,87 @@ $(function () {
         }, 100);
     })
 })
+
+
+
+$(function () {
+    var 
+        option = {
+        title: {
+            text: 'Product1,layer1,DOI1,Step1,2019.04.16-2019.05.15',
+            x: 'center',
+            y: '0',
+            textStyle: {
+                fontSize: 14
+            }
+        },
+        legend: {
+            data: ['机台1 ChamberA', '机台1 ChamberB','机台2 ChamberA','机台2 ChamberB'],
+            x: 'center',
+            y: '30',
+        },
+
+        tooltip: {
+            trigger: 'axis'
+        },
+
+        
+
+        xAxis: {
+            data: ['机台1 ChamberA', '机台1 ChamberB','机台2 ChamberA','机台2 ChamberB'],
+        },
+        yAxis: {
+                type: 'value'
+            },
+
+
+
+
+     
+    series: [{
+        type: 'k',
+        data: [
+            [20, 30, 10, 65],
+            [40, 35, 30, 55],
+            [33, 38, 23, 40],
+            [40, 50, 32, 62]
+        ]
+    }]
+};
+
+
+
+
+
+    var myChart = echarts.init(document.getElementById('myChart2'));
+    myChart.setOption(option);
+    $("body").on("click", ".main_rem", function () {
+        $(this).parents('.main_box').remove()
+    })
+     
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -575,8 +575,9 @@
                     <a class="blue-btn" id="ReleaseBtn" href="javascript:;">Release</a>
                     <a class="blue-btn" id="LTNBtn" href="javascript:;">Lot Tracing Notice</a>
                     <a class="blue-btn" id="ILTBtn" href="javascript:;">Impact Lot Tracing</a>
-                    <a class="blue-btn" id="IDBtn" href="javascript:;">Issue DN(Defect Notice)</a>
                     <a class="blue-btn model_btn" href="javascript:;">Defect Report</a>
+                    <a class="blue-btn" id="IDBtn" href="javascript:;">Issue DN(Defect Notice)</a>
+                    
                 </div>
 
                 <div class="box-container">
@@ -1128,6 +1129,9 @@
                                             <span class="main_rem">Remove</span>
                                             <div id="main1" class="main"></div>
                                         </div>
+
+
+
                                     </div>
 
                                     <div class="box-content-chart">
@@ -1146,6 +1150,10 @@
                                                 <option value="1">DOI1</option>
                                                 <option value="2">DOI2</option>
                                             </select>
+                                            <select name="" id="">
+                                                <option value="1">Step1</option>
+                                                <option value="2">Step2</option>
+                                            </select>
                                             <input type="text" class="layui-input" id="test1"
                                                 placeholder="2019-4-16 - 2019-5-15">
                                             <a class="blue-btn addChart2" href="javascript:;">Add</a>
@@ -1155,6 +1163,13 @@
                                             <span class="main_rem">Remove</span>
                                             <div id="main2" class="main"></div>
                                         </div>
+
+                                        <div class="main_box">
+                                            <span class="main_rem">Remove</span>
+                                            <div id="myChart2" class="main"></div>
+                                        </div>
+
+
                                     </div>
                                 </li>
                                 <li>
@@ -1265,6 +1280,8 @@
                                             <span class="main_rem">Remove</span>
                                             <div id="main6" class="main"></div>
                                         </div>
+
+
                                     </div>
                                 </li>
                             </ul>
@@ -1517,7 +1534,7 @@
                         </select>
                     </li>
                     <li>
-                        <span class="tit">Eone ID </span>
+                        <span class="tit">EQP ID </span>
                         <select>
                             <option>--</option>
                         </select>
@@ -1533,9 +1550,13 @@
                         <tr>
                             <th style="width: 8%;"><input type="checkBox" name=""></th>
                             <th>Lot ID </th>
-                            <th>Concern Step</th>
+                            <th>Product ID </th>
+                            <th>Qty</th>
+                            <th>Processed Time</th>
+                            <th>Processed Step</th>
                             <th>Lot priority</th>
                             <th>QT</th>
+                            <th>Current Step</th>
                         </tr>
                         <tr>
                             <td><input type="checkBox" name=""></td>
@@ -1543,9 +1564,6 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkBox" name=""></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -1557,9 +1575,28 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><input type="checkBox" name=""></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkBox" name=""></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -1570,7 +1607,8 @@
 
             </div>
             <div class="bottom-btn">
-                <a href="javascript:;" class="blue-btn Submit">Submit</a>
+                <a href="javascript:;" class="blue-btn Submit">Hold Lot</a>
+                <a href="javascript:;" class="blue-btn Submit">加扫加量</a>
                 <a href="javascript:;" class="gray-btn Cancel">Cancel</a>
             </div>
         </div>
