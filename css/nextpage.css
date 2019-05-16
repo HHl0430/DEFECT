@@ -85,15 +85,40 @@
         border-color: #ddd; }
     .nextpage-container .page-content .main_box {
       margin-top: 20px;
-      height: 340px;
+      min-height: 340px;
       position: relative; }
       .nextpage-container .page-content .main_box .main_rem {
         text-align: center; }
       .nextpage-container .page-content .main_box .main {
         height: 320px; }
-    .nextpage-container .page-content .chart-box-content {
+      .nextpage-container .page-content .main_box .arrow-list {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding-left: 188px;
+        padding-right: 30px;
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center; }
+        .nextpage-container .page-content .main_box .arrow-list:after {
+          content: "";
+          display: block;
+          clear: both;
+          overflow: hidden;
+          height: 0; }
+        .nextpage-container .page-content .main_box .arrow-list li {
+          width: 16.666666%;
+          float: left;
+          height: 10px;
+          background: #f80; }
+          .nextpage-container .page-content .main_box .arrow-list li i {
+            display: block;
+            line-height: 27px;
+            color: #fff;
+            font-size: 20px;
+            height: 27px; }
+    .nextpage-container .page-content .box-content-chart {
       margin-bottom: 20px;
-      border-bottom: 1px solid #ddd;
       padding-bottom: 10px; }
     .nextpage-container .page-content .min-tit {
       font-size: 14px;
@@ -105,7 +130,7 @@
       width: 0;
       height: 240px;
       position: absolute;
-      left: 187px;
+      left: 188px;
       top: 60px;
       overflow: hidden;
       display: block; }

@@ -120,7 +120,7 @@ $green-color:#45b821;
 		}
 		.main_box{
 			margin-top: 20px;
-			height: 340px;
+			min-height: 340px;
 			position: relative;
 			.main_rem{
 				text-align: center;
@@ -129,10 +129,33 @@ $green-color:#45b821;
 			.main{
 				height: 320px;
 			}
+			.arrow-list{
+				position:absolute;
+				left: 0;
+				top: 0;
+				padding-left:188px;
+				padding-right:30px;
+				box-sizing:border-box;
+				width:100%;
+				text-align: center;
+				&:after{ content: ""; display: block; clear:both; overflow: hidden; height: 0;}
+				li{
+					width: 16.666666%;
+					float: left;
+					height: 10px;
+					background: #f80;
+					i{
+						display:block;
+						line-height: 27px;
+						color: #fff;
+						font-size: 20px;
+						height: 27px;
+					}
+				}
+			}
 		}
-		.chart-box-content{
+		.box-content-chart{
 			margin-bottom: 20px;
-			border-bottom:1px solid #ddd;
 			padding-bottom:10px;
 		}
 		.min-tit{
@@ -146,7 +169,7 @@ $green-color:#45b821;
 			width: 0;
 			height: 240px;
 			position:absolute;
-			left: 187px;
+			left: 188px;
 			top: 60px;
 			overflow: hidden;
 			display:block;

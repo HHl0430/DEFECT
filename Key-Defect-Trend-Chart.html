@@ -42,7 +42,7 @@
         <div class="page-content">
             
 
-            <div class="chart-box-content">
+            <div class="box-content-chart">
 
                 <div class="select-bar">
                     <select class="js-example-basic-single"><option>Product</option><option>Product1</option><option>Product2</option></select>
@@ -54,7 +54,7 @@
                 </div>
                 <div class="main_box">
                     <span  class="main_rem">Remove</span>
-                    <div id="main" class="main" style="height: 300px;"></div>
+                    <div id="main" class="main" style="height: 450px;"></div>
                 </div>
             </div>
              
@@ -75,7 +75,6 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/echarts.min.js"></script>
-<script src="js/eacher.js"></script>
 <script src="select2/select2.min.js"></script>
 <script src="layui/layui.js"></script>
 <script type="text/javascript">
@@ -102,10 +101,94 @@ layui.use('laydate', function(){
   });
 
 });
+
+
+$(function () {
+    var option = {
+        title: {
+            text: 'Product1,layer1,DOI1,2019.04.16-2019.05.15',
+            x: 'center',
+            y: '0',
+            textStyle: {
+                fontSize: 14
+            }
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            data: ['Defect1'],
+            x: 'center',
+            y: '30',
+        },
+        grid: {
+            top:"80",
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            axisLabel: {
+                interval: 0,
+                rotate: 90
+            },
+            // data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+            data: ['A01_W#1_2019-04-16', 'A01_W#8_2019-04-17',
+                'A01_W#8_2019-04-18', 'A02_W#1_2019-04-19', 'A02_W#6_2019-04-20', 'A02_W#8_2019-04-21', 'A03_W#1_2019-04-22',
+                'A03_W#6_2019-04-23', 'A03_W#6_2019-04-24', 'A04_W#1_2019-04-25', 'A04_W#6_2019-04-26', 'A04_W#8_2019-04-27',
+                'A05_W#8_2019-04-28', 'A05_W#6_2019-04-29', 'A05_W#8_2019-04-30','A06_W#1_2019-05-01', 'A06_W#6_2019-05-02',
+                'A06_W#8_2019-05-03', 'A07_W#1_2019-05-04', 'A07_W#6_2019-05-05', 'A07_W#8_2019-05-06', 'A08_W#1_2019-05-07',
+                'A08_W#6_2019-05-08', 'A08_W#8_2019-05-09', 'A09_W#2_2019-05-10', 'A09_W#6_2019-05-11', 'A09_W#8_2019-05-12',
+                'A10_W#1_2019-05-13', 'A10_W#1_2019-05-14', 'A10_W#8_2019-05-15']
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+                 
+                symbolSize: 7,
+                connectNulls: true,
+                name: 'Defect1',
+                type: 'line',
+                stack: '总量',
+                // itemStyle: {
+                //     normal: {
+                //         lineStyle: {
+                //             color: '#ccc',
+                //             width: 3
+                //         }
+                //     }
+                // },
+                data: [2, 1, 2, 1, 5, 1, 2, 1, 1, 1, 1, 2, 4, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 1, 18, 1, 2, 2, 15, 1]
+            },
+            
+        ]
+    };
+
+    var myChart = echarts.init(document.getElementById('main'));
+    myChart.setOption(option);
+    $("body").on("click", ".main_rem", function () {
+        $(this).parents('.main_box').remove()
+    })
+    $(".addChart").on("click", function () {
+        var num = new Date().getTime().toString(36) + Math.random().toString(36).slice(2)
+        $(this).parents(".box-content-chart").append(`<div class='main_box'><span class='main_rem'>Remove</span><div class="main" id='${'main' + num}'></div> </div>`)
+        // var myChart1 = echarts.init(document.getElementById(`${'main' + num}`));
+        // myChart1.setOption(option);
+        setTimeout(() => {
+            var myChart = echarts.init(document.getElementById(`${'main' + num}`));
+            myChart.setOption(option);
+        }, 100);
+    })
+})
+
+
+
 </script>
-
-
-
 
 
 </html>

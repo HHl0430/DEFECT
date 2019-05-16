@@ -12,9 +12,9 @@ $(function () {
             },
             grid: {
                 left: '3%',
-                right: '4%',
+                right: '3%',
                 bottom: '3%',
-                containLabel: true
+                containLabel: true,
             },
             xAxis : [
                 {
@@ -38,28 +38,29 @@ $(function () {
                     barWidth : 50,
                     stack: 'Product',
                     color:'#eb4848',
-                    data:[2, 2.5, 3, 2.5, 2, 2, 2]
+                     
+                    data:[2, 2, 3, 2, 2, 2, 2]
                 },
                 {
                     name:'Layer2',
                     type:'bar',
                     stack: 'Product',
                     color:'#64c828',
-                    data:[1.5, 3.5, 2, 3, 2, 2, 1.5]
+                    data:[2, 3, 2, 3, 2, 2, 1]
                 },
                 {
                     name:'Layer3',
                     type:'bar',
                     stack: 'Product',
                     color:'#fead2e',
-                    data:[1, 5, 3.5, 3, 3.5, 2.5, 2]
+                    data:[1, 4, 3, 3, 3.5, 3, 2]
                 },
                 {
                     name:'Layer4',
                     type:'bar',
                     stack: 'Product',
                     color:'#30a5ff',
-                    data:[1.5, 4, 4, 2, 2, 2, 2]
+                    data:[2, 4, 4, 2, 2, 2, 2]
                 },
                  
                 
@@ -74,11 +75,11 @@ $(function () {
                 }
             },
             legend: {
-                data:['Layer1','Layer2','DOI1','DOI2']
+                data:['Layer1','Layer2','Layer3','Layer4']
             },
             grid: {
                 left: '3%',
-                right: '4%',
+                right: '3%',
                 bottom: '3%',
                 containLabel: true
             },
@@ -104,6 +105,7 @@ $(function () {
                     barWidth : 50,
                     stack: 'Product',
                     color:'#eb4848',
+
                     data:[2, 3, 2, 3, 2, 1, 2]
                 },
                 {
@@ -111,17 +113,17 @@ $(function () {
                     type:'bar',
                     stack: 'Product',
                     color:'#64c828',
-                    data:[1.5, 2, 2, 2, 2, 4, 3]
+                    data:[1, 2, 2, 2, 2, 4, 3]
                 },
                 {
-                    name:'DOI1',
+                    name:'Layer3',
                     type:'bar',
                     stack: 'Product',
                     color:'#fead2e',
-                    data:[1, 4, 3.2, 3, 4, 2, 2]
+                    data:[1, 4, 3, 3, 4, 2, 2]
                 },
                 {
-                    name:'DOI2',
+                    name:'Layer4',
                     type:'bar',
                     stack: 'Product',
                     color:'#30a5ff',
