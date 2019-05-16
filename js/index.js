@@ -79,6 +79,137 @@ $(function () {
             }
         ]
     }
+    var trendOption = {
+        title: {
+            text: 'Product1,layer1,DOI1,2019.04.16-2019.05.15',
+            x: 'center',
+            y: '0',
+            textStyle: {
+                fontSize: 14
+            }
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            data: ['Defect1'],
+            x: 'center',
+            y: '30',
+        },
+        grid: {
+            top: "80",
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            axisLabel: {
+                interval: 0,
+                rotate: 90
+            },
+            data: ['A01_W#1_2019-04-16', 'A01_W#8_2019-04-17',
+                'A01_W#8_2019-04-18', 'A02_W#1_2019-04-19', 'A02_W#6_2019-04-20', 'A02_W#8_2019-04-21', 'A03_W#1_2019-04-22',
+                'A03_W#6_2019-04-23', 'A03_W#6_2019-04-24', 'A04_W#1_2019-04-25', 'A04_W#6_2019-04-26', 'A04_W#8_2019-04-27',
+                'A05_W#8_2019-04-28', 'A05_W#6_2019-04-29', 'A05_W#8_2019-04-30', 'A06_W#1_2019-05-01', 'A06_W#6_2019-05-02',
+                'A06_W#8_2019-05-03', 'A07_W#1_2019-05-04', 'A07_W#6_2019-05-05', 'A07_W#8_2019-05-06', 'A08_W#1_2019-05-07',
+                'A08_W#6_2019-05-08', 'A08_W#8_2019-05-09', 'A09_W#2_2019-05-10', 'A09_W#6_2019-05-11', 'A09_W#8_2019-05-12',
+                'A10_W#1_2019-05-13', 'A10_W#1_2019-05-14', 'A10_W#8_2019-05-15']
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+                symbolSize: 7,
+                connectNulls: true,
+                name: 'Defect1',
+                type: 'line',
+                stack: '总量',
+                data: [2, 1, 2, 1, 5, 1, 2, 1, 1, 1, 1, 2, 4, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 1, 18, 1, 2, 2, 15, 1]
+            },
+
+        ]
+    };
+    var crossOption = {
+        title: {
+            text: 'Product1,layer1,DOI1,2019.04.16-2019.05.15',
+            x: 'center',
+            y: '0',
+            textStyle: {
+                fontSize: 14
+            }
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            data: ['机台1 ChamberA', '机台1 ChamberB', '机台2 ChamberA', '机台2 ChamberB'],
+            x: 'center',
+            y: '30',
+        },
+        grid: {
+            top: "80",
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            axisLabel: {
+                interval: 0,
+                rotate: 90
+            },
+            data: ['A01_W#1_2019-04-16', 'A01_W#8_2019-04-17',
+                'A01_W#8_2019-04-18', 'A02_W#1_2019-04-19', 'A02_W#6_2019-04-20', 'A02_W#8_2019-04-21', 'A03_W#1_2019-04-22',
+                'A03_W#6_2019-04-23', 'A03_W#6_2019-04-24', 'A04_W#1_2019-04-25', 'A04_W#6_2019-04-26', 'A04_W#8_2019-04-27',
+                'A05_W#8_2019-04-28', 'A05_W#6_2019-04-29', 'A05_W#8_2019-04-30', 'A06_W#1_2019-05-01', 'A06_W#6_2019-05-02',
+                'A06_W#8_2019-05-03', 'A07_W#1_2019-05-04', 'A07_W#6_2019-05-05', 'A07_W#8_2019-05-06', 'A08_W#1_2019-05-07',
+                'A08_W#6_2019-05-08', 'A08_W#8_2019-05-09', 'A09_W#1_2019-05-10', 'A09_W#6_2019-05-11', 'A09_W#8_2019-05-12',
+                'A10_W#1_2019-05-13', 'A10_W#6_2019-05-14', 'A10_W#8_2019-05-15']
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+                symbolSize: 7,
+                connectNulls: true,
+                name: '机台1 ChamberA',
+                type: 'line',
+                stack: '总量',
+                data: [2, null, null, null, 5, null, null, null, 3, null, null, null, 4, null, null, null, 4, null, null, null, 3, null, null, null, 18, null, null, null, 15, null, null]
+            },
+            {
+                symbolSize: 7,
+                connectNulls: true,
+                name: '机台1 ChamberB',
+                type: 'line',
+                stack: '总量',
+                data: [null, 1, null, null, null, 2, null, null, null, 1, null, null, null, 1, null, null, null, 2, null, null, null, 1, null, null, null, 1, null, null, null, 1]
+            },
+            {
+                symbolSize: 7,
+                connectNulls: true,
+                name: '机台2 ChamberA',
+                type: 'line',
+                stack: '总量',
+                data: [null, null, 2, null, null, null, 2, null, null, null, 1, null, null, null, 2, null, null, null, 1, null, null, null, 1, null, null, null, 2, null, null, null]
+            },
+            {
+                symbolSize: 7,
+                connectNulls: true,
+                name: '机台2 ChamberB',
+                type: 'line',
+                stack: '总量',
+                data: [null, null, null, 1, null, null, null, 1, null, null, null, 1, null, null, null, 1, null, null, null, 1, null, null, null, 1, null, null, null, 2, null, null, null]
+            },
+        ]
+    };
 
     $('.List li').on('click', function () {
         $(this).siblings().removeClass('cur')
@@ -91,11 +222,19 @@ $(function () {
         })
         $("#dailog").show()
         arr.forEach(function (item) {
+
             var i = '.' + item;
             $(i).show()
+            if (item === "trend_chart") {
+                var myCharta = echarts.init(document.getElementById('mein'));
+                myCharta.setOption(trendOption);
+            }
+            if (item === "cross_charts") {
+                var myCharta2 = echarts.init(document.getElementById('mein2'));
+                myCharta2.setOption(crossOption);
+            }
+
         })
-        var myCharta = echarts.init(document.getElementById('mein'));
-        myCharta.setOption(option);
         // arr.foreach(function() {
         //     var cln = this;
         //     console.log(cln)
@@ -458,5 +597,16 @@ $(function () {
         }
         translationRender()
     })
-
+    $(".hold-btn").on("click", function () {
+        $(".hold_down").text("On going").addClass("on-going")
+    })
+    $(".add-btn").on("click", function () {
+        $(".down_text").text("On going").addClass("on-going")
+    })
+    $(".donw_btn").on("click", function () {
+        $(".relest_text").text("On going").addClass("on-going")
+    })
+    $(".release_btn").on("click", function () {
+        $(".add_text").text("On going").addClass("on-going")
+    })
 })
