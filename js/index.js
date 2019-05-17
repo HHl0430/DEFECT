@@ -283,16 +283,16 @@ $(function () {
         }
     })
     var list = [{
-        src: './images/step3.png',
+        src: './images/CurrentStep.png',
         text: 'Current Step',
-        tableSrc: './images/step1.png',
-        UniqueSrc: './images/step0.png',
+        tableSrc: './images/CurrentConmmon.png',
+        UniqueSrc: './images/CurrentUnique.png',
     },
     {
-        src: './images/step4.png',
+        src: './images/step1.png',
         text: 'Step1',
-        tableSrc: './images/step2.png',
-        UniqueSrc: './images/step1.png',
+        tableSrc: './images/StepConmmon.png',
+        UniqueSrc: './images/StepUnique.png',
     }]
     var defectRender = function () {
         $(".defect_right").empty()
@@ -312,39 +312,39 @@ $(function () {
                 <td>${list[0].text}</td>
                 <td>22</td>
                 <td>2019-04-30 12:00:00</td>
-                <td id="mare_img"><img src="./images/1_11.png" data-original="./images/1_11.png" ></td>
+                <td id="mare_img"><img src="./images/WechatIMG119.jpeg" data-original="./images/WechatIMG119.jpeg" ></td>
             </tr>
             <tr>
                 <td>${list[1].text}</td>
                 <td>22</td>
                 <td>2019-04-30 12:00:00</td>
-                <td id="mare_img2"><img src="./images/1_11.png" data-original="./images/1_11.png" ></td>
+                <td id="mare_img2"><img src="./images/WechatIMG120.jpeg" data-original="./images/WechatIMG120.jpeg" ></td>
             </tr>
             <tr>
                 <td rowspan="2">5,6</td>
                 <td>${list[0].text}</td>
                 <td>22</td>
                 <td>2019-04-30 12:00:00</td>
-                <td id="mare_img3"><img src="./images/1_11.png" data-original="./images/1_11.png" ></td>
+                <td id="mare_img3"><img src="./images/WechatIMG121.jpeg" data-original="./images/WechatIMG121.jpeg" ></td>
             </tr>
             <tr>
                 <td>${list[1].text}</td>
                 <td>22</td>
                 <td>2019-04-30 12:00:00</td>
-                <td id="mare_img4"><img src="./images/1_11.png" data-original="./images/1_11.png" ></td>
+                <td id="mare_img4"><img src="./images/WechatIMG121.jpeg" data-original="./images/WechatIMG121.jpeg" ></td>
             </tr>
             <tr>
                 <td rowspan="2">3,4</td>
                 <td>${list[0].text}</td>
                 <td>22</td>
                 <td>2019-04-30 12:00:00</td>
-                <td id="mare_img5"><img src="./images/1_11.png" data-original="./images/1_11.png" ></td>
+                <td id="mare_img5"><img src="./images/WechatIMG122.jpeg" data-original="./images/WechatIMG122.jpeg" ></td>
             </tr>
             <tr>
                 <td>${list[1].text}</td>
                 <td>22</td>
                 <td>2019-04-30 12:00:00</td>
-                <td id="mare_img6"><img src="./images/1_11.png" data-original="./images/1_11.png" ></td>
+                <td id="mare_img6"><img src="./images/WechatIMG122.jpeg" data-original="./images/WechatIMG122.jpeg" ></td>
             </tr>
            
         </tbody>
@@ -403,9 +403,9 @@ $(function () {
         $(".more-right li").each((index, element) => {
             list.map(item => {
                 if (item.text === element.children[1].innerHTML) {
-                    if (element.children[1].innerHTML === 'Step2') {
-                        item.tableSrc = './images/step0.png'
-                        item.UniqueSrc = './images/step2.png'
+                    if (element.children[1].innerHTML === 'Step1') {
+                        item.tableSrc = './images/StepConmmon.png'
+                        item.UniqueSrc = './images/StepUnique.png'
                         stepOption.series = [
                             {
                                 name: 'Current Step',
@@ -441,87 +441,9 @@ $(function () {
                             show: true,
                             data: ['Current Step', 'Common', 'Current Step Unique', 'Step2 Unique']
                         }
-                    } else if (element.children[1].innerHTML === 'Step3') {
-                        item.tableSrc = './images/step1.png'
-                        item.UniqueSrc = './images/step2.png'
-                        stepOption.series = [
-                            {
-                                name: 'Current Step',
-                                barWidth: 20,
-                                stack: '总量',
-                                type: 'bar',
-                                data: [21, 0]
-                            },
-                            {
-                                name: 'Common',
-                                barWidth: 20,
-                                stack: '总量',
-                                type: 'bar',
-                                data: [0, 16]
-                            },
-                            {
-                                name: 'Current Step Unique',
-                                stack: '总量',
-                                width: '10%',
-                                type: 'bar',
-                                data: [0, -5]
-                            },
-                            ,
-                            {
-                                name: 'Step3 Unique',
-                                stack: '总量',
-                                width: '10%',
-                                type: 'bar',
-                                data: [0, 10]
-                            }
-                        ]
-                        stepOption.legend = {
-                            type: 'scroll',
-                            show: true,
-                            data: ['Current Step', 'Common', 'Current Step Unique', 'Step3 Unique']
-                        }
-                    } else if (element.children[1].innerHTML === 'Step4') {
-                        item.tableSrc = './images/step0.png'
-                        item.UniqueSrc = './images/step2.png'
-                        stepOption.series = [
-                            {
-                                name: 'Current Step',
-                                barWidth: 20,
-                                stack: '总量',
-                                type: 'bar',
-                                data: [46, 0]
-                            },
-                            {
-                                name: 'Common',
-                                barWidth: 20,
-                                stack: '总量',
-                                type: 'bar',
-                                data: [0, 36]
-                            },
-                            {
-                                name: 'Current Step Unique',
-                                stack: '总量',
-                                width: '10%',
-                                type: 'bar',
-                                data: [0, -10]
-                            },
-                            ,
-                            {
-                                name: 'Step4 Unique',
-                                stack: '总量',
-                                width: '10%',
-                                type: 'bar',
-                                data: [0, 10]
-                            }
-                        ]
-                        stepOption.legend = {
-                            type: 'scroll',
-                            show: true,
-                            data: ['Current Step', 'Common', 'Current Step Unique', 'Step4 Unique']
-                        }
                     } else {
-                        item.tableSrc = './images/step0.png'
-                        item.UniqueSrc = './images/step1.png'
+                        item.tableSrc = './images/StepConmmon.png'
+                        item.UniqueSrc = './images/StepUnique.png'
                         stepOption.series = [
 
                             {
@@ -610,13 +532,13 @@ $(function () {
     })
     var imgList = [
         {
-            src: './images/1_11.png'
+            src: './images/WechatIMG125.jpeg'
         },
         {
-            src: './images/1_11.png'
+            src: './images/WechatIMG126.jpeg'
         },
         {
-            src: './images/1_11.png'
+            src: './images/WechatIMG127.jpeg'
         }
     ]
     var translationRender = function () {
@@ -641,49 +563,49 @@ $(function () {
         if ($(this).attr("class") === 'one') {
             imgList = [
                 {
-                    src: './images/1_11.png'
+                    src: './images/WechatIMG123.jpeg'
                 },
                 {
-                    src: './images/1_11.png'
+                    src: './images/WechatIMG124.jpeg'
                 },
                 {
-                    src: './images/1_11.png'
+                    src: './images/WechatIMG125.jpeg'
                 }
             ]
         } else if ($(this).attr("class") === 'two') {
             imgList = [
                 {
-                    src: './images/121.jpg'
+                    src: './images/WechatIMG121.jpeg'
                 },
                 {
-                    src: './images/122.jpg'
+                    src: './images/WechatIMG122.jpeg'
                 },
                 {
-                    src: './images/1_11.png'
+                    src: './images/WechatIMG123.jpeg'
                 }
             ]
         } else if ($(this).attr("class") === 'thr') {
             imgList = [
                 {
-                    src: './images/122.jpg'
+                    src: './images/WechatIMG119.jpeg'
                 },
                 {
-                    src: './images/124.jpg'
+                    src: './images/WechatIMG120.jpeg'
                 },
                 {
-                    src: './images/1_11.png'
+                    src: './images/WechatIMG121.jpeg'
                 }
             ]
         } else if ($(this).attr("class") === 'five') {
             imgList = [
                 {
-                    src: './images/121.jpg'
+                    src: './images/WechatIMG127.jpeg'
                 },
                 {
-                    src: './images/122.jpg'
+                    src: './images/WechatIMG120.jpeg'
                 },
                 {
-                    src: './images/124.jpg'
+                    src: './images/WechatIMG125.jpeg'
                 }
             ]
         }

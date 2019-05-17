@@ -8,14 +8,14 @@
 <link href="layui/css/layui.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="css/style.css" >
 <link rel="stylesheet" type="text/css" href="css/nextpage.css" >
-
 </head>
 
 <body class="gray-bg">
 <form class="layui-form" action="">
+
 <div class="header">
     <a href="javascript:;" class="logo"> AI Defect</a>
-
+   
     <div class="right-bar">
         <a href="javascript:;"><i class="iconfont iconzhanghu"></i>Admin</a>
         <a href="javascript:;"><i class="iconfont iconzhuxiao"></i>Logout</a>
@@ -36,16 +36,15 @@
         <div class="breadCrumb">
             <a href="javascript:;">Home</a> /
             <a href="Baseline-Reporting.html">Baseline Reporting</a> /
-            <a href="javascript:;">Key Defect Trend Chart</a>
+            <a href="javascript:;">Golden Path</a>
         </div>
-        <div class="page-title">Key Defect Trend Chart</div>
+        <div class="page-title">Golden Path</div>
         <div class="page-content">
             
 
             <div class="box-content-chart">
 
                 <div class="select-bar">
-
                     <div class="layui-input-inline">
                         <select name="Product" lay-verify="required" >
                             <option value="">Product</option>
@@ -55,38 +54,39 @@
                             <option value="3">Product4</option>
                         </select>
                     </div>
-                    <div class="layui-input-inline">
-                        <select name="Layer" lay-verify="required" >
-                            <option value="">Layer</option>
-                            <option value="0" selected>Layer1</option>
-                            <option value="1">Layer2</option>
-                            <option value="2">Layer3</option>
-                            <option value="3">Layer4</option>
-                        </select>
-                    </div>
-                    <div class="layui-input-inline">
-                        <select name="DOI" lay-verify="required" >
-                            <option value="">DOI</option>
-                            <option value="0" selected>DOI1</option>
-                            <option value="1">DOI2</option>
-                            <option value="2">DOI3</option>
-                            <option value="3">DOI4</option>
-                             
-                        </select>
-                    </div>
-                    <div class="layui-input-inline">
+                    <label class="layui-form-label" style="width:40px;">From</label>
 
+                    <div class="layui-input-inline">
+                        <select name="step" lay-verify="required" >
+                            <option value="">step</option>
+                            <option value="0" selected>step1</option>
+                            <option value="1">step2</option>
+                            <option value="2">step3</option>
+                            <option value="3">step4</option>
+                        </select>
+                    </div>
+                    <span style="margin: 0 5px; vertical-align: middle;"> to </span>
+                    <div class="layui-input-inline">
+                        <select name="step" lay-verify="required" >
+                            <option value="">step</option>
+                            <option value="0" >step1</option>
+                            <option value="1" selected>step2</option>
+                            <option value="2">step3</option>
+                            <option value="3">step4</option>
+                        </select>
+                    </div>
+                     
+                    <div class="layui-input-inline">
                         <input type="text" class="layui-input time-slot" style="width: 240px;"  placeholder="请选择时间段 ">
                     </div>
-                    <a href="javascript:;" class=" addChart layui-btn">Add</a>
+                    <a href="javascript:;" class="blue-btn addChart">Add</a>
                 </div>
+
                 <div class="main_box">
                     <span  class="main_rem">Remove</span>
                     <div id="main" class="main" style="height: 450px;"></div>
                 </div>
             </div>
-             
-
 
             <!-- <div class="chart-bar">
                 <img src="images/chart_03.png">
@@ -144,7 +144,7 @@ layui.use('form', function(){
 $(function () {
     var option = {
         title: {
-            text: 'Product1,layer1,DOI1,2019.04.16-2019.05.15',
+            text: 'Product1,Step1~Step5,2019.04.16-2019.05.15',
             x: 'center',
             y: '0',
             textStyle: {
@@ -226,7 +226,7 @@ $(function () {
 
 
 
-</script>
 
+</script>
 
 </html>
