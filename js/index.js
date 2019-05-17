@@ -13,8 +13,6 @@ $(function () {
             trigger: 'axis'
         },
 
-        
-
         xAxis: {
             type: 'category',
             boundaryGap: false,
@@ -233,6 +231,7 @@ $(function () {
             }
             if (item === "cross_charts") {
                 var myCharta2 = echarts.init(document.getElementById('mein2'));
+
                 myCharta2.setOption(crossOption);
             }
 
@@ -244,13 +243,12 @@ $(function () {
     })
 
     $(".a_d_tog").change(function (e) {
-        console.log()
         var i = '.' + $(this).val()
-        $(this).parents('.box-content').find('.y-axis').hide()
+        $(this).parents('.box-content').find('.chart2').hide()
         $(this).parents('.box-content').find(i).show()
     })
 
-    $(".Infomore").on("click", function () {
+    $(".more").on("click", function () {
         $("#more_dailog").show()
         var myCharta3 = echarts.init(document.getElementById('step'));
         myCharta3.setOption(stepOption);
@@ -273,67 +271,67 @@ $(function () {
         }
     })
     var list = [{
-        src: './images/CurrentStep.png',
+        src: './images/step3.png',
         text: 'Current Step',
-        tableSrc: './images/CurrentConmmon.png',
-        UniqueSrc: './images/CurrentUnique.png',
+        tableSrc: './images/step1.png',
+        UniqueSrc: './images/step0.png',
     },
     {
-        src: './images/Step1.png',
+        src: './images/step4.png',
         text: 'Step1',
-        tableSrc: './images/StepConmmon.png',
-        UniqueSrc: './images/StepUnique.png',
+        tableSrc: './images/step2.png',
+        UniqueSrc: './images/step1.png',
     }]
     var defectRender = function () {
         $(".defect_right").empty()
         let defectHTML = `  <table style="width: 436px;text-align: center;">
         <thead>
             <tr>
-                <th>Location</th>
+                <th>location</th>
                 <th>Step</th>
-                <th>Defect ID</th>
-                <th>Scan Time</th>
-                <th>Image</th>
+                <th>defect ID</th>
+                <th>time</th>
+                <th>image</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td rowspan="2">7,8</td>
                 <td>${list[0].text}</td>
-                <td>0051</td>
-                <td>2019-05-15 12:10:00</td>
+                <td>22</td>
+                <td>2019-04-30 12:00:00</td>
                 <td><img src="./images/1_11.png" ></td>
             </tr>
             <tr>
                 <td>${list[1].text}</td>
-                <td>0021</td>
-                <td>2019-05-14 10:30:10</td>
+                <td>22</td>
+                <td>2019-04-30 12:00:00</td>
                 <td><img src="./images/1_11.png" ></td>
             </tr>
             <tr>
                 <td rowspan="2">5,6</td>
                 <td>${list[0].text}</td>
-                <td>0052</td>
-                <td>2019-05-15 12:10:00</td>
+                <td>22</td>
+                <td>2019-04-30 12:00:00</td>
                 <td><img src="./images/1_11.png" ></td>
             </tr>
             <tr>
                 <td>${list[1].text}</td>
-                <td>0022</td>
-                <td>2019-05-14 10:30:10</td>
+                <td>22</td>
+                <td>2019-04-30 12:00:00</td>
                <td><img src="./images/1_11.png" ></td>
             </tr>
             <tr>
                 <td rowspan="2">3,4</td>
                 <td>${list[0].text}</td>
-                <td>0053</td>
-                <td>2019-05-15 12:10:00</td>
+                <td>22</td>
+                <td>2019-04-30 12:00:00</td>
                <td><img src="./images/1_11.png" ></td>
             </tr>
             <tr>
                 <td>${list[1].text}</td>
-                <td>0023</td>
-                <td>2019-05-14 10:30:10</td>
+                <td>22</td>
+                <td>2019-04-30 12:00:00</td>
                <td><img src="./images/1_11.png" ></td>
             </tr>
            
@@ -375,10 +373,9 @@ $(function () {
         $(".more-right li").each((index, element) => {
             list.map(item => {
                 if (item.text === element.children[1].innerHTML) {
-                    if (element.children[1].innerHTML === 'Step1') {
-                        item.UniqueSrc = './images/StepUnique.png'
-                        item.tableSrc = './images/StepConmmon.png'
-                        
+                    if (element.children[1].innerHTML === 'Step2') {
+                        item.tableSrc = './images/step0.png'
+                        item.UniqueSrc = './images/step2.png'
                         stepOption.series = [
                             {
                                 barWidth: 20,
@@ -400,9 +397,9 @@ $(function () {
                                 data: [0, 10]
                             }
                         ]
-                    } else if (element.children[1].innerHTML === 'Step1') {
-                        item.tableSrc = './images/StepConmmon.png'
-                        item.UniqueSrc = './images/StepUnique.png'
+                    } else if (element.children[1].innerHTML === 'Step3') {
+                        item.tableSrc = './images/step1.png'
+                        item.UniqueSrc = './images/step2.png'
                         stepOption.series = [
                             {
                                 barWidth: 20,
@@ -424,9 +421,9 @@ $(function () {
                                 data: [0, 10]
                             }
                         ]
-                    } else if (element.children[1].innerHTML === 'Step1') {
-                        item.tableSrc = './images/StepConmmon.png'
-                        item.UniqueSrc = './images/StepUnique.png'
+                    } else if (element.children[1].innerHTML === 'Step4') {
+                        item.tableSrc = './images/step0.png'
+                        item.UniqueSrc = './images/step2.png'
                         stepOption.series = [
                             {
                                 barWidth: 20,
@@ -449,8 +446,8 @@ $(function () {
                             }
                         ]
                     } else {
-                        item.tableSrc = './images/StepConmmon.png'
-                        item.UniqueSrc = './images/StepUnique.png'
+                        item.tableSrc = './images/step0.png'
+                        item.UniqueSrc = './images/step1.png'
                         stepOption.series = [
 
                             {

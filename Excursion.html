@@ -123,27 +123,89 @@
                         <div class="box information" style="display: none">
                             <div class="box-content w1">
                                 <div class="min-tit">W#1 <select class="a_d_tog">
-                                        <option>amount</option>
-                                        <option>density</option>
+                                        <option value="amount">amount</option>
+                                        <option value="norm">norm defect count</option>
+                                        <option value="defect1">defect densing</option>
+                                        <option value="normal">normal dedect densing</option>
+                                        <option value="defect2">defect D.D%</option>
+                                        <option value="yield">Yield loos</option>
                                     </select> </div>
                                 <a class="more" href="javascript:;">More>></a>
                                 <div class="chart-container">
                                     <div class="legend">
-                                        <ul id="dowebok3">
-                                            <li><img class="legend_img" data-original="images/WechatIMG119.jpeg"
-                                                    src="images/WechatIMG119.jpeg" alt="图片1">
+                                        <ul>
+                                            <li>
+                                                <ul id="dowebok3">
+                                                    <li>
+                                                        <img class="legend_img" data-original="images/WechatIMG119.jpeg"
+                                                            src="images/WechatIMG119.jpeg" alt="图片1">
+                                                        <img style="display: none" class="legend_img"
+                                                            data-original="images/WechatIMG120.jpeg"
+                                                            src="images/WechatIMG120.jpeg" alt="图片2">
+                                                    </li>
+                                                </ul>
                                             </li>
-                                            <li><img class="legend_img" data-original="images/WechatIMG120.jpeg"
-                                                    src="images/WechatIMG120.jpeg" alt="图片2">
+                                            <li>
+                                                <ul id="dowebok3_a">
+                                                    <li>
+                                                        <img class="legend_img" data-original="images/WechatIMG119.jpeg"
+                                                            src="images/WechatIMG119.jpeg" alt="图片1">
+                                                        <img style="display: none" class="legend_img"
+                                                            data-original="images/WechatIMG120.jpeg"
+                                                            src="images/WechatIMG120.jpeg" alt="图片2">
+                                                    </li>
+                                                </ul>
                                             </li>
-                                            <li><img class="legend_img" data-original="images/WechatIMG121.jpeg"
-                                                    src="images/WechatIMG121.jpeg" alt="图片3">
+                                            <li>
+                                                <ul id="dowebok3_b">
+                                                    <li>
+                                                        <img class="legend_img" data-original="images/WechatIMG119.jpeg"
+                                                            src="images/WechatIMG119.jpeg" alt="图片1">
+                                                        <img style="display: none" class="legend_img"
+                                                            data-original="images/WechatIMG120.jpeg"
+                                                            src="images/WechatIMG120.jpeg" alt="图片2">
+                                                        <img style="display: none" class="legend_img"
+                                                            data-original="images/WechatIMG121.jpeg"
+                                                            src="images/WechatIMG121.jpeg" alt="图片3">
+                                                    </li>
+                                                </ul>
                                             </li>
-                                            <li><img class="legend_img" data-original="images/WechatIMG122.jpeg"
-                                                    src="images/WechatIMG122.jpeg" alt="图片4">
+                                            <li>
+                                                <ul id="dowebok3_c">
+                                                    <li>
+                                                        <img class="legend_img" data-original="images/WechatIMG119.jpeg"
+                                                            src="images/WechatIMG119.jpeg" alt="图片1">
+                                                        <img style="display: none" class="legend_img"
+                                                            data-original="images/WechatIMG120.jpeg"
+                                                            src="images/WechatIMG120.jpeg" alt="图片2">
+                                                        <img style="display: none" class="legend_img"
+                                                            data-original="images/WechatIMG121.jpeg"
+                                                            src="images/WechatIMG121.jpeg" alt="图片3">
+                                                        <img style="display: none" class="legend_img"
+                                                            data-original="images/WechatIMG122.jpeg"
+                                                            src="images/WechatIMG122.jpeg" alt="图片4">
+                                                    </li>
+                                                </ul>
                                             </li>
-                                            <li><img class="legend_img" data-original="images/WechatIMG123.jpeg"
-                                                    src="images/WechatIMG123.jpeg" alt="图片5">
+                                            <li>
+                                                <ul id="dowebok3_d">
+                                                    <li>
+                                                        <img class="legend_img" data-original="images/WechatIMG119.jpeg"
+                                                            src="images/WechatIMG119.jpeg" alt="图片1">
+                                                        <img style="display: none" class="legend_img"
+                                                            data-original="images/WechatIMG120.jpeg"
+                                                            src="images/WechatIMG120.jpeg" alt="图片2">
+                                                        <img style="display: none" class="legend_img"
+                                                            data-original="images/WechatIMG121.jpeg"
+                                                            src="images/WechatIMG121.jpeg" alt="图片3">
+                                                        <img style="display: none" class="legend_img"
+                                                            data-original="images/WechatIMG122.jpeg"
+                                                            src="images/WechatIMG122.jpeg" alt="图片4">
+                                                        <img style="display: none" class="legend_img"
+                                                            data-original="images/WechatIMG123.jpeg"
+                                                            src="images/WechatIMG123.jpeg" alt="图片5">
+                                                    </li>
+                                                </ul>
                                             </li>
                                         </ul>
                                     </div>
@@ -251,8 +313,8 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="chart2">
-                                        <ul class="y-axis amount">
+                                    <div class="chart2 amount">
+                                        <ul class="y-axis">
                                             <li><span>25</span></li>
                                             <li><span>20</span></li>
                                             <li><span>15</span></li>
@@ -260,22 +322,180 @@
                                             <li><span>5</span></li>
                                             <li><span>0</span></li>
                                         </ul>
-                                        <ul class="y-axis density" style="display:none">
-                                            <li><span>100%</span></li>
-                                            <li><span>80%</span></li>
-                                            <li><span>60%</span></li>
-                                            <li><span>40%</span></li>
-                                            <li><span>20%</span></li>
-                                            <li><span>0%</span></li>
-                                        </ul>
                                         <ul class="x-axis">
-                                            <li><span>A</span></li>
-                                            <li><span>B</span></li>
-                                            <li><span>C</span></li>
-                                            <li><span>D</span></li>
-                                            <li><span>E</span></li>
+                                            <li><span>Defect1</span></li>
+                                            <li><span>Defect2</span></li>
+                                            <li><span>Defect3</span></li>
+                                            <li><span>Defect4</span></li>
+                                            <li><span>Defect5</span></li>
                                         </ul>
                                         <ul class="bar-graph">
+
+                                            <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                            <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                            <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                            <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                            <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                        </ul>
+                                        <ul class="line">
+                                            <li><span style="top: 135px;">6</span></li>
+                                            <li><span style="top: 114px;">8</span></li>
+                                            <li><span style="top: 148px;">4</span></li>
+                                            <li><span style="top: 101px;">10</span></li>
+                                            <li><span style="top: 90px;">12</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="chart2 norm" style="display: none">
+                                        <ul class="y-axis">
+                                            <li><span>25</span></li>
+                                            <li><span>20</span></li>
+                                            <li><span>15</span></li>
+                                            <li><span>10</span></li>
+                                            <li><span>5</span></li>
+                                            <li><span>0</span></li>
+                                        </ul>
+                                        <ul class="x-axis">
+                                            <li><span>Defect1</span></li>
+                                            <li><span>Defect2</span></li>
+                                            <li><span>Defect3</span></li>
+                                            <li><span>Defect4</span></li>
+                                            <li><span>Defect5</span></li>
+                                        </ul>
+                                        <ul class="bar-graph">
+
+                                            <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                            <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                            <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                            <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                            <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                        </ul>
+                                        <ul class="line">
+                                            <li><span style="top: 135px;">6</span></li>
+                                            <li><span style="top: 114px;">8</span></li>
+                                            <li><span style="top: 148px;">4</span></li>
+                                            <li><span style="top: 101px;">10</span></li>
+                                            <li><span style="top: 90px;">12</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="chart2 defect1" style="display: none">
+                                        <ul class="y-axis">
+                                            <li><span>25</span></li>
+                                            <li><span>20</span></li>
+                                            <li><span>15</span></li>
+                                            <li><span>10</span></li>
+                                            <li><span>5</span></li>
+                                            <li><span>0</span></li>
+                                        </ul>
+                                        <ul class="x-axis">
+                                            <li><span>Defect1</span></li>
+                                            <li><span>Defect2</span></li>
+                                            <li><span>Defect3</span></li>
+                                            <li><span>Defect4</span></li>
+                                            <li><span>Defect5</span></li>
+                                        </ul>
+                                        <ul class="bar-graph">
+
+                                            <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                            <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                            <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                            <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                            <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                        </ul>
+                                        <ul class="line">
+                                            <li><span style="top: 135px;">6</span></li>
+                                            <li><span style="top: 114px;">8</span></li>
+                                            <li><span style="top: 148px;">4</span></li>
+                                            <li><span style="top: 101px;">10</span></li>
+                                            <li><span style="top: 90px;">12</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="chart2 normal" style="display: none">
+                                        <ul class="y-axis">
+                                            <li><span>25</span></li>
+                                            <li><span>20</span></li>
+                                            <li><span>15</span></li>
+                                            <li><span>10</span></li>
+                                            <li><span>5</span></li>
+                                            <li><span>0</span></li>
+                                        </ul>
+                                        <ul class="x-axis">
+                                            <li><span>Defect1</span></li>
+                                            <li><span>Defect2</span></li>
+                                            <li><span>Defect3</span></li>
+                                            <li><span>Defect4</span></li>
+                                            <li><span>Defect5</span></li>
+                                        </ul>
+                                        <ul class="bar-graph">
+
+                                            <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                            <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                            <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                            <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                            <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                        </ul>
+                                        <ul class="line">
+                                            <li><span style="top: 135px;">6</span></li>
+                                            <li><span style="top: 114px;">8</span></li>
+                                            <li><span style="top: 148px;">4</span></li>
+                                            <li><span style="top: 101px;">10</span></li>
+                                            <li><span style="top: 90px;">12</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="chart2 defect2" style="display: none">
+                                        <ul class="y-axis">
+                                            <li><span>25</span></li>
+                                            <li><span>20</span></li>
+                                            <li><span>15</span></li>
+                                            <li><span>10</span></li>
+                                            <li><span>5</span></li>
+                                            <li><span>0</span></li>
+                                        </ul>
+                                        <ul class="x-axis">
+                                            <li><span>Defect1</span></li>
+                                            <li><span>Defect2</span></li>
+                                            <li><span>Defect3</span></li>
+                                            <li><span>Defect4</span></li>
+                                            <li><span>Defect5</span></li>
+                                        </ul>
+                                        <ul class="bar-graph">
+
+                                            <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                            <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                            <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                            <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                            <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                        </ul>
+                                        <ul class="line">
+                                            <li><span style="top: 135px;">6</span></li>
+                                            <li><span style="top: 114px;">8</span></li>
+                                            <li><span style="top: 148px;">4</span></li>
+                                            <li><span style="top: 101px;">10</span></li>
+                                            <li><span style="top: 90px;">12</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="chart2 yield" style="display: none">
+                                        <ul class="y-axis">
+                                            <li><span>25</span></li>
+                                            <li><span>20</span></li>
+                                            <li><span>15</span></li>
+                                            <li><span>10</span></li>
+                                            <li><span>5</span></li>
+                                            <li><span>0</span></li>
+                                        </ul>
+                                        <ul class="x-axis">
+                                            <li><span>Defect1</span></li>
+                                            <li><span>Defect2</span></li>
+                                            <li><span>Defect3</span></li>
+                                            <li><span>Defect4</span></li>
+                                            <li><span>Defect5</span></li>
+                                        </ul>
+                                        <ul class="bar-graph">
+
                                             <li class="bar-a cur"><span style="height: 120px;"></span></li>
                                             <li class="bar-b cur"><span style="height: 140px;"></span></li>
                                             <li class="bar-c cur"><span style="height: 180px;"></span></li>
@@ -296,28 +516,89 @@
                             </div>
                             <div class="box-content w2">
                                 <div class="min-tit">W#2 <select class="a_d_tog">
-                                        <option>amount</option>
-                                        <option>density</option>
+                                        <option value="amount">amount</option>
+                                        <option value="norm">norm defect count</option>
+                                        <option value="defect1">defect densing</option>
+                                        <option value="normal">normal dedect densing</option>
+                                        <option value="defect2">defect D.D%</option>
+                                        <option value="yield">Yield loos</option>
                                     </select> </div>
                                 <a class="more" href="javascript:;">More>></a>
                                 <div class="chart-container">
                                     <div class="legend">
-                                        <ul id="dowebok4">
-
-                                            <li><img class="legend_img" data-original="images/WechatIMG119.jpeg"
-                                                    src="images/WechatIMG119.jpeg" alt="图片1">
+                                        <ul>
+                                            <li>
+                                                <ul id="dowebok4">
+                                                    <li>
+                                                        <img class="legend_img" data-original="images/WechatIMG119.jpeg"
+                                                            src="images/WechatIMG119.jpeg" alt="图片1">
+                                                        <img style="display: none" class="legend_img"
+                                                            data-original="images/WechatIMG120.jpeg"
+                                                            src="images/WechatIMG120.jpeg" alt="图片2">
+                                                    </li>
+                                                </ul>
                                             </li>
-                                            <li><img class="legend_img" data-original="images/WechatIMG120.jpeg"
-                                                    src="images/WechatIMG120.jpeg" alt="图片2">
+                                            <li>
+                                                <ul id="dowebok4_a">
+                                                    <li>
+                                                        <img class="legend_img" data-original="images/WechatIMG119.jpeg"
+                                                            src="images/WechatIMG119.jpeg" alt="图片1">
+                                                        <img style="display: none" class="legend_img"
+                                                            data-original="images/WechatIMG120.jpeg"
+                                                            src="images/WechatIMG120.jpeg" alt="图片2">
+                                                    </li>
+                                                </ul>
                                             </li>
-                                            <li><img class="legend_img" data-original="images/WechatIMG121.jpeg"
-                                                    src="images/WechatIMG121.jpeg" alt="图片3">
+                                            <li>
+                                                <ul id="dowebok4_b">
+                                                    <li>
+                                                        <img class="legend_img" data-original="images/WechatIMG119.jpeg"
+                                                            src="images/WechatIMG119.jpeg" alt="图片1">
+                                                        <img style="display: none" class="legend_img"
+                                                            data-original="images/WechatIMG120.jpeg"
+                                                            src="images/WechatIMG120.jpeg" alt="图片2">
+                                                        <img style="display: none" class="legend_img"
+                                                            data-original="images/WechatIMG121.jpeg"
+                                                            src="images/WechatIMG121.jpeg" alt="图片3">
+                                                    </li>
+                                                </ul>
                                             </li>
-                                            <li><img class="legend_img" data-original="images/WechatIMG122.jpeg"
-                                                    src="images/WechatIMG122.jpeg" alt="图片4">
+                                            <li>
+                                                <ul id="dowebok4_c">
+                                                    <li>
+                                                        <img class="legend_img" data-original="images/WechatIMG119.jpeg"
+                                                            src="images/WechatIMG119.jpeg" alt="图片1">
+                                                        <img style="display: none" class="legend_img"
+                                                            data-original="images/WechatIMG120.jpeg"
+                                                            src="images/WechatIMG120.jpeg" alt="图片2">
+                                                        <img style="display: none" class="legend_img"
+                                                            data-original="images/WechatIMG121.jpeg"
+                                                            src="images/WechatIMG121.jpeg" alt="图片3">
+                                                        <img style="display: none" class="legend_img"
+                                                            data-original="images/WechatIMG122.jpeg"
+                                                            src="images/WechatIMG122.jpeg" alt="图片4">
+                                                    </li>
+                                                </ul>
                                             </li>
-                                            <li><img class="legend_img" data-original="images/WechatIMG123.jpeg"
-                                                    src="images/WechatIMG123.jpeg" alt="图片5">
+                                            <li>
+                                                <ul id="dowebok4_d">
+                                                    <li>
+                                                        <img class="legend_img" data-original="images/WechatIMG119.jpeg"
+                                                            src="images/WechatIMG119.jpeg" alt="图片1">
+                                                        <img style="display: none" class="legend_img"
+                                                            data-original="images/WechatIMG120.jpeg"
+                                                            src="images/WechatIMG120.jpeg" alt="图片2">
+                                                        <img style="display: none" class="legend_img"
+                                                            data-original="images/WechatIMG121.jpeg"
+                                                            src="images/WechatIMG121.jpeg" alt="图片3">
+                                                        <img style="display: none" class="legend_img"
+                                                            data-original="images/WechatIMG122.jpeg"
+                                                            src="images/WechatIMG122.jpeg" alt="图片4">
+                                                        <img style="display: none" class="legend_img"
+                                                            data-original="images/WechatIMG123.jpeg"
+                                                            src="images/WechatIMG123.jpeg" alt="图片5">
+                                                    </li>
+                                                </ul>
                                             </li>
                                         </ul>
                                     </div>
@@ -425,8 +706,8 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="chart2">
-                                        <ul class="y-axis amount">
+                                    <div class="chart2 amount">
+                                        <ul class="y-axis">
                                             <li><span>25</span></li>
                                             <li><span>20</span></li>
                                             <li><span>15</span></li>
@@ -434,24 +715,181 @@
                                             <li><span>5</span></li>
                                             <li><span>0</span></li>
                                         </ul>
-                                        <ul class="y-axis density" style="display:none">
-                                            <li><span>100%</span></li>
-                                            <li><span>80%</span></li>
-                                            <li><span>60%</span></li>
-                                            <li><span>40%</span></li>
-                                            <li><span>20%</span></li>
-                                            <li><span>0%</span></li>
-                                        </ul>
                                         <ul class="x-axis">
-                                            <li><span>A</span></li>
-                                            <li><span>B</span></li>
-                                            <li><span>C</span></li>
-                                            <li><span>D</span></li>
-                                            <li><span>E</span></li>
+                                            <li><span>Defect1</span></li>
+                                            <li><span>Defect2</span></li>
+                                            <li><span>Defect3</span></li>
+                                            <li><span>Defect4</span></li>
+                                            <li><span>Defect5</span></li>
                                         </ul>
                                         <ul class="bar-graph">
 
-                                            <li class="bar-a cur"><span style="height: 120px;">12</span></li>
+                                            <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                            <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                            <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                            <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                            <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                        </ul>
+                                        <ul class="line">
+                                            <li><span style="top: 135px;">6</span></li>
+                                            <li><span style="top: 114px;">8</span></li>
+                                            <li><span style="top: 148px;">4</span></li>
+                                            <li><span style="top: 101px;">10</span></li>
+                                            <li><span style="top: 90px;">12</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="chart2 norm" style="display: none">
+                                        <ul class="y-axis">
+                                            <li><span>25</span></li>
+                                            <li><span>20</span></li>
+                                            <li><span>15</span></li>
+                                            <li><span>10</span></li>
+                                            <li><span>5</span></li>
+                                            <li><span>0</span></li>
+                                        </ul>
+                                        <ul class="x-axis">
+                                            <li><span>Defect1</span></li>
+                                            <li><span>Defect2</span></li>
+                                            <li><span>Defect3</span></li>
+                                            <li><span>Defect4</span></li>
+                                            <li><span>Defect5</span></li>
+                                        </ul>
+                                        <ul class="bar-graph">
+
+                                            <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                            <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                            <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                            <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                            <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                        </ul>
+                                        <ul class="line">
+                                            <li><span style="top: 135px;">6</span></li>
+                                            <li><span style="top: 114px;">8</span></li>
+                                            <li><span style="top: 148px;">4</span></li>
+                                            <li><span style="top: 101px;">10</span></li>
+                                            <li><span style="top: 90px;">12</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="chart2 defect1" style="display: none">
+                                        <ul class="y-axis">
+                                            <li><span>25</span></li>
+                                            <li><span>20</span></li>
+                                            <li><span>15</span></li>
+                                            <li><span>10</span></li>
+                                            <li><span>5</span></li>
+                                            <li><span>0</span></li>
+                                        </ul>
+                                        <ul class="x-axis">
+                                            <li><span>Defect1</span></li>
+                                            <li><span>Defect2</span></li>
+                                            <li><span>Defect3</span></li>
+                                            <li><span>Defect4</span></li>
+                                            <li><span>Defect5</span></li>
+                                        </ul>
+                                        <ul class="bar-graph">
+
+                                            <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                            <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                            <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                            <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                            <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                        </ul>
+                                        <ul class="line">
+                                            <li><span style="top: 135px;">6</span></li>
+                                            <li><span style="top: 114px;">8</span></li>
+                                            <li><span style="top: 148px;">4</span></li>
+                                            <li><span style="top: 101px;">10</span></li>
+                                            <li><span style="top: 90px;">12</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="chart2 normal" style="display: none">
+                                        <ul class="y-axis">
+                                            <li><span>25</span></li>
+                                            <li><span>20</span></li>
+                                            <li><span>15</span></li>
+                                            <li><span>10</span></li>
+                                            <li><span>5</span></li>
+                                            <li><span>0</span></li>
+                                        </ul>
+                                        <ul class="x-axis">
+                                            <li><span>Defect1</span></li>
+                                            <li><span>Defect2</span></li>
+                                            <li><span>Defect3</span></li>
+                                            <li><span>Defect4</span></li>
+                                            <li><span>Defect5</span></li>
+                                        </ul>
+                                        <ul class="bar-graph">
+
+                                            <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                            <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                            <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                            <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                            <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                        </ul>
+                                        <ul class="line">
+                                            <li><span style="top: 135px;">6</span></li>
+                                            <li><span style="top: 114px;">8</span></li>
+                                            <li><span style="top: 148px;">4</span></li>
+                                            <li><span style="top: 101px;">10</span></li>
+                                            <li><span style="top: 90px;">12</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="chart2 defect2" style="display: none">
+                                        <ul class="y-axis">
+                                            <li><span>25</span></li>
+                                            <li><span>20</span></li>
+                                            <li><span>15</span></li>
+                                            <li><span>10</span></li>
+                                            <li><span>5</span></li>
+                                            <li><span>0</span></li>
+                                        </ul>
+                                        <ul class="x-axis">
+                                            <li><span>Defect1</span></li>
+                                            <li><span>Defect2</span></li>
+                                            <li><span>Defect3</span></li>
+                                            <li><span>Defect4</span></li>
+                                            <li><span>Defect5</span></li>
+                                        </ul>
+                                        <ul class="bar-graph">
+
+                                            <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                            <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                            <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                            <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                            <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                        </ul>
+                                        <ul class="line">
+                                            <li><span style="top: 135px;">6</span></li>
+                                            <li><span style="top: 114px;">8</span></li>
+                                            <li><span style="top: 148px;">4</span></li>
+                                            <li><span style="top: 101px;">10</span></li>
+                                            <li><span style="top: 90px;">12</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="chart2 yield" style="display: none">
+                                        <ul class="y-axis">
+                                            <li><span>25</span></li>
+                                            <li><span>20</span></li>
+                                            <li><span>15</span></li>
+                                            <li><span>10</span></li>
+                                            <li><span>5</span></li>
+                                            <li><span>0</span></li>
+                                        </ul>
+                                        <ul class="x-axis">
+                                            <li><span>Defect1</span></li>
+                                            <li><span>Defect2</span></li>
+                                            <li><span>Defect3</span></li>
+                                            <li><span>Defect4</span></li>
+                                            <li><span>Defect5</span></li>
+                                        </ul>
+                                        <ul class="bar-graph">
+
+                                            <li class="bar-a cur"><span style="height: 120px;"></span></li>
                                             <li class="bar-b cur"><span style="height: 140px;"></span></li>
                                             <li class="bar-c cur"><span style="height: 180px;"></span></li>
                                             <li class="bar-d cur"><span style="height: 70px;"></span></li>
@@ -579,7 +1017,7 @@
                     <a class="blue-btn" id="ILTBtn" href="javascript:;">Impact Lot Tracing</a>
                     <a class="blue-btn model_btn" href="javascript:;">Defect Report</a>
                     <a class="blue-btn" id="IDBtn" href="javascript:;">Issue DN(Defect Notice)</a>
-                    
+
                 </div>
 
                 <div class="box-container">
@@ -590,20 +1028,20 @@
 
                             <ul class="proposal-list">
                                 <li>
-                                    <span>1.Down Tool A & in MES ,inform Etch On duty by mail</span> 
+                                    <span>1.Down Tool A & in MES ,inform Etch On duty by mail</span>
                                     <b class="hold_down on-going">On Going</b></li>
                                 <li>
-                                    <span>2.Add scan neighbor N wafer from Tool D</span> 
+                                    <span>2.Add scan neighbor N wafer from Tool D</span>
                                     <b class="down_text on-going">On Going</b></li>
                                 <li>
-                                    <span>3.Pullback impact lot list and add scan </span> 
+                                    <span>3.Pullback impact lot list and add scan </span>
                                     <b class="relest_text on-going">On Going</b></li>
                                 <li>
-                                    <span>4.Issue DN and auto send out</span> 
+                                    <span>4.Issue DN and auto send out</span>
                                     <b class="on-going">On Going</b>
                                 </li>
                                 <li>
-                                    <span>5.Record for tracing yield</span> 
+                                    <span>5.Record for tracing yield</span>
                                     <b class="on-going">On Going</b>
                                 </li>
                             </ul>
@@ -621,27 +1059,89 @@
                         <div class="box-content">
 
                             <div class="min-tit">W#1 <select class="a_d_tog">
-                                    <option>amount</option>
-                                    <option>density</option>
+                                    <option value="amount">amount</option>
+                                    <option value="norm">norm defect count</option>
+                                    <option value="defect1">defect densing</option>
+                                    <option value="normal">normal dedect densing</option>
+                                    <option value="defect2">defect D.D%</option>
+                                    <option value="yield">Yield loos</option>
                                 </select></div>
                             <a class="more Infomore" href="javascript:;">More>></a>
                             <div class="chart-container">
                                 <div class="legend">
-                                    <ul id="dowebok">
-                                        <li><img class="legend_img" data-original="images/WechatIMG119.jpeg"
-                                                    src="images/WechatIMG119.jpeg" alt="图片1">
+                                    <ul>
+                                        <li>
+                                            <ul id="dowebok">
+                                                <li>
+                                                    <img class="legend_img" data-original="images/WechatIMG119.jpeg"
+                                                        src="images/WechatIMG119.jpeg" alt="图片1">
+                                                    <img style="display: none" class="legend_img"
+                                                        data-original="images/WechatIMG120.jpeg"
+                                                        src="images/WechatIMG120.jpeg" alt="图片2">
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li><img class="legend_img" data-original="images/WechatIMG120.jpeg"
-                                                src="images/WechatIMG120.jpeg" alt="图片2">
+                                        <li>
+                                            <ul id="dowebok_a">
+                                                <li>
+                                                    <img class="legend_img" data-original="images/WechatIMG119.jpeg"
+                                                        src="images/WechatIMG119.jpeg" alt="图片1">
+                                                    <img style="display: none" class="legend_img"
+                                                        data-original="images/WechatIMG120.jpeg"
+                                                        src="images/WechatIMG120.jpeg" alt="图片2">
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li><img class="legend_img" data-original="images/WechatIMG121.jpeg"
-                                                src="images/WechatIMG121.jpeg" alt="图片3">
+                                        <li>
+                                            <ul id="dowebok_b">
+                                                <li>
+                                                    <img class="legend_img" data-original="images/WechatIMG119.jpeg"
+                                                        src="images/WechatIMG119.jpeg" alt="图片1">
+                                                    <img style="display: none" class="legend_img"
+                                                        data-original="images/WechatIMG120.jpeg"
+                                                        src="images/WechatIMG120.jpeg" alt="图片2">
+                                                    <img style="display: none" class="legend_img"
+                                                        data-original="images/WechatIMG121.jpeg"
+                                                        src="images/WechatIMG121.jpeg" alt="图片3">
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li><img class="legend_img" data-original="images/WechatIMG122.jpeg"
-                                                src="images/WechatIMG122.jpeg" alt="图片4">
+                                        <li>
+                                            <ul id="dowebok_c">
+                                                <li>
+                                                    <img class="legend_img" data-original="images/WechatIMG119.jpeg"
+                                                        src="images/WechatIMG119.jpeg" alt="图片1">
+                                                    <img style="display: none" class="legend_img"
+                                                        data-original="images/WechatIMG120.jpeg"
+                                                        src="images/WechatIMG120.jpeg" alt="图片2">
+                                                    <img style="display: none" class="legend_img"
+                                                        data-original="images/WechatIMG121.jpeg"
+                                                        src="images/WechatIMG121.jpeg" alt="图片3">
+                                                    <img style="display: none" class="legend_img"
+                                                        data-original="images/WechatIMG122.jpeg"
+                                                        src="images/WechatIMG122.jpeg" alt="图片4">
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li><img class="legend_img" data-original="images/WechatIMG123.jpeg"
-                                                src="images/WechatIMG123.jpeg" alt="图片5">
+                                        <li>
+                                            <ul id="dowebok_d">
+                                                <li>
+                                                    <img class="legend_img" data-original="images/WechatIMG119.jpeg"
+                                                        src="images/WechatIMG119.jpeg" alt="图片1">
+                                                    <img style="display: none" class="legend_img"
+                                                        data-original="images/WechatIMG120.jpeg"
+                                                        src="images/WechatIMG120.jpeg" alt="图片2">
+                                                    <img style="display: none" class="legend_img"
+                                                        data-original="images/WechatIMG121.jpeg"
+                                                        src="images/WechatIMG121.jpeg" alt="图片3">
+                                                    <img style="display: none" class="legend_img"
+                                                        data-original="images/WechatIMG122.jpeg"
+                                                        src="images/WechatIMG122.jpeg" alt="图片4">
+                                                    <img style="display: none" class="legend_img"
+                                                        data-original="images/WechatIMG123.jpeg"
+                                                        src="images/WechatIMG123.jpeg" alt="图片5">
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
                                 </div>
@@ -749,8 +1249,8 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="chart2">
-                                    <ul class="y-axis amount">
+                                <div class="chart2 amount">
+                                    <ul class="y-axis">
                                         <li><span>25</span></li>
                                         <li><span>20</span></li>
                                         <li><span>15</span></li>
@@ -758,13 +1258,170 @@
                                         <li><span>5</span></li>
                                         <li><span>0</span></li>
                                     </ul>
-                                    <ul class="y-axis density" style="display:none">
-                                        <li><span>100%</span></li>
-                                        <li><span>80%</span></li>
-                                        <li><span>60%</span></li>
-                                        <li><span>40%</span></li>
-                                        <li><span>20%</span></li>
-                                        <li><span>0%</span></li>
+                                    <ul class="x-axis">
+                                        <li><span>Defect1</span></li>
+                                        <li><span>Defect2</span></li>
+                                        <li><span>Defect3</span></li>
+                                        <li><span>Defect4</span></li>
+                                        <li><span>Defect5</span></li>
+                                    </ul>
+                                    <ul class="bar-graph">
+
+                                        <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                        <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                        <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                        <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                        <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                    </ul>
+                                    <ul class="line">
+                                        <li><span style="top: 135px;">6</span></li>
+                                        <li><span style="top: 114px;">8</span></li>
+                                        <li><span style="top: 148px;">4</span></li>
+                                        <li><span style="top: 101px;">10</span></li>
+                                        <li><span style="top: 90px;">12</span></li>
+                                    </ul>
+                                </div>
+                                <div class="chart2 norm" style="display: none">
+                                    <ul class="y-axis">
+                                        <li><span>25</span></li>
+                                        <li><span>20</span></li>
+                                        <li><span>15</span></li>
+                                        <li><span>10</span></li>
+                                        <li><span>5</span></li>
+                                        <li><span>0</span></li>
+                                    </ul>
+                                    <ul class="x-axis">
+                                        <li><span>Defect1</span></li>
+                                        <li><span>Defect2</span></li>
+                                        <li><span>Defect3</span></li>
+                                        <li><span>Defect4</span></li>
+                                        <li><span>Defect5</span></li>
+                                    </ul>
+                                    <ul class="bar-graph">
+
+                                        <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                        <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                        <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                        <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                        <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                    </ul>
+                                    <ul class="line">
+                                        <li><span style="top: 135px;">6</span></li>
+                                        <li><span style="top: 114px;">8</span></li>
+                                        <li><span style="top: 148px;">4</span></li>
+                                        <li><span style="top: 101px;">10</span></li>
+                                        <li><span style="top: 90px;">12</span></li>
+                                    </ul>
+                                </div>
+                                <div class="chart2 defect1" style="display: none">
+                                    <ul class="y-axis">
+                                        <li><span>25</span></li>
+                                        <li><span>20</span></li>
+                                        <li><span>15</span></li>
+                                        <li><span>10</span></li>
+                                        <li><span>5</span></li>
+                                        <li><span>0</span></li>
+                                    </ul>
+                                    <ul class="x-axis">
+                                        <li><span>Defect1</span></li>
+                                        <li><span>Defect2</span></li>
+                                        <li><span>Defect3</span></li>
+                                        <li><span>Defect4</span></li>
+                                        <li><span>Defect5</span></li>
+                                    </ul>
+                                    <ul class="bar-graph">
+
+                                        <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                        <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                        <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                        <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                        <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                    </ul>
+                                    <ul class="line">
+                                        <li><span style="top: 135px;">6</span></li>
+                                        <li><span style="top: 114px;">8</span></li>
+                                        <li><span style="top: 148px;">4</span></li>
+                                        <li><span style="top: 101px;">10</span></li>
+                                        <li><span style="top: 90px;">12</span></li>
+                                    </ul>
+                                </div>
+                                <div class="chart2 normal" style="display: none">
+                                    <ul class="y-axis">
+                                        <li><span>25</span></li>
+                                        <li><span>20</span></li>
+                                        <li><span>15</span></li>
+                                        <li><span>10</span></li>
+                                        <li><span>5</span></li>
+                                        <li><span>0</span></li>
+                                    </ul>
+                                    <ul class="x-axis">
+                                        <li><span>Defect1</span></li>
+                                        <li><span>Defect2</span></li>
+                                        <li><span>Defect3</span></li>
+                                        <li><span>Defect4</span></li>
+                                        <li><span>Defect5</span></li>
+                                    </ul>
+                                    <ul class="bar-graph">
+
+                                        <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                        <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                        <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                        <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                        <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                    </ul>
+                                    <ul class="line">
+                                        <li><span style="top: 135px;">6</span></li>
+                                        <li><span style="top: 114px;">8</span></li>
+                                        <li><span style="top: 148px;">4</span></li>
+                                        <li><span style="top: 101px;">10</span></li>
+                                        <li><span style="top: 90px;">12</span></li>
+                                    </ul>
+                                </div>
+                                <div class="chart2 defect2" style="display: none">
+                                    <ul class="y-axis">
+                                        <li><span>25</span></li>
+                                        <li><span>20</span></li>
+                                        <li><span>15</span></li>
+                                        <li><span>10</span></li>
+                                        <li><span>5</span></li>
+                                        <li><span>0</span></li>
+                                    </ul>
+                                    <ul class="x-axis">
+                                        <li><span>Defect1</span></li>
+                                        <li><span>Defect2</span></li>
+                                        <li><span>Defect3</span></li>
+                                        <li><span>Defect4</span></li>
+                                        <li><span>Defect5</span></li>
+                                    </ul>
+                                    <ul class="bar-graph">
+
+                                        <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                        <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                        <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                        <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                        <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                    </ul>
+                                    <ul class="line">
+                                        <li><span style="top: 135px;">6</span></li>
+                                        <li><span style="top: 114px;">8</span></li>
+                                        <li><span style="top: 148px;">4</span></li>
+                                        <li><span style="top: 101px;">10</span></li>
+                                        <li><span style="top: 90px;">12</span></li>
+                                    </ul>
+                                </div>
+                                <div class="chart2 yield" style="display: none">
+                                    <ul class="y-axis">
+                                        <li><span>25</span></li>
+                                        <li><span>20</span></li>
+                                        <li><span>15</span></li>
+                                        <li><span>10</span></li>
+                                        <li><span>5</span></li>
+                                        <li><span>0</span></li>
                                     </ul>
                                     <ul class="x-axis">
                                         <li><span>Defect1</span></li>
@@ -797,28 +1454,89 @@
                         <div class="box-content">
 
                             <div class="min-tit">W#2 <select class="a_d_tog">
-                                    <option>amount</option>
-                                    <option>density</option>
+                                    <option value="amount">amount</option>
+                                    <option value="norm">norm defect count</option>
+                                    <option value="defect1">defect densing</option>
+                                    <option value="normal">normal dedect densing</option>
+                                    <option value="defect2">defect D.D%</option>
+                                    <option value="yield">Yield loos</option>
                                 </select></div>
                             <a class="more Infomore" href="javascript:;">More>></a>
                             <div class="chart-container">
                                 <div class="legend">
-                                    <ul id="dowebok1">
-
-                                        <li><img class="legend_img" data-original="images/WechatIMG119.jpeg"
-                                                    src="images/WechatIMG119.jpeg" alt="图片1">
+                                    <ul>
+                                        <li>
+                                            <ul id="dowebok1">
+                                                <li>
+                                                    <img class="legend_img" data-original="images/WechatIMG119.jpeg"
+                                                        src="images/WechatIMG119.jpeg" alt="图片1">
+                                                    <img style="display: none" class="legend_img"
+                                                        data-original="images/WechatIMG120.jpeg"
+                                                        src="images/WechatIMG120.jpeg" alt="图片2">
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li><img class="legend_img" data-original="images/WechatIMG120.jpeg"
-                                                src="images/WechatIMG120.jpeg" alt="图片2">
+                                        <li>
+                                            <ul id="dowebok1_a">
+                                                <li>
+                                                    <img class="legend_img" data-original="images/WechatIMG119.jpeg"
+                                                        src="images/WechatIMG119.jpeg" alt="图片1">
+                                                    <img style="display: none" class="legend_img"
+                                                        data-original="images/WechatIMG120.jpeg"
+                                                        src="images/WechatIMG120.jpeg" alt="图片2">
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li><img class="legend_img" data-original="images/WechatIMG121.jpeg"
-                                                src="images/WechatIMG121.jpeg" alt="图片3">
+                                        <li>
+                                            <ul id="dowebok1_b">
+                                                <li>
+                                                    <img class="legend_img" data-original="images/WechatIMG119.jpeg"
+                                                        src="images/WechatIMG119.jpeg" alt="图片1">
+                                                    <img style="display: none" class="legend_img"
+                                                        data-original="images/WechatIMG120.jpeg"
+                                                        src="images/WechatIMG120.jpeg" alt="图片2">
+                                                    <img style="display: none" class="legend_img"
+                                                        data-original="images/WechatIMG121.jpeg"
+                                                        src="images/WechatIMG121.jpeg" alt="图片3">
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li><img class="legend_img" data-original="images/WechatIMG122.jpeg"
-                                                src="images/WechatIMG122.jpeg" alt="图片4">
+                                        <li>
+                                            <ul id="dowebok1_c">
+                                                <li>
+                                                    <img class="legend_img" data-original="images/WechatIMG119.jpeg"
+                                                        src="images/WechatIMG119.jpeg" alt="图片1">
+                                                    <img style="display: none" class="legend_img"
+                                                        data-original="images/WechatIMG120.jpeg"
+                                                        src="images/WechatIMG120.jpeg" alt="图片2">
+                                                    <img style="display: none" class="legend_img"
+                                                        data-original="images/WechatIMG121.jpeg"
+                                                        src="images/WechatIMG121.jpeg" alt="图片3">
+                                                    <img style="display: none" class="legend_img"
+                                                        data-original="images/WechatIMG122.jpeg"
+                                                        src="images/WechatIMG122.jpeg" alt="图片4">
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li><img class="legend_img" data-original="images/WechatIMG123.jpeg"
-                                                src="images/WechatIMG123.jpeg" alt="图片5">
+                                        <li>
+                                            <ul id="dowebok1_d">
+                                                <li>
+                                                    <img class="legend_img" data-original="images/WechatIMG119.jpeg"
+                                                        src="images/WechatIMG119.jpeg" alt="图片1">
+                                                    <img style="display: none" class="legend_img"
+                                                        data-original="images/WechatIMG120.jpeg"
+                                                        src="images/WechatIMG120.jpeg" alt="图片2">
+                                                    <img style="display: none" class="legend_img"
+                                                        data-original="images/WechatIMG121.jpeg"
+                                                        src="images/WechatIMG121.jpeg" alt="图片3">
+                                                    <img style="display: none" class="legend_img"
+                                                        data-original="images/WechatIMG122.jpeg"
+                                                        src="images/WechatIMG122.jpeg" alt="图片4">
+                                                    <img style="display: none" class="legend_img"
+                                                        data-original="images/WechatIMG123.jpeg"
+                                                        src="images/WechatIMG123.jpeg" alt="图片5">
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
                                 </div>
@@ -919,7 +1637,205 @@
                                 </div>
 
 
-                                <div class="chart2">
+                                <div class="chart2 amount">
+                                    <ul class="y-axis">
+                                        <li><span>25</span></li>
+                                        <li><span>20</span></li>
+                                        <li><span>15</span></li>
+                                        <li><span>10</span></li>
+                                        <li><span>5</span></li>
+                                        <li><span>0</span></li>
+                                    </ul>
+                                    <ul class="x-axis">
+                                        <li><span>Defect1</span></li>
+                                        <li><span>Defect2</span></li>
+                                        <li><span>Defect3</span></li>
+                                        <li><span>Defect4</span></li>
+                                        <li><span>Defect5</span></li>
+                                    </ul>
+                                    <ul class="bar-graph">
+
+                                        <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                        <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                        <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                        <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                        <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                    </ul>
+                                    <ul class="line">
+                                        <li><span style="top: 135px;">6</span></li>
+                                        <li><span style="top: 114px;">8</span></li>
+                                        <li><span style="top: 148px;">4</span></li>
+                                        <li><span style="top: 101px;">10</span></li>
+                                        <li><span style="top: 90px;">12</span></li>
+                                    </ul>
+                                </div>
+                                <div class="chart2 norm" style="display: none">
+                                    <ul class="y-axis">
+                                        <li><span>25</span></li>
+                                        <li><span>20</span></li>
+                                        <li><span>15</span></li>
+                                        <li><span>10</span></li>
+                                        <li><span>5</span></li>
+                                        <li><span>0</span></li>
+                                    </ul>
+                                    <ul class="x-axis">
+                                        <li><span>Defect1</span></li>
+                                        <li><span>Defect2</span></li>
+                                        <li><span>Defect3</span></li>
+                                        <li><span>Defect4</span></li>
+                                        <li><span>Defect5</span></li>
+                                    </ul>
+                                    <ul class="bar-graph">
+
+                                        <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                        <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                        <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                        <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                        <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                    </ul>
+                                    <ul class="line">
+                                        <li><span style="top: 135px;">6</span></li>
+                                        <li><span style="top: 114px;">8</span></li>
+                                        <li><span style="top: 148px;">4</span></li>
+                                        <li><span style="top: 101px;">10</span></li>
+                                        <li><span style="top: 90px;">12</span></li>
+                                    </ul>
+                                </div>
+                                <div class="chart2 defect1" style="display: none">
+                                    <ul class="y-axis">
+                                        <li><span>25</span></li>
+                                        <li><span>20</span></li>
+                                        <li><span>15</span></li>
+                                        <li><span>10</span></li>
+                                        <li><span>5</span></li>
+                                        <li><span>0</span></li>
+                                    </ul>
+                                    <ul class="x-axis">
+                                        <li><span>Defect1</span></li>
+                                        <li><span>Defect2</span></li>
+                                        <li><span>Defect3</span></li>
+                                        <li><span>Defect4</span></li>
+                                        <li><span>Defect5</span></li>
+                                    </ul>
+                                    <ul class="bar-graph">
+
+                                        <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                        <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                        <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                        <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                        <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                    </ul>
+                                    <ul class="line">
+                                        <li><span style="top: 135px;">6</span></li>
+                                        <li><span style="top: 114px;">8</span></li>
+                                        <li><span style="top: 148px;">4</span></li>
+                                        <li><span style="top: 101px;">10</span></li>
+                                        <li><span style="top: 90px;">12</span></li>
+                                    </ul>
+                                </div>
+                                <div class="chart2 normal" style="display: none">
+                                    <ul class="y-axis">
+                                        <li><span>25</span></li>
+                                        <li><span>20</span></li>
+                                        <li><span>15</span></li>
+                                        <li><span>10</span></li>
+                                        <li><span>5</span></li>
+                                        <li><span>0</span></li>
+                                    </ul>
+                                    <ul class="x-axis">
+                                        <li><span>Defect1</span></li>
+                                        <li><span>Defect2</span></li>
+                                        <li><span>Defect3</span></li>
+                                        <li><span>Defect4</span></li>
+                                        <li><span>Defect5</span></li>
+                                    </ul>
+                                    <ul class="bar-graph">
+
+                                        <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                        <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                        <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                        <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                        <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                    </ul>
+                                    <ul class="line">
+                                        <li><span style="top: 135px;">6</span></li>
+                                        <li><span style="top: 114px;">8</span></li>
+                                        <li><span style="top: 148px;">4</span></li>
+                                        <li><span style="top: 101px;">10</span></li>
+                                        <li><span style="top: 90px;">12</span></li>
+                                    </ul>
+                                </div>
+                                <div class="chart2 defect2" style="display: none">
+                                    <ul class="y-axis">
+                                        <li><span>25</span></li>
+                                        <li><span>20</span></li>
+                                        <li><span>15</span></li>
+                                        <li><span>10</span></li>
+                                        <li><span>5</span></li>
+                                        <li><span>0</span></li>
+                                    </ul>
+                                    <ul class="x-axis">
+                                        <li><span>Defect1</span></li>
+                                        <li><span>Defect2</span></li>
+                                        <li><span>Defect3</span></li>
+                                        <li><span>Defect4</span></li>
+                                        <li><span>Defect5</span></li>
+                                    </ul>
+                                    <ul class="bar-graph">
+
+                                        <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                        <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                        <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                        <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                        <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                    </ul>
+                                    <ul class="line">
+                                        <li><span style="top: 135px;">6</span></li>
+                                        <li><span style="top: 114px;">8</span></li>
+                                        <li><span style="top: 148px;">4</span></li>
+                                        <li><span style="top: 101px;">10</span></li>
+                                        <li><span style="top: 90px;">12</span></li>
+                                    </ul>
+                                </div>
+                                <div class="chart2 yield" style="display: none">
+                                    <ul class="y-axis">
+                                        <li><span>25</span></li>
+                                        <li><span>20</span></li>
+                                        <li><span>15</span></li>
+                                        <li><span>10</span></li>
+                                        <li><span>5</span></li>
+                                        <li><span>0</span></li>
+                                    </ul>
+                                    <ul class="x-axis">
+                                        <li><span>Defect1</span></li>
+                                        <li><span>Defect2</span></li>
+                                        <li><span>Defect3</span></li>
+                                        <li><span>Defect4</span></li>
+                                        <li><span>Defect5</span></li>
+                                    </ul>
+                                    <ul class="bar-graph">
+
+                                        <li class="bar-a cur"><span style="height: 120px;"></span></li>
+                                        <li class="bar-b cur"><span style="height: 140px;"></span></li>
+                                        <li class="bar-c cur"><span style="height: 180px;"></span></li>
+                                        <li class="bar-d cur"><span style="height: 70px;"></span></li>
+                                        <li class="bar-e cur"><span style="height: 60px;"></span></li>
+
+                                    </ul>
+                                    <ul class="line">
+                                        <li><span style="top: 135px;">6</span></li>
+                                        <li><span style="top: 114px;">8</span></li>
+                                        <li><span style="top: 148px;">4</span></li>
+                                        <li><span style="top: 101px;">10</span></li>
+                                        <li><span style="top: 90px;">12</span></li>
+                                    </ul>
+                                </div>
+                                <!-- <div class="chart2" style="display: none">
                                     <ul class="y-axis amount">
                                         <li><span>25</span></li>
                                         <li><span>20</span></li>
@@ -959,53 +1875,11 @@
                                         <li><span style="top: 101px;">10</span></li>
                                         <li><span style="top: 90px;">12</span></li>
                                     </ul>
-                                </div>
-
-                                <div class="chart2" style="none">
-                                    <ul class="y-axis amount">
-                                        <li><span>25</span></li>
-                                        <li><span>20</span></li>
-                                        <li><span>15</span></li>
-                                        <li><span>10</span></li>
-                                        <li><span>5</span></li>
-                                        <li><span>0</span></li>
-                                    </ul>
-                                    <ul class="y-axis density" style="display:none">
-                                        <li><span>100%</span></li>
-                                        <li><span>80%</span></li>
-                                        <li><span>60%</span></li>
-                                        <li><span>40%</span></li>
-                                        <li><span>20%</span></li>
-                                        <li><span>0%</span></li>
-                                    </ul>
-                                    <ul class="x-axis">
-                                        <li><span>Defect1</span></li>
-                                        <li><span>Defect2</span></li>
-                                        <li><span>Defect3</span></li>
-                                        <li><span>Defect4</span></li>
-                                        <li><span>Defect5</span></li>
-                                    </ul>
-                                    <ul class="bar-graph">
-
-                                        <li class="bar-a cur"><span style="height: 150px;"></span></li>
-                                        <li class="bar-b cur"><span style="height: 120px;"></span></li>
-                                        <li class="bar-c cur"><span style="height: 112px;"></span></li>
-                                        <li class="bar-d cur"><span style="height: 25px;"></span></li>
-                                        <li class="bar-e cur"><span style="height: 80px;"></span></li>
-
-                                    </ul>
-                                    <ul class="line">
-                                        <li><span style="top: 135px;">6</span></li>
-                                        <li><span style="top: 114px;">8</span></li>
-                                        <li><span style="top: 148px;">4</span></li>
-                                        <li><span style="top: 101px;">10</span></li>
-                                        <li><span style="top: 90px;">12</span></li>
-                                    </ul>
-                                </div>
+                                </div> -->
 
 
                             </div>
-                            
+
                         </div>
 
                     </div>
@@ -1141,19 +2015,19 @@
                             </li>
                         </ul>
 
-                       
-                           
-                            <div class="layui-input-block" style="float: left; margin-left: 0;">
-                              <select name="interest" lay-filter="aihao" style=" width: 140px;height: 30px;margin: 5px;">
-                                
+
+
+                        <div class="layui-input-block" style="float: left; margin-left: 0;">
+                            <select name="interest" lay-filter="aihao" style=" width: 140px;height: 30px;margin: 5px;">
+
                                 <option value="0">Defect4</option>
                                 <option value="1">Defect5</option>
                                 <option value="2">Defect6</option>
                                 <option value="3">Defect7</option>
                                 <option value="4">Defect8</option>
-                              </select>
-                            </div>
-                          
+                            </select>
+                        </div>
+
                     </div>
 
                     <div class="box">
@@ -1866,6 +2740,14 @@
                 , range: true //或 range: '~' 来自定义分割字符
             });
         });
+        // layui.use('form', function () {
+        //     var form = layui.form;
+        //     //监听提交
+        //     // form.on('submit(formDemo)', function (data) {
+        //     //     layer.msg(JSON.stringify(data.field));
+        //     //     return false;
+        //     // });
+        // });
         $("#MESBtn").click(function () {
             $("#MESBox").show();
         });
@@ -1945,6 +2827,62 @@
             url: 'data-original'
         });
         var viewer4 = new Viewer(document.getElementById('dowebok4'), {
+            url: 'data-original'
+        });
+
+        var viewer_a = new Viewer(document.getElementById('dowebok_a'), {
+            url: 'data-original'
+        });
+
+        var viewer_b = new Viewer(document.getElementById('dowebok_b'), {
+            url: 'data-original'
+        });
+        var viewer_c = new Viewer(document.getElementById('dowebok_c'), {
+            url: 'data-original'
+        });
+        var viewer_d = new Viewer(document.getElementById('dowebok_d'), {
+            url: 'data-original'
+        });
+
+        var viewer1_a = new Viewer(document.getElementById('dowebok1_a'), {
+            url: 'data-original'
+        });
+
+        var viewer1_b = new Viewer(document.getElementById('dowebok1_b'), {
+            url: 'data-original'
+        });
+        var viewer1_c = new Viewer(document.getElementById('dowebok1_c'), {
+            url: 'data-original'
+        });
+        var viewer1_d = new Viewer(document.getElementById('dowebok1_d'), {
+            url: 'data-original'
+        });
+
+        var viewer3_a = new Viewer(document.getElementById('dowebok3_a'), {
+            url: 'data-original'
+        });
+
+        var viewer3_b = new Viewer(document.getElementById('dowebok3_b'), {
+            url: 'data-original'
+        });
+        var viewer3_c = new Viewer(document.getElementById('dowebok3_c'), {
+            url: 'data-original'
+        });
+        var viewer3_d = new Viewer(document.getElementById('dowebok3_d'), {
+            url: 'data-original'
+        });
+
+        var viewer4_a = new Viewer(document.getElementById('dowebok4_a'), {
+            url: 'data-original'
+        });
+
+        var viewer4_b = new Viewer(document.getElementById('dowebok4_b'), {
+            url: 'data-original'
+        });
+        var viewer4_c = new Viewer(document.getElementById('dowebok4_c'), {
+            url: 'data-original'
+        });
+        var viewer4_d = new Viewer(document.getElementById('dowebok4_d'), {
             url: 'data-original'
         });
 
