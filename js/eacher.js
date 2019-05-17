@@ -711,21 +711,32 @@ $(function () {
         },
         yAxis: {
                 type: 'value'
+
             },
-
-
 
 
      
     series: [{
         type: 'k',
         data: [
-            [20, 30, 10, 65],
+            [20, 30, 10, 45],
             [40, 35, 30, 55],
             [33, 38, 23, 40],
             [40, 50, 32, 62]
-        ]
-    }]
+        ],
+        tooltip: {
+                formatter: function (param) {
+                    return [
+                        'Experiment ' + param.name + ': ',
+                        'upper: ' + param.data[5],
+                        'Q3: ' + param.data[4],
+                        'median: ' + param.data[3],
+                        'Q1: ' + param.data[2],
+                        'lower: ' + param.data[1]
+                    ].join('<br/>');
+                }
+            }
+    },]
 };
 
 

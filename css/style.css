@@ -1238,8 +1238,9 @@ ol {
 } */
 .legend {
   width: 90%;
-  margin: 10px 20px 0 40px;
+  margin: 10px 0 0px 40px;
   position: relative;
+  height: 50px;
   top: 30px;
 }
 .legend #dowebok > li,
@@ -1254,7 +1255,7 @@ ol {
 }
 .legend li .legend_img {
   width: 40px !important;
-  max-height: 24px;
+  height: 40px;
 }
 
 .model_swich {

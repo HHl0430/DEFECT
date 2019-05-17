@@ -13,6 +13,8 @@ $(function () {
             trigger: 'axis'
         },
 
+        
+
         xAxis: {
             type: 'category',
             boundaryGap: false,
@@ -271,16 +273,16 @@ $(function () {
         }
     })
     var list = [{
-        src: './images/step3.png',
+        src: './images/CurrentStep.png',
         text: 'Current Step',
-        tableSrc: './images/step1.png',
-        UniqueSrc: './images/step0.png',
+        tableSrc: './images/CurrentConmmon.png',
+        UniqueSrc: './images/CurrentUnique.png',
     },
     {
-        src: './images/step4.png',
+        src: './images/Step1.png',
         text: 'Step1',
-        tableSrc: './images/step2.png',
-        UniqueSrc: './images/step1.png',
+        tableSrc: './images/StepConmmon.png',
+        UniqueSrc: './images/StepUnique.png',
     }]
     var defectRender = function () {
         $(".defect_right").empty()
@@ -373,9 +375,10 @@ $(function () {
         $(".more-right li").each((index, element) => {
             list.map(item => {
                 if (item.text === element.children[1].innerHTML) {
-                    if (element.children[1].innerHTML === 'Step2') {
-                        item.tableSrc = './images/step0.png'
-                        item.UniqueSrc = './images/step2.png'
+                    if (element.children[1].innerHTML === 'Step1') {
+                        item.UniqueSrc = './images/StepUnique.png'
+                        item.tableSrc = './images/StepConmmon.png'
+                        
                         stepOption.series = [
                             {
                                 barWidth: 20,
@@ -397,9 +400,9 @@ $(function () {
                                 data: [0, 10]
                             }
                         ]
-                    } else if (element.children[1].innerHTML === 'Step3') {
-                        item.tableSrc = './images/step1.png'
-                        item.UniqueSrc = './images/step2.png'
+                    } else if (element.children[1].innerHTML === 'Step1') {
+                        item.tableSrc = './images/StepConmmon.png'
+                        item.UniqueSrc = './images/StepUnique.png'
                         stepOption.series = [
                             {
                                 barWidth: 20,
@@ -421,9 +424,9 @@ $(function () {
                                 data: [0, 10]
                             }
                         ]
-                    } else if (element.children[1].innerHTML === 'Step4') {
-                        item.tableSrc = './images/step0.png'
-                        item.UniqueSrc = './images/step2.png'
+                    } else if (element.children[1].innerHTML === 'Step1') {
+                        item.tableSrc = './images/StepConmmon.png'
+                        item.UniqueSrc = './images/StepUnique.png'
                         stepOption.series = [
                             {
                                 barWidth: 20,
@@ -446,8 +449,8 @@ $(function () {
                             }
                         ]
                     } else {
-                        item.tableSrc = './images/step0.png'
-                        item.UniqueSrc = './images/step1.png'
+                        item.tableSrc = './images/StepConmmon.png'
+                        item.UniqueSrc = './images/StepUnique.png'
                         stepOption.series = [
 
                             {
