@@ -92,19 +92,7 @@ $green-color:#45b821;
 		padding:20px;
 		.select-bar{
 			height: 40px;
-			select,input[type=text],input[type=date]{
-				height: 34px;
-				border:1px solid #ddd;
-				line-height: 34px;
-				width: 200px;
-				margin-right: 5px;
-				vertical-align: middle;
-				display: inline-block;
-				background:#fff;
-				box-sizing:border-box;
-				padding:0 10px;
-				box-sizing:border-box;
-			}
+			 
 			input[type=date]{
 				width: 120px;
 			}
@@ -137,7 +125,7 @@ $green-color:#45b821;
 				box-sizing:border-box;
 				width:100%;
 				text-align: center;
-				 
+
 				&:after{ content: ""; display: block; clear:both; overflow: hidden; height: 0;}
 				li{
 					width: 16.666666%;

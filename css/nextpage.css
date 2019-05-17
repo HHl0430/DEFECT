@@ -64,18 +64,6 @@
     padding: 20px; }
     .nextpage-container .page-content .select-bar {
       height: 40px; }
-      .nextpage-container .page-content .select-bar select, .nextpage-container .page-content .select-bar input[type=text], .nextpage-container .page-content .select-bar input[type=date] {
-        height: 34px;
-        border: 1px solid #ddd;
-        line-height: 34px;
-        width: 200px;
-        margin-right: 5px;
-        vertical-align: middle;
-        display: inline-block;
-        background: #fff;
-        box-sizing: border-box;
-        padding: 0 10px;
-        box-sizing: border-box; }
       .nextpage-container .page-content .select-bar input[type=date] {
         width: 120px; }
       .nextpage-container .page-content .select-bar a {

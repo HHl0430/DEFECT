@@ -11,6 +11,7 @@
 </head>
 
 <body class="gray-bg">
+<form class="layui-form" action="">
 
 <div class="header">
     <a href="javascript:;" class="logo"> AI Defect</a>
@@ -44,17 +45,38 @@
             <div class="box-content-chart">
 
                 <div class="select-bar">
-                    <select class="js-example-basic-single" style="width: 200px;">
-                        <option>Product</option>
-                        <option>Product1</option>
-                        <option>Product2</option>
-                        <option>Product3</option>
-                        <option>Product4</option>
-                    </select>
-                    <select class="js-example-basic-single"><option>Layer</option><option>Layer1</option><option>Layer2</option></select>
-                    <select class="js-example-basic-single"><option>Key Porameter</option><option>Key Porameter1</option><option>Key Porameter2</option></select>
-                    <input type="text" class="layui-input time-slot" style="width: 240px;"  placeholder="请选择时间段 ">
-                     
+                    <div class="layui-input-inline">
+                        <select name="Product" lay-verify="required" >
+                            <option value="">Product</option>
+                            <option value="0" selected>Product1</option>
+                            <option value="1">Product2</option>
+                            <option value="2">Product3</option>
+                            <option value="3">Product4</option>
+                        </select>
+                    </div>
+                    <div class="layui-input-inline">
+                        <select name="Layer" lay-verify="required" >
+                            <option value="">Layer</option>
+                            <option value="0" selected>Layer1</option>
+                            <option value="1">Layer2</option>
+                            <option value="2">Layer3</option>
+                            <option value="3">Layer4</option>
+                        </select>
+                    </div>
+                    <div class="layui-input-inline">
+                        <select name="Key Porameter" lay-verify="required" >
+                            <option value="">Key Porameter</option>
+                            <option value="0" selected>Key Porameter1</option>
+                            <option value="1">Key Porameter2</option>
+                            <option value="2">Key Porameter3</option>
+                            <option value="3">Key Porameter4</option>
+                             
+                        </select>
+                    </div>
+
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input time-slot" style="width: 240px;"  placeholder="请选择时间段 ">
+                    </div>
                     <a href="javascript:;" class="blue-btn addChart">Add</a>
                 </div>
                 <div class="main_box">
@@ -71,7 +93,7 @@
     </div>
 </div>
 
-
+</form>
 
  
 </body>
@@ -104,6 +126,17 @@ layui.use('laydate', function(){
   });
 
 });
+
+layui.use('form', function(){
+  var form = layui.form;
+  
+  //监听提交
+  form.on('submit(formDemo)', function(data){
+    layer.msg(JSON.stringify(data.field));
+    return false;
+  });
+});
+
 
 $(function () {
     var option = {
