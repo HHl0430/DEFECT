@@ -46,7 +46,9 @@ $(function () {
     };
     var stepOption = {
         legend: {
-            data: ['Current Step', 'Disappear']
+            type: 'scroll',
+            show: true,
+            data: ['Current Step', 'Common', 'Current Step Unique', 'Step3 Unique']
         },
         xAxis: {
             type: 'category',
@@ -59,12 +61,21 @@ $(function () {
         series: [
 
             {
+                name: 'Current Step',
                 barWidth: 20,
                 stack: '总量',
                 type: 'bar',
-                data: [41, 21]
+                data: [41, 0]
             },
             {
+                name: 'Common',
+                barWidth: 20,
+                stack: '总量',
+                type: 'bar',
+                data: [0, 21]
+            },
+            {
+                name: 'Current Step Unique',
                 stack: '总量',
                 width: '10%',
                 type: 'bar',
@@ -72,6 +83,7 @@ $(function () {
             },
             ,
             {
+                name: 'Step3 Unique',
                 stack: '总量',
                 width: '10%',
                 type: 'bar',
@@ -300,45 +312,63 @@ $(function () {
                 <td>${list[0].text}</td>
                 <td>22</td>
                 <td>2019-04-30 12:00:00</td>
-                <td><img src="./images/1_11.png" ></td>
+                <td id="mare_img"><img src="./images/1_11.png" data-original="./images/1_11.png" ></td>
             </tr>
             <tr>
                 <td>${list[1].text}</td>
                 <td>22</td>
                 <td>2019-04-30 12:00:00</td>
-                <td><img src="./images/1_11.png" ></td>
+                <td id="mare_img2"><img src="./images/1_11.png" data-original="./images/1_11.png" ></td>
             </tr>
             <tr>
                 <td rowspan="2">5,6</td>
                 <td>${list[0].text}</td>
                 <td>22</td>
                 <td>2019-04-30 12:00:00</td>
-                <td><img src="./images/1_11.png" ></td>
+                <td id="mare_img3"><img src="./images/1_11.png" data-original="./images/1_11.png" ></td>
             </tr>
             <tr>
                 <td>${list[1].text}</td>
                 <td>22</td>
                 <td>2019-04-30 12:00:00</td>
-               <td><img src="./images/1_11.png" ></td>
+                <td id="mare_img4"><img src="./images/1_11.png" data-original="./images/1_11.png" ></td>
             </tr>
             <tr>
                 <td rowspan="2">3,4</td>
                 <td>${list[0].text}</td>
                 <td>22</td>
                 <td>2019-04-30 12:00:00</td>
-               <td><img src="./images/1_11.png" ></td>
+                <td id="mare_img5"><img src="./images/1_11.png" data-original="./images/1_11.png" ></td>
             </tr>
             <tr>
                 <td>${list[1].text}</td>
                 <td>22</td>
                 <td>2019-04-30 12:00:00</td>
-               <td><img src="./images/1_11.png" ></td>
+                <td id="mare_img6"><img src="./images/1_11.png" data-original="./images/1_11.png" ></td>
             </tr>
            
         </tbody>
     </table>`
 
         $(".defect_right").append(defectHTML)
+        var viewer = new Viewer(document.getElementById('mare_img'), {
+            url: 'data-original'
+        });
+        var viewer2 = new Viewer(document.getElementById('mare_img2'), {
+            url: 'data-original'
+        });
+        var viewer3 = new Viewer(document.getElementById('mare_img3'), {
+            url: 'data-original'
+        });
+        var viewer4 = new Viewer(document.getElementById('mare_img4'), {
+            url: 'data-original'
+        });
+        var viewer5 = new Viewer(document.getElementById('mare_img5'), {
+            url: 'data-original'
+        });
+        var viewer6 = new Viewer(document.getElementById('mare_img6'), {
+            url: 'data-original'
+        });
     }
     defectRender()
     var render = function () {
@@ -378,12 +408,20 @@ $(function () {
                         item.UniqueSrc = './images/step2.png'
                         stepOption.series = [
                             {
+                                name: 'Current Step',
                                 barWidth: 20,
                                 stack: '总量',
                                 type: 'bar',
                                 data: [31, 26]
+                            }, {
+                                name: 'Common',
+                                barWidth: 20,
+                                stack: '总量',
+                                type: 'bar',
+                                data: [0, 26]
                             },
                             {
+                                name: 'Current Step Unique',
                                 stack: '总量',
                                 width: '10%',
                                 type: 'bar',
@@ -391,23 +429,38 @@ $(function () {
                             },
                             ,
                             {
+                                name: 'Step2 Unique',
                                 stack: '总量',
                                 width: '10%',
                                 type: 'bar',
                                 data: [0, 10]
                             }
                         ]
+                        stepOption.legend = {
+                            type: 'scroll',
+                            show: true,
+                            data: ['Current Step', 'Common', 'Current Step Unique', 'Step2 Unique']
+                        }
                     } else if (element.children[1].innerHTML === 'Step3') {
                         item.tableSrc = './images/step1.png'
                         item.UniqueSrc = './images/step2.png'
                         stepOption.series = [
                             {
+                                name: 'Current Step',
                                 barWidth: 20,
                                 stack: '总量',
                                 type: 'bar',
-                                data: [21, 16]
+                                data: [21, 0]
                             },
                             {
+                                name: 'Common',
+                                barWidth: 20,
+                                stack: '总量',
+                                type: 'bar',
+                                data: [0, 16]
+                            },
+                            {
+                                name: 'Current Step Unique',
                                 stack: '总量',
                                 width: '10%',
                                 type: 'bar',
@@ -415,23 +468,38 @@ $(function () {
                             },
                             ,
                             {
+                                name: 'Step3 Unique',
                                 stack: '总量',
                                 width: '10%',
                                 type: 'bar',
                                 data: [0, 10]
                             }
                         ]
+                        stepOption.legend = {
+                            type: 'scroll',
+                            show: true,
+                            data: ['Current Step', 'Common', 'Current Step Unique', 'Step3 Unique']
+                        }
                     } else if (element.children[1].innerHTML === 'Step4') {
                         item.tableSrc = './images/step0.png'
                         item.UniqueSrc = './images/step2.png'
                         stepOption.series = [
                             {
+                                name: 'Current Step',
                                 barWidth: 20,
                                 stack: '总量',
                                 type: 'bar',
-                                data: [46, 36]
+                                data: [46, 0]
                             },
                             {
+                                name: 'Common',
+                                barWidth: 20,
+                                stack: '总量',
+                                type: 'bar',
+                                data: [0, 36]
+                            },
+                            {
+                                name: 'Current Step Unique',
                                 stack: '总量',
                                 width: '10%',
                                 type: 'bar',
@@ -439,24 +507,39 @@ $(function () {
                             },
                             ,
                             {
+                                name: 'Step4 Unique',
                                 stack: '总量',
                                 width: '10%',
                                 type: 'bar',
                                 data: [0, 10]
                             }
                         ]
+                        stepOption.legend = {
+                            type: 'scroll',
+                            show: true,
+                            data: ['Current Step', 'Common', 'Current Step Unique', 'Step4 Unique']
+                        }
                     } else {
                         item.tableSrc = './images/step0.png'
                         item.UniqueSrc = './images/step1.png'
                         stepOption.series = [
 
                             {
+                                name: 'Current Step',
                                 barWidth: 20,
                                 stack: '总量',
                                 type: 'bar',
-                                data: [41, 21]
+                                data: [41, 0]
                             },
                             {
+                                name: 'Common',
+                                barWidth: 20,
+                                stack: '总量',
+                                type: 'bar',
+                                data: [0, 21]
+                            },
+                            {
+                                name: 'Current Step Unique',
                                 stack: '总量',
                                 width: '10%',
                                 type: 'bar',
@@ -464,12 +547,18 @@ $(function () {
                             },
                             ,
                             {
+                                name: 'Step Unique',
                                 stack: '总量',
                                 width: '10%',
                                 type: 'bar',
                                 data: [0, 10]
                             }
                         ]
+                        stepOption.legend = {
+                            type: 'scroll',
+                            show: true,
+                            data: ['Current Step', 'Common', 'Current Step Unique', 'Step Unique']
+                        }
                     }
                     element.classList.add("active");
                 } else {
@@ -533,12 +622,15 @@ $(function () {
     var translationRender = function () {
         $(".translation_left table").empty()
         var html = `
-        <tr>
-        <td><img src="${imgList[0].src}" alt=""></td>
-        <td><img src="${imgList[1].src}" alt=""></td>
-        <td><img src="${imgList[2].src}" alt=""></td>
+        <tr  id="tran_img">
+        <td ><img src="${imgList[0].src}" data-original="${imgList[0].src}" alt=""></td>
+        <td ><img src="${imgList[1].src}" data-original="${imgList[1].src}" alt=""></td>
+        <td ><img src="${imgList[2].src}" data-original="${imgList[2].src}" alt=""></td>
     </tr>`
         $(".translation_left table").append(html)
+        var viewer4_d = new Viewer(document.getElementById('tran_img'), {
+            url: 'data-original'
+        });
     }
     translationRender()
 
