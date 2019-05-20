@@ -1035,7 +1035,7 @@ ol {
   min-width: 300px;
   min-height: 200px;
 
-  overflow: hidden;
+  
   position: relative;
 }
 .pup-box .close-btn {
@@ -1126,7 +1126,7 @@ ol {
   padding: 0px;
 }
 .pup-box .content .input-line {
-  padding: 0 10px;
+  padding:10px;
 }
 .pup-box .content .input-line:after {
   content: "";
@@ -1153,12 +1153,13 @@ ol {
   border: 1px solid #e1e1e1;
   border-radius: 0;
   padding: 0 10px;
+  display: inline-block;
 }
 .pup-box .content .input-line li input[type="date"] {
   padding: 0px;
 }
 .pup-box .content .pup-tb {
-  padding: 10px;
+   
 }
 .pup-box .content .pup-tb table {
   width: 100%;
@@ -1171,7 +1172,7 @@ ol {
   padding: 10px 10px;
   text-align: left;
   box-sizing: border-box;
-  width: 23%;
+   
   color: #949bab;
   border-bottom: 1px solid #e1e1e1;
 }
@@ -1180,6 +1181,21 @@ ol {
   line-height: 20px;
   border-bottom: 1px solid #e1e1e1;
   box-sizing: border-box;
+}
+
+.pup-box .content .pup-tb table tr td a{
+  color: #1c92ed;
+}
+
+.pup-box .content .pup-tb table tr td input{
+  height: 34px;
+  box-sizing: border-box;
+  padding:0 5px;
+  border:1px  solid #ddd; 
+}
+select{
+  display: inline-block;
+
 }
 .pup-box .content .pup-tb table tr:hover td {
   background: #fafafa;
@@ -1390,3 +1406,14 @@ ol {
 .box-content-chart .add_box .layui-input {
   width: 220px;
 }
+.layui-btn,
+.layui-input, .layui-select, .layui-textarea{
+  height: 34px;
+}
+.layui-btn{
+  line-height: 32px;
+  font-size: 12px;
+}
+
+
+

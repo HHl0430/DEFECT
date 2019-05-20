@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Baseline Reporting</title>
+<link rel="stylesheet" type="text/css" href="font/iconfont.css" >
+<link href="select2/select2.min.css" rel="stylesheet" />
+<link href="layui/css/layui.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/style.css" >
+<link rel="stylesheet" type="text/css" href="css/nextpage.css" >
+</head>
+
+<body class="gray-bg">
+<form class="layui-form" action="">
+
+<div class="header">
+    <a href="javascript:;" class="logo"> AI Defect</a>
+   
+    <div class="right-bar">
+        <a href="javascript:;"><i class="iconfont iconzhanghu"></i>Admin</a>
+        <a href="javascript:;"><i class="iconfont iconzhuxiao"></i>Logout</a>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="left-nav">
+        <ul class="nav">
+            <li><a href="Excursion.html"><i class="iconfont iconzhineng"></i> <span>Excursion</span></a></li>
+            <li  class="cur"><a href="Baseline-Reporting.html"><i class="iconfont iconlogAnalysis"></i> <span>Baseline Reporting</span></a></li>
+            <li><a href="Toolbox.html"><i class="iconfont icongongjuxiang"></i> <span>Toolbox</span></a></li>
+            <li><a href="Set-Up.html"><i class="iconfont iconzhinengyunweiguanli"></i> <span>Set Up</span></a></li>
+        </ul>
+    </div>
+    <div class="nextpage-container">
+        <div class="breadCrumb">
+            <a href="javascript:;">Home</a> /
+            <a href="Baseline-Reporting.html">Baseline Reporting</a> /
+            <a href="javascript:;">YE Production Report</a>
+        </div>
+        <div class="page-title">YE Production Report</div>
+        <div class="page-content">
+            
+            <div class="select-bar">
+                <div class="layui-input-inline">
+                    <form class="layui-form" action="">
+                        <select name="Product" lay-verify="required" >
+                            <option value="">Product</option>
+                            <option value="0">001</option>
+                            <option value="1">002</option>
+                            <option value="2">003</option>
+                            <option value="3">004</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="layui-input-inline">
+                    <form class="layui-form" action="">
+                        <select name="Layer" lay-verify="required" >
+                            <option value="">Layer</option>
+                            <option value="0">AA ASI</option>
+                            <option value="3">SN RM</option>
+                            <option value="3">M6 CMP</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="layui-input-inline">
+                    <form class="layui-form" action="">
+                        <select name="DOI" lay-verify="required" >
+                            <option value="">DOI</option>
+                            <option value="0">Tiny PD</option>
+                            <option value="1">Bridge</option>
+                            <option value="2">Buried PD</option>
+                            <option value="3">CMP_SC</option>
+                        </select>
+                    </form>
+                </div>
+                <a href="javascript:;" class=" layui-btn">Add to monitor</a>
+            </div>
+
+             
+        
+        </div>
+    </div>
+</div>
+
+</form>
+
+ 
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="select2/select2.min.js"></script>
+<script src="layui/layui.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        $('.js-example-basic-multiple').select2();
+        $('.js-example-basic-single').select2();
+       
+    });
+ 
+layui.use('laydate', function(){
+  var laydate = layui.laydate;
+  
+   
+  //同时绑定多个
+  lay('.time-slot').each(function(){
+    laydate.render({
+      elem: this
+      ,range: true
+      ,trigger: 'click'
+      ,format: 'yyyy年MM月dd日'
+         
+    });
+  });
+
+});
+
+layui.use('form', function(){
+  var form = layui.form;
+  
+  //监听提交
+  form.on('submit(formDemo)', function(data){
+    layer.msg(JSON.stringify(data.field));
+    return false;
+  });
+});
+
+
+
+
+
+</script>
+
+</html>

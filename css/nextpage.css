@@ -131,6 +131,27 @@
     .nextpage-container .page-content .select2-container--default .select2-selection--multiple {
       border-radius: 0;
       min-height: 34px; }
+    .nextpage-container .page-content .page-tb-bar table {
+      border-collapse: collapse;
+      width: 100%; }
+      .nextpage-container .page-content .page-tb-bar table tr th {
+        background: #f8f9fc;
+        font-weight: normal;
+        line-height: 15px;
+        padding: 10px;
+        text-align: left;
+        box-sizing: border-box;
+        width: 14.28%;
+        color: #949bab;
+        border-bottom: 1px solid #e1e1e1; }
+      .nextpage-container .page-content .page-tb-bar table tr td {
+        padding: 10px;
+        line-height: 20px;
+        border-bottom: 1px solid #e1e1e1;
+        box-sizing: border-box;
+        background: #fff; }
+      .nextpage-container .page-content .page-tb-bar table tr:hover td {
+        background: #fafafa; }
 
 .layui-btn {
   background: #1c92ed;
