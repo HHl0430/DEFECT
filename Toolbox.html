@@ -1,53 +1,777 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Set Up</title>
-<link rel="stylesheet" type="text/css" href="font/iconfont.css" >
-<link rel="stylesheet" type="text/css" href="css/style.css" >
-<link rel="stylesheet" type="text/css" href="css/nextpage.css" >
+    <meta charset="UTF-8">
+    <title>Set Up</title>
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="select2/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/nextpage.css">
+    <link rel="stylesheet" href="css/tool_box.css">
 </head>
 
 <body class="gray-bg">
 
-<div class="header">
-    <a href="javascript:;" class="logo"> AI Defect</a>
-     
-
-    <div class="right-bar">
-        <a href="javascript:;"><i class="iconfont iconzhanghu"></i>Admin</a>
-        <a href="javascript:;"><i class="iconfont iconzhuxiao"></i>Logout</a>
-    </div>
-</div>
+    <div class="header">
+        <a href="javascript:;" class="logo"> AI Defect</a>
 
 
-<div class="container">
-    <div class="left-nav">
-        <ul class="nav">
-            <li><a href="Excursion.html"><i class="iconfont iconzhineng"></i> <span>Excursion</span></a></li>
-            <li><a href="Baseline-Reporting.html"><i class="iconfont iconlogAnalysis"></i> <span>Baseline Reporting</span></a></li>
-            <li class="cur"><a href="Toolbox.html"><i class="iconfont icongongjuxiang"></i> <span>Toolbox</span></a></li>
-            <li><a href="Set-Up.html"><i class="iconfont iconzhinengyunweiguanli"></i> <span>Set Up</span></a></li>
-        </ul>
+        <div class="right-bar">
+            <a href="javascript:;"><i class="iconfont iconzhanghu"></i>Admin</a>
+            <a href="javascript:;"><i class="iconfont iconzhuxiao"></i>Logout</a>
+        </div>
     </div>
 
 
-    <div class="nextpage-container">
-        <div class="max-tit">Toolbox</div>
-        <div class="page-content" style="text-align: center; font-size:36px; padding: 100px 0;">开发中</div>
+    <div class="container">
+        <div class="left-nav">
+            <ul class="nav">
+                <li><a href="Excursion.html"><i class="iconfont iconzhineng"></i> <span>Excursion</span></a></li>
+                <li><a href="Baseline-Reporting.html"><i class="iconfont iconlogAnalysis"></i> <span>Baseline
+                            Reporting</span></a></li>
+                <li class="cur"><a href="Toolbox.html"><i class="iconfont icongongjuxiang"></i> <span>Toolbox</span></a>
+                </li>
+                <li><a href="Set-Up.html"><i class="iconfont iconzhinengyunweiguanli"></i> <span>Set Up</span></a></li>
+            </ul>
+        </div>
+        <div class="tool_nav">
+            <div class="tool_box_title">图表工具</div>
+            <ul class="the_chart clear">
+                <li class="active"><img src="./images/1.png" alt=""></li>
+                <li><img src="./images/2.png" alt=""></li>
+                <li><img src="./images/3.png" alt=""></li>
+                <li><img src="./images/4.png" alt=""></li>
+                <li><img src="./images/5.png" alt=""></li>
+                <li><img src="./images/6.png" alt=""></li>
+                <li><img src="./images/7.png" alt=""></li>
+                <li><img src="./images/8.png" alt=""></li>
+                <li><img src="./images/9.png" alt=""></li>
+                <li><img src="./images/10.png" alt=""></li>
+                <li><img src="./images/11.png" alt=""></li>
+                <li><img src="./images/12.png" alt=""></li>
+                <li><img src="./images/13.png" alt=""></li>
+                <li><img src="./images/14.png" alt=""></li>
+                <li><img src="./images/15.png" alt=""></li>
+
+            </ul>
+            <div class="tool_box_title">分析工具</div>
+            <ul class="analyze_chart clear">
+                <li><img src="./images/icon/1.png" alt=""><br />Constant</li>
+                <li><img src="./images/icon/2.png" alt=""><br />CN2 Rule Induct...</li>
+                <li><img src="./images/icon/3.png" alt=""><br />KNN</li>
+                <li><img src="./images/icon/4.png" alt=""><br />Tree</li>
+                <li class="random"><img src="./images/icon/5.png" alt=""><br />Random Forest</li>
+                <li><img src="./images/icon/6.png" alt=""><br />SVM</li>
+                <li class="linear"><img src="./images/icon/7.png" alt=""><br />Linear Regres...</li>
+                <li><img src="./images/icon/8.png" alt=""><br />Logistic Regres...</li>
+                <li><img src="./images/icon/9.png" alt=""><br />Naive Bayes</li>
+                <li><img src="./images/icon/10.png" alt=""><br />AdaBosst</li>
+                <li><img src="./images/icon/11.png" alt=""><br />Neural Network</li>
+                <li><img src="./images/icon/12.png" alt=""><br />Stocha... Gradie...</li>
+                <li><img src="./images/icon/13.png" alt=""><br />Hierar... Cluste...</li>
+                <li class="means"><img src="./images/icon/14.png" alt=""><br />K-Means</li>
+                <li><img src="./images/icon/15.png" alt=""><br />Loural Cluste...</li>
+                <li><img src="./images/icon/16.png" alt=""><br />Manifold Learning</li>
+                <li><img src="./images/icon/17.png" alt=""><br />PCA</li>
+                <li><img src="./images/icon/18.png" alt=""><br />Corres... Anglysis</li>
+                <li><img src="./images/icon/19.png" alt=""><br />Distan...</li>
+                <li><img src="./images/icon/20.png" alt=""><br />Distance Transf...</li>
+            </ul>
+            <div class="tool_box_title">图型工具</div>
+            <ul class="graphics_chart clear">
+                <li><img src="./images/icon/image-embedd.png" alt=""><br />Import Images</li>
+                <li><img src="./images/icon/image-grid.png" alt=""><br />Image Viewer</li>
+                <li><img src="./images/icon/image-viewer.png" alt=""><br />Image Embedd</li>
+                <li><img src="./images/icon/import-image.png" alt=""><br />Image Grid</li>
+            </ul>
+        </div>
+        <div class="tool_content">
+            <!-- <div class="tool_title">Tool Box</div> -->
+            <div class="max-tit">Data loader</div>
+            <div class="loder_check">
+                <form class="layui-form" action="">
+                    <input type="checkbox" name="" value="defect" title="Defect" lay-filter="primary" lay-skin="primary"
+                        checked>
+                    <input type="checkbox" name="" value="metrology" title="Metrology" lay-filter="primary"
+                        lay-skin="primary">
+                    <input type="checkbox" name="" value="mes" title="MES" lay-filter="primary" lay-skin="primary"
+                        checked>
+                    <input type="checkbox" name="" value="eap" title="EAP" lay-filter="primary" lay-skin="primary">
+                    <input type="checkbox" name="" value="wat" title="WAT" lay-filter="primary" lay-skin="primary">
+                    <input type="checkbox" name="" value="cp" title="CP" lay-filter="primary" lay-skin="primary">
+                    <input type="checkbox" name="" value="iems" title="iEMS" lay-filter="primary" lay-skin="primary"
+                        checked>
+                    <input type="checkbox" name="" value="spc" title="SPC" lay-filter="primary" lay-skin="primary">
+                </form>
+            </div>
+            <div class="defect">
+                <div class="max-tit">Defect</div>
+                <div class="loder_check">
+                    <form class="layui-form" action="">
+                        <div class="layui-form-item">
+                            <select name="city" lay-verify="">
+                                <option value="">Product</option>
+                            </select>
+                        </div>
+                        <div class="layui-form-item">
+                            <select name="city" lay-verify="">
+                                <option value="">Layer</option>
+                            </select>
+                        </div>
+                        <div class="layui-form-item">
+                            <select name="city" lay-verify="">
+                                <option value="">Lot</option>
+                            </select>
+                        </div>
+                        <div class="layui-form-item">
+                            <select name="city" lay-verify="">
+                                <option value="">Wafer</option>
+                            </select>
+                        </div>
+                        <div class="layui-form-item">
+                            <select name="city" lay-verify="">
+                                <option value="">Inspector</option>
+                            </select>
+                        </div>
+                        <div class="layui-form-item">
+                            <select name="city" lay-verify="">
+                                <option value="">Time Range</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="metrology">
+
+            </div>
+            <div class="mes">
+                <div class="max-tit">MES</div>
+                <div class="loder_check">
+                    <form class="layui-form" action="">
+                        <div class="layui-form-item">
+                            <select name="city" lay-filter="MES" lay-verify="">
+                                <option value="Auto mapping">Auto mapping</option>
+                                <option value="Manual setting">Manual setting</option>
+                            </select>
+                        </div>
+                    </form>
+                    <form class="layui-form ems_form" action="" style="display: none">
+                        <div class="layui-form-item">
+                            <select name="city" lay-verify="">
+                                <option value="Product">Product</option>
+                            </select>
+                        </div>
+                        <div class="layui-form-item">
+                            <select name="city" lay-verify="">
+                                <option value="Step Range">Step Range</option>
+                            </select>
+                        </div>
+                        <div class="layui-form-item">
+                            <select name="city" lay-verify="">
+                                <option value="Time">Time</option>
+                            </select>
+                        </div>
+                        <div class="layui-form-item">
+                            <select name="city" lay-verify="">
+                                <option value="Lot">Lot</option>
+                            </select>
+                        </div>
+                        <div class="layui-form-item">
+                            <select name="city" lay-verify="">
+                                <option value="wafer">wafer</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="eap">
+
+            </div>
+            <div class="wat">
+
+            </div>
+            <div class="cp">
+
+            </div>
+            <div class="iems">
+                <div class="max-tit">iEMS</div>
+                <div class="loder_check">
+                    <form class="layui-form" action="">
+                        <div class="layui-form-item">
+                            <select name="city" lay-filter="iEMS" lay-verify="iEMS">
+                                <option value="Auto mapping">Auto mapping</option>
+                                <option value="Manual setting">Manual setting</option>
+                            </select>
+                        </div>
+                    </form>
+                    <form class="layui-form iems_form" action="" style="display: none">
+                        <div class="layui-form-item">
+                            <select name="city" lay-verify="required">
+                                <option value="Tool">Tool</option>
+                            </select>
+                        </div>
+                        <div class="layui-form-item">
+                            <select name="city" lay-verify="required">
+                                <option value="Time Range">Time Range</option>
+                            </select>
+                        </div>
+                        <div class="layui-form-item">
+                            <select name="city" lay-verify="required">
+                                <option value="Lot">Lot</option>
+                            </select>
+                        </div>
+                        <div class="layui-form-item">
+                            <select name="city" lay-verify="required">
+                                <option value="wafer">wafer</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="spc"></div>
+            <table class="layui-table">
+                <thead>
+                    <tr>
+                        <th rowspan="2">Product</th>
+                        <th rowspan="2">Layer</th>
+                        <th rowspan="2">Lot</th>
+                        <th style="text-align: center" colspan="2">W1</th>
+                        <th rowspan="2">...</th>
+                        <th rowspan="2">Step1</th>
+                        <th rowspan="2">Step2</th>
+                        <th rowspan="2">...</th>
+                        <th rowspan="2">iEMS Para. 1</th>
+                        <th rowspan="2">...</th>
+                    </tr>
+                    <tr>
+                        <th>DOI1</th>
+                        <th>DOI2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>P1000</td>
+                        <td>L0001</td>
+                        <td>A0001</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>...</td>
+                        <td>Tool-Chamber</td>
+                        <td>Tool-Chamber</td>
+                        <td>...</td>
+                        <td>xxx</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>P1000</td>
+                        <td>L0001</td>
+                        <td>A0001</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>...</td>
+                        <td>Tool-Chamber</td>
+                        <td>Tool-Chamber</td>
+                        <td>...</td>
+                        <td>xxx</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>P1000</td>
+                        <td>L0001</td>
+                        <td>A0001</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>...</td>
+                        <td>Tool-Chamber</td>
+                        <td>Tool-Chamber</td>
+                        <td>...</td>
+                        <td>xxx</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>P1000</td>
+                        <td>L0001</td>
+                        <td>A0001</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>...</td>
+                        <td>Tool-Chamber</td>
+                        <td>Tool-Chamber</td>
+                        <td>...</td>
+                        <td>xxx</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>P1000</td>
+                        <td>L0001</td>
+                        <td>A0001</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>...</td>
+                        <td>Tool-Chamber</td>
+                        <td>Tool-Chamber</td>
+                        <td>...</td>
+                        <td>xxx</td>
+                        <td>...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pup-bg" id="linear" style="display:none;">
+            <div class="pup-box">
+                <a href="javascript:;" class="close-btn"><i class="iconfont iconguanbi"></i></a>
+                <div class="max-tit">W#1</div>
+                <div class="content">
+                    <table class="layui-table">
+                        <thead>
+                            <tr>
+                                <th rowspan="2">Product</th>
+                                <th rowspan="2">Layer</th>
+                                <th rowspan="2">Lot</th>
+                                <th style="text-align: center" colspan="2">W1</th>
+                                <th rowspan="2">...</th>
+                                <th rowspan="2">Step1</th>
+                                <th rowspan="2">Step2</th>
+                                <th rowspan="2">...</th>
+                                <th rowspan="2">iEMS Para. 1</th>
+                                <th rowspan="2">...</th>
+                            </tr>
+                            <tr>
+                                <th>DOI1</th>
+                                <th>DOI2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>P1000</td>
+                                <td>L0001</td>
+                                <td>A0001</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>...</td>
+                                <td>Tool-Chamber</td>
+                                <td>Tool-Chamber</td>
+                                <td>...</td>
+                                <td>xxx</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>P1000</td>
+                                <td>L0001</td>
+                                <td>A0001</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>...</td>
+                                <td>Tool-Chamber</td>
+                                <td>Tool-Chamber</td>
+                                <td>...</td>
+                                <td>xxx</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>P1000</td>
+                                <td>L0001</td>
+                                <td>A0001</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>...</td>
+                                <td>Tool-Chamber</td>
+                                <td>Tool-Chamber</td>
+                                <td>...</td>
+                                <td>xxx</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>P1000</td>
+                                <td>L0001</td>
+                                <td>A0001</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>...</td>
+                                <td>Tool-Chamber</td>
+                                <td>Tool-Chamber</td>
+                                <td>...</td>
+                                <td>xxx</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>P1000</td>
+                                <td>L0001</td>
+                                <td>A0001</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>...</td>
+                                <td>Tool-Chamber</td>
+                                <td>Tool-Chamber</td>
+                                <td>...</td>
+                                <td>xxx</td>
+                                <td>...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="chart_select">
+                        <div class="loder_check">
+                            <form class="layui-form" action="">
+                                <span>X轴:</span>
+                                <div class="layui-form-item">
+                                    <select name="city" lay-filter="charts" lay-verify="iEMS">
+                                        <option value="Auto mapping">Auto mapping</option>
+                                        <option value="Manual setting">Manual setting</option>
+                                    </select>
+                                </div>
+                                <span>Y轴:</span>
+                                <div class="layui-form-item">
+                                    <select name="city" lay-filter="charts" lay-verify="iEMS">
+                                        <option value="Auto mapping">Auto mapping</option>
+                                        <option value="Manual setting">Manual setting</option>
+                                    </select>
+                                </div>
+                                <span>R^2 SPEC:</span>
+                                <div class="layui-form-item">
+                                    <select name="city" lay-filter="charts" lay-verify="iEMS">
+                                        <option value="Auto mapping">Auto mapping</option>
+                                        <option value="Manual setting">Manual setting</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="main_box">
+                        <span>R^2=0.95</span>
+                        <div class="main" id="main"></div>
+                    </div>
+                    <div class="main_box">
+                        <span>R^2=0.85</span>
+                        <div class="main" id="main1"></div>
+                    </div>
+                    <div class="main_box">
+                        <span>R^2=0.7</span>
+                        <div class="main" id="main2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pup-bg random1" id="random " style="display:none;">
+            <div class="pup-box">
+                <a href="javascript:;" class="close-btn"><i class="iconfont iconguanbi"></i></a>
+                <div class="max-tit">W#1</div>
+                <div class="content">
+                    <table class="layui-table">
+                        <thead>
+                            <tr>
+                                <th rowspan="2">Product</th>
+                                <th rowspan="2">Layer</th>
+                                <th rowspan="2">Lot</th>
+                                <th style="text-align: center" colspan="2">W1</th>
+                                <th rowspan="2">...</th>
+                                <th rowspan="2">Step1</th>
+                                <th rowspan="2">Step2</th>
+                                <th rowspan="2">...</th>
+                                <th rowspan="2">iEMS Para. 1</th>
+                                <th rowspan="2">...</th>
+                            </tr>
+                            <tr>
+                                <th>DOI1</th>
+                                <th>DOI2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>P1000</td>
+                                <td>L0001</td>
+                                <td>A0001</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>...</td>
+                                <td>Tool-Chamber</td>
+                                <td>Tool-Chamber</td>
+                                <td>...</td>
+                                <td>xxx</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>P1000</td>
+                                <td>L0001</td>
+                                <td>A0001</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>...</td>
+                                <td>Tool-Chamber</td>
+                                <td>Tool-Chamber</td>
+                                <td>...</td>
+                                <td>xxx</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>P1000</td>
+                                <td>L0001</td>
+                                <td>A0001</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>...</td>
+                                <td>Tool-Chamber</td>
+                                <td>Tool-Chamber</td>
+                                <td>...</td>
+                                <td>xxx</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>P1000</td>
+                                <td>L0001</td>
+                                <td>A0001</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>...</td>
+                                <td>Tool-Chamber</td>
+                                <td>Tool-Chamber</td>
+                                <td>...</td>
+                                <td>xxx</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>P1000</td>
+                                <td>L0001</td>
+                                <td>A0001</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>...</td>
+                                <td>Tool-Chamber</td>
+                                <td>Tool-Chamber</td>
+                                <td>...</td>
+                                <td>xxx</td>
+                                <td>...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="chart_select">
+                        <div class="loder_check">
+                            <form class="layui-form" action="">
+                                <span>分类参数:</span>
+                                <div class="layui-form-item">
+                                    <select name="city" lay-verify="iEMS">
+                                        <option value="Defect">Defect</option>
+                                    </select>
+                                </div>
+                                <span>分类1 设定:</span>
+                                <div class="layui-form-item">
+                                    <input type="text" name="title" required lay-verify="required" placeholder="0-50"
+                                        autocomplete="off" class="layui-input">
+                                </div>
+                                <span>分类2 设定:</span>
+                                <div class="layui-form-item">
+                                    <input type="text" name="title" required lay-verify="required" placeholder="50-100"
+                                        autocomplete="off" class="layui-input">
+                                </div>
+                                <span>分类3 设定:</span>
+                                <div class="layui-form-item">
+                                    <input type="text" name="title" required lay-verify="required" placeholder=">100"
+                                        autocomplete="off" class="layui-input">
+                                </div>
+                                <br>
+                                <span>输入参数</span>
+                                <div class="layui-form-item more_select" style="width:300px ">
+                                    <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+
+                                        <option selected>Para. 1</option>
+                                        <option>Para. 2</option>
+                                        <option>Para. 3</option>
+                                        <option>Para. 4</option>
+                                        <option>Para. 5</option>
+                                        <option>Para. 6</option>
+                                        <option>Para. 7</option>
+                                        <option>Para. 8</option>
+                                    </select>
+                                </div>
+                                <div class="layui-form-item">
+                                    <a class="blue-btn" href="javascript:;">分析</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="ranking">
+                        <p class="max-tit">相关排名</p>
+                        <ul>
+                            <li>
+                                1，Etch－ Parameter 1 0.8
+                            </li>
+                            <li>
+                                2，Etch－ Parameter 2 0.7
+                            </li>
+                            <li>
+                                3，Litho－ Parameter 1 0.5
+                            </li>
+                            <li>
+                                4，Litho－ Parameter 2 0.4
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pup-bg means1" id="means " style="display:none;">
+            <div class="pup-box">
+                <a href="javascript:;" class="close-btn"><i class="iconfont iconguanbi"></i></a>
+                <div class="max-tit">W#1</div>
+                <div class="content">
+                    <table class="layui-table">
+                        <thead>
+                            <tr>
+                                <th rowspan="2">Product</th>
+                                <th rowspan="2">Layer</th>
+                                <th rowspan="2">Lot</th>
+                                <th style="text-align: center" colspan="2">W1</th>
+                                <th rowspan="2">...</th>
+                                <th rowspan="2">Step1</th>
+                                <th rowspan="2">Step2</th>
+                                <th rowspan="2">...</th>
+                                <th rowspan="2">iEMS Para. 1</th>
+                                <th rowspan="2">...</th>
+                            </tr>
+                            <tr>
+                                <th>DOI1</th>
+                                <th>DOI2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>P1000</td>
+                                <td>L0001</td>
+                                <td>A0001</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>...</td>
+                                <td>Tool-Chamber</td>
+                                <td>Tool-Chamber</td>
+                                <td>...</td>
+                                <td>xxx</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>P1000</td>
+                                <td>L0001</td>
+                                <td>A0001</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>...</td>
+                                <td>Tool-Chamber</td>
+                                <td>Tool-Chamber</td>
+                                <td>...</td>
+                                <td>xxx</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>P1000</td>
+                                <td>L0001</td>
+                                <td>A0001</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>...</td>
+                                <td>Tool-Chamber</td>
+                                <td>Tool-Chamber</td>
+                                <td>...</td>
+                                <td>xxx</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>P1000</td>
+                                <td>L0001</td>
+                                <td>A0001</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>...</td>
+                                <td>Tool-Chamber</td>
+                                <td>Tool-Chamber</td>
+                                <td>...</td>
+                                <td>xxx</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>P1000</td>
+                                <td>L0001</td>
+                                <td>A0001</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>...</td>
+                                <td>Tool-Chamber</td>
+                                <td>Tool-Chamber</td>
+                                <td>...</td>
+                                <td>xxx</td>
+                                <td>...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="chart_select">
+                        <div class="loder_check">
+                            <form class="layui-form" action="">
+                                <span>分类参数:</span>
+                                <div class="layui-form-item">
+                                    <select name="city" lay-verify="iEMS">
+                                        <option value="Defect">Defect</option>
+                                    </select>
+                                </div>
+                                <span>分类1 设定:</span>
+                                <div class="layui-form-item">
+                                    <input type="text" name="title" required lay-verify="required" placeholder="0-50"
+                                        autocomplete="off" class="layui-input">
+                                </div>
+                                <span>分类2 设定:</span>
+                                <div class="layui-form-item">
+                                    <input type="text" name="title" required lay-verify="required" placeholder="50-100"
+                                        autocomplete="off" class="layui-input">
+                                </div>
+                                <span>分类3 设定:</span>
+                                <div class="layui-form-item">
+                                    <input type="text" name="title" required lay-verify="required" placeholder=">100"
+                                        autocomplete="off" class="layui-input">
+                                </div>
+                                <br>
+                                <span>输入参数</span>
+                                <div class="layui-form-item more_select" style="width:300px ">
+                                    <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+
+                                        <option selected>Para. 1</option>
+                                        <option>Para. 2</option>
+                                        <option>Para. 3</option>
+                                        <option>Para. 4</option>
+                                        <option>Para. 5</option>
+                                        <option>Para. 6</option>
+                                        <option>Para. 7</option>
+                                        <option>Para. 8</option>
+                                    </select>
+                                </div>
+                                <div class="layui-form-item">
+                                    <a class="blue-btn" href="javascript:;">分析</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="main_box">
+                        <div class="main" id="means"></div>
+                    </div>
+                    <div class="main_box">
+                        <div class="main" id="means1"></div>
+                    </div>
+                    <div class="main_box">
+                        <div class="main" id="means2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 
 
 
- 
+
 </body>
 
+</html>
 <script src="js/jquery.min.js"></script>
 <script src="js/echarts.min.js"></script>
- 
-
-
-
-
-</html>
+<script src="./layui/layui.js"></script>
+<script src="js/ecStat.js"></script>
+<script src="select2/select2.min.js"></script>
+<script src="js/toolBox.js"></script>

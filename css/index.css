@@ -1,3 +1,7 @@
+/* .gray-bg {
+  min-width: 1300px;
+  overflow: auto;
+} */
 .add_box .layui-input {
   width: 250px;
   height: 34px;
@@ -108,4 +112,66 @@
 }
 .on-going {
   color: #2ccac1 !important;
+}
+.summary_box .title {
+  font-weight: 700;
+  border-bottom: none !important;
+}
+
+.summary_content li {
+  padding-left: 60px;
+  position: relative;
+}
+.summary_content .summary_title {
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+}
+.tog_box {
+  list-style: none;
+  height: 40px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.tog_box li {
+  float: left;
+  width: 150px;
+}
+.tog_box li a {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.tog_box li.active a {
+  color: #fff;
+}
+.tog_box li.active {
+  background: #1c92ed;
+  color: #fff;
+}
+.information_title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+.history .title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700 !important;
+}
+.form-title {
+  font-weight: 700;
+  font-size: 14px;
+}
+.main_box {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+  background: #fff;
+}
+#defect_chart4_b,
+#defect_chart4_c {
+  height: 100%;
 }

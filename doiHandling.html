@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Set Up</title>
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link href="select2/select2.min.css" rel="stylesheet" />
+    <link href="layui/css/layui.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/nextpage.css">
+    <link rel="stylesheet" href="./css/prediction.css">
+    <link rel="stylesheet" href="css/doiHanding.css">
+</head>
+
+<body class="gray-bg">
+
+    <div class="header">
+        <a href="javascript:;" class="logo"> AI Defect</a>
+
+
+        <div class="right-bar">
+            <a href="javascript:;"><i class="iconfont iconzhanghu"></i>Admin</a>
+            <a href="javascript:;"><i class="iconfont iconzhuxiao"></i>Logout</a>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="left-nav">
+            <ul class="nav">
+                <li><a href="Excursion.html"><i class="iconfont iconzhineng"></i> <span>Excursion</span></a></li>
+                <li><a href="Baseline-Reporting.html"><i class="iconfont iconlogAnalysis"></i> <span>Baseline
+                            Reporting</span></a></li>
+                <li><a href="Toolbox.html"><i class="iconfont icongongjuxiang"></i> <span>Toolbox</span></a></li>
+                <li class="cur"><a href="Set-Up.html"><i class="iconfont iconzhinengyunweiguanli"></i> <span>Set
+                            Up</span></a></li>
+            </ul>
+        </div>
+
+
+        <div class="nextpage-container">
+            <div class="breadCrumb">
+                <a href="javascript:;">Home</a> /
+                <a href="Set-Up.html">Set Up</a> /
+                <a href="javascript:;">DOI Handling</a>
+            </div>
+            <div class="page-title">DOI Handling</div>
+            <div class="page-content">
+                <div class="doi_add_box select-bar">
+                    <div class="layui-input-inline">
+                        <form class="layui-form" action="">
+                            <select name="Product" lay-verify="required">
+                                <option value="1">Flow ID
+                                </option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="layui-input-inline">
+                        <form class="layui-form" action="">
+                            <select name="Product" lay-verify="required">
+                                <option value="1">Product
+                                </option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="layui-input-inline">
+                        <form class="layui-form" action="">
+                            <select name="Product" lay-verify="required">
+                                <option value="1">Layer
+                                </option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="layui-input-inline">
+                        <form class="layui-form" action="">
+                            <select name="Product" lay-verify="required">
+                                <option value="1">DOI
+                                </option>
+                            </select>
+                        </form>
+                    </div>
+
+                    <a class="blue-btn addChart1" href="javascript:;">Add</a>
+                </div>
+                <table class="doi_tab">
+                    <thead>
+                        <tr>
+                            <th width='8%'>Flow ID</th>
+                            <th width='8%'>Product</th>
+                            <th width='6%'>Layer</th>
+                            <th width='5%'>DOI</th>
+                            <th width='6%'>Spec (cnt)</th>
+                            <th width='7.5%'>Spec (Norm. cnt)</th>
+                            <th width='7%'>Spec (Defect Density)</th>
+                            <th width='14%'>Spec (Norm. Defect Density)</th>
+                            <th width='7%'>Spec (D.D%)</th>
+                            <th width='9%'>Spec (Norm. D.D%)</th>
+                            <th width='3%'>KR</th>
+                            <th>Suspect Step No. （多选）
+                            </th>
+                            <th>Anlaysis model (多选）</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>XXX.01</td>
+                            <td>XXX</td>
+                            <td>XXX</td>
+                            <td>XXX</td>
+                            <td>10</td>
+                            <td>100</td>
+                            <td>0.01</td>
+                            <td>0.5</td>
+                            <td>3%</td>
+                            <td>10%</td>
+                            <td>0.2</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>XXX.01</td>
+                            <td>XXX</td>
+                            <td>XXX</td>
+                            <td>XXX</td>
+                            <td>10</td>
+                            <td>100</td>
+                            <td>0.01</td>
+                            <td>0.5</td>
+                            <td>3%</td>
+                            <td>10%</td>
+                            <td>0.2</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>XXX.01</td>
+                            <td>XXX</td>
+                            <td>XXX</td>
+                            <td>XXX</td>
+                            <td>10</td>
+                            <td>100</td>
+                            <td>0.01</td>
+                            <td>0.5</td>
+                            <td>3%</td>
+                            <td>10%</td>
+                            <td>0.2</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>XXX.01</td>
+                            <td>XXX</td>
+                            <td>XXX</td>
+                            <td>XXX</td>
+                            <td>10</td>
+                            <td>100</td>
+                            <td>0.01</td>
+                            <td>0.5</td>
+                            <td>3%</td>
+                            <td>10%</td>
+                            <td>0.2</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="select2/select2.min.js"></script>
+<script src="layui/layui.js"></script>
+<script>
+    $(function () {
+        $(document).ready(function () {
+            $('.js-example-basic-multiple').select2();
+            $('.js-example-basic-single').select2();
+
+        });
+        layui.use('form', function () {
+            var form = layui.form;
+
+            //监听提交
+            form.on('submit(formDemo)', function (data) {
+                layer.msg(JSON.stringify(data.field));
+                return false;
+            });
+        });
+    })
+</script>

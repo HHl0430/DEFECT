@@ -1,47 +1,52 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Baseline Reporting</title>
-<link rel="stylesheet" type="text/css" href="font/iconfont.css" >
-<link href="select2/select2.min.css" rel="stylesheet" />
-<link href="layui/css/layui.css" rel="stylesheet" />
-<link rel="stylesheet" type="text/css" href="css/style.css" >
-<link rel="stylesheet" type="text/css" href="css/nextpage.css" >
+    <meta charset="UTF-8">
+    <title>Baseline Reporting</title>
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link href="select2/select2.min.css" rel="stylesheet" />
+    <link href="layui/css/layui.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/nextpage.css">
+    <link rel="stylesheet" href="./css/index.css">
+
 </head>
 
 <body class="gray-bg">
-<form class="layui-form" action="">
+    <form class="layui-form" action="">
 
-<div class="header">
-    <a href="javascript:;" class="logo"> AI Defect</a>
-   
-    <div class="right-bar">
-        <a href="javascript:;"><i class="iconfont iconzhanghu"></i>Admin</a>
-        <a href="javascript:;"><i class="iconfont iconzhuxiao"></i>Logout</a>
-    </div>
-</div>
+        <div class="header">
+            <a href="javascript:;" class="logo"> AI Defect</a>
 
-
-<div class="container">
-    <div class="left-nav">
-        <ul class="nav">
-            <li><a href="Excursion.html"><i class="iconfont iconzhineng"></i> <span>Excursion</span></a></li>
-            <li  class="cur"><a href="Baseline-Reporting.html"><i class="iconfont iconlogAnalysis"></i> <span>Baseline Reporting</span></a></li>
-            <li><a href="Toolbox.html"><i class="iconfont icongongjuxiang"></i> <span>Toolbox</span></a></li>
-            <li><a href="Set-Up.html"><i class="iconfont iconzhinengyunweiguanli"></i> <span>Set Up</span></a></li>
-        </ul>
-    </div>
-    <div class="nextpage-container">
-        <div class="breadCrumb">
-            <a href="javascript:;">Home</a> /
-            <a href="Baseline-Reporting.html">Baseline Reporting</a> /
-            <a href="javascript:;">YE Production Report</a>
+            <div class="right-bar">
+                <a href="javascript:;"><i class="iconfont iconzhanghu"></i>Admin</a>
+                <a href="javascript:;"><i class="iconfont iconzhuxiao"></i>Logout</a>
+            </div>
         </div>
-        <div class="page-title">YE Production Report</div>
-        <div class="page-content">
-            
-            <div class="select-bar">
+
+
+        <div class="container">
+            <div class="left-nav">
+                <ul class="nav">
+                    <li><a href="Excursion.html"><i class="iconfont iconzhineng"></i> <span>Excursion</span></a></li>
+                    <li class="cur"><a href="Baseline-Reporting.html"><i class="iconfont iconlogAnalysis"></i>
+                            <span>Baseline Reporting</span></a></li>
+                    <li><a href="Toolbox.html"><i class="iconfont icongongjuxiang"></i> <span>Toolbox</span></a></li>
+                    <li><a href="Set-Up.html"><i class="iconfont iconzhinengyunweiguanli"></i> <span>Set Up</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nextpage-container">
+                <div class="breadCrumb">
+                    <a href="javascript:;">Home</a> /
+                    <a href="Baseline-Reporting.html">Baseline Reporting</a> /
+                    <a href="javascript:;">YE Production Report</a>
+                </div>
+                <div class="page-title">YE Production Report</div>
+                <div class="page-content">
+
+                    <!-- <div class="select-bar">
                 <div class="layui-input-inline">
                     <form class="layui-form" action="">
                         <select name="Product" lay-verify="required" >
@@ -75,17 +80,71 @@
                     </form>
                 </div>
                 <a href="javascript:;" class=" layui-btn">Add to monitor</a>
+            </div> -->
+                    <div class="ooc_charts_box">
+
+                        <span class="form-title">OOC By time:</span>
+                        <div class="layui-input-inline">
+                            <form class="layui-form" action="">
+                                <select name="Product" lay-verify="required">
+                                    <option value="">Day</option>
+                                    <option value="0">Week</option>
+                                    <option value="1">Month</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div id="main" class="main" style="height: 400px;"></div>
+                    </div>
+
+                    <div class="prod_charts_box">
+
+                        <span class="form-title">OOC By Prod/Layer:</span>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input" id="test1" placeholder="2019-4-16 - 2019-5-15">
+                        </div>
+                        <div id="main1" class="main" style="height: 400px;"></div>
+                    </div>
+
+                    <div class="Layer_charts_box">
+
+                        <span class="form-title">OOC% By Prod/Layer:
+                        </span>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input" id="test" placeholder="2019-4-16 - 2019-5-15">
+                        </div>
+                        <div id="main2" class="main" style="height: 400px;"></div>
+                    </div>
+                    <div class="Layer_charts_box">
+
+                        <span class="form-title">YE Cycle time:
+                        </span>
+                        <div class="layui-input-inline">
+                            <form class="layui-form" action="">
+                                <select name="Product" lay-verify="required">
+                                    <option value="">Day</option>
+                                    <option value="0">Week</option>
+                                    <option value="1">Month</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div id="main3" class="main" style="height: 400px;"></div>
+                    </div>
+                    <div class="Layer_charts_box">
+
+                        <span class="form-title">OOC handling By Prod/Layer:
+                        </span>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input" id="test2" placeholder="2019-4-16 - 2019-5-15">
+                        </div>
+                        <div id="main4" class="main" style="height: 400px;"></div>
+                    </div>
+                </div>
             </div>
-
-             
-        
         </div>
-    </div>
-</div>
 
-</form>
+    </form>
 
- 
+
 </body>
 
 <script src="js/jquery.min.js"></script>
@@ -94,39 +153,126 @@
 <script src="layui/layui.js"></script>
 <script type="text/javascript">
 
-    $(document).ready(function() {
-        $('.js-example-basic-multiple').select2();
-        $('.js-example-basic-single').select2();
-       
-    });
- 
-layui.use('laydate', function(){
-  var laydate = layui.laydate;
-  
-   
-  //同时绑定多个
-  lay('.time-slot').each(function(){
-    laydate.render({
-      elem: this
-      ,range: true
-      ,trigger: 'click'
-      ,format: 'yyyy年MM月dd日'
-         
-    });
-  });
+    $(function () {
+        $(document).ready(function () {
+            $('.js-example-basic-multiple').select2();
+            $('.js-example-basic-single').select2();
 
-});
+        });
 
-layui.use('form', function(){
-  var form = layui.form;
-  
-  //监听提交
-  form.on('submit(formDemo)', function(data){
-    layer.msg(JSON.stringify(data.field));
-    return false;
-  });
-});
 
+        function useLayDateMultiple(cls) {
+            layui.use('laydate', function () {
+                var laydate = layui.laydate;
+                lay('#' + cls).each(function () {
+                    laydate.render({
+                        elem: this,
+                        range: true,
+                        trigger: 'click'
+                    });
+                });
+            });
+        }
+        useLayDateMultiple('test');
+        useLayDateMultiple('test1'); 
+        useLayDateMultiple('test2');
+        layui.use('form', function () {
+            var form = layui.form;
+
+            //监听提交
+            form.on('submit(formDemo)', function (data) {
+                layer.msg(JSON.stringify(data.field));
+                return false;
+            });
+        });
+
+        var option = {
+            xAxis: {
+                type: 'category',
+                data: ['5/13', '5/14', '5/15', '5/16', '5/17', '5/18', '5/19']
+            },
+            yAxis: {
+                type: 'value',
+                name: 'WIP'
+            },
+            series: [{
+                data: [120, 200, 150, 80, 70, 110, 130],
+                type: 'bar'
+            }]
+        }
+        var myChart = echarts.init(document.getElementById('main'));
+        myChart.setOption(option);
+
+        var option = {
+            xAxis: {
+                type: 'category',
+                data: ['0001_AA ASI', '0001_CT WCMP', '0001_M1 CMP', '0001_M2 CMP', '0001_P1 ASI', '0001_NiSi']
+            },
+            yAxis: {
+                type: 'value',
+                name: 'WIP'
+            },
+            series: [{
+                data: [200, 180, 160, 140, 120, 100],
+                type: 'bar'
+            }]
+        }
+        var myChart = echarts.init(document.getElementById('main1'));
+        myChart.setOption(option);
+        var option = {
+            xAxis: {
+                type: 'category',
+                data: ['0001_AA ASI', '0001_CT WCMP', '0001_M1 CMP', '0001_M2 CMP', '0001_P1 ASI', '0001_NiSi']
+            },
+            yAxis: {
+                type: 'value',
+                name: 'OOC%',
+                axisLabel: {
+                    show: true,
+                    interval: 'auto',
+                    formatter: '{value} %'
+                },
+            },
+            series: [{
+                data: [80, 70, 60, 50, 40, 30],
+                type: 'bar'
+            }]
+        }
+        var myChart = echarts.init(document.getElementById('main2'));
+        myChart.setOption(option);
+        var option = {
+            xAxis: {
+                type: 'category',
+                data: ['5/13', '5/14', '5/15', '5/16', '5/17', '5/18', '5/19']
+            },
+            yAxis: {
+                type: 'value',
+                name: 'Time length(mins)'
+            },
+            series: [{
+                data: [120, 200, 150, 80, 70, 110, 130],
+                type: 'bar'
+            }]
+        }
+        var myChart = echarts.init(document.getElementById('main3'));
+        myChart.setOption(option);
+        var option = {
+            xAxis: {
+                type: 'category',
+                data: ['0001_AA ASI', '0001_CT WCMP', '0001_M1 CMP', '0001_M2 CMP', '0001_P1 ASI', '0001_NiSi']
+            },
+            yAxis: {
+                type: 'value',
+                name: 'Time Length'
+            },
+            series: [{
+                data: [200, 180, 160, 140, 120, 100],
+                type: 'bar'
+            }]
+        }
+        var myChart = echarts.init(document.getElementById('main4'));
+        myChart.setOption(option);
+    })
 
 
 

@@ -1,142 +1,133 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Baseline Reporting</title>
-<link rel="stylesheet" type="text/css" href="font/iconfont.css" >
-<link href="select2/select2.min.css" rel="stylesheet" />
-<link href="layui/css/layui.css" rel="stylesheet" />
-<link rel="stylesheet" type="text/css" href="css/style.css" >
-<link rel="stylesheet" type="text/css" href="css/nextpage.css" >
+    <meta charset="UTF-8">
+    <title>Baseline Reporting</title>
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link href="select2/select2.min.css" rel="stylesheet" />
+    <link href="layui/css/layui.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/nextpage.css">
+    <link rel="stylesheet" href="./css/prediction.css">
 </head>
 
 <body class="gray-bg">
-<form class="layui-form" action="">
+    <form class="layui-form" action="">
 
-<div class="header">
-    <a href="javascript:;" class="logo"> AI Defect</a>
-   
-    <div class="right-bar">
-        <a href="javascript:;"><i class="iconfont iconzhanghu"></i>Admin</a>
-        <a href="javascript:;"><i class="iconfont iconzhuxiao"></i>Logout</a>
-    </div>
-</div>
+        <div class="header">
+            <a href="javascript:;" class="logo"> AI Defect</a>
 
-
-<div class="container">
-    <div class="left-nav">
-        <ul class="nav">
-            <li><a href="Excursion.html"><i class="iconfont iconzhineng"></i> <span>Excursion</span></a></li>
-            <li  class="cur"><a href="Baseline-Reporting.html"><i class="iconfont iconlogAnalysis"></i> <span>Baseline Reporting</span></a></li>
-            <li><a href="Toolbox.html"><i class="iconfont icongongjuxiang"></i> <span>Toolbox</span></a></li>
-            <li><a href="Set-Up.html"><i class="iconfont iconzhinengyunweiguanli"></i> <span>Set Up</span></a></li>
-        </ul>
-    </div>
-    <div class="nextpage-container">
-        <div class="breadCrumb">
-            <a href="javascript:;">Home</a> /
-            <a href="Baseline-Reporting.html">Baseline Reporting</a> /
-            <a href="javascript:;">KR Prediction</a>
-        </div>
-        <div class="page-title">KR Prediction</div>
-        <div class="page-content">
-            
-            <div class="select-bar">
-                <div class="layui-input-inline">
-                    <form class="layui-form" action="">
-                        <select name="Product" lay-verify="required" >
-                            <option value="">Product</option>
-                            <option value="0">001</option>
-                            <option value="1">002</option>
-                            <option value="2">003</option>
-                            <option value="3">004</option>
-                        </select>
-                    </form>
-                </div>
-                <div class="layui-input-inline">
-                    <form class="layui-form" action="">
-                        <select name="Layer" lay-verify="required" >
-                            <option value="">Layer</option>
-                            <option value="0">AA ASI</option>
-                            <option value="3">SN RM</option>
-                            <option value="3">M6 CMP</option>
-                        </select>
-                    </form>
-                </div>
-                <div class="layui-input-inline">
-                    <form class="layui-form" action="">
-                        <select name="DOI" lay-verify="required" >
-                            <option value="">DOI</option>
-                            <option value="0">Tiny PD</option>
-                            <option value="1">Bridge</option>
-                            <option value="2">Buried PD</option>
-                            <option value="3">CMP_SC</option>
-                        </select>
-                    </form>
-                </div>
-                <a href="javascript:;" class=" layui-btn">Add to monitor</a>
+            <div class="right-bar">
+                <a href="javascript:;"><i class="iconfont iconzhanghu"></i>Admin</a>
+                <a href="javascript:;"><i class="iconfont iconzhuxiao"></i>Logout</a>
             </div>
-
-            <div class="page-tb-bar" style="margin: 10px 0;">
-                <table>
-                    <tr>
-                        <th>Product</th>
-                        <th>Layer</th>
-                        <th>DOI</th>
-                        <th>Wafer Count</th>
-                        <th>KR Prediction</th>
-                        <th>Top Fail bin</th>
-                    </tr>
-                    <tr>
-                        <td>001</td>
-                        <td>AA ASI</td>
-                        <td>Tiny PD</td>
-                        <td>500</td>
-                        <td>0.21</td>
-                        <td>Bin10 – S Bit</td>
-                    </tr>
-                    <tr>
-                        <td>001</td>
-                        <td>AA ASI</td>
-                        <td>Bridge</td>
-                        <td>500</td>
-                        <td>0.88</td>
-                        <td>Bin11 – SBL</td>
-                    </tr>
-                    <tr>
-                        <td>001</td>
-                        <td>AA ASI</td>
-                        <td>Buried PD</td>
-                        <td>500</td>
-                        <td>0.79</td>
-                        <td>Bin12 – SBL</td>
-                    </tr>
-                    <tr>
-                        <td>001</td>
-                        <td>SN RM</td>
-                        <td>CMP_SC</td>
-                        <td>430</td>
-                        <td>0.32</td>
-                        <td>Bin 20 – scan chain HV</td>
-                    </tr>
-                    <tr>
-                        <td>001</td>
-                        <td>SN RM</td>
-                        <td>STI Void</td>
-                        <td>430</td>
-                        <td>0.52</td>
-                        <td>Bin 30 – IDDQ</td>
-                    </tr>
-                </table>
-            </div>
-        
         </div>
-    </div>
-</div>
 
-</form>
 
- 
+        <div class="container">
+            <div class="left-nav">
+                <ul class="nav">
+                    <li><a href="Excursion.html"><i class="iconfont iconzhineng"></i> <span>Excursion</span></a></li>
+                    <li class="cur"><a href="Baseline-Reporting.html"><i class="iconfont iconlogAnalysis"></i>
+                            <span>Baseline Reporting</span></a></li>
+                    <li><a href="Toolbox.html"><i class="iconfont icongongjuxiang"></i> <span>Toolbox</span></a></li>
+                    <li><a href="Set-Up.html"><i class="iconfont iconzhinengyunweiguanli"></i> <span>Set Up</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nextpage-container">
+                <div class="breadCrumb">
+                    <a href="javascript:;">Home</a> /
+                    <a href="Baseline-Reporting.html">Baseline Reporting</a> /
+                    <a href="javascript:;">KR Prediction</a>
+                </div>
+                <div class="page-title">KR Prediction</div>
+                <div class="page-content">
+
+                    <div class="select-bar">
+                        <div class="layui-input-inline">
+                            <form class="layui-form" action="">
+                                <select name="Product" lay-verify="required">
+                                    <option value="">Product
+                                    </option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="layui-input-inline">
+                            <form class="layui-form" action="">
+                                <select name="Product" lay-verify="required">
+                                    <option value="">Layer
+                                    </option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="layui-input-inline">
+                            <form class="layui-form" action="">
+                                <select name="Product" lay-verify="required">
+                                    <option value="">DOI
+                                    </option>
+                                </select>
+                            </form>
+                        </div>
+                        <a class="blue-btn" href="">Add to monitor</a>
+                    </div>
+                    <div class="pred_tab">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Layer</th>
+                                    <th>DOI</th>
+                                    <th> Wafer Count</th>
+                                    <th>KR Prediction</th>
+                                    <th>Top Fail bin</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0001</td>
+                                    <td>AA ASI</td>
+                                    <td>Tiny PD</td>
+                                    <td>500</td>
+                                    <td>0.21</td>
+                                    <td>Bin10 -S Bit</td>
+                                </tr>
+                                <tr>
+                                    <td>0001</td>
+                                    <td>AA ASI</td>
+                                    <td>Tiny PD</td>
+                                    <td>500</td>
+                                    <td>0.21</td>
+                                    <td>Bin10 -S Bit</td>
+                                </tr>
+                                <tr>
+                                    <td>0001</td>
+                                    <td>AA ASI</td>
+                                    <td>Tiny PD</td>
+                                    <td>500</td>
+                                    <td>0.21</td>
+                                    <td>Bin10 -S Bit</td>
+                                </tr>
+                                <tr>
+                                    <td>0001</td>
+                                    <td>AA ASI</td>
+                                    <td>Tiny PD</td>
+                                    <td>500</td>
+                                    <td>0.21</td>
+                                    <td>Bin10 -S Bit</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+
 </body>
 
 <script src="js/jquery.min.js"></script>
@@ -145,38 +136,58 @@
 <script src="layui/layui.js"></script>
 <script type="text/javascript">
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('.js-example-basic-multiple').select2();
         $('.js-example-basic-single').select2();
-       
-    });
- 
-layui.use('laydate', function(){
-  var laydate = layui.laydate;
-  
-   
-  //同时绑定多个
-  lay('.time-slot').each(function(){
-    laydate.render({
-      elem: this
-      ,range: true
-      ,trigger: 'click'
-      ,format: 'yyyy年MM月dd日'
-         
-    });
-  });
 
-});
+    });
 
-layui.use('form', function(){
-  var form = layui.form;
-  
-  //监听提交
-  form.on('submit(formDemo)', function(data){
-    layer.msg(JSON.stringify(data.field));
-    return false;
-  });
-});
+    layui.use('laydate', function () {
+        var laydate = layui.laydate;
+
+
+        //同时绑定多个
+        lay('.time-slot').each(function () {
+            laydate.render({
+                elem: this
+                , range: true
+                , trigger: 'click'
+                , format: 'yyyy年MM月dd日'
+
+            });
+        });
+
+    });
+
+    layui.use('form', function () {
+        var form = layui.form;
+
+        //监听提交
+        form.on('submit(formDemo)', function (data) {
+            layer.msg(JSON.stringify(data.field));
+            return false;
+        });
+    });
+    layui.use('laydate', function () {
+        var laydate = layui.laydate;
+
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#test2'
+            , range: true //或 range: '~' 来自定义分割字符
+        });
+
+    });
+    // layui.use('laydate', function () {
+    //     var laydate = layui.laydate;
+
+    //     //执行一个laydate实例
+    //     laydate.render({
+    //         elem: '#test3'
+    //         , range: true //或 range: '~' 来自定义分割字符
+    //     });
+    // });
+
 
 
 

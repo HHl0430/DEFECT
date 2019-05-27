@@ -1,4 +1,5 @@
 $(function () {
+    
     var option = {
         title: {
             text: 'Peoduct1,layer1,DOI1,2019.04.01-2019.02.12',
@@ -623,4 +624,47 @@ $(function () {
     $(".release_btn").on("click", function () {
         $(".add_text").text("Done").removeClass("on-going")
     })
+
+    $(".tog_box li").on("click", function () {
+        $(this).siblings().removeClass("active");
+        $(this).addClass("active");
+        var ar = '.' + $(this).attr("data-type");
+        $(this).parents('.box').find('.box-content').hide();
+        $(ar).show()
+    })
+    var issueList = 'step1'
+    $(".issue_check").on("click", function () {
+        issueList = $(this).val()
+    })
+    var issueRender = function () {
+        $("#SEBox .summary_content").empty()
+        if (issueList === 'step1') {
+            var html = `  <ul>
+            <li>
+                <span class="summary_title">Defect1:</span>
+                <span> #1-15(6) -D.D% 58%</span>
+                <br>
+                <span> #2-15(6) -D.D% 58%</span>
+                <span>Defect1 suspect tool: Tool A</span>
+            </li>
+           
+        </ul>`
+        } else {
+            var html = `  <ul>
+          
+            <li>
+                <span class="summary_title">Defect2:</span>
+                <span> #1-17(8) -D.D% 60%</span>
+                <br>
+                <span> #2-17(8) -D.D% 60%</span>
+                <span>Defect2 suspect tool: Tool B</span>
+            </li>
+        </ul>`
+        }
+        $("#SEBox .summary_content").append(html)
+    }
+    $("#SEBtn").click(function () {
+        $(".SEBox").show();
+        issueRender()
+    });
 })
