@@ -96,7 +96,7 @@ $(function () {
 
         var option1 = {
             title: {
-                text: 'Add scan result',
+                text: 'Product1,layer1,DOI2,2019.04.16-2019.05.15',
                 x: 'center',
                 y: '0',
                 textStyle: {
@@ -132,7 +132,7 @@ $(function () {
                     'A05_W#8_2019-04-28', 'A05_W#6_2019-04-29', 'A05_W#8_2019-04-30', 'A06_W#1_2019-05-01', 'A06_W#6_2019-05-02',
                     'A06_W#8_2019-05-03', 'A07_W#1_2019-05-04', 'A07_W#6_2019-05-05', 'A07_W#1_2019-05-06', 'A08_W#1_2019-05-07',
                     'A08_W#6_2019-05-08', 'A08_W#8_2019-05-09', 'A09_W#1_2019-05-10', 'A09_W#6_2019-05-11', 'A09_W#8_2019-05-12',
-                    'A10_W#1_2019-05-13', 'A10_W#2_2019-05-14', 'A10_W#8_2019-05-15']
+                    'A10_W#1_2019-05-13', 'A10_W#2_2019-05-14', 'A10_W#8_2019-05-15', 'A10_W#3_2019-05-14', 'A10_W#4_2019-05-14']
             },
             yAxis: {
                 type: 'value'
@@ -153,7 +153,7 @@ $(function () {
                     //         }
                     //     }
                     // },
-                    data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 17, 1, 1, 1, 1, 1, 1, 1, 15, 1]
+                    data: [2, 1, 2, 1, 1, 5, 2, 1, 1, 3, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 17, 1, 1, 1, 1, 1, 1, 2, 15, 1, 5, 2]
                 },
 
             ]
@@ -171,15 +171,26 @@ $(function () {
         var $item = $contents.eq(_index).addClass('selected');
         $navs.not($this).removeClass('selected');
         $contents.not($item).removeClass('selected');
+        // console.log($('.box-tab ul li a').text(), $(this).children())
+        $('.box-tab ul li a').each((i,e) => {
+            $('.box-tab ul li').eq(i).removeClass('selected')
+            if(e.text ===$(this).children().text() ) {
+                $('.box-tab ul li').eq(i).addClass('selected')
+            }
+        })
         if ($(this).children().text() === 'Defect2') {
+
             $(".commonality").show()
             $(".commonality3").hide()
+            $(".commonality2").hide()
             $(".commonality4").hide()
             $(".cd_tb_red").css({
                 color: '#333'
             })
+
         } else if ($(this).children().text() === 'Defect1') {
             $(".commonality").hide()
+            $(".commonality2").show()
             $(".commonality3").hide()
             $(".commonality4").hide()
             $(".cd_tb_red").css({
@@ -188,6 +199,7 @@ $(function () {
         } else if ($(this).children().text() === 'Defect3') {
             $(".commonality").hide()
             $(".commonality3").show()
+            $(".commonality2").hide()
             $(".commonality4").hide()
             $(".cd_tb_red").css({
                 color: '#333'
@@ -195,10 +207,18 @@ $(function () {
         } else {
             $(".commonality").hide()
             $(".commonality3").hide()
+            $(".commonality2").hide()
             $(".commonality4").show()
             render()
         }
     });
+    // $(".tog_box li").on("click", function () {
+    //     $(this).siblings().removeClass("active");
+    //     $(this).addClass("active");
+    //     var ar = '.' + $(this).attr("data-type");
+    //     $(this).parents('.box').find('.box-content').hide();
+    //     $(ar).show()
+    // })
 })
 
 
@@ -295,7 +315,7 @@ $(function () {
 $(function () {
     var option = {
         title: {
-            text: 'Product1,layer1,DOI1,2019.04.16-2019.05.15',
+            text: 'Product1,layer1,DOI1,2019.04.16-2019.05.15_step 0110',
             x: 'center',
             y: '0',
             textStyle: {
@@ -306,7 +326,7 @@ $(function () {
             trigger: 'axis'
         },
         legend: {
-            data: ['机台1 ChamberA', '机台1 ChamberB', '机台2 ChamberA', '机台2 ChamberB'],
+            data: ['E11-1 ChamberA', 'E11-1 ChamberB', 'E11 ChamberA', 'E11 ChamberB'],
             x: 'center',
             y: '30',
         },
@@ -341,7 +361,7 @@ $(function () {
 
                 symbolSize: 7,
                 connectNulls: true,
-                name: '机台1 ChamberA',
+                name: 'E11-1 ChamberA',
                 type: 'line',
                 stack: '总量',
                 // itemStyle: {
@@ -358,7 +378,7 @@ $(function () {
 
                 symbolSize: 7,
                 connectNulls: true,
-                name: '机台1 ChamberB',
+                name: 'E11-1 ChamberB',
                 type: 'line',
                 stack: '总量',
                 // itemStyle: {
@@ -375,7 +395,7 @@ $(function () {
 
                 symbolSize: 7,
                 connectNulls: true,
-                name: '机台2 ChamberA',
+                name: 'E11 ChamberA',
                 type: 'line',
                 stack: '总量',
                 // itemStyle: {
@@ -392,7 +412,7 @@ $(function () {
 
                 symbolSize: 7,
                 connectNulls: true,
-                name: '机台2 ChamberB',
+                name: 'E11 ChamberB',
                 type: 'line',
                 stack: '总量',
                 // itemStyle: {
@@ -413,11 +433,90 @@ $(function () {
     $("body").on("click", ".main_rem", function () {
         $(this).parents('.main_box').remove()
     })
+
     $(".addChart2").on("click", function () {
         var num = new Date().getTime().toString(36) + Math.random().toString(36).slice(2)
         $(this).parents(".box-content-chart").append(`<div class='main_box'><span class='main_rem'>Remove</span><div class="main" id='${'main2' + num}'></div> </div>`)
         // var myChart1 = echarts.init(document.getElementById(`${'main' + num}`));
         // myChart1.setOption(option);
+        option.title.text = 'Product1,layer1,DOI1,2019.04.16-2019.05.15_step ' + $(".change_select option:selected").text()
+        switch ($(".change_select option:selected").text()) {
+            case '0200':
+                option.legend.data = ['E20-1 ChamberA', 'E20-1 ChamberB', 'E20 ChamberA', 'E20 ChamberB']
+                option.series[0].name = 'E20-1 ChamberA'
+                option.series[1].name = 'E20-1 ChamberB'
+                option.series[2].name = 'E20 ChamberA'
+                option.series[3].name = 'E20 ChamberB'
+                break;
+            case '0190':
+                option.legend.data = ['E19-1 ChamberA', 'E19-1 ChamberB', 'E19 ChamberA', 'E19 ChamberB']
+                option.series[0].name = 'E19-1 ChamberA'
+                option.series[1].name = 'E19-1 ChamberB'
+                option.series[2].name = 'E19 ChamberA'
+                option.series[3].name = 'E19 ChamberB'
+                break;
+            case '0180':
+                option.legend.data = ['E18-1 ChamberA', 'E18-1 ChamberB', 'E18 ChamberA', 'E18 ChamberB']
+                option.series[0].name = 'E18-1 ChamberA'
+                option.series[1].name = 'E18-1 ChamberB'
+                option.series[2].name = 'E18 ChamberA'
+                option.series[3].name = 'E18 ChamberB'
+                break;
+            case '0170':
+                option.legend.data = ['E17-1 ChamberA', 'E17-1 ChamberB', 'E17 ChamberA', 'E17 ChamberB']
+                option.series[0].name = 'E17-1 ChamberA'
+                option.series[1].name = 'E17-1 ChamberB'
+                option.series[2].name = 'E17 ChamberA'
+                option.series[3].name = 'E17 ChamberB'
+                break;
+            case '0160':
+                option.legend.data = ['E16-1 ChamberA', 'E16-1 ChamberB', 'E16 ChamberA', 'E16 ChamberB']
+                option.series[0].name = 'E16-1 ChamberA'
+                option.series[1].name = 'E16-1 ChamberB'
+                option.series[2].name = 'E16 ChamberA'
+                option.series[3].name = 'E16 ChamberB'
+                break;
+            case '0150':
+                option.legend.data = ['E15-1 ChamberA', 'E15-1 ChamberB', 'E15 ChamberA', 'E15 ChamberB']
+                option.series[0].name = 'E15-1 ChamberA'
+                option.series[1].name = 'E15-1 ChamberB'
+                option.series[2].name = 'E15 ChamberA'
+                option.series[3].name = 'E15 ChamberB'
+                break;
+            case '0140':
+                option.legend.data = ['E14-1 ChamberA', 'E14-1 ChamberB', 'E14 ChamberA', 'E14 ChamberB']
+                option.series[0].name = 'E14-1 ChamberA'
+                option.series[1].name = 'E14-1 ChamberB'
+                option.series[2].name = 'E14 ChamberA'
+                option.series[3].name = 'E14 ChamberB'
+                break;
+            case '0130':
+                option.legend.data = ['E13-1 ChamberA', 'E13-1 ChamberB', 'E13 ChamberA', 'E13 ChamberB']
+                option.series[0].name = 'E13-1 ChamberA'
+                option.series[1].name = 'E13-1 ChamberB'
+                option.series[2].name = 'E13 ChamberA'
+                option.series[3].name = 'E13 ChamberB'
+                break;
+            case '0120':
+                option.legend.data = ['E12-1 ChamberA', 'E12-1 ChamberB', 'E12 ChamberA', 'E12 ChamberB']
+                option.series[0].name = 'E12-1 ChamberA'
+                option.series[1].name = 'E12-1 ChamberB'
+                option.series[2].name = 'E12 ChamberA'
+                option.series[3].name = 'E12 ChamberB'
+                break;
+            case '0110':
+                option.legend.data = ['E11-1 ChamberA', 'E11-1 ChamberB', 'E11 ChamberA', 'E11 ChamberB']
+                option.series[0].name = 'E11-1 ChamberA'
+                option.series[1].name = 'E11-1 ChamberB'
+                option.series[2].name = 'E11 ChamberA'
+                option.series[3].name = 'E11 ChamberB'
+                break;
+            default:
+                console.log(333)
+        }
+        // if ($(".change_select option:selected").text() === '0200') {
+
+        // }
         setTimeout(() => {
             var myChart = echarts.init(document.getElementById(`${'main2' + num}`));
             myChart.setOption(option);
@@ -430,7 +529,7 @@ $(function () {
 $(function () {
     var option = {
         title: {
-            text: 'Product1,layer1,DOI1,2019.04.16-2019.05.15',
+            text: 'Product1,layer1,DOI2,2019.04.16-2019.05.15',
             x: 'center',
             y: '0',
             textStyle: {
@@ -441,7 +540,7 @@ $(function () {
             trigger: 'axis'
         },
         legend: {
-            data: ['Defect2'],
+            data: ['Defect4'],
             x: 'center',
             y: '30',
         },
@@ -476,7 +575,7 @@ $(function () {
 
                 symbolSize: 7,
                 connectNulls: true,
-                name: 'Defect2',
+                name: 'Defect4',
                 type: 'line',
                 stack: '总量',
                 // itemStyle: {
@@ -519,7 +618,7 @@ $(function () {
 $(function () {
     var option = {
         title: {
-            text: 'Product1,layer1,DOI1,2019.04.16-2019.05.15',
+            text: 'Product1,layer1,DOI1,2019.04.16-2019.05.15_Step 0110',
             x: 'center',
             y: '0',
             textStyle: {
@@ -530,7 +629,7 @@ $(function () {
             trigger: 'axis'
         },
         legend: {
-            data: ['机台1 ChamberA', '机台1 ChamberB', '机台2 ChamberA', '机台2 ChamberB'],
+            data: ['E11 ChamberA', 'E11 ChamberB', 'E11-1 ChamberA', 'E11-1 ChamberB'],
             x: 'center',
             y: '30',
         },
@@ -566,7 +665,7 @@ $(function () {
 
                 symbolSize: 7,
                 connectNulls: true,
-                name: '机台1 ChamberA',
+                name: 'E11 ChamberA',
                 type: 'line',
                 stack: '总量',
                 // itemStyle: {
@@ -583,7 +682,7 @@ $(function () {
 
                 symbolSize: 7,
                 connectNulls: true,
-                name: '机台1 ChamberB',
+                name: 'E11 ChamberB',
                 type: 'line',
                 stack: '总量',
                 // itemStyle: {
@@ -600,7 +699,7 @@ $(function () {
 
                 symbolSize: 7,
                 connectNulls: true,
-                name: '机台2 ChamberA',
+                name: 'E11-1 ChamberA',
                 type: 'line',
                 stack: '总量',
                 // itemStyle: {
@@ -617,7 +716,7 @@ $(function () {
 
                 symbolSize: 7,
                 connectNulls: true,
-                name: '机台2 ChamberB',
+                name: 'E11-1 ChamberB',
                 type: 'line',
                 stack: '总量',
                 // itemStyle: {
@@ -645,6 +744,164 @@ $(function () {
         $(this).parents(".box-content-chart").append(`<div class='main_box'><span class='main_rem'>Remove</span><div class="main" id='${'main4' + num}'></div> </div>`)
         // var myChart1 = echarts.init(document.getElementById(`${'main' + num}`));
         // myChart1.setOption(option);
+        option.title.text = 'Product1,layer1,DOI1,2019.04.16-2019.05.15_step ' + $(".change_select2 option:selected").text()
+        switch ($(".change_select2 option:selected").text()) {
+            case '0200':
+                option.legend.data = ['E20-1 ChamberA', 'E20-1 ChamberB', 'E20 ChamberA', 'E20 ChamberB']
+                option.series[0].name = 'E20-1 ChamberA'
+                option.series[1].name = 'E20-1 ChamberB'
+                option.series[2].name = 'E20 ChamberA'
+                option.series[3].name = 'E20 ChamberB'
+                break;
+            case '0190':
+                option.legend.data = ['E19-1 ChamberA', 'E19-1 ChamberB', 'E19 ChamberA', 'E19 ChamberB']
+                option.series[0].name = 'E19-1 ChamberA'
+                option.series[1].name = 'E19-1 ChamberB'
+                option.series[2].name = 'E19 ChamberA'
+                option.series[3].name = 'E19 ChamberB'
+                break;
+            case '0180':
+                option.legend.data = ['E18-1 ChamberA', 'E18-1 ChamberB', 'E18 ChamberA', 'E18 ChamberB']
+                option.series[0].name = 'E18-1 ChamberA'
+                option.series[1].name = 'E18-1 ChamberB'
+                option.series[2].name = 'E18 ChamberA'
+                option.series[3].name = 'E18 ChamberB'
+                break;
+            case '0170':
+                option.legend.data = ['E17-1 ChamberA', 'E17-1 ChamberB', 'E17 ChamberA', 'E17 ChamberB']
+                option.series[0].name = 'E17-1 ChamberA'
+                option.series[1].name = 'E17-1 ChamberB'
+                option.series[2].name = 'E17 ChamberA'
+                option.series[3].name = 'E17 ChamberB'
+                break;
+            case '0160':
+                option.legend.data = ['E16-1 ChamberA', 'E16-1 ChamberB', 'E16 ChamberA', 'E16 ChamberB']
+                option.series[0].name = 'E16-1 ChamberA'
+                option.series[1].name = 'E16-1 ChamberB'
+                option.series[2].name = 'E16 ChamberA'
+                option.series[3].name = 'E16 ChamberB'
+                break;
+            case '0150':
+                option.legend.data = ['E15-1 ChamberA', 'E15-1 ChamberB', 'E15 ChamberA', 'E15 ChamberB']
+                option.series[0].name = 'E15-1 ChamberA'
+                option.series[1].name = 'E15-1 ChamberB'
+                option.series[2].name = 'E15 ChamberA'
+                option.series[3].name = 'E15 ChamberB'
+                break;
+            case '0140':
+                option.legend.data = ['E14-1 ChamberA', 'E14-1 ChamberB', 'E14 ChamberA', 'E14 ChamberB']
+                option.series[0].name = 'E14-1 ChamberA'
+                option.series[1].name = 'E14-1 ChamberB'
+                option.series[2].name = 'E14 ChamberA'
+                option.series[3].name = 'E14 ChamberB'
+                break;
+            case '0130':
+                option.legend.data = ['E13-1 ChamberA', 'E13-1 ChamberB', 'E13 ChamberA', 'E13 ChamberB']
+                option.series[0].name = 'E13-1 ChamberA'
+                option.series[1].name = 'E13-1 ChamberB'
+                option.series[2].name = 'E13 ChamberA'
+                option.series[3].name = 'E13 ChamberB'
+                break;
+            case '0120':
+                option.legend.data = ['E12-1 ChamberA', 'E12-1 ChamberB', 'E12 ChamberA', 'E12 ChamberB']
+                option.series[0].name = 'E12-1 ChamberA'
+                option.series[1].name = 'E12-1 ChamberB'
+                option.series[2].name = 'E12 ChamberA'
+                option.series[3].name = 'E12 ChamberB'
+                break;
+            case '0110':
+                option.legend.data = ['E11-1 ChamberA', 'E11-1 ChamberB', 'E11 ChamberA', 'E11 ChamberB']
+                option.series[0].name = 'E11-1 ChamberA'
+                option.series[1].name = 'E11-1 ChamberB'
+                option.series[2].name = 'E11 ChamberA'
+                option.series[3].name = 'E11 ChamberB'
+                break;
+            default:
+                console.log(333)
+        }
+        setTimeout(() => {
+            var myChart = echarts.init(document.getElementById(`${'main4' + num}`));
+            myChart.setOption(option);
+        }, 100);
+    })
+    $(".addChart0").on("click", function () {
+        var num = new Date().getTime().toString(36) + Math.random().toString(36).slice(2)
+        $(this).parents(".box-content-chart").append(`<div class='main_box'><span class='main_rem'>Remove</span><div class="main" id='${'main4' + num}'></div> </div>`)
+        option.title.text = 'Product1,layer1,DOI1,2019.04.16-2019.05.15_step ' + $(".change_select4 option:selected").text()
+        switch ($(".change_select4 option:selected").text()) {
+            case '0200':
+                option.legend.data = ['E20-1 ChamberA', 'E20-1 ChamberB', 'E20 ChamberA', 'E20 ChamberB']
+                option.series[0].name = 'E20-1 ChamberA'
+                option.series[1].name = 'E20-1 ChamberB'
+                option.series[2].name = 'E20 ChamberA'
+                option.series[3].name = 'E20 ChamberB'
+                break;
+            case '0190':
+                option.legend.data = ['E19-1 ChamberA', 'E19-1 ChamberB', 'E19 ChamberA', 'E19 ChamberB']
+                option.series[0].name = 'E19-1 ChamberA'
+                option.series[1].name = 'E19-1 ChamberB'
+                option.series[2].name = 'E19 ChamberA'
+                option.series[3].name = 'E19 ChamberB'
+                break;
+            case '0180':
+                option.legend.data = ['E18-1 ChamberA', 'E18-1 ChamberB', 'E18 ChamberA', 'E18 ChamberB']
+                option.series[0].name = 'E18-1 ChamberA'
+                option.series[1].name = 'E18-1 ChamberB'
+                option.series[2].name = 'E18 ChamberA'
+                option.series[3].name = 'E18 ChamberB'
+                break;
+            case '0170':
+                option.legend.data = ['E17-1 ChamberA', 'E17-1 ChamberB', 'E17 ChamberA', 'E17 ChamberB']
+                option.series[0].name = 'E17-1 ChamberA'
+                option.series[1].name = 'E17-1 ChamberB'
+                option.series[2].name = 'E17 ChamberA'
+                option.series[3].name = 'E17 ChamberB'
+                break;
+            case '0160':
+                option.legend.data = ['E16-1 ChamberA', 'E16-1 ChamberB', 'E16 ChamberA', 'E16 ChamberB']
+                option.series[0].name = 'E16-1 ChamberA'
+                option.series[1].name = 'E16-1 ChamberB'
+                option.series[2].name = 'E16 ChamberA'
+                option.series[3].name = 'E16 ChamberB'
+                break;
+            case '0150':
+                option.legend.data = ['E15-1 ChamberA', 'E15-1 ChamberB', 'E15 ChamberA', 'E15 ChamberB']
+                option.series[0].name = 'E15-1 ChamberA'
+                option.series[1].name = 'E15-1 ChamberB'
+                option.series[2].name = 'E15 ChamberA'
+                option.series[3].name = 'E15 ChamberB'
+                break;
+            case '0140':
+                option.legend.data = ['E14-1 ChamberA', 'E14-1 ChamberB', 'E14 ChamberA', 'E14 ChamberB']
+                option.series[0].name = 'E14-1 ChamberA'
+                option.series[1].name = 'E14-1 ChamberB'
+                option.series[2].name = 'E14 ChamberA'
+                option.series[3].name = 'E14 ChamberB'
+                break;
+            case '0130':
+                option.legend.data = ['E13-1 ChamberA', 'E13-1 ChamberB', 'E13 ChamberA', 'E13 ChamberB']
+                option.series[0].name = 'E13-1 ChamberA'
+                option.series[1].name = 'E13-1 ChamberB'
+                option.series[2].name = 'E13 ChamberA'
+                option.series[3].name = 'E13 ChamberB'
+                break;
+            case '0120':
+                option.legend.data = ['E12-1 ChamberA', 'E12-1 ChamberB', 'E12 ChamberA', 'E12 ChamberB']
+                option.series[0].name = 'E12-1 ChamberA'
+                option.series[1].name = 'E12-1 ChamberB'
+                option.series[2].name = 'E12 ChamberA'
+                option.series[3].name = 'E12 ChamberB'
+                break;
+            case '0110':
+                option.legend.data = ['E11-1 ChamberA', 'E11-1 ChamberB', 'E11 ChamberA', 'E11 ChamberB']
+                option.series[0].name = 'E11-1 ChamberA'
+                option.series[1].name = 'E11-1 ChamberB'
+                option.series[2].name = 'E11 ChamberA'
+                option.series[3].name = 'E11 ChamberB'
+                break;
+            default:
+                console.log(333)
+        }
         setTimeout(() => {
             var myChart = echarts.init(document.getElementById(`${'main4' + num}`));
             myChart.setOption(option);
@@ -657,7 +914,7 @@ $(function () {
 $(function () {
     var option = {
         title: {
-            text: 'Product1,layer1,DOI1,2019.04.16-2019.05.15',
+            text: 'Product1,layer1,DOI1,2019.04.16-2019.05.15_Step 0110',
             x: 'center',
             y: '0',
             textStyle: {
@@ -668,7 +925,7 @@ $(function () {
             trigger: 'axis'
         },
         legend: {
-            data: ['Defect3-A', 'Defect3-B'],
+            data: ['EQP-E11 ChamberA', 'EQP-E11 ChamberB'],
             x: 'center',
             y: '30',
         },
@@ -701,28 +958,28 @@ $(function () {
         series: [
             {
                 markPoint: {
-                    data: [
-                        // { name: 'Defect1', value: -2, xAxis: 2.1, yAxis: -1.5 },
-                        { name: 'Defect1', value: 'PM', xAxis: 18, yAxis: 0 },
-                        { name: 'Defect1', value: 'PM', xAxis: 26, yAxis: 0 },
-                    ]
+                    // data: [
+                    //     // { name: 'Defect1', value: -2, xAxis: 2.1, yAxis: -1.5 },
+                    //     { name: 'Defect1', value: 'PM', xAxis: 18, yAxis: 0 },
+                    //     { name: 'Defect1', value: 'PM', xAxis: 26, yAxis: 0 },
+                    // ]
                 },
                 symbolSize: 7,
                 connectNulls: true,
-                name: 'Defect3-A',
+                name: 'EQP-E11 ChamberA',
                 type: 'line',
                 data: [2, null, 2, null, 1, null, 2, null, 1, null, 1, null, 1, null, 1, null, 1, null, 0, null, 22, null, 1, null, 1, null, 0, null, 14, null]
             },
             {
                 markPoint: {
-                    data: [
-                        { name: 'Defect1', value: 'PM', xAxis: 5, yAxis: 1 },
-                        { name: 'Defect1', value: 'PM', xAxis: 8, yAxis: 1 },
-                    ]
+                    // data: [
+                    //     { name: 'Defect1', value: 'PM', xAxis: 5, yAxis: 1 },
+                    //     { name: 'Defect1', value: 'PM', xAxis: 8, yAxis: 1 },
+                    // ]
                 },
                 symbolSize: 7,
                 connectNulls: true,
-                name: 'Defect3-B',
+                name: 'EQP-E11 ChamberB',
                 type: 'line',
                 // itemStyle: {
                 //     normal: {
@@ -740,14 +997,89 @@ $(function () {
 
     var myChart = echarts.init(document.getElementById('main5'));
     myChart.setOption(option);
+    $(".show_pm").on("click", function () {
+        option.series[0].markPoint = {
+            data: [
+                // { name: 'Defect1', value: -2, xAxis: 2.1, yAxis: -1.5 },
+                { name: 'Defect1', value: 'PM', xAxis: 18, yAxis: 0 },
+                { name: 'Defect1', value: 'PM', xAxis: 26, yAxis: 0 },
+            ]
+        }
+        option.series[1].markPoint = {
+            data: [
+                { name: 'Defect1', value: 'PM', xAxis: 5, yAxis: 1 },
+                { name: 'Defect1', value: 'PM', xAxis: 8, yAxis: 1 },
+            ]
+        }
+        var myChart = echarts.init(document.getElementById('main5'));
+        myChart.setOption(option);
+    })
     $("body").on("click", ".main_rem", function () {
         $(this).parents('.main_box').remove()
     })
     $(".addChart5").on("click", function () {
         var num = new Date().getTime().toString(36) + Math.random().toString(36).slice(2)
         $(this).parents(".box-content-chart").append(`<div class='main_box'><span class='main_rem'>Remove</span><div class="main" id='${'main5' + num}'></div> </div>`)
-        var myChart1 = echarts.init(document.getElementById(`${'main' + num}`));
-        myChart1.setOption(option);
+
+        // var myChart1 = echarts.init(document.getElementById(`${'main' + num}`));
+        // myChart1.setOption(option);
+        option.title.text = 'Product1,layer1,DOI1,2019.04.16-2019.05.15_step ' + $(".change_select3 option:selected").text()
+        switch ($(".change_select3 option:selected").text()) {
+            case '0200':
+                option.legend.data = ['E20 ChamberA', 'E20 ChamberB']
+                option.series[0].name = 'E20 ChamberA'
+                option.series[1].name = 'E20 ChamberB'
+                // option.series[2].name = 'E20 ChamberA'
+                // option.series[3].name = 'E20 ChamberB'
+                break;
+            case '0190':
+                option.legend.data = ['E19 ChamberA', 'E19 ChamberB']
+                option.series[0].name = 'E19 ChamberA'
+                option.series[1].name = 'E19 ChamberB'
+                break;
+            case '0180':
+                option.legend.data = ['E18 ChamberA', 'E18 ChamberB']
+                option.series[0].name = 'E18 ChamberA'
+                option.series[1].name = 'E18 ChamberB'
+                break;
+            case '0170':
+                option.legend.data = ['E17 ChamberA', 'E17 ChamberB']
+                option.series[0].name = 'E17 ChamberA'
+                option.series[1].name = 'E17 ChamberB'
+                break;
+            case '0160':
+                option.legend.data = ['E16 ChamberA', 'E16 ChamberB']
+                option.series[0].name = 'E16 ChamberA'
+                option.series[1].name = 'E16 ChamberB'
+                break;
+            case '0150':
+                option.legend.data = ['E15 ChamberA', 'E15 ChamberB']
+                option.series[0].name = 'E15 ChamberA'
+                option.series[1].name = 'E15 ChamberB'
+                break;
+            case '0140':
+                option.legend.data = ['E14 ChamberA', 'E14 ChamberB']
+                option.series[0].name = 'E14 ChamberA'
+                option.series[1].name = 'E14 ChamberB'
+                break;
+            case '0130':
+                option.legend.data = ['E13 ChamberA', 'E13 ChamberB']
+                option.series[0].name = 'E13 ChamberA'
+                option.series[1].name = 'E13 ChamberB'
+                break;
+            case '0120':
+                option.legend.data = ['E12 ChamberA', 'E12 ChamberB']
+                option.series[0].name = 'E12 ChamberA'
+                option.series[1].name = 'E12 ChamberB'
+                break;
+            case '0110':
+                option.legend.data = ['E11 ChamberA', 'E11 ChamberB']
+                option.series[0].name = 'E11 ChamberA'
+                option.series[1].name = 'E11 ChamberB'
+                break;
+            default:
+                console.log(333)
+        }
         setTimeout(() => {
             var myChart = echarts.init(document.getElementById(`${'main5' + num}`));
             myChart.setOption(option);
@@ -762,7 +1094,7 @@ $(function () {
 $(function () {
     var option = {
         title: {
-            text: 'Product1,layer1,DOI1,2019.04.16-2019.05.15',
+            text: 'Product1,layer1,DOI3,2019.04.16-2019.05.15',
             x: 'center',
             y: '0',
             textStyle: {
@@ -773,7 +1105,7 @@ $(function () {
             trigger: 'axis'
         },
         legend: {
-            data: ['机台1 ChamberA', '机台1 ChamberB', '机台2 ChamberA', '机台2 ChamberB'],
+            data: ['defect3'],
             x: 'center',
             y: '30',
         },
@@ -809,69 +1141,10 @@ $(function () {
 
                 symbolSize: 7,
                 connectNulls: true,
-                name: '机台1 ChamberA',
+                name: 'defect3',
                 type: 'line',
                 stack: '总量',
-                // itemStyle: {
-                //     normal: {
-                //         lineStyle: {
-                //             color: '#ccc',
-                //             width: 3
-                //         }
-                //     }
-                // },
-                data: [2, null, null, null, 4, null, null, null, 3, null, null, null, 5, null, null, null, 4, null, null, null, 22, null, null, null, 3, null, null, null, 14, null, null]
-            },
-            {
-
-                symbolSize: 7,
-                connectNulls: true,
-                name: '机台1 ChamberB',
-                type: 'line',
-                stack: '总量',
-                // itemStyle: {
-                //     normal: {
-                //         lineStyle: {
-                //             color: '#ccc',
-                //             width: 3
-                //         }
-                //     }
-                // },
-                data: [null, 1, null, null, null, 1, null, null, null, 1, null, null, null, 1, null, null, null, 1, null, null, null, 1, null, null, null, 1, null, null, null, 1]
-            },
-            {
-
-                symbolSize: 7,
-                connectNulls: true,
-                name: '机台2 ChamberA',
-                type: 'line',
-                stack: '总量',
-                // itemStyle: {
-                //     normal: {
-                //         lineStyle: {
-                //             color: '#ccc',
-                //             width: 3
-                //         }
-                //     }
-                // },
-                data: [null, null, 2, null, null, null, 2, null, null, null, 1, null, null, null, 2, null, null, null, 1, null, null, null, 1, null, null, null, 2, null, null, null]
-            },
-            {
-
-                symbolSize: 7,
-                connectNulls: true,
-                name: '机台2 ChamberB',
-                type: 'line',
-                stack: '总量',
-                // itemStyle: {
-                //     normal: {
-                //         lineStyle: {
-                //             color: '#ccc',
-                //             width: 3
-                //         }
-                //     }
-                // },
-                data: [null, null, null, 1, null, null, null, 1, null, null, null, 1, null, null, null, 1, null, null, null, 1, null, null, null, 1, null, null, null, 1, null, null, null]
+                data: [2, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 0, 1, 22, 1, 1, 1, 1, 1, 0, 1, 14, 1, 1]
             },
         ]
     };
@@ -907,7 +1180,7 @@ $(function () {
                 }
             },
             legend: {
-                data: ['机台1 ChamberA', '机台1 ChamberB', '机台2 ChamberA', '机台2 ChamberB'],
+                data: ['E11-1 ChamberA', 'E11-1 ChamberB', 'E11 ChamberA', 'E11 ChamberB'],
                 x: 'center',
                 y: '30',
             },
@@ -919,7 +1192,7 @@ $(function () {
 
 
             xAxis: {
-                data: ['机台1 ChamberA', '机台1 ChamberB', '机台2 ChamberA', '机台2 ChamberB'],
+                data: ['E11-1 ChamberA', 'E11-1 ChamberB', 'E11 ChamberA', 'E11 ChamberB'],
             },
             yAxis: {
                 type: 'value'

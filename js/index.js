@@ -1,5 +1,5 @@
 $(function () {
-    
+
     var option = {
         title: {
             text: 'Peoduct1,layer1,DOI1,2019.04.01-2019.02.12',
@@ -625,13 +625,7 @@ $(function () {
         $(".add_text").text("Done").removeClass("on-going")
     })
 
-    $(".tog_box li").on("click", function () {
-        $(this).siblings().removeClass("active");
-        $(this).addClass("active");
-        var ar = '.' + $(this).attr("data-type");
-        $(this).parents('.box').find('.box-content').hide();
-        $(ar).show()
-    })
+
     var issueList = 'step1'
     $(".issue_check").on("click", function () {
         issueList = $(this).val()

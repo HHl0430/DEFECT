@@ -62,7 +62,7 @@
                         <td>25</td>
                         <td>18</td>
                         <td>0.1</td>
-                        <td>Defect oos&ooc Please YE MM Handle</td>
+                        <td>Review OK Please YE onday handle</td>
                     </tr>
                     <tr>
                         <td>A02.01</td>
@@ -936,7 +936,7 @@
                         <div class="box history" style="display: none;">
                             <div class="title">Lot History</div>
                             <!-- <a class="more" href="javascript:;">More>></a> -->
-                            <div class="box-tb">
+                            <div class="box-tb ">
                                 <table>
                                     <tr>
                                         <th>Step Name</th>
@@ -1047,22 +1047,24 @@
                 <div class="box-container">
                     <div class="box">
                         <div class="title">诊断建议 </div>
-                        <ul class="tog_box">
-                            <li data-type="defect1-diagnosis" class="active">
-                                <a href="javascript:;">Defect1</a>
-                            </li>
-                            <li data-type="defect2-diagnosis">
-                                <a href="javascript:;">Defect2</a>
-                            </li>
-                            <li data-type="defect3-diagnosis">
-                                <a href="javascript:;">Defect3</a>
-                            </li>
-                            <li data-type="defect4-diagnosis">
-                                <a href="javascript:;">Defect4</a>
-                            </li>
+                        <div class="box-tab">
+                            <ul class="">
+                                <li data-type="defect1-diagnosis" class="selected">
+                                    <a href="javascript:;">Defect1</a>
+                                </li>
+                                <li data-type="defect2-diagnosis">
+                                    <a href="javascript:;">Defect2</a>
+                                </li>
+                                <li data-type="defect3-diagnosis">
+                                    <a href="javascript:;">Defect3</a>
+                                </li>
+                                <li data-type="defect4-diagnosis">
+                                    <a href="javascript:;">Defect4</a>
+                                </li>
 
-                        </ul>
-                        <div class="box-content defect1-diagnosis">
+                            </ul>
+                        </div>
+                        <div class="box-content commonality2">
                             <ul class="proposal-list">
                                 <li>
                                     <span>1.Defect1 suspect tool: E11</span></li>
@@ -1070,7 +1072,7 @@
                                     <span>2.Down E11 & in MES ,inform Etch On duty by mail</span>
                                     <b class="hold_down on-going">On Going</b></li>
                                 <li>
-                                    <span>3.Add scan neighbor N wafer from Tool D</span>
+                                    <span>3.Add scan neighbor N wafer from E11</span>
                                     <b class="down_text on-going">On Going</b></li>
                                 <li>
                                     <span>4.Pullback impact lot list and add scan </span>
@@ -1090,7 +1092,7 @@
                                 <a class="blue-btn" href="javascript:;">button</a>
                             </div> -->
                         </div>
-                        <div class="box-content defect2-diagnosis" style="display: none">
+                        <div class="box-content commonality" style="display: none">
                             <ul class="proposal-list">
                                 <li>
                                     <span>1.Defect2 suspect tool: E11</span></li>
@@ -1098,7 +1100,7 @@
                                     <span>2.Down E11 & in MES ,inform Etch On duty by mail</span>
                                     <b class="hold_down on-going">On Going</b></li>
                                 <li>
-                                    <span>3.Add scan neighbor N wafer from Tool D</span>
+                                    <span>3.Add scan neighbor N wafer from E11</span>
                                     <b class="down_text on-going">On Going</b></li>
                                 <li>
                                     <span>4.Pullback impact lot list and add scan </span>
@@ -1113,15 +1115,15 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="box-content defect3-diagnosis" style="display: none">
+                        <div class="box-content commonality3" style="display: none">
                             <ul class="proposal-list">
                                 <li>
-                                    <span>1.Defect3 suspect tool: Tool A</span></li>
+                                    <span>1.Defect3 suspect tool: E11</span></li>
                                 <li>
                                     <span>2.Down Tool A & in MES ,inform Etch On duty by mail</span>
                                     <b class="hold_down on-going">On Going</b></li>
                                 <li>
-                                    <span>3.Add scan neighbor N wafer from Tool D</span>
+                                    <span>3.Add scan neighbor N wafer from E11</span>
                                     <b class="down_text on-going">On Going</b></li>
                                 <li>
                                     <span>4.Pullback impact lot list and add scan </span>
@@ -1136,15 +1138,15 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="box-content defect4-diagnosis" style="display: none">
+                        <div class="box-content commonality4" style="display: none">
                             <ul class="proposal-list">
                                 <li>
-                                    <span>1.Defect4 suspect tool: Tool A</span></li>
+                                    <span>1.Defect4 suspect tool: E11</span></li>
                                 <li>
                                     <span>2.Down Tool A & in MES ,inform Etch On duty by mail</span>
                                     <b class="hold_down on-going">On Going</b></li>
                                 <li>
-                                    <span>3.Add scan neighbor N wafer from Tool D</span>
+                                    <span>3.Add scan neighbor N wafer from E11</span>
                                     <b class="down_text on-going">On Going</b></li>
                                 <li>
                                     <span>4.Pullback impact lot list and add scan </span>
@@ -1991,27 +1993,34 @@
 
                         </div>
                         <div class="summary_box">
-                            <p class="title">Defect summary:</p>
+                            <p class="title">Defect summary: <span style="margin-left: 100px;">Last 7 Day's cases</span>
+                            </p>
                             <div class="summary_content">
                                 <ul>
-                                    <li>
+                                    <li style="position: relative">
                                         <span class="summary_title">Defect1:</span>
                                         <span> #1-15(6) -D.D% 58%</span>
                                         <br>
                                         <span> #2-15(6) -D.D% 58%</span>
+                                        <span style="position: absolute;left: 252px;top: 8px"><a href=""
+                                                style="color: #1c92ed;">01_20190115_Lot1_Product1_Layer1_DOI1</a></span>
                                     </li>
-                                    <li>
+                                    <li style="position: relative">
                                         <span class="summary_title">Defect2:</span>
                                         <span> #1-17(8) -D.D% 60%</span>
                                         <br>
                                         <span> #2-17(8) -D.D% 60%</span>
+                                        <span style="position: absolute;left: 252px;top: 8px"><a href=""
+                                                style="color: #1c92ed;">01_20190115_Lot1_Product1_Layer1_DOI2</a></span>
                                     </li>
-                                    <li>
+                                    <li style="position: relative">
                                         <span class="summary_title">Defect3:</span>
                                         <span> #1-23(4) -D.D% 30%</span>
                                         <br>
                                         <span> #2-23(4) -D.D% 30%</span>
-                                    </li>
+                                        <span style="position: absolute;left: 252px;top: 8px"><a href=""
+                                                style="color: #1c92ed;">01_20190115_Lot1_Product1_Layer1_DOI3</a></span>
+                                    </li style="position: relative">
                                     <!-- <li>
                                         <span class="summary_title">Defect4:</span>
                                         <span> #1-9(10) -D.D% 20%</span>
@@ -2036,7 +2045,7 @@
                             </select>
                         </div>
                         <a class="more" href="javascript:;">More>></a>
-                        <div class="box-tb">
+                        <div class="box-tb show_dialog">
                             <table>
                                 <tr>
                                     <th>Step Name</th>
@@ -2115,7 +2124,7 @@
                                     <td>Step 13</td>
                                     <td>0130</td>
                                     <td>E13</td>
-                                    <td>G</td>
+                                    <td>A、B</td>
                                     <td>Trackout</td>
                                     <td>2019-05-08 16:19:09</td>
                                     <td>--</td>
@@ -2124,7 +2133,7 @@
                                     <td>Step 12</td>
                                     <td>0120</td>
                                     <td>E12</td>
-                                    <td>H</td>
+                                    <td>A、B</td>
                                     <td>Trackout</td>
                                     <td>2019-05-07 16:10:23</td>
                                     <td>--</td>
@@ -2134,7 +2143,7 @@
                                     <td>Step 11</td>
                                     <td>0110</td>
                                     <td>E11</td>
-                                    <td>I</td>
+                                    <td>A、B</td>
                                     <td>Trackout</td>
                                     <td>2019-05-06 16:11:18</td>
                                     <td>--</td>
@@ -2146,16 +2155,16 @@
                     </div>
                     <div class="box-tab">
                         <ul>
-                            <li class="selected">
+                            <li class="selected" data-type="defect1-diagnosis">
                                 <a href="javascript:;">Defect1</a>
                             </li>
-                            <li>
+                            <li data-type="defect2-diagnosis">
                                 <a href="javascript:;">Defect2</a>
                             </li>
-                            <li>
+                            <li data-type="defect3-diagnosis">
                                 <a href="javascript:;">Defect3</a>
                             </li>
-                            <li>
+                            <li data-type="defect4-diagnosis">
                                 <a href="javascript:;">Defect4</a>
                             </li>
                         </ul>
@@ -2223,7 +2232,7 @@
                                                 <option value="1">Layer1</option>
                                                 <option value="2">Layer1</option>
                                             </select>
-                                            <select name="" id="">
+                                            <select name="" id="" class="change_select">
                                                 <option value="1">0200</option>
                                                 <option value="2">0190</option>
                                                 <option value="3">0180</option>
@@ -2231,8 +2240,9 @@
                                                 <option value="5">0160</option>
                                                 <option value="6">0150</option>
                                                 <option value="7">0140</option>
-                                                <option value="1">DOI1</option>
-                                                <option value="2">DOI2</option>
+                                                <option value="8">0130</option>
+                                                <option value="9">0120</option>
+                                                <option value="10">0110</option>
                                             </select>
                                             <input type="text" class="layui-input" id="test1"
                                                 placeholder="2019-4-16 - 2019-5-15">
@@ -2292,7 +2302,7 @@
                                                 <option value="1">Layer1</option>
                                                 <option value="2">Layer2</option>
                                             </select>
-                                            <select name="" id="">
+                                            <select name="" id="" class="change_select2">
                                                 <option value="1">0200</option>
                                                 <option value="2">0190</option>
                                                 <option value="3">0180</option>
@@ -2300,6 +2310,9 @@
                                                 <option value="5">0160</option>
                                                 <option value="6">0150</option>
                                                 <option value="7">0140</option>
+                                                <option value="8">0130</option>
+                                                <option value="9">0120</option>
+                                                <option value="10">0110</option>
                                             </select>
                                             <input type="text" class="layui-input" id="test1"
                                                 placeholder="2019-4-16 - 2019-5-15">
@@ -2313,9 +2326,9 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="box-content-tit"><input class="model_swich" name="model" type="checkbox"
-                                            value='history' /> Trend Chart </div>
                                     <div class="box-content-chart">
+                                        <div class="box-content-tit"><input class="model_swich" name="model"
+                                                type="checkbox" value='history' /> Trend Chart </div>
                                         <div class="add_box">
                                             <select name="" id="">
                                                 <option value="1">Product1</option>
@@ -2328,38 +2341,7 @@
                                             <select name="" id="">
                                                 <option value="1">DOI1</option>
                                                 <option value="2">DOI2</option>
-                                            </select>
-                                            <input type="text" class="layui-input" id="test1"
-                                                placeholder="2019-4-16 - 2019-5-15">
-                                            <a class="blue-btn addChart5" href="javascript:;">Add</a>
-                                        </div>
-
-                                        <div class="main_box">
-                                            <span class="main_rem">Remove</span>
-                                            <div id="main5" class="main"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="box-content-chart">
-                                        <div class="box-content-tit"><input class="model_swich" name="model"
-                                                type="checkbox" value='history' /> Cross Module Chart</div>
-                                        <div class="add_box">
-                                            <select name="" id="">
-                                                <option value="1">Product1</option>
-                                                <option value="2">Product2</option>
-                                            </select>
-                                            <select name="" id="">
-                                                <option value="1">Layer1</option>
-                                                <option value="2">Layer2</option>
-                                            </select>
-                                            <select name="" id="">
-                                                <option value="1">0200</option>
-                                                <option value="2">0190</option>
-                                                <option value="3">0180</option>
-                                                <option value="4">0170</option>
-                                                <option value="5">0160</option>
-                                                <option value="6">0150</option>
-                                                <option value="7">0140</option>
+                                                <option value="2">DOI3</option>
                                             </select>
                                             <input type="text" class="layui-input" id="test1"
                                                 placeholder="2019-4-16 - 2019-5-15">
@@ -2373,6 +2355,47 @@
 
 
                                     </div>
+                                    <div class="box-content-tit"><input class="model_swich" name="model" type="checkbox"
+                                            value='history' /> Cross Module Chart</div>
+
+                                    <div class="box-content-chart">
+                                        <div class="add_box">
+                                            <select name="" id="">
+                                                <option value="1">Product1</option>
+                                                <option value="2">Product2</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="1">Layer1</option>
+                                                <option value="2">Layer2</option>
+                                            </select>
+                                            <select name="" id="" class="change_select3">
+                                                <option value="1">0200</option>
+                                                <option value="2">0190</option>
+                                                <option value="3">0180</option>
+                                                <option value="4">0170</option>
+                                                <option value="5">0160</option>
+                                                <option value="6">0150</option>
+                                                <option value="7">0140</option>
+                                                <option value="7">0130</option>
+                                                <option value="7">0120</option>
+                                                <option value="7">0110</option>
+                                            </select>
+
+                                            <input type="text" class="layui-input" id="test1"
+                                                placeholder="2019-4-16 - 2019-5-15">
+                                            <a class="blue-btn addChart5" href="javascript:;">Add</a>
+                                        </div>
+
+                                        <div class="main_box">
+                                            <span class="main_rem">Remove</span>
+                                            <span class="blue-btn show_pm"
+                                                style="position: absolute;  right: 100px; top: 0;z-index: 1;cursor: pointer;">show
+                                                PM</span>
+                                            <div id="main5" class="main"></div>
+                                        </div>
+                                    </div>
+
+
                                 </li>
                                 <li>
                                     <div class="box-content-tit"> <input class="model_swich" name="model"
@@ -2417,7 +2440,7 @@
                                                 <option value="1">Layer1</option>
                                                 <option value="2">Layer1</option>
                                             </select>
-                                            <select name="" id="">
+                                            <select name="" id="" class="change_select4">
                                                 <option value="1">0200</option>
                                                 <option value="2">0190</option>
                                                 <option value="3">0180</option>
@@ -2425,12 +2448,13 @@
                                                 <option value="5">0160</option>
                                                 <option value="6">0150</option>
                                                 <option value="7">0140</option>
-                                                <option value="1">DOI1</option>
-                                                <option value="2">DOI2</option>
+                                                <option value="7">0130</option>
+                                                <option value="7">0120</option>
+                                                <option value="7">0110</option>
                                             </select>
                                             <input type="text" class="layui-input" id="test1"
                                                 placeholder="2019-4-16 - 2019-5-15">
-                                            <a class="blue-btn addChart2" href="javascript:;">Add</a>
+                                            <a class="blue-btn addChart0" href="javascript:;">Add</a>
                                         </div>
 
                                         <div class="main_box">
@@ -2465,28 +2489,28 @@
                                 <tbody>
                                     <tr>
                                         <td style="background: red;color:#fff">A07_W#1</td>
-                                        <td>E11/I</td>
-                                        <td>E12 H</td>
+                                        <td>E11/A</td>
+                                        <td>E12 A</td>
                                     </tr>
                                     <tr>
                                         <td style="background: red;color:#fff">A10_W#2</td>
-                                        <td>E11/I</td>
-                                        <td>E12 H</td>
+                                        <td>E11/A</td>
+                                        <td>E12 A</td>
                                     </tr>
                                     <tr>
                                         <td style="background: green;color: #fff">A07_W#6</td>
-                                        <td>E11/I1</td>
-                                        <td>E12 H1</td>
+                                        <td>E11/B</td>
+                                        <td>E12 A</td>
                                     </tr>
                                     <tr>
                                         <td style="background: green;color: #fff">A10_W#8</td>
-                                        <td>E11/I1</td>
-                                        <td>E12 H1</td>
+                                        <td>E11/B</td>
+                                        <td>E12 A</td>
                                     </tr>
                                     <tr>
                                         <td>Commona lity score</td>
+                                        <td>100%</td>
                                         <td>50%</td>
-                                        <td>0%</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -2512,28 +2536,28 @@
                                 <tbody>
                                     <tr>
                                         <td style="background: red;color:#fff">A07_W#1</td>
-                                        <td>E11/I</td>
-                                        <td>E12 H</td>
+                                        <td>E11/A</td>
+                                        <td>E12 A</td>
                                     </tr>
                                     <tr>
                                         <td style="background: red;color:#fff">A10_W#2</td>
-                                        <td>E11/I</td>
-                                        <td>E12 H</td>
+                                        <td>E11/A</td>
+                                        <td>E12 A</td>
                                     </tr>
                                     <tr>
                                         <td style="background: green;color: #fff">A07_W#6</td>
-                                        <td>E11/I1</td>
-                                        <td>E12 H1</td>
+                                        <td>E11/A</td>
+                                        <td>E12 A</td>
                                     </tr>
                                     <tr>
                                         <td style="background: green;color: #fff">A10_W#8</td>
-                                        <td>E11/I1</td>
-                                        <td>E12 H1</td>
+                                        <td>E11/A</td>
+                                        <td>E12 A</td>
                                     </tr>
                                     <tr>
                                         <td>Commona lity score</td>
                                         <td>50%</td>
-                                        <td>0%</td>
+                                        <td>50%</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -2553,34 +2577,39 @@
                                         <th>Lot Wafer</th>
                                         <th>0110</th>
                                         <th>0120</th>
-
+                                        <th>0130</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td style="background: red;color:#fff">A07_W#1</td>
-                                        <td>E11/I</td>
-                                        <td>E12 H</td>
+                                        <td>E11/A</td>
+                                        <td>E12/A</td>
+                                        <td>E13/A</td>
                                     </tr>
                                     <tr>
                                         <td style="background: red;color:#fff">A10_W#2</td>
-                                        <td>E11/I</td>
-                                        <td>E12 H</td>
+                                        <td>E11/A</td>
+                                        <td>E12/A</td>
+                                        <td>E13/A</td>
                                     </tr>
                                     <tr>
                                         <td style="background: green;color: #fff">A07_W#6</td>
-                                        <td>E11/I1</td>
-                                        <td>E12 H1</td>
+                                        <td>E11/A</td>
+                                        <td>E12/A</td>
+                                        <td>E13/A</td>
                                     </tr>
                                     <tr>
                                         <td style="background: green;color: #fff">A10_W#8</td>
-                                        <td>E11/I1</td>
-                                        <td>E12 H1</td>
+                                        <td>E11/B</td>
+                                        <td>E12/A</td>
+                                        <td>E13/A</td>
                                     </tr>
                                     <tr>
                                         <td>Commona lity score</td>
                                         <td>50%</td>
-                                        <td>0%</td>
+                                        <td>50%</td>
+                                        <td>50%</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -2597,31 +2626,29 @@
                                     <tr>
                                         <th></th>
                                         <th>Unique Element</th>
-
-
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
 
-                                        <td>Tool A</td>
+                                        <td>E18</td>
                                         <td>TiN</td>
                                     </tr>
                                     <tr>
 
-                                        <td>Tool B</td>
+                                        <td>E17</td>
                                         <td>Si</td>
                                     </tr>
                                     <tr>
-                                        <td>Tool C</td>
+                                        <td>E13</td>
                                         <td>Y,<span style="color: red">Sn</span></td>
                                     </tr>
                                     <tr>
-                                        <td>Tool D</td>
+                                        <td>E11</td>
                                         <td><span style="color: red">Sn</span></td>
                                     </tr>
                                     <tr>
-                                        <td>Tool E</td>
+                                        <td>E12</td>
                                         <td>O,Al</td>
                                     </tr>
                                 </tbody>
@@ -2638,45 +2665,41 @@
                                 <thead>
                                     <tr>
                                         <th>Lot Wafer</th>
-                                        <th>Tool C</th>
-                                        <th>Tool ID</th>
+                                        <th>E11</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td style="background: red;color:#fff">LotA_#1</td>
-                                        <td>CHA</td>
-                                        <td>CHB</td>
+                                        <td style="background: red;color:#fff">A07_W#1</td>
+                                        <td>E11/A</td>
+
                                     </tr>
                                     <tr>
-                                        <td style="background: red;color:#fff">LotB_#3</td>
-                                        <td>CHA</td>
-                                        <td>CHB</td>
+                                        <td style="background: red;color:#fff">A10_W#2</td>
+                                        <td>E11/A</td>
                                     </tr>
                                     <tr>
-                                        <td style="background: green;color: #fff">LotA_#24</td>
-                                        <td>CHA</td>
-                                        <td>CHC</td>
+                                        <td style="background: green;color: #fff">A07_W#18</td>
+                                        <td>E11/A</td>
                                     </tr>
                                     <tr>
-                                        <td style="background: green;color: #fff">LotA_#2</td>
-                                        <td>CHA</td>
-                                        <td>CHC</td>
+                                        <td style="background: green;color: #fff">A07_W#6</td>
+                                        <td>E11/A</td>
                                     </tr>
                                     <tr>
-                                        <td style="background: green;color: #fff">LotA_#4</td>
-                                        <td>CHA</td>
-                                        <td>CHC</td>
+                                        <td style="background: green;color: #fff">A10_W#3</td>
+                                        <td>E11/B</td>
                                     </tr>
                                     <tr>
-                                        <td style="background: green;color: #fff">LotA_#5</td>
-                                        <td>CHA</td>
-                                        <td>CHC</td>
+                                        <td style="background: green;color: #fff">A10_W#4</td>
+                                        <td>E11/B</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
+                    <div class="box"><a style="float: right;" href="./Toolbox.html" class="blue-btn">advance
+                            analysis</a></div>
                 </div>
 
             </div>
@@ -3377,7 +3400,7 @@
 
 
 
-        $(".box-tb tr td").click(function () {
+        $(".show_dialog tr td").click(function () {
             $("#EQPBox").show();
         });
 

@@ -594,6 +594,30 @@ $(function () {
             return false;
         });
         //监听下拉框
+        form.on('select(x)', function (data) {
+            $(".imes1").hide()
+            $(".defect1").hide()
+            $(".mes1").hide()
+            if (data.value === 'mes') {
+                $(".mes1").show(300)
+            } else if (data.value === 'imes') {
+                $(".imes1").show(300)
+            } else if (data.value === 'defect') {
+                $(".defect1").show(300)
+            }
+        });
+        form.on('select(y)', function (data) {
+            $(".imes2").hide()
+            $(".defect2").hide()
+            $(".mes2").hide()
+            if (data.value === 'mes') {
+                $(".mes2").show(300)
+            } else if (data.value === 'imes') {
+                $(".imes2").show(300)
+            } else if (data.value === 'defect') {
+                $(".defect2").show(300)
+            }
+        });
         form.on('select(iEMS)', function (data) {
             if (data.value === 'Manual setting') {
                 $(".iems_form").show(300)
@@ -645,6 +669,11 @@ $(function () {
         $(".random1 ").show()
     })
     $(".means").on("click", function () {
+
+        $(".means1 ").show()
+
+    })
+    $(".mens_ana").on("click", function () {
         var option = {
             xAxis: {},
             yAxis: {},
@@ -828,7 +857,6 @@ $(function () {
                 type: 'scatter'
             }]
         }
-        $(".means1 ").show()
         var myChart = echarts.init(document.getElementById('means'));
         myChart.setOption(option);
         var myChart = echarts.init(document.getElementById('means1'));

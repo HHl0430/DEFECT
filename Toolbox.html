@@ -418,23 +418,92 @@
                             <form class="layui-form" action="">
                                 <span>X轴:</span>
                                 <div class="layui-form-item">
-                                    <select name="city" lay-filter="charts" lay-verify="iEMS">
-                                        <option value="Auto mapping">Auto mapping</option>
-                                        <option value="Manual setting">Manual setting</option>
+                                    <select name="city" lay-filter="x" lay-verify="iEMS">
+                                        <option value="">请选择</option>
+                                        <option value="mes">MES</option>
+                                        <option value="imes">iMES</option>
+                                        <option value="defect">Defect</option>
                                     </select>
                                 </div>
                                 <span>Y轴:</span>
                                 <div class="layui-form-item">
-                                    <select name="city" lay-filter="charts" lay-verify="iEMS">
-                                        <option value="Auto mapping">Auto mapping</option>
-                                        <option value="Manual setting">Manual setting</option>
+                                    <select name="city" lay-filter="y" lay-verify="iEMS">
+                                        <option value="">请选择</option>
+                                        <option value="mes">MES</option>
+                                        <option value="imes">iMES</option>
+                                        <option value="defect">Defect</option>
                                     </select>
                                 </div>
                                 <span>R^2 SPEC:</span>
                                 <div class="layui-form-item">
-                                    <select name="city" lay-filter="charts" lay-verify="iEMS">
-                                        <option value="Auto mapping">Auto mapping</option>
-                                        <option value="Manual setting">Manual setting</option>
+                                    <input type="text" name="title" required lay-verify="required" placeholder="请输入"
+                                        autocomplete="off" class="layui-input">
+                                </div>
+                                <br>
+                                <div class="layui-form-item defect1" style="display: none;margin-left: 26px">
+                                    <select name="city" lay-filter="" lay-verify="iEMS">
+                                        <option value="">Defect1</option>
+                                        <option value="MES">Defect2</option>
+                                        <option value="iMES">Defect3</option>
+                                        <option value="Defect">Defect4</option>
+                                    </select>
+                                </div>
+                                <div class="layui-form-item mes1" style="display: none;margin-left: 26px">
+                                    <select name="city" lay-filter="" lay-verify="iEMS">
+                                        <option value="">mes1</option>
+                                        <option value="MES">mes2</option>
+                                        <option value="iMES">mes3</option>
+                                        <option value="Defect">mes4</option>
+                                    </select>
+                                </div>
+                                <div class="layui-form-item imes1" style="display: none;margin-left: 26px">
+                                    <select name="city" lay-filter="" lay-verify="iEMS">
+                                        <option value="">iMES1</option>
+                                        <option value="MES">iMES2</option>
+                                        <option value="iMES">iMES3</option>
+                                        <option value="Defect">iMES4</option>
+                                    </select>
+                                </div>
+                                <div class="layui-form-item more_select defect2"
+                                    style="width:300px;display: none;margin-left: 26px">
+                                    <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+
+                                        <option selected>Para. 1</option>
+                                        <option>Para. 2</option>
+                                        <option>Para. 3</option>
+                                        <option>Para. 4</option>
+                                        <option>Para. 5</option>
+                                        <option>Para. 6</option>
+                                        <option>Para. 7</option>
+                                        <option>Para. 8</option>
+                                    </select>
+                                </div>
+                                <div class="layui-form-item more_select mes2"
+                                    style="width:300px;display: none;margin-left: 26px">
+                                    <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+
+                                        <option selected>Para. 1</option>
+                                        <option>Para. 2</option>
+                                        <option>Para. 3</option>
+                                        <option>Para. 4</option>
+                                        <option>Para. 5</option>
+                                        <option>Para. 6</option>
+                                        <option>Para. 7</option>
+                                        <option>Para. 8</option>
+                                    </select>
+                                </div>
+                                <div class="layui-form-item more_select imes2"
+                                    style="width:300px;display: none;margin-left: 26px">
+                                    <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+
+                                        <option selected>Para. 1</option>
+                                        <option>Para. 2</option>
+                                        <option>Para. 3</option>
+                                        <option>Para. 4</option>
+                                        <option>Para. 5</option>
+                                        <option>Para. 6</option>
+                                        <option>Para. 7</option>
+                                        <option>Para. 8</option>
                                     </select>
                                 </div>
                             </form>
@@ -744,7 +813,7 @@
                                     </select>
                                 </div>
                                 <div class="layui-form-item">
-                                    <a class="blue-btn" href="javascript:;">分析</a>
+                                    <a class="blue-btn mens_ana" href="javascript:;">分析</a>
                                 </div>
                             </form>
                         </div>
