@@ -175,3 +175,53 @@
 #defect_chart4_c {
   height: 100%;
 }
+.steps {
+  padding: 0 50px;
+  padding-top: 20px;
+}
+.steps li {
+  float: left;
+  position: relative;
+  width: 20%;
+}
+.steps .ball {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ccc;
+}
+.steps li:nth-child(1) .ball {
+  background: #1c92ed;
+}
+.steps .line {
+  width: 90%;
+  height: 10px;
+  display: inline-block;
+  background: #ccc;
+  position: absolute;
+  top: 5px;
+  left: 19px;
+}
+.steps .steps_text {
+  position: absolute;
+  transform: translateX(-50%);
+  top: -28px;
+}
+.steps .steps_exp {
+  position: absolute;
+  top: 25px;
+  white-space: nowrap;
+  transform: translateX(-50%);
+}
+
+.canvas {
+  width: 300px;
+  height: 300px;
+  background-color: #ffff6d;
+  border: 1px solid #ddd;
+  box-sizing: content-box;
+  position: absolute;
+  left: 0px;
+  top: -3px;
+}

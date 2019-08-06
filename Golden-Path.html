@@ -1,104 +1,178 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Baseline Reporting</title>
-<link rel="stylesheet" type="text/css" href="font/iconfont.css" >
-<link href="select2/select2.min.css" rel="stylesheet" />
-<link href="layui/css/layui.css" rel="stylesheet" />
-<link rel="stylesheet" type="text/css" href="css/style.css" >
-<link rel="stylesheet" type="text/css" href="css/nextpage.css" >
+    <meta charset="UTF-8">
+    <title>Baseline Reporting</title>
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link href="select2/select2.min.css" rel="stylesheet" />
+    <link href="layui/css/layui.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/nextpage.css">
 </head>
 
 <body class="gray-bg">
-<form class="layui-form" action="">
+    <form class="layui-form" action="">
 
-<div class="header">
-    <a href="javascript:;" class="logo"> AI Defect</a>
-   
-    <div class="right-bar">
-        <a href="javascript:;"><i class="iconfont iconzhanghu"></i>Admin</a>
-        <a href="javascript:;"><i class="iconfont iconzhuxiao"></i>Logout</a>
-    </div>
-</div>
+        <div class="header">
+            <a href="javascript:;" class="logo">Aurora AI Defect</a>
 
-
-<div class="container">
-    <div class="left-nav">
-        <ul class="nav">
-            <li><a href="Excursion.html"><i class="iconfont iconzhineng"></i> <span>Excursion</span></a></li>
-            <li  class="cur"><a href="Baseline-Reporting.html"><i class="iconfont iconlogAnalysis"></i> <span>Baseline Reporting</span></a></li>
-            <li><a href="Toolbox.html"><i class="iconfont icongongjuxiang"></i> <span>Toolbox</span></a></li>
-            <li><a href="Set-Up.html"><i class="iconfont iconzhinengyunweiguanli"></i> <span>Set Up</span></a></li>
-        </ul>
-    </div>
-    <div class="nextpage-container">
-        <div class="breadCrumb">
-            <a href="javascript:;">Home</a> /
-            <a href="Baseline-Reporting.html">Baseline Reporting</a> /
-            <a href="javascript:;">Golden Path</a>
+            <div class="right-bar">
+                <a href="javascript:;"><i class="iconfont iconzhanghu"></i>Admin</a>
+                <a href="javascript:;"><i class="iconfont iconzhuxiao"></i>Logout</a>
+            </div>
         </div>
-        <div class="page-title">Golden Path</div>
-        <div class="page-content">
-            
 
-            <div class="box-content-chart">
 
-                <div class="select-bar">
-                    <div class="layui-input-inline">
-                        <select name="Product" lay-verify="required" >
-                            <option value="">Product</option>
-                            <option value="0" selected>Product1</option>
-                            <option value="1">Product2</option>
-                            <option value="2">Product3</option>
-                            <option value="3">Product4</option>
-                        </select>
-                    </div>
-                    <label class="layui-form-label" style="width:40px;">From</label>
-
-                    <div class="layui-input-inline">
-                        <select name="step" lay-verify="required" >
-                            <option value="">step</option>
-                            <option value="0" selected>step1</option>
-                            <option value="1">step2</option>
-                            <option value="2">step3</option>
-                            <option value="3">step4</option>
-                        </select>
-                    </div>
-                    <span style="margin: 0 5px; vertical-align: middle;"> to </span>
-                    <div class="layui-input-inline">
-                        <select name="step" lay-verify="required" >
-                            <option value="">step</option>
-                            <option value="0" >step1</option>
-                            <option value="1" selected>step2</option>
-                            <option value="2">step3</option>
-                            <option value="3">step4</option>
-                        </select>
-                    </div>
-                     
-                    <div class="layui-input-inline">
-                        <input type="text" class="layui-input time-slot" style="width: 240px;"  placeholder="请选择时间段 ">
-                    </div>
-                    <a href="javascript:;" class="blue-btn addChart">Add</a>
+        <div class="container">
+            <div class="left-nav">
+                <ul class="nav">
+                    <li><a href="Excursion.html"><i class="iconfont iconzhineng"></i> <span>Excursion</span></a></li>
+                    <li class="cur"><a href="Baseline-Reporting.html"><i class="iconfont iconlogAnalysis"></i>
+                            <span>Baseline Reporting</span></a></li>
+                    <li><a href="Toolbox.html"><i class="iconfont icongongjuxiang"></i> <span>Toolbox</span></a></li>
+                    <li><a href="Set-Up.html"><i class="iconfont iconzhinengyunweiguanli"></i> <span>Set Up</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nextpage-container">
+                <div class="breadCrumb">
+                    <a href="javascript:;">Home</a> /
+                    <a href="Baseline-Reporting.html">Baseline Reporting</a> /
+                    <a href="javascript:;">Golden Path</a>
                 </div>
+                <div class="page-title">Golden Path</div>
+                <div class="page-content">
 
-                <div class="main_box">
+
+                    <div class="box-content-chart">
+
+                        <div class="select-bar" style="height: auto">
+                            <div class="layui-input-inline">
+                                <select name="Product" lay-verify="required">
+                                    <option value="">Product</option>
+                                    <option value="0" selected>Product1</option>
+                                    <option value="1">Product2</option>
+                                    <option value="2">Product3</option>
+                                    <option value="3">Product4</option>
+                                </select>
+                            </div>
+                            <label class="layui-form-label" style="width:40px;">From</label>
+
+                            <div class="layui-input-inline">
+                                <select name="step" lay-verify="required" lay-filter="step_sat">
+                                    <!-- <option value="">step</option> -->
+                                    <option value="1" selected>step1</option>
+                                    <option value="2">step2</option>
+                                    <option value="3">step3</option>
+                                    <option value="4">step4</option>
+                                </select>
+                            </div>
+                            <span style="margin: 0 5px; vertical-align: middle;"> to </span>
+                            <div class="layui-input-inline">
+                                <select name="step" lay-verify="required" lay-filter="step_end">
+                                    <option value="1">step1</option>
+                                    <option value="2" selected>step2</option>
+                                    <option value="3">step3</option>
+                                    <option value="4">step4</option>
+                                </select>
+                            </div>
+
+                            <div class="layui-input-inline">
+                                <input type="text" class="layui-input time-slot" style="width: 240px;"
+                                    placeholder="请选择时间段 ">
+                            </div>
+                            <div class="layui-input-inline" style="margin-top: 20px; margin-right: 20px;">
+                                <select name="step" lay-filter="parameter" lay-verify="required">
+                                    <option value="">目标参数</option>
+                                    <option value="yield">Yield</option>
+                                    <option value="defect">Defect</option>
+                                    <option value="wap">WAP</option>
+                                </select>
+                            </div>
+                            <div class="layui-input-inline yield" style="display: none;margin-top: 20px;">
+                                <select name="step" lay-verify="required">
+                                    <option value="0">bin1</option>
+                                    <option value="1">bin2</option>
+                                    <option value="2">bin3</option>
+                                </select>
+                            </div>
+                            <div class="layui-input-inline defect" style="display: none;margin-top: 20px;">
+                                <select name="step" lay-verify="required">
+                                    <option value="0">defect1</option>
+                                    <option value="1">defect2</option>
+                                    <option value="2">defect3</option>
+                                </select>
+                            </div>
+                            <div class="layui-input-inline wap" style="display: none;margin-top: 20px;">
+                                <select name="step" lay-verify="required">
+                                    <option value="2">product1</option>
+                                    <option value="0">product2</option>
+                                    <option value="1">product3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="box-tb ">
+
+                        </div>
+                        <table class="layui-table">
+                            <!-- <thead>
+                                <tr>
+                                    <th> SEQ </th>
+                                    <th> step1 </th>
+                                    <th> step2 </th>
+                                    <th> step3 </th>
+                                    <th> Yield </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>E01 ChamberA</td>
+                                    <td>E01 ChamberB</td>
+                                    <td>E01 ChamberA</td>
+                                    <td>98</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>E02 ChamberB</td>
+                                    <td>E02 ChamberB</td>
+                                    <td>E02 ChamberA</td>
+                                    <td>96</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>E03 ChamberA/B</td>
+                                    <td>E03 ChamberA</td>
+                                    <td>E03 ChamberB</td>
+                                    <td>99</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>E04 ChamberB</td>
+                                    <td>E04 ChamberA</td>
+                                    <td>E04 ChamberB</td>
+                                    <td>97</td>
+                                </tr>
+                            </tbody> -->
+                        </table>
+                        <!-- <div class="main_box">
                     <span  class="main_rem">Remove</span>
                     <div id="main" class="main" style="height: 450px;"></div>
-                </div>
-            </div>
+                </div> -->
+                    </div>
 
-            <!-- <div class="chart-bar">
+                    <!-- <div class="chart-bar">
                 <img src="images/chart_03.png">
                 <img src="images/chart_03.png">
             </div> -->
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-</form>
+    </form>
 
- 
+
 </body>
 
 <script src="js/jquery.min.js"></script>
@@ -107,122 +181,165 @@
 <script src="layui/layui.js"></script>
 <script type="text/javascript">
 
-    $(document).ready(function() {
-        $('.js-example-basic-multiple').select2();
-        $('.js-example-basic-single').select2();
-       
-    });
- 
-layui.use('laydate', function(){
-  var laydate = layui.laydate;
-  
-   
-  //同时绑定多个
-  lay('.time-slot').each(function(){
-    laydate.render({
-      elem: this
-      ,range: true
-      ,trigger: 'click'
-      ,format: 'yyyy年MM月dd日'
-         
-    });
-  });
+    $(function () {
+        $(document).ready(function () {
+            $('.js-example-basic-multiple').select2();
+            $('.js-example-basic-single').select2();
 
-});
+        });
 
-layui.use('form', function(){
-  var form = layui.form;
-  
-  //监听提交
-  form.on('submit(formDemo)', function(data){
-    layer.msg(JSON.stringify(data.field));
-    return false;
-  });
-});
+        layui.use('laydate', function () {
+            var laydate = layui.laydate;
 
 
-$(function () {
-    var option = {
-        title: {
-            text: 'Product1,Step1~Step5,2019.04.16-2019.05.15',
-            x: 'center',
-            y: '0',
-            textStyle: {
-                fontSize: 14
+            //同时绑定多个
+            lay('.time-slot').each(function () {
+                laydate.render({
+                    elem: this
+                    , range: true
+                    , trigger: 'click'
+                    , format: 'yyyy年MM月dd日'
+
+                });
+            });
+
+        });
+        var list = [1, 2]
+        layui.use('form', function () {
+            var form = layui.form;
+
+            //监听提交
+            form.on('submit(formDemo)', function (data) {
+                layer.msg(JSON.stringify(data.field));
+                return false;
+            });
+            form.on('select(parameter)', function (data) {
+                console.log(data.value)
+                $(".yield").hide()
+                $(".defect").hide()
+                $(".wap").hide()
+                if (data.value !== '') {
+                    var i = '.' + data.value
+                    $(i).show(300)
+                }
+            });
+            form.on('select(step_sat)', function (data) {
+                list[0] = data.value - 0
+                render()
+            });
+            form.on('select(step_end)', function (data) {
+                list[1] = data.value - 0
+                render()
+            });
+        });
+        var render = function () {
+            console.log(list)
+            $(".layui-table").empty()
+            if (list[0] > list[1]) {
+                var html =`
+                    <div style="text-align: center;font-weight: 700">No data found</div>
+                `
+            } else {
+                var html = `
+            <thead>
+                <tr>
+                    <th> SEQ </th>
+                    ${list[0] == 1 ? '<th> step1 </th>' : ''}
+                    ${list[0] <= 2 && list[1] >= 2 ? '<th> step2 </th>' : ''}
+                    ${list[0] <= 3 && list[1] >= 3 ? '<th> step3 </th>' : ''}
+                    ${list[0] <= 4 && list[1] >= 4 ? '<th> step4 </th>' : ''}
+                    <th> Yield </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    ${list[0] == 1 ? ' <td>E01 ChamberA</td>' : ''}
+                    ${list[0] <= 2 && list[1] >= 2 ? ' <td>E01 ChamberB</td>' : ''}
+                    ${list[0] <= 3 && list[1] >= 3 ? ' <td>E01 ChamberA</td>' : ''}
+                     ${list[0] <= 4 && list[1] >= 4 ? ' <td>E01 ChamberA/B</td>' : ''}
+                    <td>98</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    ${list[0] == 1 ? ' <td>E02 ChamberA/B</td>' : ''}
+                      ${list[0] <= 2 && list[1] >= 2 ? ' <td>E02 ChamberA</td>' : ''}
+                    ${list[0] <= 3 && list[1] >= 3 ? ' <td>E02 ChamberA/B</td>' : ''}
+                     ${list[0] <= 4 && list[1] >= 4 ? ' <td>E02 ChamberA</td>' : ''}
+                    <td>96</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    ${list[0] == 1 ? ' <td>E03 ChamberB</td>' : ''}
+                    ${list[0] <= 2 && list[1] >= 2 ? ' <td>E013 ChamberA/B</td>' : ''}
+                    ${list[0] < 3 && list[1] >= 3 ? ' <td>E03 ChamberB</td>' : ''}
+                    ${list[0] < 4 && list[1] >= 4 ? ' <td>E03 ChamberA/B</td>' : ''}
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    ${list[0] == 1 ? ' <td>E04 ChamberA</td>' : ''}
+                    ${list[0] <= 2 && list[1] >= 2 ? ' <td>E04 ChamberB</td>' : ''}
+                    ${list[0] < 3 && list[1] >= 3 ? ' <td>E04 ChamberA</td>' : ''}
+                    ${list[0] < 4 && list[1] >= 4 ? ' <td>E04 ChamberA</td>' : ''}
+                    <td>97</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    ${list[0] == 1 ? ' <td>E05 ChamberB</td>' : ''}
+                    ${list[0] <= 2 && list[1] >= 2 ? ' <td>E05 ChamberB</td>' : ''}
+                    ${list[0] <= 3 && list[1] >= 3 ? ' <td>E05 ChamberB</td>' : ''}
+                     ${list[0] <= 4 && list[1] >= 4 ? ' <td>E05 ChamberA</td>' : ''}
+                    <td>93</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    ${list[0] == 1 ? ' <td>E06 ChamberB</td>' : ''}
+                    ${list[0] <= 2 && list[1] >= 2 ? ' <td>E06 ChamberA</td>' : ''}
+                    ${list[0] <= 3 && list[1] >= 3 ? ' <td>E06 ChamberB</td>' : ''}
+                     ${list[0] <= 4 && list[1] >= 4 ? ' <td>E06 ChamberA/B</td>' : ''}
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    ${list[0] == 1 ? ' <td>E07 ChamberA/B</td>' : ''}
+                    ${list[0] <= 2 && list[1] >= 2 ? ' <td>E07 ChamberB</td>' : ''}
+                    ${list[0] <= 3 && list[1] >= 3 ? ' <td>E07 ChamberB</td>' : ''}
+                     ${list[0] <= 4 && list[1] >= 4 ? ' <td>E07 ChamberB</td>' : ''}
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    ${list[0] == 1 ? ' <td>E08 ChamberA/B</td>' : ''}
+                    ${list[0] <= 2 && list[1] >= 2 ? ' <td>E08 ChamberA/B</td>' : ''}
+                    ${list[0] <= 3 && list[1] >= 3 ? ' <td>E08 ChamberA/B</td>' : ''}
+                     ${list[0] <= 4 && list[1] >= 4 ? ' <td>E08 ChamberA/B</td>' : ''}
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    ${list[0] == 1 ? ' <td>E09 ChamberA</td>' : ''}
+                    ${list[0] <= 2 && list[1] >= 2 ? ' <td>E09 ChamberB</td>' : ''}
+                    ${list[0] <= 3 && list[1] >= 3 ? ' <td>E09 ChamberA/B</td>' : ''}
+                     ${list[0] <= 4 && list[1] >= 4 ? ' <td>E09 ChamberA</td>' : ''}
+                    <td>94</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    ${list[0] == 1 ? ' <td>E10 ChamberB</td>' : ''}
+                    ${list[0] <= 2 && list[1] >= 2 ? ' <td>E10 ChamberA</td>' : ''}
+                    ${list[0] <= 3 && list[1] >= 3 ? ' <td>E10 ChamberA</td>' : ''}
+                     ${list[0] <= 4 && list[1] >= 4 ? ' <td>E10 ChamberA</td>' : ''}
+                    <td>93</td>
+                </tr>
+            </tbody>
+            `
             }
-        },
-        tooltip: {
-            trigger: 'axis'
-        },
-        legend: {
-            data: ['Defect1'],
-            x: 'center',
-            y: '30',
-        },
-        grid: {
-            top:"80",
-            left: '3%',
-            right: '4%',
-            bottom: '3%',
-            containLabel: true
-        },
-        xAxis: {
-            type: 'category',
-            boundaryGap: false,
-            axisLabel: {
-                interval: 0,
-                rotate: 90
-            },
-            // data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
-            data: ['A01_W#1_2019-04-16', 'A01_W#8_2019-04-17',
-                'A01_W#8_2019-04-18', 'A02_W#1_2019-04-19', 'A02_W#6_2019-04-20', 'A02_W#8_2019-04-21', 'A03_W#1_2019-04-22',
-                'A03_W#6_2019-04-23', 'A03_W#6_2019-04-24', 'A04_W#1_2019-04-25', 'A04_W#6_2019-04-26', 'A04_W#8_2019-04-27',
-                'A05_W#8_2019-04-28', 'A05_W#6_2019-04-29', 'A05_W#8_2019-04-30','A06_W#1_2019-05-01', 'A06_W#6_2019-05-02',
-                'A06_W#8_2019-05-03', 'A07_W#1_2019-05-04', 'A07_W#6_2019-05-05', 'A07_W#8_2019-05-06', 'A08_W#1_2019-05-07',
-                'A08_W#6_2019-05-08', 'A08_W#8_2019-05-09', 'A09_W#2_2019-05-10', 'A09_W#6_2019-05-11', 'A09_W#8_2019-05-12',
-                'A10_W#1_2019-05-13', 'A10_W#1_2019-05-14', 'A10_W#8_2019-05-15']
-        },
-        yAxis: {
-            type: 'value'
-        },
-        series: [
-            {
-                 
-                symbolSize: 7,
-                connectNulls: true,
-                name: 'Defect1',
-                type: 'line',
-                stack: '总量',
-                // itemStyle: {
-                //     normal: {
-                //         lineStyle: {
-                //             color: '#ccc',
-                //             width: 3
-                //         }
-                //     }
-                // },
-                data: [2, 1, 2, 1, 5, 1, 2, 1, 1, 1, 1, 2, 4, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 1, 18, 1, 2, 2, 15, 1]
-            },
-            
-        ]
-    };
+            $(".layui-table").append(html)
+        }
+        render()
 
-    var myChart = echarts.init(document.getElementById('main'));
-    myChart.setOption(option);
-    $("body").on("click", ".main_rem", function () {
-        $(this).parents('.main_box').remove()
     })
-    $(".addChart").on("click", function () {
-        var num = new Date().getTime().toString(36) + Math.random().toString(36).slice(2)
-        $(this).parents(".box-content-chart").append(`<div class='main_box'><span class='main_rem'>Remove</span><div class="main" id='${'main' + num}'></div> </div>`)
-        // var myChart1 = echarts.init(document.getElementById(`${'main' + num}`));
-        // myChart1.setOption(option);
-        setTimeout(() => {
-            var myChart = echarts.init(document.getElementById(`${'main' + num}`));
-            myChart.setOption(option);
-        }, 100);
-    })
-})
 
 
 

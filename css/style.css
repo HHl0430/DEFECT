@@ -117,9 +117,9 @@ ol {
   color: #fff;
   margin-left: 10px;
   font-weight: 100;
-  background: url(../images/smic-logo.png) 0 center no-repeat;
+  background: url(../images/zyy-logo.png) 0 center no-repeat;
   background-size: 75px auto;
-  width: 100px;
+  width: 150px;
   padding-left: 80px;
   line-height: 50px;
   font-size: 18px;
@@ -234,6 +234,7 @@ ol {
   height: 100%;
   top: 50px;
   left: 100px;
+  overflow: hidden;
 }
 
 .left-list .title {
@@ -245,9 +246,11 @@ ol {
 
 .left-list .List-tb {
   padding: 0 1px;
+  overflow: auto;
+  width: 400px;
 }
 .left-list .List-tb table {
-  width: 100%;
+  width: 830px;
   border-collapse: collapse;
 }
 .left-list .List-tb table tr th {
@@ -492,7 +495,7 @@ ol {
 
 .right-container .box-container .box .box-content .chart-container {
   text-align: center;
-  padding-left: 260px;
+  padding-left: 320px;
   position: relative;
 }
 .right-container .box-container .box .box-content .chart-container:after {
@@ -519,7 +522,7 @@ ol {
   top: 40px;
   overflow: hidden;
 }
-.right-container .box-container .box .box-content .chart-container .chip li i {
+.right-container .box-container .box .box-content .chart-container .chip i {
   display: block;
   border: 1px solid #000;
   width: 10px;
@@ -537,7 +540,6 @@ ol {
   .box-content
   .chart-container
   .chip
-  li
   i:after {
   content: "";
   display: inline-block;
@@ -879,10 +881,11 @@ ol {
   .line {
   position: absolute;
   left: 0;
-  top: 0;
+  bottom: 0;
   width: 100%;
   height: 10px;
   font-size: 0px;
+  text-align: left;
 }
 .right-container
   .box-container
@@ -894,7 +897,7 @@ ol {
   li {
   display: inline-block;
   width: 20%;
-  position: relative;
+  float: left;
   text-align: center;
   left: 0px;
 }
@@ -1035,7 +1038,6 @@ ol {
   min-width: 300px;
   min-height: 200px;
 
-  
   position: relative;
 }
 .pup-box .close-btn {
@@ -1126,7 +1128,7 @@ ol {
   padding: 0px;
 }
 .pup-box .content .input-line {
-  padding:10px;
+  padding: 10px;
 }
 .pup-box .content .input-line:after {
   content: "";
@@ -1159,7 +1161,6 @@ ol {
   padding: 0px;
 }
 .pup-box .content .pup-tb {
-   
 }
 .pup-box .content .pup-tb table {
   width: 100%;
@@ -1172,7 +1173,7 @@ ol {
   padding: 10px 10px;
   text-align: left;
   box-sizing: border-box;
-   
+
   color: #949bab;
   border-bottom: 1px solid #e1e1e1;
 }
@@ -1183,19 +1184,18 @@ ol {
   box-sizing: border-box;
 }
 
-.pup-box .content .pup-tb table tr td a{
+.pup-box .content .pup-tb table tr td a {
   color: #1c92ed;
 }
 
-.pup-box .content .pup-tb table tr td input{
+.pup-box .content .pup-tb table tr td input {
   height: 34px;
   box-sizing: border-box;
-  padding:0 5px;
-  border:1px  solid #ddd; 
+  padding: 0 5px;
+  border: 1px solid #ddd;
 }
-select{
+select {
   display: inline-block;
-
 }
 .pup-box .content .pup-tb table tr:hover td {
   background: #fafafa;
@@ -1407,13 +1407,12 @@ select{
   width: 220px;
 }
 .layui-btn,
-.layui-input, .layui-select, .layui-textarea{
+.layui-input,
+.layui-select,
+.layui-textarea {
   height: 34px;
 }
-.layui-btn{
+.layui-btn {
   line-height: 32px;
   font-size: 12px;
 }
-
-
-
